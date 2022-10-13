@@ -1,0 +1,72 @@
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
+
+ .nav-glow-selected {
+	 animation: glow 4s ease-in-out both infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 8.3333333333px snow, 0 -3px 7px tomato, -3px 3px 7px yellow, 3px 3px 7px rgb(130, 22, 3);
+ }
+  50% {
+    transform:translateY(-5px);
+    text-shadow: 0 0 8.3333333333px snow, 0 -3px 7px cyan, -3px 3px 7px tomato, 3px 3px 7px cyan, ;
+ }
+  100% {
+    text-shadow: 0 0 8.3333333333px snow, 0 -3px 7px yellow, -3px 3px 7px cyan, 3px 3px 7px yellow;
+ }
+}
+
+
+.nav-text{
+  font-size: 26px;
+  text-shadow: 0 0 5px #000000, 0 0 20px #000, 0 0 30px #000;
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right,#6a6060c0 1px,transparent 1px), linear-gradient(to bottom,#b2a8a856 1px,transparent 1px);
+  color: rgba(230, 220, 220, 0.313)
+}
+.bouncing:hover {
+  color: #EEE;
+  font-family: 'Rubik Maze', cursive;
+  text-align: center;
+-webkit-animation: bounce .5s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+      text-shadow:
+                  0 1px 0  black,
+                  0 2px 3px rgba(0, 0, 0, 1);  
+  }
+  100% {
+    transform:translateY(-10px);
+    text-shadow:  0 10px 0 black,
+                  0 0px 20px rgb(0, 0, 0);
+  }
+}
+
+#background-navbar{
+  font-family: 'Rubik Maze', cursive;
+}
+
+@keyframes example {
+  0%   {background-color: rgba(13, 0, 0, 0.179);}
+  1.1%  {background-color: rgb(59, 48, 48);}
+  2.8%  {background-color:rgb(0, 0, 0);}
+  2.9%  {background-color:rgb(59, 48, 48);}
+  3.5%  {background-color:rgb(0, 0, 0);}
+  3.6%  {background-color:rgb(59, 48, 48);}
+  5%  {background-color: rgb(0, 0, 0); }
+  59% {background-color: rgb(190, 209, 190); }
+  79.4%  {background-color: rgb(0, 0, 0);}
+  80.8%  {background-color:rgb(0, 0, 0);}
+  80.9%  {background-color:rgb(59, 48, 48);}
+  90.1%  {background-color:rgb(255, 255, 255);}
+  91.1%  {background-color:rgb(0, 0, 0);}
+  100% {background-color: rgb(12, 14, 12);}
+}
+#background-navbar:hover{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}

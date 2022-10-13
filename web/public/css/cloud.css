@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;700&display=swap');
+
+ .tagcloud {
+	 display: inline-block;
+	 font-size: 1.05rem;
+	 font-weight: normal;
+	 left: 10%;
+	 letter-spacing: 1px;
+	 transition: 0.3s;
+   margin: 80px;
+}
+ .tagcloud--item:hover {
+	 color: #e2f3f5;
+	 font-weight: bolder;
+}
+ 

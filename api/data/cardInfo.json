@@ -1,0 +1,32 @@
+[
+  {
+      "name": "Espada de damasco",
+      "image":"https://i.pinimg.com/564x/4a/23/1e/4a231e763ef53a36446b0bde20fca2af.jpg",
+      "description":"gideon es muy valiente",
+      "special":"Tiene bulalas por todas partes",
+      "type":"Espada",
+      "weight":8,
+      "life":6,
+      "mana":6,
+      "mov":3,
+      "damage":{
+        "fis": 2,
+        "dist": 3,
+        "mag": 11,
+        "bla": 4
+      },
+      "reach": 4,
+      "ac":{
+        "fis": 4,
+        "mag": 5,
+        "dist": 51
+      },
+      "acPower":["2","0","1"],
+      "def":["15","14","13","15"],
+      "defPower":["2","0","1","1"],
+      "part":["manos"],
+      "price":15,
+      "held":"Dos manos",
+      "character": 1
+      }
+]
