@@ -13,7 +13,7 @@ module.exports.register = (req, res, next) => {
         next(
           createError(400, {
             message: "La validación ha fallado",
-            errors: { nickname: { message: "El usuario ya está registrado" } },
+            errors: { nickname: { message: "Ese nombre ya existe. Elige otro" } },
           })
         );
       } else {

@@ -15,7 +15,7 @@ const cardSchema = new Schema({
     type: String,
     trim: true,
     required: "Un nombre te facilitará encontrarlo. Lo necesitas, hazme caso",
-    maxLength:[25, "Si es tan largo el título, es que es texto que va abajo..."]
+    maxLength:[30, "Si es tan largo el título, es que es texto que va abajo..."]
   },
   description:{
     type: String,
@@ -27,7 +27,7 @@ const cardSchema = new Schema({
     trim: true,
     validate: {
       validator: isURL,
-      message: "La URL no es válida",
+      message: "La URL no es válida",        
     },
     required: false,
     default:"https://res.cloudinary.com/dfrda73uc/image/upload/v1665356910/donGions%20imgs/notes/noteBook_lxsw4h.png"

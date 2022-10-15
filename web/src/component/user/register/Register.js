@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm, } from "react-hook-form";
 import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";
-
+import Modal from "../../extra/Modal";
+import data from "../../../data/pjs"
 function Register() {
   const navigation = useNavigate();
+  const [passShow, setPassShow] = useState(false)
   const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
 
+  const handleShowpass = () => {
+    setPassShow(!passShow)
+  }
+    const lili = JSON.stringify(data[0])
+console.log("string", lili)
   const handleRegisterSubmit = (data) => {
     console.log(data)
     pjService.registerPj(data)
@@ -23,32 +30,53 @@ function Register() {
       })
   }
   return (
-    <div className="">
+    <center className="form-register">
       <form onSubmit={handleSubmit(handleRegisterSubmit)} className="mt-3">
-        <div className="input-group ">
-          <input  type="text" className={`form-control ${errors.title ? "is-invalid" : ""}`} placeholder="Nombre del apunte. Max 25 caracteres"
+      {/*  nickname */}
+        <div className="">
+          <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder="Nickname... elige un nombre para tu personaje"
             {...register("nickname", {
-              required: "Necesitas un nombre para esta nota, será más fácil encontrarla luego",
-              maxLength: {value: 25, message:"Máximo 25 caracteres. Si es tan largo el título, es que es texto que va abajo...",
-              },
+              required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
+              unique: "El nombre debe ser único",
+              maxLength:{value:20, message:"El nombre debe tener menos de 20 caracteres"}
             })}
           />
-          {errors.title && ( <div className="invalid-feedback">{errors.title.message}</div>
+          {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
           )}
         </div>
-        
-        <div className="input-group ms-3">
-            <textarea className={`form-control ${errors.description ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Descibe lo que quieras. Max 600 caracteres"
-              {...register("email", {
-                maxLength:{value:600, message: "Máximo 600 caracteres. Los textos pequeños son más fáciles de seguir. Siempre puedes crear otras notas"}
+        {/* password */}
+        <div className="">
+          <button onClick={handleShowpass}>ver</button>
+          <input  type={passShow ? "text" : "password"} className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder="Nickname... elige un nombre para tu personaje"
+            {...register("password", {
+              required: "Necesitas proporcionar un correo para las actualizaciones",
+            })}
+          />
+          {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
+          )}
+        </div>
+        {/* email-contact */}
+        <div className="">
+          <input  type="email" className={`input-register ${errors.contact ? "is-invalid" : "repite"}`} placeholder="Dirección de correo...podrás usar el mismo para varios personajes"
+            {...register("contact", {
+              required: "Necesitas proporcionar un correo para las actualizaciones",
+            })}
+          />
+          {errors.contact && ( <div className="invalid-feedback">{errors.contact.message}</div>
+          )}
+        </div>
+        <div className="">
+            <textarea className={`input-register ${errors.background ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Opcional. Puedes escribir algo sobre el pasado de tu personaje, sus ambiciones, relaciones, puntos fuertes etc..."
+              {...register("background", {
+                maxLength:{value:2000, message: "Máximo 2000 caracteres. Guárdate algo de background como secreto para revelera a tus compañeros"}
               })}
             />
-                  {errors.description && ( <div className="invalid-feedback">{errors.description.message}</div>
+                  {errors.background && ( <div className="invalid-feedback">{errors.background.message}</div>
           )}
         </div>
         
         <div className="">
-          <input  type="text" className={`form-control ${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
+          <input  type="text" className={`${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
             {...register("image", {
 
             })}
@@ -57,10 +85,8 @@ function Register() {
         </div>
 
 <div className="d-flex pt-2">
-        <input type="checkbox" className="btn-check" value="Personaje" id="person" {...register("category")}/>
-        <label style={{border: "black"}} className="btn btn-outline-dark p-2"  htmlFor="person"> Personaje</label><br></br>
-        <input type="checkbox" className="btn-check" value="Lugar" id="place" {...register("category")}/>
-        <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="place"> Lugar</label><br></br>
+        <input type="checkbox" className="btn-check" value={lili} id="place" {...register("mana")}/>
+        <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="place"> Lili</label><br></br>
         <input type="checkbox" className="btn-check" value="Evento" id="event" {...register("category")}/>
         <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="event"> Evento</label><br></br>
         <input type="checkbox" className="btn-check" value="Criatura" id="creature" {...register("category")}/>
@@ -73,12 +99,12 @@ function Register() {
         <label style={{border: "black"}} className="btn btn-outline- p-2" htmlFor="extra"> Extra</label><br></br>
 </div>
         <div className="mt-2 ">
-          <button className={!isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"} type="submit" disabled={!isValid}>
+          <button className="btn-rules-toggle-sub"  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
         <button>dsads</button>
         </div>
       </form>
-    </div>
+    </center>
   );
 }
 

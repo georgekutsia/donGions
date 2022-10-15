@@ -2,17 +2,12 @@ import {v4 as uuid} from 'uuid'
 //físico, mágico, a distancia
 //esquiva, bloqueo, parada, resistencia
 const personaje = [
-  {
-    id: uuid(),
+    {
     name: "Liliana",
     image: "https://media.magic.wizards.com/images/featured/EN_Liliana_Header.jpg",
     life: 4,
     mana: 6,
     move: 5,
-    esence : 0,
-    damage:[1, 3, 1],
-    ac:[10, 14, 12],
-    def:[9, 9, 9, 14],
     prec: 0,
     speed: 0
   },

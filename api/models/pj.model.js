@@ -9,45 +9,39 @@ const WORK_FACTOR = 10;
 
 const pjSchema = new Schema(
   {
-    email: {
+    nickname: {
       type: String,
-      required:
-        "Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
+      required: "El nombre de tu personaje debe ser único",
       trim: true,
-      lowercase: true,
-      match: [EMAIL_PATTERN, "correo electrónico no valido"],
+      unique: true,
+      maxLength: [20, "Debe tener menos de 20 caracteres"],
     },
     password: {
       type: String,
       required: "Necesitas una contraseña",
       match: [PW_PATTERN, "Necesitas al menos 8 caracteres"],
     },
-    nickname: {
+    contact: {
       type: String,
-      required: "El nombre de tu personaje debe ser único",
+      required:"Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
       trim: true,
-      unique: true,
-      maxLength: [40, "Debe tener menos de 40 caracteres"],
-    },
-    name: {
-      type: String,
-      trim: true,
-      maxLength: [20, "Debe tener menos de 20 caracteres"],
-    },
-    image: {
-      type: String,
-      trim: true,
+      lowercase: true,
+      match: [EMAIL_PATTERN, "Correo electrónico no válido"],
     },
     background:{
       type: String,
       trim: true,
       maxLength: [2000, "No te pases con tu background, guárdate algunos secretos"]
     },
+    image: {
+      type: String,
+      trim: true,
+    },
     life: {
       type: Number,
     },
     mana: {
-      type: Number,
+      type: Array,
     },
     mov: {
       type: Number,
@@ -87,15 +81,9 @@ const pjSchema = new Schema(
     },
     // reflejos <-> firmeza <-> temple
     defPower: {
-      refl: {
-        type: Number,
-      },
-      firm: {
-        type: Number,
-      },
-      temp: {
-        type: Number,
-      },
+      refl: Number,
+      firm: Number,
+      temp: Number,
     },
     // suerte <-> carisma <-> percepción <-> cinestesia <-> presencia
     character: {
@@ -109,26 +97,13 @@ const pjSchema = new Schema(
       type: Array,
     },
     equipped: {
-      head: {
-        type: mongoose.Schema.Types.ObjectId,
-      },
-      feet: {
-        type: mongoose.Schema.Types.ObjectId,
-      },
-      hands: {
-        type: mongoose.Schema.Types.ObjectId,
-      },
-      back: {
-        type: mongoose.Schema.Types.ObjectId,
-      },
-      body: {
-        type: mongoose.Schema.Types.ObjectId,
-      },
-      fingers: {
-        type: [mongoose.Schema.Types.ObjectId],
-      },
-      misc: {
-        type: [mongoose.Schema.Types.ObjectId],
+      head: mongoose.Schema.Types.ObjectId,
+      feet: mongoose.Schema.Types.ObjectId,
+      hands: mongoose.Schema.Types.ObjectId,
+      back: mongoose.Schema.Types.ObjectId,
+      body: mongoose.Schema.Types.ObjectId,
+      fingers: [mongoose.Schema.Types.ObjectId],
+      misc: [mongoose.Schema.Types.ObjectId],
       },
       gold: {
         type: Number,
@@ -138,7 +113,6 @@ const pjSchema = new Schema(
       },
       admin: {
         type: Boolean,
-      },
     },
   },
   {timestamps: true,

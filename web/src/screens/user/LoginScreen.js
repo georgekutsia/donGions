@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useForm } from "react-hook-form";
 import * as login from "../../services/all-services"
-import { NeonDonGions } from '../../component'
+import { BackgroundFloatingBuble, NeonDonGions } from '../../component'
 import { useNavigate } from 'react-router';
 import { AuthContext } from '../../context/AuthContext';
 
@@ -17,7 +17,7 @@ function LoginScreeen() {
         .then((data)=> {
           console.log(data)
           value.setPj(data)
-          navigation("/authenticate")
+          navigation("/profile")
     })
     .catch(error => {
       if(error.response?.data?.errors){
@@ -32,10 +32,18 @@ function LoginScreeen() {
 }
   return (
     <center>
-        <form className='col-4 m-5 login-form-img' onSubmit={handleSubmit(handleLogin)}>
+            <BackgroundFloatingBuble
+        floatingBalls={
+          "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665733888/donGions%20imgs/planeswalkers%20png/pngwing.com_73_klyr29.png)"
+        }
+        widthBall={"10px"}
+        heigthBall={"10px"}
+        idFlow={"slow-flow"}
+      />
+        <form className='m-5 login-form-img' onSubmit={handleSubmit(handleLogin)}>
           <div className='login-form-margin d-flex'>
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665689975/donGions%20imgs/planeswalkers%20png/pjlog_cg3cdj.png" alt="sorin" height="40px" />
             <div className="input-group">
-            <img src="" alt="" />
               <input  type="text" className={`login-textarea ${errors.nickname ? "is-invalid" : ""}`} placeholder="Nickname..."
                 {...register("nickname", {
                   required: "¿Cual es el nombre que pusiste a tu personaje?",
@@ -44,6 +52,7 @@ function LoginScreeen() {
               {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
               )}
             </div>
+            <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665690302/donGions%20imgs/planeswalkers%20png/pngwing.com_72_b53gkz.png" alt="sorin" height="40px" />
             <div className="input-group ">
               <input  type="password" className={`login-textarea ${errors.password ? "is-invalid" : ""}`} placeholder="password..."
                 {...register("password", {
@@ -55,10 +64,11 @@ function LoginScreeen() {
             </div>
           </div>
             <div className="mt-2 ">
-              <button className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"} type="submit" disabled={!isValid}>
-              <span></span><span></span><span></span><span></span> Crear Nota</button>
+              <button className={"btn-rules-toggle-sub"} type="submit" disabled={!isValid}>
+              <span></span><span></span><span></span><span></span> Conectarse </button>
             </div>
         </form>
+
     <NeonDonGions/>
     </center>
   )

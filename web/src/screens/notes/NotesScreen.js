@@ -9,7 +9,8 @@ function NotesScreen() {
   return (
     <div>
     <div className="ms-5">
-    <BackgroundFloatingBuble floatingBalls={"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665653141/donGions%20imgs/backgroundEffects/pngwing.com_70_czolhq.png)"} 
+    <BackgroundFloatingBuble floatingBalls=
+    {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665653141/donGions%20imgs/backgroundEffects/pngwing.com_70_czolhq.png)"} 
     widthBall={"50px"} heigthBall={"100px"} radiusBall={"2px"} idFlow={"square-flow"}/>
     <center><NoteForm /></center>
       

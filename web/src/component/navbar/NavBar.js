@@ -27,6 +27,11 @@ function NavBar({opacity}) {
                 <li className="nav-item mx-5 ">
                   <NavLink to="/pj" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} ><h2>Personaje</h2></NavLink>
                 </li>
+              <ul>
+                <li className='nav-item'>
+                    {/* {value.pj.mana} */}
+                </li>
+              </ul>
                 <li className="nav-item mx-5">
                   <NavLink to="/shop" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Tienda </NavLink>
                 </li>
@@ -39,11 +44,6 @@ function NavBar({opacity}) {
                 {/* <li className="nav-item mx-5">
                   <NavLink title={user && user.nickname} onClick={handleLogOut} className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Logout </NavLink>
                 </li> */}
-              </ul>
-              <ul>
-                <li className='nav-item'>
-                    {value.pj.nickname}
-                </li>
               </ul>
             </div>
         </nav>

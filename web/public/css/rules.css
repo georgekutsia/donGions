@@ -1,3 +1,25 @@
+
+.iconBar {
+  width: 90px;
+  background-color: #303030;
+}
+
+.iconBar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 35px;
+}
+
+.iconBar a:hover {
+  background-color: #006346;
+}
+
+.active {
+  background-color: #008c62;
+}
 .gran-div{
   margin-left: 80px;
   margin-right: 80px;

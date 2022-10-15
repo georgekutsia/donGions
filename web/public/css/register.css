@@ -1,5 +1,14 @@
+
+.input-register{
+  width: 500px;
+}
+.form-register{
+background: url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665739227/donGions%20imgs/backgroundEffects/pngwing.com_74_kievyi.png);
+background-size: cover;
+}
+
 .black-mirror {
-  position: relative;
+  margin-top:100px;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -10,14 +19,11 @@
   user-select: none;
   white-space: nowrap;
   filter: blur(0.007em);
-  left: 45%;
   animation: shake 2s linear forwards;
 }
 
 .black-mirror span {
   position: absolute;
-  top: 0;
-  left: 0;
   transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
           clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
@@ -27,8 +33,6 @@
 .black-mirror::after {
   content: attr(data-text);
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .black-mirror::before {
