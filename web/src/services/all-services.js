@@ -28,12 +28,17 @@ export function getNote(id){
 }
 
 export function createNote(id) {
-  // return http.post(('/notes', id).then(res => res.id))
   return http.post('/notes', id)
 }
 export function registerPj(pj) {
-  // return http.post(('/notes', id).then(res => res.id))
-  return http.post('/register', pj)
+  pj.image = pj.image[0]
+  const data = new FormData()
+  
+  Object.keys(pj).forEach(key => {
+    data.append(key, pj[key])
+  })
+
+  return http.post('/register', data)
 }
 
 export function login(data) {

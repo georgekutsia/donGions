@@ -23,79 +23,59 @@ const pjSchema = new Schema(
     },
     contact: {
       type: String,
-      required:"Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
+      required:
+        "Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
       trim: true,
       lowercase: true,
       match: [EMAIL_PATTERN, "Correo electrónico no válido"],
     },
-    background:{
+    background: {
       type: String,
       trim: true,
-      maxLength: [2000, "No te pases con tu background, guárdate algunos secretos"]
+      maxLength: [
+        2000,
+        "No te pases con tu background, guárdate algunos secretos",
+      ],
     },
-    image: {
-      type: String,
-      trim: true,
-    },
-    life: {
-      type: Number,
-    },
-    mana: {
-      type: Array,
-    },
-    mov: {
-      type: Number,
-    },
-    // la carga del objeto
-    weight: {
-      type: Number,
-    },
-    // daño físico <-> daño mágico <-> daño a distancia
-    damage: {
-      fis: Number,
-      dist: Number,
-      mag: Number,
-    },
+    name: String,
+    image: String,
+    life: Number,
+    mana: Number,
+    actions: Number,
+    // movimiento
+    mov: Number,
     // alcance al que hace daño
-    reach: {
-      type: Number,
-    },
+    reach: Number,
+    // la carga del objeto
+    weight: Number,
+    // daño físico <-> daño mágico <-> daño a distancia
+    damFis: Number,
+    damDist: Number,
+    damMag: Number,
     // acierto físico <-> acierto mágico <-> acierto a distancia
-    ac: {
-      fis: Number,
-      dist: Number,
-      mag: Number,
-    },
+    asFis: Number,
+    adDist: Number,
+    acMag: Number,
     // Precisión <-> velocidad <-> marcialidad
-    acPower: {
-      prec: Number,
-      speed: Number,
-      marc: Number,
-    },
+    precision: Number,
+    speed: Number,
+    marciality: Number,
     // esquiva <->  bloqueo <-> parada <-> resistencia
-    def: {
-      dodge: Number,
-      block: Number,
-      parry: Number,
-      resist: Number,
-    },
+    dodge: Number,
+    block: Number,
+    parry: Number,
+    resist: Number,
     // reflejos <-> firmeza <-> temple
-    defPower: {
-      refl: Number,
-      firm: Number,
-      temp: Number,
-    },
+    reflex: Number,
+    firm: Number,
+    temple: Number,
     // suerte <-> carisma <-> percepción <-> cinestesia <-> presencia
-    character: {
-      luck: Number,
-      charisma: Number,
-      perception: Number,
-      kinesthesia: Number,
-      presence: Number
-    },
-    inventory: {
-      type: Array,
-    },
+    luck: Number,
+    charisma: Number,
+    perception: Number,
+    kinesthesia: Number,
+    presence: Number,
+    inventory: Array,
     equipped: {
       head: mongoose.Schema.Types.ObjectId,
       feet: mongoose.Schema.Types.ObjectId,
@@ -104,23 +84,21 @@ const pjSchema = new Schema(
       body: mongoose.Schema.Types.ObjectId,
       fingers: [mongoose.Schema.Types.ObjectId],
       misc: [mongoose.Schema.Types.ObjectId],
-      },
-      gold: {
-        type: Number,
-      },
-      level:{
-        type: Number
-      },
-      admin: {
-        type: Boolean,
+    },
+    gold: Number,
+    level: Number,
+    admin: {
+      type: Boolean,
     },
   },
-  {timestamps: true,
+  {
+    timestamps: true,
     toJSON: {
       transform: (doc, ret) => {
         delete ret.__v;
         ret.id = ret._id;
         delete ret._id;
+        delete ret.password;
         return ret;
       },
     },

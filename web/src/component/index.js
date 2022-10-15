@@ -10,6 +10,7 @@ export {default as NavbarVertical} from "./guide/NavbarVertical"
 export {default as Register} from "./user/register/Register"
 export {default as SelectPj} from "./user/register/SelectPj"
 export {default as PjDetail} from "./user/register/PjDetail"
+export {default as Liliana} from "./user/register/regPj/Liliana"
 export {default as CarouselImgs1} from "./extra/CarouselImgs1"
 export {default as Notes} from "./notes/Notes"
 export {default as SwordsBall} from "./extra/SwordsBall"
@@ -23,7 +24,4 @@ export {default as NoteForm} from "./notes/NoteForm"
 export {default as NoteDetail} from "./notes/NoteDetail"
 export {default as Acordion} from "./acordion/Acordion"
 
-
-
-export {default as Liliana} from "./user/register/regPj/Liliana"
 

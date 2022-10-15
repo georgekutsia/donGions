@@ -1,3 +1,16 @@
+.plans-img-register{
+  border-radius: 50%;
+  border: 6px double white;
+  width: 200px;
+  height: 200px;
+}
+.plans-img-register:hover{
+  border-radius: 49%;
+  border: 3px double rgb(255, 255, 255);
+}
+.plans-img-register-selected{
+  border-color: blue;
+}
 
 .input-register{
   width: 500px;

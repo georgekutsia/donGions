@@ -1,5 +1,6 @@
 const express =  require("express");
 const router =  express.Router();
+const upload = require("./multer.config")
 const cards = require("../constrollers/card.controller")
 const note = require("../constrollers/note.controller")
 const auth = require("../constrollers/auth.controller")
@@ -7,7 +8,7 @@ const secure = require("../middlewares/secure.mid")
 const owned = require("../middlewares/note.auth.mid")
 const creator = require("../middlewares/card.auth.mid")
 
-router.post("/register", auth.register)
+router.post("/register", upload.single("image"), auth.register)
 router.post("/authenticate", auth.authenticate)
 router.delete("/logout", auth.logout)
 

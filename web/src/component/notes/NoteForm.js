@@ -59,12 +59,15 @@ function NoteForm() {
           <input  type="text" className={`form-control ${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
             {...register("image", 
             {validate:{ value: (value) =>{
+              if(value){
                   try{
                     new URL(value)
                     return true
                   } catch (error) {
                     return "Dirección de URL no válida";
-                  }},}}
+                  }
+              }
+                },}}
             )}
           />
           {errors.image && (<div className="invalid-feedback">{errors.image.message}</div>)}

@@ -25,10 +25,10 @@ const cardSchema = new Schema({
   image:{
     type: String,
     trim: true,
-    validate: {
-      validator: isURL,
-      message: "La URL no es válida",        
-    },
+    // validate: {
+    //   validator: isURL,
+    //   message: "La URL no es válida",        
+    // },
     required: false,
     default:"https://res.cloudinary.com/dfrda73uc/image/upload/v1665356910/donGions%20imgs/notes/noteBook_lxsw4h.png"
   },
