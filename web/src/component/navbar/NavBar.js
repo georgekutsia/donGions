@@ -20,7 +20,7 @@ function NavBar({opacity}) {
                 </li>
               <ul>
                 <li className='nav-item'>
-                <img src={value.pj.image} alt="hey" width="200px" />                    
+                {value.pj.stats.name}           
                 </li>
               </ul>
                 <li className="nav-item mx-5">

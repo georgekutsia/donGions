@@ -1,17 +1,56 @@
-.plans-img-register{
-  border-radius: 50%;
-  border: 6px double white;
+.habilidades-register{
+  border-radius: 15px;
   width: 200px;
-  height: 200px;
+  transition: all .2s ease-in-out; 
 }
-.plans-img-register:hover{
-  border-radius: 49%;
-  border: 3px double rgb(255, 255, 255);
+.habilidades-register:hover{
+ transform: scale(2)
 }
-.plans-img-register-selected{
-  border-color: blue;
+.seccion-habilidades{
+  background-color: rgba(128, 128, 128, 0.425);
+  border: 4px solid black;
+  border-radius: 20px;
+  width: 1200px;
+  height: 500px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  z-index: 3;
+  
 }
 
+.back-plan-image{
+  background-color: rgba(128, 128, 128, 0.248);
+  border: 4px solid black;
+  border-radius: 20px;
+  width: 1200px;
+  height: 500px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all .2s ease-in-out; 
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.back-plan-image:hover{
+ transform: scale(1.3)
+}
+.plans-img-register{
+  border-radius: 20%;
+  border: 6px double white;
+  width: 120px;
+  height: 80px;
+  transition: all .2s ease-in-out; 
+}
+.plans-img-register:hover{
+  border-radius: 15%;
+  border: 3px double rgb(255, 255, 255);
+  transform: scale(1.5)
+  
+}
+.radio-register{
+  margin: -13px;
+}
 .input-register{
   width: 500px;
 }

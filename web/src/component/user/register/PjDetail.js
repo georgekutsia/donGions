@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {useParams, useNavigate} from "react-router-dom"
-import pjs from '../../../data/pjs'
+import pjs from '../../../data/pjStats'
 
 
 function PjDetail() {

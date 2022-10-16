@@ -25,7 +25,6 @@ function Notes({size,color}) {
               <h5>{capitilize(note.title)}</h5>
               <div>{note.description}</div>
               <div>{note.updatedAt}</div>
-              <div>{console.log(note.category)}</div>
               <div>{note.category}</div>
               <div>{note.author.nickname}</div>
             </div>

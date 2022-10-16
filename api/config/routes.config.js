@@ -7,8 +7,8 @@ const auth = require("../constrollers/auth.controller")
 const secure = require("../middlewares/secure.mid")
 const owned = require("../middlewares/note.auth.mid")
 const creator = require("../middlewares/card.auth.mid")
-
-router.post("/register", upload.single("image"), auth.register)
+// upload.single("image"),
+router.post("/register", auth.register)
 router.post("/authenticate", auth.authenticate)
 router.delete("/logout", auth.logout)
 

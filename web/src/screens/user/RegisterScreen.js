@@ -11,7 +11,7 @@ function RegisterScreen() {
     <CarouselImgs1/>
     </div>
     <button className='btn-rules-toggle' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setShowInfo(!showInfo)}>
-          <span></span><span></span><span></span><span></span>Estadísticas del personaje
+          <span></span><span></span><span></span><span></span>Comenzar con el Registro
       </button>
     <div className='mt-5'>
     {showInfo &&  <Register/>}

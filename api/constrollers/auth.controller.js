@@ -17,8 +17,6 @@ module.exports.register = (req, res, next) => {
           })
         );
       } else {
-        req.body.image = req.file.path
-        console.log(req.file)
         return Pj.create(req.body).then((pj) => res.status(201).json(pj));
       }
     })

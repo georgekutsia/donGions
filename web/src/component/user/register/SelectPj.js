@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import pjs from "../../../data/pjs";
+import pjs from "../../../data/pjStats";
 
 function SelectPj() {
   const [pj, setPj] = useState([]);

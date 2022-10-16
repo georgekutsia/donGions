@@ -16,13 +16,13 @@ function NotesScreen() {
       
     </div>
         <div className="d-flex">
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(!mode1)}}>
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(!mode1);setMode2(false);setMode3(false)}}>
           <span></span><span></span><span></span><span></span>Normal letterssss
           </button>
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(!mode2);setMode1(!mode1);}} >
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(!mode2);setMode1(false);}} >
           <span></span><span></span><span></span><span></span>Big letter
           </button>
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode3(!mode3);setMode2(!mode2); setMode1(!mode1)}} >
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode3(!mode3);setMode2(false); setMode1(false)}} >
           <span></span><span></span><span></span><span></span>Big letter
           </button>
           

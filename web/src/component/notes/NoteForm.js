@@ -8,13 +8,11 @@ function NoteForm() {
   const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onBlur"});
 
   const handleNoteSubmit = (data) => {
-    console.log(data)
     noteService.createNote(data)
       .then(note => navigation("/shop"))
       .catch(error => {
         if(error.response?.data?.errors){
           const {errors} = error.response.data;
-          console.log(errors)
           Object.keys(error.response.data.errors)
             .forEach((error) => {
               setError(error, { message: errors[error].message})

@@ -1,92 +1,162 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, } from "react-hook-form";
 import { Link, NavLink} from "react-router-dom"
 
 import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";
-import planeswalker from "../../../data/pjs"
+import statistics from "../../../data/pjStats"
+import char from "../../../data/character"
 import Liliana from "./regPj/Liliana";
+import Gideon from "./regPj/Gideon";
+import BackPlan from "./regPj/BackPlan";
+import Ajani from "./regPj/Ajani";
+import Elspeth from "./regPj/Elspeth";
+import Jace from "./regPj/Jace";
+import Nissa from "./regPj/Nissa";
+import Ral from "./regPj/Ral";
+import Sarkhan from "./regPj/Sarkhan";
+import Sorin from "./regPj/Sorin";
+import Teferi from "./regPj/Teferi";
+
+
+
 function Register() {
   const navigation = useNavigate();
+  const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
+ 
+  const [pjInfo, setPjInfo] = useState([])
+  useEffect(() => {
+    setPjInfo(statistics)
+  })
+  const [character, setCharacter] = useState([])
+  useEffect(() => {
+    setCharacter(char)
+  })
+
+
+  const [borderSelected, setBorderSelected] = useState("plans-img-register")
+
+
   const [passShow, setPassShow] = useState(false)
   const [infoLili, setInfoLili] = useState(false)
-  const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
+  const [infoGid, setInfoGid] = useState(false)
+  const [infoJace, setInfoJace] = useState(false)
+  const [infoNissa, setInfoNissa] = useState(false)
+  const [infoZarek, setInfoZarek] = useState(false)
+  const [infoAjani, setInfoAjani] = useState(false)
+  const [infoSorin, setInfoSorin] = useState(false)
+  const [infoElspeth, setInfoElspeth] = useState(false)
+  const [infoSarkhan, setInfoSarkhan] = useState(false)
+  const [infoTeferi, setInfoTeferi] = useState(false)
+  
 
-  const handleShowLili = () => setInfoLili(!infoLili)
+  // const handleLili = () => setInfoLili(!infoLili)
+  // const handleGid = () =>setInfoGid(!infoGid)
+  // const handleJace = () =>setInfoJace(!infoJace)
+  // const handleNissa = () =>setInfoNissa(!infoNissa)
+  // const handleRal = () =>setInfoRal(!infoRal)
+  // const handleAjani = () =>setInfoAjani(!infoAjani)
+  // const handleSorin = () =>setInfoSorin(!infoSorin)
+  // const handleElspeth = () =>setInfoElspeth(!infoElspeth)
+  // const handleSarkhan = () =>setInfoSarkhan(!infoSarkhan)
+  // const handleTeferi = () =>setInfoTeferi(!infoTeferi)
+  
 
   const handleShowpass = () => {setPassShow(!passShow)}
+  const handleBig = () => {setPassShow(!passShow)}
+
   const handleRegisterSubmit = (data) => {
-    console.log(data)
-  if (data.planeswalker === "liliana") {
-      delete data.planeswalker;
-      data.name = "Liliana Vess"; data.life = 6; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://media.magic.wizards.com/images/featured/EN_Liliana_Header.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "gideon") {
-      delete data.planeswalker
-      data.name = "Gideon Jura";data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "jace") {
-      delete data.planeswalker
-      data.name = "Jace Beleren"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "nissa") {
-      delete data.planeswalker
-      data.name = "Nissa Nalaar"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "ral") {
-      delete data.planeswalker
-      data.name = "Ral Zarek"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "ajani") {
-      delete data.planeswalker
-      data.name = "Ajani Goldmane"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "sorin") {
-      delete data.planeswalker
-      data.name = "Jace Beleren"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "elspeth") {
-      delete data.planeswalker
-      data.name = "Jace Beleren"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "sarkhan") {
-      delete data.planeswalker
-      data.name = "Jace Beleren"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
-    }
-  if (data.planeswalker === "teferi") {
-      delete data.planeswalker
-      data.name = "Jace Beleren"; data.life = 20; data.mana = 6; data.move = 2; data.weight= 8; data.actions= 5; data.image = ("https://pm1.narvii.com/6043/71bd03c89734ee8bbc0d188c6307eb17ecb744ab_hq.jpg")
-      data.famFis = 0.5; data.dist = 0; data.damMag = 1; data.acFis = 16; data.acDist = 15; data.acMag = 14; data.precision = 0; data.speed=0; data.marciality=0;
-      data.dodge = 16; data.block=17; data.parry = 17; data.resist = 16;
+
+  if(data.character === "Suerte"){
+    const character = char[0]
+    delete data.character
+    data = {...data, character}
+  }
+  if(data.character === "Carisma"){
+    const character = char[1]
+    delete data.character
+    data = {...data, character}
+  }
+  if(data.character === "Percepción"){
+    const character = char[2]
+    delete data.character
+    data = {...data, character}
+  }
+  if(data.character === "Cinestesia"){
+    const character = char[3]
+    delete data.character
+    data = {...data, character}
+  }
+  if(data.character === "Presencia"){
+    const character = char[4]
+    delete data.character
+    data = {...data, character}
+  }
+
+  if (data.planeswalker === "Liliana") {
+      const stats = statistics[0]
+          delete data.planeswalker;
+          data = {...data, stats} 
     }
 
-
-    console.log(data)
-
+  if (data.planeswalker === "Gideon") {
+  const stats = statistics[1]
+      delete data.planeswalker
+      data = {...data, stats}
+    }
+  if (data.planeswalker === "Jace") {
+      delete data.planeswalker
+      const stats = statistics[2]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Nissa") {
+      delete data.planeswalker
+      const stats = statistics[3]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Ral") {
+      delete data.planeswalker
+      const stats = statistics[4]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Ajani") {
+      delete data.planeswalker
+      const stats = statistics[5]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Sorin") {
+      delete data.planeswalker
+      const stats = statistics[6]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Elspeth") {
+      delete data.planeswalker
+      const stats = statistics[7]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Sarkhan") {
+      delete data.planeswalker
+      const stats = statistics[8]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
+  if (data.planeswalker === "Teferi") {
+      delete data.planeswalker
+      const stats = statistics[9]
+          delete data.planeswalker;
+          data = {...data, stats} 
+    }
     pjService.registerPj(data)
       .then(note => navigation("/profile"))
       .catch(error => {
         if(error.response?.data?.errors){
           const {errors} = error.response.data;
-          console.log(errors)
           Object.keys(error.response.data.errors)
             .forEach((error) => {
               setError(error, { message: errors[error].message})
@@ -111,7 +181,6 @@ function Register() {
         </div>
         {/* password */}
         <div className="">
-          <button onClick={handleShowpass}>ver</button>
           <input  type={passShow ? "text" : "password"} className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder="Nickname... elige un nombre para tu personaje"
             {...register("password", {
               required: "Necesitas proporcionar un correo para las actualizaciones",
@@ -119,6 +188,7 @@ function Register() {
           />
           {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
           )}
+          <button onClick={handleShowpass}>ver</button>
         </div>
         {/* email-contact */}
         <div className="">
@@ -140,86 +210,89 @@ function Register() {
           )}
         </div>
         
-        <div className="">
-          <input  type="file" className={`${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
-            {...register("image", {
-
-            })}
-          />
-          {errors.image && (<div className="invalid-feedback">{errors.image.message}</div>)}
-        </div>
-        <NavLink className={({isActive}) => isActive ? "nav-link bouncing active" : "nav-link nav-glow-selected"} >Frokdshauiuashkadshodshuasntpage</NavLink>
-
-
-
-<div className="d-flex m-5">
-    <div className="form-check">
-      <input className={ ({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"}  type="radio" value="liliana" name="planeswalkers" id="liliana" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="liliana">
-      <NavLink onClick={()=>setInfoLili(!infoLili)} className={({isActive}) => isActive ? "nav-link bouncing active" : "nav-link nav-glow-selected"}  > <img className="plans-img-register" src="https://media.magic.wizards.com/images/featured/EN_Liliana_Header.jpg" alt="planeswalker" /></NavLink>
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="gideon" name="planeswalkers" id="gideon"{...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="gideon">
-        gideon
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="jace" name="planeswalkers" id="jace" {...register("planeswalker")}  />
-      <label className="form-check-label" htmlFor="jace">
-        jace 
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="nissa" name="planeswalkers" id="nissa" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="nissa">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="ral" name="planeswalkers" id="ral" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="ral">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="ajani" name="planeswalkers" id="ajani" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="ajani">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="sorin" name="planeswalkers" id="sorin" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="sorin">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="elspeth" name="planeswalkers" id="elspeth" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="elspeth">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="sarkhan" name="planeswalkers" id="sarkhan" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="sarkhan">
-        nisa revane
-      </label>
-    </div>
-    <div className="form-check">
-      <input className="form-check-input" type="radio" value="teferi" name="planeswalkers" id="teferi" {...register("planeswalker")} />
-      <label className="form-check-label" htmlFor="teferi">
-        nisa revane
-      </label>
-    </div>
-</div>
-  {infoLili && <Liliana/>}
-      <div>
-        <input type="radio" value="Male" name="gender" /> Male
-        <input type="radio" value="Female" name="gender" /> Female
-        <input type="radio" value="Other" name="gender" /> Other
+        
+<div className="d-flex justify-content-evenly">
+    {pjInfo.map((pjData) =>(
+      <div align="center" key={pjData.name} >
+      <h6 style={{color: `${pjData.style}`}} className="ms-4">{pjData.name} {pjData.surname}</h6>
+      <div className="form-check d-flex">
+              <label className="form-check-label" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
+              onClick={()=> {
+                  if (pjData.name === "Liliana"){
+                    setInfoLili(!infoLili); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  } else if(pjData.name === "Gideon"){
+                    setInfoLili(false); setInfoGid(!infoGid);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  } else if (pjData.name === "Jace"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(!infoJace);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Nissa"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(!infoNissa); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Ral"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(!infoZarek); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Ajani"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(!infoAjani);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Sorin"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(!infoSorin);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Elspeth"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(!infoElspeth);setInfoTeferi(false);setInfoSarkhan(false)
+                  }else if (pjData.name === "Sarkhan"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(!infoSarkhan)
+                  }else if (pjData.name === "Teferi"){
+                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(!infoTeferi);setInfoSarkhan(false)
+                  }
+                }
+              }  />
+              </label>
+              <input className="form-check-input radio-register" type="radio" value={pjData.name} name="planeswalkers" id={pjData.name} {...register("planeswalker", {
+              required: "Debes elegir un Planeswalker que te guie",
+            })} />
+            </div>
       </div>
+    ))}
+</div>
+
+  {infoZarek   && <Liliana/>}
+  {infoLili && <Liliana/>}
+  {infoGid && <Gideon/>}
+  {infoAjani   &&  <Ajani/>}
+  {infoElspeth   && <Elspeth/>}
+  {infoJace   && <Jace/>}
+  {infoNissa   &&  <Nissa/>}
+  {infoSarkhan  && <Sarkhan/>}
+  {infoSorin  &&  <Sorin/>}
+  {infoTeferi  && <Teferi/>}
+
+
+
+<div className="d-flex mt-5 justify-content-evenly">
+    {character.map((char) =>(
+      <div align="center" key={char.name} >
+      <h6 style={{}} className="ms-4">{char.name} </h6>
+      <div className="form-check d-flex">
+              <label className="form-check-label" htmlFor={char.name}>  
+              <img className={borderSelected}  src={char.image}alt="character" 
+              onClick={()=> {
+                  if (char.name === "Liliana"){
+                    setInfoLili(!infoLili);
+                    setInfoGid(false)
+                  } else if(char.name === "Gideon"){
+                    setInfoGid(!infoGid)
+                    setInfoLili(false)
+                  } else if (char.name === "Jace"){
+                    setInfoJace(!infoJace)
+                  }else if (char.name === "Nissa"){
+                    setInfoNissa(!infoNissa)
+                  }
+                }
+              }  />
+              </label>
+              <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
+              required: "Debes elegir una característica ",
+            })} />
+            </div>
+      </div>
+    ))}
+</div>
+
         <div className="mt-2 ">
           <button className="btn-rules-toggle-sub"  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
