@@ -250,44 +250,36 @@ function Register() {
     ))}
 </div>
 
-  {infoZarek   && <Liliana/>}
-  {infoLili && <Liliana/>}
-  {infoGid && <Gideon/>}
-  {infoAjani   &&  <Ajani/>}
-  {infoElspeth   && <Elspeth/>}
-  {infoJace   && <Jace/>}
-  {infoNissa   &&  <Nissa/>}
-  {infoSarkhan  && <Sarkhan/>}
-  {infoSorin  &&  <Sorin/>}
-  {infoTeferi  && <Teferi/>}
+  {infoZarek   && <Liliana/>}           {infoLili && <Liliana/>}          {infoGid && <Gideon/>}          {infoAjani   &&  <Ajani/>}          {infoElspeth   && <Elspeth/>}         
+  {infoJace   && <Jace/>}          {infoNissa   &&  <Nissa/>}          {infoSarkhan  && <Sarkhan/>}          {infoSorin  &&  <Sorin/>}          {infoTeferi  && <Teferi/>}         
 
 
 
 <div className="d-flex mt-5 justify-content-evenly">
     {character.map((char) =>(
       <div align="center" key={char.name} >
-      <h6 style={{}} className="ms-4">{char.name} </h6>
-      <div className="form-check d-flex">
-              <label className="form-check-label" htmlFor={char.name}>  
-              <img className={borderSelected}  src={char.image}alt="character" 
-              onClick={()=> {
-                  if (char.name === "Liliana"){
-                    setInfoLili(!infoLili);
-                    setInfoGid(false)
-                  } else if(char.name === "Gideon"){
-                    setInfoGid(!infoGid)
-                    setInfoLili(false)
-                  } else if (char.name === "Jace"){
-                    setInfoJace(!infoJace)
-                  }else if (char.name === "Nissa"){
-                    setInfoNissa(!infoNissa)
-                  }
-                }
-              }  />
-              </label>
-              <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
-              required: "Debes elegir una característica ",
-            })} />
+        <h6 style={{fontSize:"25px"}} className="ms-4 mb-5 mt-5">{char.name} </h6>
+              <div style={{scale: "2"}} className="form-check d-flex">
+                  <label className="form-check-label" htmlFor={char.name}>  
+                      <img  className={`mt-2 ${borderSelected}`}  src={char.image} alt="character" 
+                      onClick={()=> {
+                          if (char.name === "Liliana"){
+                            setInfoLili(!infoLili);
+                            setInfoGid(false)
+                          } else if(char.name === "Gideon"){
+                            setInfoGid(!infoGid)
+                            setInfoLili(false)
+                          } else if (char.name === "Jace"){
+                            setInfoJace(!infoJace)
+                          }else if (char.name === "Nissa"){
+                            setInfoNissa(!infoNissa)
+                          }
+                        }
+                      }  />
+                  </label>
+                  <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
+                  required: "Debes elegir una característica ",
+                })} />
             </div>
       </div>
     ))}

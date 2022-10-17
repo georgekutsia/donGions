@@ -3,10 +3,28 @@ export {default as NeonDonGions} from "./frontpage/NeonDonGions"
 export {default as FramerMotion} from "./motions/FramerMotion"
 export {default as NavBar} from "./navbar/NavBar"
 export {default as Shop} from "./shop/Shop"
+
 export {default as Actions} from "./guide/parts/toggle-info/Actions"
 export {default as MovesPlus} from "./guide/parts/toggle-info/Speed"
+export {default as Brake} from "./guide/parts/toggle-info/Brake"
+export {default as Enfoque} from "./guide/parts/toggle-info/Enfoque"
+export {default as Effort} from "./guide/parts/toggle-info/Effort"
+export {default as Combat} from "./guide/parts/fight/Combat"
+
+
+export {default as Characters} from "./guide/parts/character/Characters"
+export {default as Luck} from "./guide/parts/character/Luck"
+export {default as Charisma} from "./guide/parts/character/Charisma"
+export {default as Presence} from "./guide/parts/character/Presence"
+export {default as Kinesthesia} from "./guide/parts/character/Kinesthesia"
+export {default as Perception} from "./guide/parts/character/Perception"
+
+
+
+
 export {default as SearchRules} from "./search-bars/SearchRules"
 export {default as NavbarVertical} from "./guide/NavbarVertical"
+export {default as EstadisticasPj} from "./guide/EstadisticasPj"
 export {default as Register} from "./user/register/Register"
 export {default as SelectPj} from "./user/register/SelectPj"
 export {default as PjDetail} from "./user/register/PjDetail"
