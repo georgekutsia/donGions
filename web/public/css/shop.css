@@ -2,43 +2,96 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  padding-top: 40px;
 }
-.scrolling-wrapper  .card {
+.scrolling-wrapper .card {
   flex: 0 0 auto;
-    height: 300px;
-    width: 205px;
-    background-color: black;
+  height: 300px;
+  width: 205px;
+  background-color: transparent;
 }
-.img-card{
+.img-card {
   border-radius: 12px;
-  border: 2px solid white
+  border: 2px solid grey;
+  transition: all 0.2s ease-in-out;
 }
-.img-card:hover{
-  transform: scale(1.2);
+.img-card:hover {
+  transform: scale(1.5);
   border-radius: 12px;
-  border: 2px solid white
+  border: 2px solid white;
 }
-.scrolling-space{
+.scrolling-space {
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130985/donGions%20imgs/shop/wood_rs0mwz.jpg");
   width: 80%;
-  height: 315px;
+  height: 410px;
   padding: 10px;
   overflow: hidden;
   align-content: center;
-  border: 10px ridge ;
+  border: 15px ridge;
   border-radius: 10px;
 }
-.scrolling-overflow{
+.scrolling-overflow {
   height: 300px;
-  overflow:auto;
+  overflow: auto;
   align-content: center;
 }
-.title-shop{
-    font-family: 'Blaka', cursive;
-    text-align: center;
-    font-size: 70px;
-    margin-bottom: 25px;
-    margin-top: 50px;
-    color: rgb(116, 192, 209);
-    text-shadow: 8px 5px 3px rgb(15, 67, 79);
-  
+.title-shop {
+  font-family: "Blaka", cursive;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  color: rgb(255, 205, 113);
+  text-shadow: 8px 5px 3px rgb(15, 67, 79);
+}
+
+.name-shop {
+  font-family: rubik moonrocks;
+  padding-top: 30px;
+  text-shadow: 2px 2px rgb(134, 83, 6);
+  text-shadow: 4px 4px rgb(134, 83, 6);
+  font-size: 40px;
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666115633/donGions%20imgs/backgroundEffects/pngwing.com_82_gsdfvi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 250px;
+}
+
+.pages-shop {
+  font-family: rubik moonrocks;
+  color: white;
+  text-shadow: 2px 2px rgb(134, 83, 6);
+  text-shadow: 4px 4px rgb(134, 83, 6);
+  text-decoration: none;
+}
+.pages-shop:hover {
+  font-family: rubik moonrocks;
+  color: rgb(135, 127, 127);
+  text-shadow: 1px 1px rgb(134, 83, 6);
+  text-shadow: 2px 2px rgb(134, 83, 6);
+  text-decoration: none;
+}
+.pages-shop-selected {
+  font-family: rubik moonrocks;
+  color: rgb(134, 83, 6);
+  text-shadow: 1px 1px rgb(255, 231, 194);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 32px;
+}
+.pages-shop-selected:hover {
+  font-family: rubik moonrocks;
+  color: rgb(135, 127, 127);
+  text-shadow: 1px 1px rgb(134, 83, 6);
+  text-shadow: 2px 2px rgb(134, 83, 6);
+  text-decoration: none;
+}
+.big-armario {
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666129238/donGions%20imgs/shop/pngwing.com_-_2022-10-18T233709.140_imjlkq.png");
+  background-size: 520px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }

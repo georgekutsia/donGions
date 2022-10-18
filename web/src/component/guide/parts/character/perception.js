@@ -24,8 +24,8 @@ function Perception() {
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Cada punto de percepción ignora un nivel de diferencia con las criaturas con las que se lucha</li>
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Contrarresta criaturas con carisma, haciendo que seas menos vulnerable a engaños y distracciones </li>
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Cada punto de Percepción aumenta en 1 las veces que puedes tirar por percepción en combate</li>
-          <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Los jugadores con <span style={{color:"orange"}}>Percepción</span> Percepción que también tienen puntos en <span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, al ver el contenido de cofres, 
-          siempre muestran 1 carta mas por cada punto de <span style={{color:"orange"}}>Percepción</span> /Percepcion y tras repartir, devuelven una carta</li>
+          <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Los jugadores con <span style={{color:"orange"}}>Percepción</span>  que también tienen puntos en <span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, al ver el contenido de cofres, 
+          siempre muestran 1 carta mas por cada punto de <span style={{color:"orange"}}>Percepción</span> /<span style={{color:"rgb(237, 0, 254)"}}>Suerte</span> y tras repartir, devuelven una carta</li>
         </ul>
     </div>
   )

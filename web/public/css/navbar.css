@@ -25,6 +25,15 @@
   background-image: linear-gradient(to right,#6a6060c0 1px,transparent 1px), linear-gradient(to bottom,#b2a8a856 1px,transparent 1px);
   color: rgba(230, 220, 220, 0.313)
 }
+.nav-text-shop{
+  font-size: 26px;
+  width: 1400px;
+  text-shadow: 0 0 5px #fd0101, 0 0 20px #000, 0 0 30px #000;
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666112584/donGions%20imgs/backgroundEffects/dsadsa_oixewe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: rgba(230, 220, 220, 0.313)
+}
 .bouncing:hover {
   color: #EEE;
   font-family: 'Rubik Maze', cursive;
@@ -66,6 +75,31 @@
   100% {background-color: rgb(12, 14, 12);}
 }
 #background-navbar:hover{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#background-navbar-shop{
+  font-family: 'Rubik Maze', cursive;
+}
+
+@keyframes example {
+  0%   {background-color: rgba(13, 0, 0, 0.179);}
+  1.1%  {background-color: rgb(59, 48, 48);}
+  2.8%  {background-color:rgb(0, 0, 0);}
+  2.9%  {background-color:rgb(59, 48, 48);}
+  3.5%  {background-color:rgb(0, 0, 0);}
+  3.6%  {background-color:rgb(59, 48, 48);}
+  5%  {background-color: rgb(0, 0, 0); }
+  59% {background-color: rgb(190, 209, 190); }
+  79.4%  {background-color: rgb(0, 0, 0);}
+  80.8%  {background-color:rgb(0, 0, 0);}
+  80.9%  {background-color:rgb(59, 48, 48);}
+  90.1%  {background-color:rgb(255, 255, 255);}
+  91.1%  {background-color:rgb(0, 0, 0);}
+  100% {background-color: rgb(12, 14, 12);}
+}
+#background-navbar-shop:hover{
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;

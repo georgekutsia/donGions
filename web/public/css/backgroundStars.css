@@ -941,8 +941,11 @@
 
 .sky-sword {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  z-index: -10;
+
 }
 .sword-sword {
   content:"";
@@ -950,151 +953,209 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  animation: plan 9000ms linear infinite;
+  animation: plan 13s linear infinite;
+  
 }
 .sword-sword:nth-child(1) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415531/donGions%20imgs/balllOfThings/pngwing.com_31_trtjfy.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_42_dqq3a5.png");
   top: calc(50% - 0px);
   left: calc(50% - 0px);
-  animation-delay: -24650ms;
+  animation-delay: -3s;
 }
 .sword-sword:nth-child(2) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_42_dqq3a5.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415531/donGions%20imgs/balllOfThings/pngwing.com_31_trtjfy.png");
   top: calc(50% - 160px);
   left: calc(50% - -150px);
-  animation-delay: -3871ms;
+  animation-delay: -4s;
 }
 .sword-sword:nth-child(3) {
-  content: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_38_mbsjxg.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_39_nlmycs.png");
   top: calc(50% - -2px);
   left: calc(50% - -220px);
-  animation-delay: -5833ms;
+  animation-delay: -5s;
 }
 .sword-sword:nth-child(4) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_32_k4iysv.png");
+  content: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_38_mbsjxg.png");
   top: calc(50% - -0);
   left: calc(50% - 16px);
-  animation-delay: -1390ms;
+  animation-delay: -6s;
 }
 .sword-sword:nth-child(5) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_39_nlmycs.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415529/donGions%20imgs/balllOfThings/pngwing.com_32_k4iysv.png");
   top: calc(50% - 66px);
   left: calc(50% - -66px);
-  animation-delay: -4527ms;
+  animation-delay: -7s;
 }
 .sword-sword:nth-child(6) {
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_37_hheaqs.png");
   top: calc(50% - 65px);
   left: calc(50% - -48px);
-  animation-delay: -3196ms;
+  animation-delay: -8s;
 }
 .sword-sword:nth-child(7) {
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_40_jk3xic.png");
   left: calc(50% - 129px);
   top: calc(50% - 65px);
-  animation-delay: -511ms;
+  animation-delay: -9s;
 }
 .sword-sword:nth-child(8) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_34_hkzbmh.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_44_onfnod.png");
   top: calc(50% -  28px);
   left: calc(50% - 9px);
-  animation-delay: -288ms;
+  animation-delay: -10s;
 }
 .sword-sword:nth-child(9) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_36_ubvrlx.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_34_hkzbmh.png");
   top: calc(50% - 141px);
   left: calc(50% - 49px);
-  animation-delay: -1133ms;
+  animation-delay: -11s;
 }
 .sword-sword:nth-child(10) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415528/donGions%20imgs/balllOfThings/pngwing.com_44_onfnod.png");
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_36_ubvrlx.png");
   top: calc(50% - -121px);
   left: calc(50% - 18px);
-  animation-delay: -2087ms;
+  animation-delay: -12s;
 }
-.sword-sword:nth-child(11) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415526/donGions%20imgs/balllOfThings/pngwing.com_48_cj6ahk.png");
-  top: calc(50% - 117px);
+
+.sky-sword-1 {
+  position: absolute;
+  right:300px;
+  top: 200px;
+  position: fixed;
+  z-index: -10;
+
+}
+.sword-sword-1 {
+  content:"";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: plan 9s linear infinite;
+}
+.sword-sword-1:nth-child(1) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118244/donGions%20imgs/balllOfThings/pngwing.com_-_2022-10-18T203618.745_aepzdw.png");
+  top: calc(50% - 0px);
+  left: calc(50% - 0px);
+  animation-delay: -1s;
+}
+.sword-sword-1:nth-child(2) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118244/donGions%20imgs/balllOfThings/pngwing.com_97_gzor03.png");
+
+  top: calc(50% - 160px);
+  left: calc(50% - -150px);
+  animation-delay: -2s;
+}
+.sword-sword-1:nth-child(3) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118244/donGions%20imgs/balllOfThings/pngwing.com_100_trheak.png");
+
+  top: calc(50% - -2px);
+  left: calc(50% - -220px);
+  animation-delay: -3s;
+}
+.sword-sword-1:nth-child(4) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118244/donGions%20imgs/balllOfThings/pngwing.com_99_xqzfq2.png");
+
+  top: calc(50% - -0);
+  left: calc(50% - 16px);
+  animation-delay: -4s;
+}
+.sword-sword-1:nth-child(5) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118244/donGions%20imgs/balllOfThings/pngwing.com_95_p4n7w8.png");
+
+  top: calc(50% - 66px);
   left: calc(50% - -66px);
-  animation-delay: -299ms;
+  animation-delay: -5a;
 }
-.sword-sword:nth-child(12) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_58_wsmaqw.png");
-  top: calc(50% - 190px);
-  left: calc(50% - -92px);
-  animation-delay: -4179ms;
+.sword-sword-1:nth-child(6) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666118245/donGions%20imgs/balllOfThings/pngwing.com_98_a5rw67.png");
+
+  top: calc(50% - 65px);
+  left: calc(50% - -48px);
+  animation-delay: -6s;
 }
-.sword-sword:nth-child(13) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415527/donGions%20imgs/balllOfThings/pngwing.com_35_mkdh3a.png");
-  top: calc(50% - -87px);
-  left: calc(50% - 123px);
-  animation-delay: -1489ms;
+.sword-sword-1:nth-child(7) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117776/donGions%20imgs/balllOfThings/pngwing.com_85_oqbycv.png");
+
+  left: calc(50% - 129px);
+  top: calc(50% - 65px);
+  animation-delay: -7s;
 }
-.sword-sword:nth-child(14) {
+.sword-sword-1:nth-child(8) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117776/donGions%20imgs/balllOfThings/pngwing.com_92_pycsid.png");
+  top: calc(50% -  28px);
+  left: calc(50% - 9px);
+  animation-delay: -8s;
+}
+.sword-sword-1:nth-child(9) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117776/donGions%20imgs/balllOfThings/pngwing.com_87_qed2fh.png");
+  top: calc(50% - 141px);
+  left: calc(50% - 49px);
+  animation-delay: -9s;
+}
+
+.sky-sword-2 {
+  position: absolute;
+  right:900px;
+  top: 200px;
+  position: fixed;
+  z-index: -10;
+}
+.sword-sword-2 {
+  content:"";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: plan 12s linear infinite;
+}
+.sword-sword-2:nth-child(1) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117778/donGions%20imgs/balllOfThings/pngwing.com_89_xxcyd7.png");
+  top: calc(50% - 0px);
+  left: calc(50% - 0px);
+  animation-delay: -8s;
+}
+.sword-sword-2:nth-child(2) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117777/donGions%20imgs/balllOfThings/pngwing.com_90_kahb8i.png");
+  top: calc(50% - 160px);
+  left: calc(50% - -150px);
+  animation-delay: -7s;
+}
+.sword-sword-2:nth-child(3) {
+  content: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117777/donGions%20imgs/balllOfThings/pngwing.com_93_paruom.png");
+  top: calc(50% - -2px);
+  left: calc(50% - -220px);
+  animation-delay: -6s;
+}
+.sword-sword-2:nth-child(4) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117777/donGions%20imgs/balllOfThings/pngwing.com_83_y4rpcu.png");
+  top: calc(50% - -0);
+  left: calc(50% - 16px);
+  animation-delay: -5s;
+}
+.sword-sword-2:nth-child(5) {
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415526/donGions%20imgs/balllOfThings/pngwing.com_47_wyzkqm.png");
-  top: calc(50% - -110px);
-  left: calc(50% - -173px);
-  animation-delay: -91ms;
+  top: calc(50% - 66px);
+  left: calc(50% - -66px);
+  animation-delay: -4s;
 }
-.sword-sword:nth-child(15) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415526/donGions%20imgs/balllOfThings/pngwing.com_53_h4fmbc.png");
-  top: calc(50% - 157px);
-  left: calc(50% - -33px);
-  animation-delay: -2182ms;
+.sword-sword-2:nth-child(6) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117777/donGions%20imgs/balllOfThings/pngwing.com_86_ldxplg.png");
+  top: calc(50% - 65px);
+  left: calc(50% - -48px);
+  animation-delay: -3s;
 }
-.sword-sword:nth-child(16) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415526/donGions%20imgs/balllOfThings/pngwing.com_52_vvr5cg.png");
-  top: calc(50% - 45px);
-  left: calc(50% - 103px);
-  animation-delay: -3701ms;
+.sword-sword-2:nth-child(7) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117776/donGions%20imgs/balllOfThings/pngwing.com_84_d5dypz.png");
+  left: calc(50% - 129px);
+  top: calc(50% - 65px);
+  animation-delay: -2s;
 }
-.sword-sword:nth-child(17) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415525/donGions%20imgs/balllOfThings/pngwing.com_46_cdf84i.png");
-  top: calc(50% - 79px);
-  left: calc(50% - -62px);
-  animation-delay: -1417ms;
-}
-.sword-sword:nth-child(18) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415525/donGions%20imgs/balllOfThings/pngwing.com_61_m0766d.png");
-  top: calc(50% - -120px);
-  left: calc(50% - 80px);
-  animation-delay: -374ms;
-}
-.sword-sword:nth-child(19) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415525/donGions%20imgs/balllOfThings/pngwing.com_45_y63dji.png");
-  top: calc(50% - 25px);
-  left: calc(50% - -161px);
-  animation-delay: -390ms;
-}
-.sword-sword:nth-child(20) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415525/donGions%20imgs/balllOfThings/pngwing.com_63_yxwzjh.png");
-  top: calc(50% - -27px);
-  left: calc(50% - 59px);
-  animation-delay: -2496ms;
-}
-.sword-sword:nth-child(21) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415525/donGions%20imgs/balllOfThings/pngwing.com_62_zsdp6h.png");
-  top: calc(50% - -95px);
-  left: calc(50% - -44px);
-  animation-delay: -4816ms;
-}
-.sword-sword:nth-child(22) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415524/donGions%20imgs/balllOfThings/pngwing.com_60_gdiky4.png");
-  top: calc(50% - -79px);
-  left: calc(50% - -103px);
-  animation-delay: -1067ms;
-}
-.sword-sword:nth-child(23) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665415524/donGions%20imgs/balllOfThings/pngwing.com_54_ejac1b.png");
-  top: calc(50% - 167px);
-  left: calc(50% - 128px);
-  animation-delay: -5498ms;
-}
-.sword-sword:nth-child(24) {
-  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1665476511/donGions%20imgs/balllOfThings/pngwing.com_64_cnnmpv.png");
-  top: calc(50% - 100px);
-  left: calc(50% - -189px);
-  animation-delay: -1131ms;
+.sword-sword-2:nth-child(8) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666117778/donGions%20imgs/balllOfThings/pngwing.com_88_sjukuv.png");
+  top: calc(50% -  28px);
+  left: calc(50% - 9px);
+  animation-delay: -1s;
 }
 
 
@@ -1113,10 +1174,13 @@
   
   50% {
     transform: scale(1) rotateZ(45deg) translate(0);
+    opacity: 0;
+    
   }
   
   70% {
     transform: scale(1)  translate(0);
+  
   }
   85% {
     transform: scale(1)  translate(0);

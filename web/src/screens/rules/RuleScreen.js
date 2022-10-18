@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Characters, Charisma, Kinesthesia, Luck, NavbarVertical, Notes, Perception, Pj, Presence, SearchRules } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Kinesthesia, Luck, NavbarVertical, Notes, Perception, Pj, Presence, SearchRules } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
 
 function RuleScreen() {
@@ -19,7 +19,6 @@ function RuleScreen() {
   const perception = () => setrPer(!rPer)
   const kinesthesia = () => setrKi(!rKi)
   return (
-
     <>
         <NavbarVertical 
             statistics={stats} 
@@ -29,14 +28,14 @@ function RuleScreen() {
             stperception={perception} 
             stkinesthesia={kinesthesia}
         />
-
-
-        
+        <BackgroundFloatingBuble floatingBalls=
+        // square-flow      slow-flow
+    {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666134847/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-19T011351.446_eeqfuh.png)"} 
+    widthBall={"50px"} heigthBall={"60px"} radiusBall={"2px"} idFlow={"square-flow"}/>
       <div className='container'>
         <h1>Manual de instrucciones del juego</h1>
           <div className='d-flex justify-content-between'> 
           <div>
-
               <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false)}}>
                   <span></span><span></span><span></span><span></span>Estadísticas básicas
               </button>
@@ -45,7 +44,6 @@ function RuleScreen() {
               </button>
               </div>
                 <div className=''>
-                  
                 <button className='btn-rules-toggle' style={{color:"violet"}} onClick={()=>{ setBasic(true); setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); }}>
                       <span></span><span></span><span></span><span></span>Abrir todo 
                 </button>

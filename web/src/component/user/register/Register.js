@@ -77,6 +77,9 @@ function Register() {
     data = {...data, character}
   }
 
+
+
+  
   if (data.planeswalker === "Liliana") {
       const stats = statistics[0]
           delete data.planeswalker;
