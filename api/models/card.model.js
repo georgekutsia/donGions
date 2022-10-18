@@ -26,128 +26,35 @@ const cardSchema = new Schema ({
     trim: true,
     maxLength:[300, "Too complicated, simplify"],
   },
-  
-  // atributo que añade maná
-  mana:{
-    type: Number,
-    trim: true,
-  },
-  mov:{
-    type: Number,
-    trim: true,
-  },
-  // la carga del objeto
-  weight:{
-    type: Number,
-    trim: true,
-  },
-  // daño físico <-> daño mágico <-> daño a distancia
-  damage:{
-    fis:{
-      type: Number,
-      trim: true,
-    },
-    dist:{
-      type: Number,
-      trim: true,
-    },
-    mag:{
-      type: Number,
-      trim: true,
-    }
-  },
-  // alcance al que hace daño
-  reach:{
-    type: Number,
-    trim: true,
-  },
-  // acierto físico <-> acierto mágico <-> acierto a distancia
-  ac: {
-    fis: {
-      type: Number,
-      trim: true,
-    },
-    dist: {
-      type: Number,
-      trim: true,
-    },
-    mag: {
-      type: Number,
-      trim: true,
-    },
-  },
-  // Precisión <-> velocidad <-> marcialidad
-  acPower: {
-    prec: {
-      type: Number,
-      trim: true,
-    },
-    speed: {
-      type: Number,
-      trim: true,
-    },
-    marc: {
-      type: Number,
-      trim: true,
-    },
-  },
-  // esquiva <->  bloqueo <-> parada <-> resistencia
-  def: {
-    dodge: {
-      type: Number,
-      trim: true,
-    },
-    block: {
-      type: Number,
-      trim: true,
-    },
-    parry: {
-      type: Number,
-      trim: true,
-    },
-    resist: {
-      type: Number,
-      trim: true,
-    },
-  },
-  // reflejos <-> firmeza <-> temple
-  defPower: {
-    refl: {
-      type: Number,
-      trim: true,
-    },
-    firm: {
-      type: Number,
-      trim: true,
-    },
-    temp: {
-      type: Number,
-      trim: true,
-    },
-  },
-  // suerte <-> carisma <-> percepción <-> cinestesia <-> presencia
-  character: {
-    luck: {
-      type: Number,
-      trim: true,
-    },
-    charisma: {
-      type: Number,
-      trim: true,
-    },
-    perception: {
-      type: Number,
-      trim: true,
-    },
-    kinesthesia: {
-      type: Number,
-      trim: true,
-    },
-    presence: {
-      type: Number,
-      trim: true,
-    },
-  },
+    life: Number,
+    mana: Number,
+    actions: Number,
+    mov: Number,
+    reach: Number,
+    weight: Number,
+    damFis: Number,
+    damDist: Number,
+    damMag: Number,
+    acFis: Number,
+    acDist: Number,
+    acMag: Number,
+    precision: Number,
+    speed: Number,
+    marciality: Number,
+    dodge: Number,
+    block: Number,
+    parry: Number,
+    resist: Number,
+    reflex: Number,
+    firm: Number,
+    temple: Number,
+    luck: Number,
+    charisma: Number,
+    perception: Number,
+    kinesthesia: Number,
+    presence: Number,
+    price: Number,
+    level:Number,
 // a qué pieza de la armadura pertenece: cabeza, manos, espalda, armadura de cuerpo, pies, arma o escudo que ocupan espacio
   part:{
     type: String,
@@ -155,17 +62,9 @@ const cardSchema = new Schema ({
     trim: true,
   },
   // precio del objeto
-  price:{
-    type: Number,
-    trim: true,
-    minimum: 0,
-  },
   author:{
     ref: "Pj",
     type: mongoose.Schema.Types.ObjectId,
-  },
-  level:{
-    type: Number
   },
   admin:{
     type: Boolean

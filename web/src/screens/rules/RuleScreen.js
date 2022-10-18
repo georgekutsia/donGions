@@ -46,10 +46,10 @@ function RuleScreen() {
               </div>
                 <div className=''>
                   
-                <button className='btn-rules-toggle' style={{color:"violet"}} onClick={()=>{setChar(true); setBasic(true)}}>
+                <button className='btn-rules-toggle' style={{color:"violet"}} onClick={()=>{ setBasic(true); setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); }}>
                       <span></span><span></span><span></span><span></span>Abrir todo 
                 </button>
-                <button className='btn-rules-toggle' style={{color:"blue"}} onClick={()=>{setChar(false); setBasic(false)}}>
+                <button className='btn-rules-toggle' style={{color:"blue"}} onClick={()=>{setChar(false); setBasic(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); }}>
                       <span></span><span></span><span></span><span></span>Cerrar todo
                 </button>
                 </div>

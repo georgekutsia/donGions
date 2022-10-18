@@ -1,0 +1,25 @@
+[{
+  "name": "Armadura Labrada",
+  "image": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_labrada_kvns5l.jpg",
+  "description": "",
+  "life":1 ,
+  "mana":3,
+  "weight":2
+},
+{
+  "name": "Armadura Pequeña",
+  "image": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_pequen%CC%83a_v5qzew.jpg",
+  "description": "",
+  "life":1 ,
+  "mana":3,
+  "weight":2
+},
+{
+  "name": "Armadura Resistente a la Magia",
+  "image": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_resistente_a_la_magia_g54iln.jpg",
+  "description": "",
+  "life":1 ,
+  "mana":3,
+  "weight":2
+}
+]

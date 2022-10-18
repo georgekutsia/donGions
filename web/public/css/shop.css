@@ -6,16 +6,39 @@
 .scrolling-wrapper  .card {
   flex: 0 0 auto;
     height: 300px;
-    width: 200px;
+    width: 205px;
+    background-color: black;
+}
+.img-card{
+  border-radius: 12px;
+  border: 2px solid white
+}
+.img-card:hover{
+  transform: scale(1.2);
+  border-radius: 12px;
+  border: 2px solid white
 }
 .scrolling-space{
   width: 80%;
-  height: 300px;
+  height: 315px;
+  padding: 10px;
   overflow: hidden;
   align-content: center;
+  border: 10px ridge ;
+  border-radius: 10px;
 }
 .scrolling-overflow{
   height: 300px;
   overflow:auto;
   align-content: center;
+}
+.title-shop{
+    font-family: 'Blaka', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    color: rgb(116, 192, 209);
+    text-shadow: 8px 5px 3px rgb(15, 67, 79);
+  
 }

@@ -11,24 +11,7 @@ module.exports.list = (req, res, next) => {
 };
 
 module.exports.create = (req, res, next) => {
-  const card = {
-    name: req.body.name,
-    image: req.body.image,
-    description: req.body.description,
-    special: req.body.special,
-    mana: req.body.mana,
-    mov: req.body.mov,
-    weight: req.body.weight,
-    damage: req.body.damage,
-    reach: req.body.reach,
-    ac: req.body.ac,
-    acPower: req.body.acPower,
-    def: req.body.def,
-    defPower: req.body.defPower,
-    character: req.body.character,
-    part: req.body.part,
-    price: req.body.price,
-  };
+  const card = req.body
   // card.author = req.pj.id;
 
   Card.create(card)
