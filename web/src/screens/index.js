@@ -9,4 +9,5 @@ export {default as ProfileScreen} from "./user/ProfileScreen"
 export {default as RuleScreen} from "./rules/RuleScreen"
 export {default as NotesScreen} from "./notes/NotesScreen"
 export {default as NoteDetailScreen} from "./notes/NoteDetailScreen"
+export {default as Carousel} from "./shop/Carousel"
 

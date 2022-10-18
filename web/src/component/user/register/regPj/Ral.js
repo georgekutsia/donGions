@@ -5,7 +5,7 @@ function Ral() {
   return (
     <div>
     <CompInfoReg 
-    numeroDePj={""} 
+    numeroDePj={"4"} 
     describingText={"Con Ral Vess tendrá algunas habilidades pasivas y otras habilidades de clase que podrás conseguir durante el juego"}/>
     </div>
   )

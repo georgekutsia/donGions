@@ -1,0 +1,21 @@
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.scrolling-wrapper  .card {
+  flex: 0 0 auto;
+    height: 300px;
+    width: 200px;
+}
+.scrolling-space{
+  width: 80%;
+  height: 300px;
+  overflow: hidden;
+  align-content: center;
+}
+.scrolling-overflow{
+  height: 300px;
+  overflow:auto;
+  align-content: center;
+}

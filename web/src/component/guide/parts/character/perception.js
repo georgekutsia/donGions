@@ -2,7 +2,7 @@ import React from 'react'
 
 function Perception() {
   return (
-    <div style={{backgroundColor:"rgba(255, 136, 0, 0.05)"}} className='background-rule-info '>
+    <div style={{backgroundColor:"rgb(26, 16, 5)"}} className='background-rule-info '>
       <h1 align="center" className='texto-resaltado-percepcion'>Percepción</h1> 
     <div className='d-flex justify-content-evenly'>
       <div><h4 className='rules-show-shadow'>1-12- <span >Nada</span></h4> </div>

@@ -19,18 +19,26 @@ export {default as Presence} from "./guide/parts/character/Presence"
 export {default as Kinesthesia} from "./guide/parts/character/Kinesthesia"
 export {default as Perception} from "./guide/parts/character/Perception"
 
-
-
-
 export {default as SearchRules} from "./search-bars/SearchRules"
 export {default as NavbarVertical} from "./guide/NavbarVertical"
 export {default as EstadisticasPj} from "./guide/EstadisticasPj"
 export {default as Register} from "./user/register/Register"
 export {default as SelectPj} from "./user/register/SelectPj"
 export {default as PjDetail} from "./user/register/PjDetail"
+export {default as Steps} from "./user/register/parts/Steps"
+
 
 export {default as Liliana} from "./user/register/regPj/Liliana"
 export {default as Gideon} from "./user/register/regPj/Gideon"
+export {default as Ajani} from "./user/register/regPj/Ajani"
+export {default as Elspeth} from "./user/register/regPj/Elspeth"
+export {default as Jace} from "./user/register/regPj/Jace"
+export {default as Nissa} from "./user/register/regPj/Nissa"
+export {default as Ral} from "./user/register/regPj/Ral"
+export {default as Sarkhan} from "./user/register/regPj/Sarkhan"
+export {default as Sorin} from "./user/register/regPj/Sorin"
+export {default as Teferi} from "./user/register/regPj/Teferi"
+export {default as BackPlan} from "./user/register/regPj/BackPlan"
 export {default as CompInfoReg} from "./user/register/regPj/CompInfoReg"
 
 export {default as CarouselImgs1} from "./extra/CarouselImgs1"
@@ -39,7 +47,6 @@ export {default as SwordsBall} from "./extra/SwordsBall"
 export {default as WordCloud} from "./extra/WordCloud"
 export {default as BlackMirror} from "./extra/buttons/BlackMirror"
 export {default as Modal} from "./extra/Modal"
-export {default as BackgroundImagesSetInterval} from "./extra/BackgroundImagesSetInterval"
 export {default as PugStars} from "./extra/PugStars"
 export {default as BackgroundFloatingBuble} from "./backgrounds.js/BackgroundFloatingBuble"
 export {default as NoteForm} from "./notes/NoteForm"

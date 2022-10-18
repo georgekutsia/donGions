@@ -23,27 +23,6 @@ function InventoryScreen() {
         <div>InventoryScreen</div>
         <div>InventoryScreen</div>
         <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
-        <div>InventoryScreen</div>
       </div>
     </div>
   );

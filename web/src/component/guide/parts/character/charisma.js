@@ -2,7 +2,8 @@ import React from 'react'
 
 function Charisma() {
   return (
-      <div style={{backgroundColor:"rgba(30, 0, 255, 0.05)"}} className='background-rule-info'>
+      <div style={{backgroundColor:"rgb(3, 2, 13)"}} className='background-rule-info'>
+
         <h1 align="center" className='texto-resaltado-carisma'>Carisma</h1> 
       <div className='d-flex justify-content-evenly'>
         <div><span className='texto-resaltado-suerte-stats'>Cada 3 tatuajes te mejoran el carisma 1 punto</span> </div>

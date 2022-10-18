@@ -39,8 +39,8 @@ function App() {
               <Route path="/notes" element={<AuthGuard><NotesScreen/></AuthGuard>}/>
               <Route path="/notes/:id" element={<AuthGuard><NoteDetailScreen/></AuthGuard>}/>
               <Route path="/inventory" element={<AuthGuard><InventoryScreen/></AuthGuard>}/>
-              <Route path="/pj" element={<AuthGuard><PjScreen/></AuthGuard>}/>
-              <Route path="/pj/:id" element={<AuthGuard><PjDetailScreen/></AuthGuard>}/>
+              <Route path="/profile" element={<AuthGuard><PjScreen/></AuthGuard>}/>
+              <Route path="/profile/:id" element={<AuthGuard><PjDetailScreen/></AuthGuard>}/>
               <Route path="/profile" element={<AuthGuard><ProfileScreen/></AuthGuard>}/>
               <Route path="/shop" element={<AuthGuard><ShopScreen/></AuthGuard>}/>
               <Route path="/rules" element={<AuthGuard><RuleScreen/></AuthGuard>}/>

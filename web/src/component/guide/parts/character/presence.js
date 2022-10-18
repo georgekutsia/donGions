@@ -2,7 +2,7 @@ import React from 'react'
 
 function Presence() {
   return (
-    <div style={{backgroundColor:"rgba(30, 0, 255, 0.05)"}} className='background-rule-info'>
+    <div style={{backgroundColor:"rgb(12, 1, 1)"}} className='background-rule-info'>
       <h1 align="center" className='texto-resaltado-presence'>Presencia</h1> 
       <div className='d-flex justify-content-evenly'> </div>
         <div align="center"><span className='texto-resaltado-suerte-stats'> Puedes tener amenaza positiva o negativa que afecta de forma opuesta a esta característica </span>

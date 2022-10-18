@@ -7,6 +7,7 @@ function PjDetailScreen() {
     <div>
     <h2>Detalles del personaje</h2>
     <PjDetail/>
+    
     </div>
   )
 }

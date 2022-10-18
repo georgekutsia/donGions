@@ -6,38 +6,29 @@ import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";
 import statistics from "../../../data/pjStats"
 import char from "../../../data/character"
-import Liliana from "./regPj/Liliana";
-import Gideon from "./regPj/Gideon";
-import BackPlan from "./regPj/BackPlan";
-import Ajani from "./regPj/Ajani";
-import Elspeth from "./regPj/Elspeth";
-import Jace from "./regPj/Jace";
-import Nissa from "./regPj/Nissa";
-import Ral from "./regPj/Ral";
-import Sarkhan from "./regPj/Sarkhan";
-import Sorin from "./regPj/Sorin";
-import Teferi from "./regPj/Teferi";
+import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence } from "../../../component"
 
 
 
 function Register() {
   const navigation = useNavigate();
   const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
- 
+
   const [pjInfo, setPjInfo] = useState([])
   useEffect(() => {
     setPjInfo(statistics)
-  })
+  },[])
+
   const [character, setCharacter] = useState([])
   useEffect(() => {
     setCharacter(char)
-  })
+  },[])
 
 
   const [borderSelected, setBorderSelected] = useState("plans-img-register")
 
 
-  const [passShow, setPassShow] = useState(false)
+  const [backPlanComp, setBackPlanComp] = useState(false)
   const [infoLili, setInfoLili] = useState(false)
   const [infoGid, setInfoGid] = useState(false)
   const [infoJace, setInfoJace] = useState(false)
@@ -50,20 +41,13 @@ function Register() {
   const [infoTeferi, setInfoTeferi] = useState(false)
   
 
-  // const handleLili = () => setInfoLili(!infoLili)
-  // const handleGid = () =>setInfoGid(!infoGid)
-  // const handleJace = () =>setInfoJace(!infoJace)
-  // const handleNissa = () =>setInfoNissa(!infoNissa)
-  // const handleRal = () =>setInfoRal(!infoRal)
-  // const handleAjani = () =>setInfoAjani(!infoAjani)
-  // const handleSorin = () =>setInfoSorin(!infoSorin)
-  // const handleElspeth = () =>setInfoElspeth(!infoElspeth)
-  // const handleSarkhan = () =>setInfoSarkhan(!infoSarkhan)
-  // const handleTeferi = () =>setInfoTeferi(!infoTeferi)
-  
+  const [showSu, setShowSu] = useState(false)
+  const [showCa, setShowCa] = useState(false)
+  const [showPe, setShowPe] = useState(false)
+  const [showCi, setShowCi] = useState(false)
+  const [showPre, setShowPre] = useState(false)
 
-  const handleShowpass = () => {setPassShow(!passShow)}
-  const handleBig = () => {setPassShow(!passShow)}
+
 
   const handleRegisterSubmit = (data) => {
 
@@ -153,7 +137,7 @@ function Register() {
           data = {...data, stats} 
     }
     pjService.registerPj(data)
-      .then(note => navigation("/profile"))
+      .then(note => navigation("/authenticate"))
       .catch(error => {
         if(error.response?.data?.errors){
           const {errors} = error.response.data;
@@ -165,52 +149,49 @@ function Register() {
       })
   }
   return (
-    <center className="form-register">
+    <div align="center" className="form-register">
       <form onSubmit={handleSubmit(handleRegisterSubmit)} className="mt-3">
+      {/* paso 1 */}
+        <Steps paso={"Paso 1"} pasoTexto={"Información de registro"}/>
       {/*  nickname */}
-        <div className="">
-          <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder="Nickname... elige un nombre para tu personaje"
-            {...register("nickname", {
-              required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
-              unique: "El nombre debe ser único",
-              maxLength:{value:20, message:"El nombre debe tener menos de 20 caracteres"}
-            })}
-          />
-          {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
-          )}
+        <div  className="d-flex justify-content-evenly">
+            <div>
+            <h4>Nickname</h4>
+              <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder=" Elige un nombre para tu personaje"
+                {...register("nickname", {
+                  required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
+                  unique: "El nombre debe ser único",
+                  maxLength:{value:20, message:"El nombre debe tener menos de 20 caracteres"}
+                })}
+              />
+              {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
+              )}
+            </div>
+            {/* password */}
+            <div>
+            <h4>Contraseña</h4>
+              <input  type="password" className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder=" Una contraseña para tus secretos"
+                {...register("password", {
+                  required: "Necesitas proporcionar un correo para las actualizaciones",
+                })}
+              />
+              {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
+              )}
+            </div>
+            {/* email-contact */}
+            <div>
+            <h4>E-mail</h4>
+              <input  type="email" className={`input-register ${errors.contact ? "is-invalid" : "repite"}`} placeholder=" Podrás usarlo para varios personajes"
+                {...register("contact", {
+                  required: "Necesitas proporcionar un correo para las actualizaciones",
+                })}
+              />
+              {errors.contact && ( <div className="invalid-feedback">{errors.contact.message}</div>
+              )}
+            </div>
         </div>
-        {/* password */}
-        <div className="">
-          <input  type={passShow ? "text" : "password"} className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder="Nickname... elige un nombre para tu personaje"
-            {...register("password", {
-              required: "Necesitas proporcionar un correo para las actualizaciones",
-            })}
-          />
-          {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
-          )}
-          <button onClick={handleShowpass}>ver</button>
-        </div>
-        {/* email-contact */}
-        <div className="">
-          <input  type="email" className={`input-register ${errors.contact ? "is-invalid" : "repite"}`} placeholder="Dirección de correo...podrás usar el mismo para varios personajes"
-            {...register("contact", {
-              required: "Necesitas proporcionar un correo para las actualizaciones",
-            })}
-          />
-          {errors.contact && ( <div className="invalid-feedback">{errors.contact.message}</div>
-          )}
-        </div>
-        <div className="">
-            <textarea className={`input-register ${errors.background ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Opcional. Puedes escribir algo sobre el pasado de tu personaje, sus ambiciones, relaciones, puntos fuertes etc..."
-              {...register("background", {
-                maxLength:{value:2000, message: "Máximo 2000 caracteres. Guárdate algo de background como secreto para revelera a tus compañeros"}
-              })}
-            />
-                  {errors.background && ( <div className="invalid-feedback">{errors.background.message}</div>
-          )}
-        </div>
-        
-        
+        {/* paso 2 */}
+                <Steps paso={"Paso 2"} pasoTexto={"Elige el Planeswalker que te guíe y enseñe"}/>
 <div className="d-flex justify-content-evenly">
     {pjInfo.map((pjData) =>(
       <div align="center" key={pjData.name} >
@@ -249,30 +230,35 @@ function Register() {
       </div>
     ))}
 </div>
+            <Link className='btn-rules-toggle-show m-2' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
+          <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
+      </Link>
+      {backPlanComp &&  <BackPlan/>}
 
-  {infoZarek   && <Liliana/>}           {infoLili && <Liliana/>}          {infoGid && <Gideon/>}          {infoAjani   &&  <Ajani/>}          {infoElspeth   && <Elspeth/>}         
+  {infoZarek   && <Ral/>}           {infoLili && <Liliana/>}          {infoGid && <Gideon/>}          {infoAjani   &&  <Ajani/>}          {infoElspeth   && <Elspeth/>}         
   {infoJace   && <Jace/>}          {infoNissa   &&  <Nissa/>}          {infoSarkhan  && <Sarkhan/>}          {infoSorin  &&  <Sorin/>}          {infoTeferi  && <Teferi/>}         
 
+{/* paso 3 */}
+<Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar el juego"}/>
 
-
-<div className="d-flex mt-5 justify-content-evenly">
+<div className="d-flex mb-5 justify-content-evenly">
     {character.map((char) =>(
       <div align="center" key={char.name} >
-        <h6 style={{fontSize:"25px"}} className="ms-4 mb-5 mt-5">{char.name} </h6>
+        <h6 style={{fontSize:"25px"}} className="ms-4 mb-5">{char.name} </h6>
               <div style={{scale: "2"}} className="form-check d-flex">
                   <label className="form-check-label" htmlFor={char.name}>  
                       <img  className={`mt-2 ${borderSelected}`}  src={char.image} alt="character" 
                       onClick={()=> {
-                          if (char.name === "Liliana"){
-                            setInfoLili(!infoLili);
-                            setInfoGid(false)
-                          } else if(char.name === "Gideon"){
-                            setInfoGid(!infoGid)
-                            setInfoLili(false)
-                          } else if (char.name === "Jace"){
-                            setInfoJace(!infoJace)
-                          }else if (char.name === "Nissa"){
-                            setInfoNissa(!infoNissa)
+                          if (char.name === "Suerte"){
+                            setShowSu(!showSu); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
+                          } else if(char.name === "Carisma"){
+                            setShowSu(false); setShowCa(!showCa); setShowPe(false); setShowCi(false); setShowPre(false)
+                          } else if (char.name === "Percepción"){
+                            setShowSu(false); setShowCa(false); setShowPe(!showPe); setShowCi(false); setShowPre(false)
+                          }else if (char.name === "Cinestesia"){
+                            setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(!showCi); setShowPre(false)
+                          } else if (char.name === "Presencia"){
+                            setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(!showPre)
                           }
                         }
                       }  />
@@ -284,14 +270,29 @@ function Register() {
       </div>
     ))}
 </div>
-
+{showSu && <Luck/>}
+{showCi && <Kinesthesia/>}
+{showPre && <Presence/>}
+{showCa && <Charisma/>}
+{showPe && <Perception/>}
+{/* paso 5 */}
+<Steps paso={"Paso 5"} pasoTexto={"Puedes crear un trasforndo para tu personaje"}/>
+        <div >
+            <textarea className={`input-register-text ${errors.background ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Opcional. Puedes escribir algo sobre el pasado de tu personaje, sus ambiciones, relaciones, puntos fuertes etc..."
+              {...register("background", {
+                maxLength:{value:2000, message: "Máximo 2000 caracteres. Guárdate algo de background como secreto para revelera a tus compañeros"}
+              })}
+            />
+                  {errors.background && ( <div className="invalid-feedback">{errors.background.message}</div>
+          )}
+        </div>
         <div className="mt-2 ">
           <button className="btn-rules-toggle-sub"  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
         <button>dsads</button>
         </div>
       </form>
-    </center>
+    </div>
   );
 }
 

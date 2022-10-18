@@ -5,6 +5,9 @@ a{
 li{
   list-style: none;
 }
+
+
+
 .login-textarea{
   border-radius: 30px;
   background-color: transparent;
@@ -274,4 +277,17 @@ border: none
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+}
+
+
+.video-controls-plan{
+  width: 300px;
+  height: 300px;
+  transition: all .6s ease-in-out; 
+  border: 10px white double;
+}
+
+.video-controls-plan:hover{
+  border-radius: 1%;
+  border: rgb(2, 160, 212) 5px solid;
 }

@@ -1,14 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { useForm } from "react-hook-form";
 import * as login from "../../services/all-services"
 import { BackgroundFloatingBuble, NeonDonGions } from '../../component'
 import { useNavigate } from 'react-router';
 import { AuthContext } from '../../context/AuthContext';
+import { Link } from 'react-router-dom';
 
 
 
 function LoginScreeen() {
-
+  const [passShow, setPassShow] = useState(false)
+  const handleShowpass = () => {setPassShow(!passShow)}
   const navigation = useNavigate()
   const value = useContext(AuthContext)
   const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onBlur"});
@@ -38,6 +40,7 @@ function LoginScreeen() {
         heigthBall={"10px"}
         idFlow={"slow-flow"}
       />
+      <img src=""  alt="" />
         <form className='m-5 login-form-img' onSubmit={handleSubmit(handleLogin)}>
           <div className='login-form-margin d-flex'>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665689975/donGions%20imgs/planeswalkers%20png/pjlog_cg3cdj.png" alt="sorin" height="40px" />
@@ -52,11 +55,12 @@ function LoginScreeen() {
             </div>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665690302/donGions%20imgs/planeswalkers%20png/pngwing.com_72_b53gkz.png" alt="sorin" height="40px" />
             <div className="input-group ">
-              <input  type="password" className={`login-textarea ${errors.password ? "is-invalid" : ""}`} placeholder="password..."
+              <input  type={passShow ? "text" : "password"} className={`login-textarea ${errors.password ? "is-invalid" : ""}`} placeholder="password..."
                 {...register("password", {
                   required: "Necesitas una contraseña para logarte",
                 })}
               />
+              <Link  onClick={handleShowpass}><i style={{color:"black"}}  className={passShow ? "fa-solid fa-eye-low-vision" : "fa-solid fa-eye"}></i></Link>
               {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
               )}
             </div>

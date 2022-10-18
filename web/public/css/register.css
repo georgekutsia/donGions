@@ -52,7 +52,11 @@
   margin: -13px;
 }
 .input-register{
-  width: 500px;
+  border-radius: 20px;
+  width: 300px;
+}
+.input-register-text{
+  width: 900px;
 }
 .form-register{
 background: url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665739227/donGions%20imgs/backgroundEffects/pngwing.com_74_kievyi.png);

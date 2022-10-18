@@ -1,37 +1,67 @@
 import React, { useState } from 'react'
-import { Characters, NavbarVertical, Notes, Pj, SearchRules } from '../../component'
+import { Characters, Charisma, Kinesthesia, Luck, NavbarVertical, Notes, Perception, Pj, Presence, SearchRules } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
 
 function RuleScreen() {
-  const [showInfo, setShowInfo] = useState(false)
-  const [showChar, setShowChar] = useState(false)
-  const handleShowInfo = () => setShowInfo(!showInfo)
-  const handleShowChar = () => setShowChar(!showChar)
+  const [basic, setBasic] = useState(false)
+  const [char, setChar] = useState(false)
+  
+  const [rPre, setrPre] = useState(false)
+  const [rCha, setrCha] = useState(false)
+  const [rLu, setrLu] = useState(false)
+  const [rPer, setrPer] = useState(false)
+  const [rKi, setrKi] = useState(false)
 
+  const stats = () => setBasic(!basic)
+  const presence = () => setrPre(!rPre)
+  const charisma = () => setrCha(!rCha)
+  const luck = () => setrLu(!rLu)
+  const perception = () => setrPer(!rPer)
+  const kinesthesia = () => setrKi(!rKi)
   return (
 
     <>
-        <NavbarVertical showTheInfo={handleShowInfo}/>
+        <NavbarVertical 
+            statistics={stats} 
+            stpresence={presence} 
+            stcharisma={charisma} 
+            stluck={luck}
+            stperception={perception} 
+            stkinesthesia={kinesthesia}
+        />
+
+
+        
       <div className='container'>
         <h1>Manual de instrucciones del juego</h1>
+          <div className='d-flex justify-content-between'> 
           <div>
-                <button className='btn-rules-toggle' style={{color:"rgb(220, 201, 10)"}} onClick={()=>setShowInfo(!showInfo)}>
-                <span></span><span></span><span></span><span></span>Estadísticas básicas
-            </button>
-                <button className='btn-rules-toggle' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setShowChar(!showChar) }>
-                <span></span><span></span><span></span><span></span>Carácter
-            </button>
-                <button className='btn-rules-toggle' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setShowChar(false); setShowInfo(false)}}>
-                <span></span><span></span><span></span><span></span>Cerrar todo
-            </button>
-                <button className='btn-rules-toggle' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setShowChar(true); setShowInfo(true)}}>
-                <span></span><span></span><span></span><span></span>Abrir todo
-            </button>
-          </div>
-        {showInfo && <Rules/>}
-        {showChar && <Characters/>}
-      </div>
 
+              <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false)}}>
+                  <span></span><span></span><span></span><span></span>Estadísticas básicas
+              </button>
+              <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setChar(!char); setBasic(false)} }>
+                  <span></span><span></span><span></span><span></span>Carácter
+              </button>
+              </div>
+                <div className=''>
+                  
+                <button className='btn-rules-toggle' style={{color:"violet"}} onClick={()=>{setChar(true); setBasic(true)}}>
+                      <span></span><span></span><span></span><span></span>Abrir todo 
+                </button>
+                <button className='btn-rules-toggle' style={{color:"blue"}} onClick={()=>{setChar(false); setBasic(false)}}>
+                      <span></span><span></span><span></span><span></span>Cerrar todo
+                </button>
+                </div>
+          </div>
+        {basic && <Rules/>}
+        {char && <Characters/>}
+        {rLu && <Luck/>}
+        {rCha && <Charisma/>}
+        {rKi && <Kinesthesia/>}
+        {rPer && <Perception/>}
+        {rPre && <Presence/>}
+      </div>
     </>
 
     

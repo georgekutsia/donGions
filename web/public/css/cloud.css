@@ -13,4 +13,49 @@
 	 color: #e2f3f5;
 	 font-weight: bolder;
 }
- 
+
+
+.liquid {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4a5978;
+	margin-top: 100px;
+}
+.liquid h2 {
+	position: absolute;
+	font-size: 40px;
+}
+.liquid h2:nth-child(1) {
+	color: #fff;
+	text-shadow: -2px 2px 0px #4a5978,
+	-4px 4px 0px #4a5978,
+	-6px 6px 0px #4a5978,
+	-8px 8px 0px #4a5978,
+	-18px 18px 20px rgba(0,0,0,0.5),
+	-18px 18px 50px rgba(0,0,0,0.5);
+}
+.liquid h2:nth-child(2) {
+	color:  #2196f3;
+	opacity: .5;
+	animation: animate1 3s ease-in-out infinite;
+}
+.liquid h2:nth-child(3) {
+	color:  #2196f3;
+	opacity: .5;
+	animation: animate1 6s ease-in-out infinite;
+}
+.liquid h2:nth-child(4) {
+	color:  #2196f3;
+	animation: animate1 4s ease-in-out infinite;
+}
+
+@keyframes animate1 {
+	0%,100%{
+		clip-path: polygon(0 56%, 13% 51%, 24% 48%, 36% 49%, 50% 55%, 66% 64%, 83% 71%, 100% 74%, 100% 100%, 0% 100%);
+	}
+	50%{
+		clip-path: polygon(0 56%, 10% 65%, 24% 70%, 36% 72%, 52% 65%, 66% 56%, 83% 53%, 100% 53%, 100% 100%, 0% 100%);
+	}
+}

@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Effort from '../toggle-info/Effort'
 
 function Kinesthesia() {
   const [effort, setEffor] = useState(true)
   return (
-      <div style={{backgroundColor:"rgba(0, 255, 60, 0.02)"}} className='background-rule-info'>
+      <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
         <h1 align="center" className='texto-resaltado-cinestesia'>Cinestesia</h1> 
       <div className='d-flex justify-content-evenly'>
         <div><span className='texto-resaltado-suerte-stats'> Cada punto de Cinestesia aumenta +2 el acierto al hacer movimientos con </span>
-        <button className='texto-resaltado-sobreesfuerzo' onClick={() => setEffor(!effort)}>Sobreesfuerzo</button> </div>
+        <Link className='texto-resaltado-sobreesfuerzo' onClick={() => setEffor(!effort)}>Sobreesfuerzo</Link> </div>
       </div>
         {effort && <Effort/>}
           <article align="center" className='background-list-actions'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Luck() {
   return (
-    <div style={{backgroundColor:"rgba(255, 0, 204, 0.03)"}} className='background-rule-info'>
+    <div style={{backgroundColor:"rgb(16, 4, 14)"}} className='background-rule-info'>
       <h1 align="center" className='texto-resaltado-suerte'>Suerte</h1> 
     <div className='d-flex justify-content-evenly'>
       <div><h4 className='rules-show-shadow'>1-11 - <span>Común</span></h4> </div>
