@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stcharisma, stpresence}) {
+function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stcharisma, stpresence,stconcentracion}) {
   return (
     <div>
       <div className="iconBar">
@@ -15,6 +15,7 @@ function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stchar
         <a onClick={stluck} href="#s-suerte"> Suerte</a>
         <a onClick={stperception} href="#s-percepcion"> Percepción</a>
         <a onClick={stkinesthesia} href="#s-cinestesia"> Cinestesia</a>
+        <a onClick={statistics} href="#s-concentracion"> Concentración</a>
       </div>
     </div>
   );

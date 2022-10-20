@@ -1,0 +1,30 @@
+.roll-dice {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+.roll-dice-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roll-dice button {
+  align-self: center;
+  width: 8em;
+  padding: 0.4em;
+  font-size: 2em;
+  border: 0px;
+  border-radius: 10;
+  color: white;
+  background-color: rgb(225, 101, 0);
+  margin-top: 3em;
+}
+
+.roll-dice button:hover {
+  background-color: rgb(255, 251, 0);
+  color: black
+}
+.result-dice{
+  font-size: 50px;
+  font-family: "Bungee spice";
+}

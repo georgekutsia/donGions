@@ -3,8 +3,8 @@ import { BackgroundFloatingBuble, Characters, Charisma, Kinesthesia, Luck, Navba
 import Rules from '../../component/guide/EstadisticasPj'
 
 function RuleScreen() {
-  const [basic, setBasic] = useState(false)
-  const [char, setChar] = useState(false)
+  const [basic, setBasic] = useState(true)
+  const [char, setChar] = useState(true)
   
   const [rPre, setrPre] = useState(false)
   const [rCha, setrCha] = useState(false)

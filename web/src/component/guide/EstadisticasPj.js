@@ -27,7 +27,7 @@ function EstadisticasPj() {
               <div className="nombre-concepto-negro" style={{color:"orange",}}> Carga:<span className="definicion-concepto"> Es la cantidad de objetos que puede tener equipados a la vez. La mayoría de los objetos llevan un número que representa la carga que tiene. 
               La carga total de tu equipo no puede superar la carga de tu personaje. El resto puede ir en la mochila y ser re-equipados. También marca la cantidad de Hechizos que se pueden transportar y objetos de arma o armadura que se puede llevar en la mochila.</span></div> 
           
-              <div className="nombre-concepto-negro" style={{color:"rgb(247, 0, 255)"}}> <span>Movimiento:</span><span className="definicion-concepto" id="sacciones">
+              <div className="nombre-concepto-negro" style={{color:"rgb(247, 0, 255)"}}> <span>Movimiento:</span><span className="definicion-concepto" id="s-acciones">
               Las cuadrículas que te puedes desplazar. A mayor cantidad de puntos de movimiento, mayor<button className='btn-rules-toggle nombre-concepto-blanco' style={{ fontSize:"20px"}} onClick={()=>setMoves(!moves)}>
           <span></span><span></span><span></span><span></span>Velocidad
           </button></span></div> 
@@ -48,7 +48,7 @@ function EstadisticasPj() {
           <span></span><span></span><span></span><span></span> Mas detalle en la página de Combate</a>
               
               <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
-                <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setFocus(!focus)}>
+                <button id="s-concentracion" className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setFocus(!focus)}>
                   <span></span><span></span><span></span><span></span>Concentración: </button>
                   </span><span className="definicion-concepto">Se gasta una acción para aumentar el acierto de tu siguiente ataque o defensa</span>
               </div> 

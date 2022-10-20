@@ -17,13 +17,13 @@ function Kinesthesia() {
           solo te delimita tu imaginación a la hora de luchar, escapar o en general, rolear 
           </article>
           <ul>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Disminuye en 2 las acciones necesarias para reequiparte por cada punto de cinestesia</li>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Permite bloquear y parar por la espalda. La disminución de la defensa tras fracasar la esquiva disminuye en 1</li>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Tras fallar en un ataque cuerpo a cuerpo, puedes atacar con acción gratuita con otra parte del cuerpo por cada punto </li>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Cada punto de Cinestesia aumenta en 1 el acierto otorgado por Euforia y puedes lanzar 2 armas arrojadizas a la vez.</li>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Puedes usar los artefactos con activación desde tu mochila que tengan igual o menor carga que tus puntos de cinestesia.
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Disminuye en 2 las acciones necesarias para reequiparte por cada punto de cinestesia</li>
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Permite bloquear y parar por la espalda. La disminución de la defensa tras fracasar la esquiva disminuye en 1</li>
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Tras fallar en un ataque cuerpo a cuerpo, puedes atacar con acción gratuita con otra parte del cuerpo por cada punto </li>
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Cada punto de Cinestesia aumenta en 1 el acierto otorgado por Euforia y puedes lanzar 2 armas arrojadizas a la vez.</li>
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Puedes usar los artefactos con activación desde tu mochila que tengan igual o menor carga que tus puntos de cinestesia.
                                                                         Lo mismo pasa con lanzar armas o activar otras habilidades de objetos</li>
-            <li><i class="fa-solid fa-dumbbell"></i>&nbsp; Los jugadores con <span style={{color:"green"}}>Cinestesia</span> que también tienen <span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, tienen mejores oportunidades para evitar explosiones o ataques 
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Los jugadores con <span style={{color:"green"}}>Cinestesia</span> que también tienen <span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, tienen mejores oportunidades para evitar explosiones o ataques 
             por sorpresa. El jugador puede elegir lanzar un D8 en lugar del D6 y asignar a los dos números adicionales la habilidad con la que quiere evitar la explosión. Si tiene 2 de <span style={{color:"green"}}>Cinestesia</span>/<span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, 
             puede tirar D10 y elegir otros 2 números para la habilidad que prefiere. Por ejemplo 1 para bloqueo, 2 para parada, 3 para resistencia y 4-5-6 para esquiva. Alguien con +1 <span style={{color:"green"}}>Cinestesia</span>/<span style={{color:"rgb(237, 0, 254)"}}>Suerte </span>  
             puede asignar el 7-8 a la esquiva.</li>

@@ -79,7 +79,7 @@
 
 
 
-.mufasa{
+.margin-floating{
 	margin-left: -34px
 }
 .circle-container {
@@ -90,6 +90,9 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+          overflow: hidden;
+          max-height: 100px;
+          
 }
 .circle-container .flow {
   width: 100%;

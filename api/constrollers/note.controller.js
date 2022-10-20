@@ -4,7 +4,7 @@ module.exports.list = (req, res, next) => {
   const criteria = {};
   if (req.pj) {
     criteria.author = req.pj.id;
-  }      
+  }
   // falta meter criteria e finde(.)
   Note.find(criteria)
     .populate("author", "nickname")
@@ -39,7 +39,6 @@ module.exports.detail = (req, res, next) => {
     .catch(next);
 };
 
-
 module.exports.edit = (req, res, next) => {
   const data = {
     title: req.body.title,
@@ -48,15 +47,15 @@ module.exports.edit = (req, res, next) => {
     category: req.body.category,
   };
   delete data.author;
+  const { id } = req.params;
 
-  const note = Object.assign(req.note, data);
-  note
-    .save()
+  Note.findByIdAndUpdate(id, data, {new:true, runValidators: true})
     .then((note) => res.json(note))
     .catch(next);
 };
+
 module.exports.delete = (req, res, next) => {
-  Note.deleteOne({_id: req.note.id})
+  Note.deleteOne({ _id: req.note.id })
     .then(() => res.status(204).send())
     .catch(next);
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import * as noteService from "../../services/all-services";
 import Actions from "../guide/parts/toggle-info/Actions";
 
-function Notes({size,color}) {
+function Notes({size,color, width, height}) {
   const [notes, setNotes] = useState([]);
   useEffect(() => {
     noteService
@@ -18,7 +18,7 @@ function Notes({size,color}) {
     <div>
       <div className="panels mt-5" >
         {notes.map((note) => (
-            <div style={{transform:"rotate(2deg)",color:`${color}`, fontSize:`${size}`}} className="panel m-2 p-3" id="note-transform" key={note.id}>
+            <div style={{transform:"rotate(2deg)",color:`${color}`, fontSize:`${size}`, width:`${width}`, height:`${height}`}} className="panel m-2 p-3" id="note-transform" key={note.id}>
               <Link to={`/notes/${note.id}`} >
                 <img src={note.image} alt="Imagen" className="img-note-position"/>
               </Link>

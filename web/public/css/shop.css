@@ -20,6 +20,9 @@
   border-radius: 12px;
   border: 2px solid white;
 }
+.double-image-cards{
+  margin-right: 230px;
+}
 .scrolling-space {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130985/donGions%20imgs/shop/wood_rs0mwz.jpg");
   width: 80%;

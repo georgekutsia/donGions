@@ -13,10 +13,10 @@ function NavBar() {
                   <NavLink to="/frontpage" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Frontpage</NavLink>
                 </li>
                 <li className="nav-item mx-5">
-                  <NavLink to="/inventory" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Inventario</NavLink>
+                  <NavLink to="/eventos" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Eventos</NavLink>
                 </li>
                 <li className="nav-item mx-5 ">
-                  <NavLink to="/profile" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} ><h2>Personaje</h2></NavLink>
+                  <NavLink to="/profile" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} ><h2>Perfil</h2></NavLink>
                 </li>
               <ul>
                 <li className='nav-item'>

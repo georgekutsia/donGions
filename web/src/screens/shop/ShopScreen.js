@@ -1,26 +1,35 @@
 import React, { useState } from 'react'
 import { Shop, SwordsBall, WordCloud} from '../../component'
-import Carousel from './Carousel'
+import ArmeriaScreen from './ArmeriaScreen'
+import Books from './BooksScreen'
+import HabilityScreen from './HabilityScreen'
 
 function ShopScreen() {
 
   const [armeria, setArmeria] = useState(false)
+  const [hability, setHability] = useState(false)
+  const [book, setBook] = useState(true)
+  
   const showArm = () => setArmeria(true)
   const hideArm = () => setArmeria(false)
+  const showBook = () => setBook(true)
+  const hideBook = () => setBook(false)
+  const showHab = () => setHability(true)
+  const hideHab = () => setHability(false)
+
 
 
   return (
     <div align="center">
-    <SwordsBall  ballDiv={"sky-sword"} ballImgs={"sword-sword"}/>
     <div>
-        <Shop  arm={showArm} armOff={hideArm}/>
+        <Shop  armOn={showArm} armOff={hideArm} habOn={showHab} habOff={hideHab} bookOn={showBook} bookOff={hideBook}/>
       <h1 align="center" className='name-shop' >Tienda de Patek el Ruinafortunas</h1>
     </div>
-    <SwordsBall  ballDiv={"sky-sword-1"} ballImgs={"sword-sword-1"}/>
-    <SwordsBall  ballDiv={"sky-sword-2"} ballImgs={"sword-sword-2"}/>
 
 
-   {armeria && <Carousel/>}
+    {armeria && <ArmeriaScreen/>}
+    {hability && <HabilityScreen/>}
+    {book && <Books/>}
     
 
 

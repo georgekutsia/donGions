@@ -1,9 +1,9 @@
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom'
 import {NavBar} from './component';
 import {InventoryScreen, PjDetailScreen, PjScreen, FrontpageScreen, NotesScreen, RegisterScreen, ShopScreen, GuideScreen, RuleScreen, CreateNotesScreen, NoteDetailScreen, LoginScreeen, ProfileScreen} from "./screens"
-// import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from './context/AuthContext';
+// import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
 
 
 function AuthGuard({ children }) {
@@ -38,10 +38,9 @@ function App() {
             <Routes>
               <Route path="/notes" element={<AuthGuard><NotesScreen/></AuthGuard>}/>
               <Route path="/notes/:id" element={<AuthGuard><NoteDetailScreen/></AuthGuard>}/>
-              <Route path="/inventory" element={<AuthGuard><InventoryScreen/></AuthGuard>}/>
+              <Route path="/eventos" element={<AuthGuard><InventoryScreen/></AuthGuard>}/>
               <Route path="/profile" element={<AuthGuard><PjScreen/></AuthGuard>}/>
               <Route path="/profile/:id" element={<AuthGuard><PjDetailScreen/></AuthGuard>}/>
-              <Route path="/profile" element={<AuthGuard><ProfileScreen/></AuthGuard>}/>
               <Route path="/shop" element={<AuthGuard><ShopScreen/></AuthGuard>}/>
               <Route path="/rules" element={<AuthGuard><RuleScreen/></AuthGuard>}/>
               <Route path="/authenticate" element={<LoginScreeen/>}/>

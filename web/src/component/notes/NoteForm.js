@@ -4,7 +4,7 @@ import * as noteService from "../../services/all-services"
 import { useNavigate } from "react-router";
 
 function NoteForm() {
-   const navigation = useNavigate();
+  const navigation = useNavigate();
   const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onBlur"});
 
   const handleNoteSubmit = (data) => {

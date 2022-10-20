@@ -24,12 +24,17 @@ export function getNotes(){
   return http.get("/notes")
 }
 export function getNote(id){
-  return http.get(`/${id}`)
+  return http.get(`/notes/${id}`)
+}
+export function editNote(id, data){
+  return http.patch(`/notes/${id}`, data)
 }
 
 export function createNote(id) {
   return http.post('/notes', id)
 }
+
+
 export function registerPj(data) {
   // pj.image = pj.image[0]
   // const data = new FormData()

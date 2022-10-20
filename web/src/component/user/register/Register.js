@@ -7,6 +7,7 @@ import { useNavigate } from "react-router";
 import statistics from "../../../data/pjStats"
 import char from "../../../data/character"
 import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence } from "../../../component"
+import RollDice from "../../dice/RollDice";
 
 
 
@@ -14,6 +15,7 @@ function Register() {
   const navigation = useNavigate();
   const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
 
+  const [resultDice, setResultDice] = useState(0)
   const [pjInfo, setPjInfo] = useState([])
   useEffect(() => {
     setPjInfo(statistics)
@@ -23,7 +25,10 @@ function Register() {
   useEffect(() => {
     setCharacter(char)
   },[])
-
+  
+  const handleResultDice = (result) => {
+    setResultDice(result)
+  }
 
   const [borderSelected, setBorderSelected] = useState("plans-img-register")
 
@@ -46,7 +51,6 @@ function Register() {
   const [showPe, setShowPe] = useState(false)
   const [showCi, setShowCi] = useState(false)
   const [showPre, setShowPre] = useState(false)
-
 
 
   const handleRegisterSubmit = (data) => {
@@ -76,9 +80,6 @@ function Register() {
     delete data.character
     data = {...data, character}
   }
-
-
-
   
   if (data.planeswalker === "Liliana") {
       const stats = statistics[0]
@@ -139,6 +140,7 @@ function Register() {
           delete data.planeswalker;
           data = {...data, stats} 
     }
+    data.gold = resultDice
     pjService.registerPj(data)
       .then(note => navigation("/authenticate"))
       .catch(error => {
@@ -154,6 +156,8 @@ function Register() {
   return (
     <div align="center" className="form-register">
       <form onSubmit={handleSubmit(handleRegisterSubmit)} className="mt-3">
+
+      <RollDice finalResult={handleResultDice} />
       {/* paso 1 */}
         <Steps paso={"Paso 1"} pasoTexto={"Información de registro"}/>
       {/*  nickname */}

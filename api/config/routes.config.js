@@ -14,15 +14,15 @@ router.delete("/logout", auth.logout)
 
 router.get("/cards",  secure.isAuthenticated, cards.list)
 router.post("/cards",  secure.isAuthenticated, cards.create)
-router.get("/cards/:id",  secure.isAuthenticated, owned.isOwnedByUser, cards.detail)
+router.get("/cards/:id",  secure.isAuthenticated, cards.detail)
 router.patch("/cards/:id", secure.isAuthenticated,   cards.edit)
 router.delete("/cards/:id", secure.isAuthenticated, cards.delete)
 
 router.get("/notes",  secure.isAuthenticated, note.list);
 router.post("/notes", secure.isAuthenticated,  note.create);
-router.get("/notes/:id", secure.isAuthenticated, owned.isOwnedByUser, note.detail);
-router.patch("/notes/:id", secure.isAuthenticated, owned.isOwnedByUser, note.edit);
-router.delete("/notes/:id", secure.isAuthenticated, owned.isOwnedByUser, note.delete);
+router.get("/notes/:id", secure.isAuthenticated,  note.detail);
+router.patch("/notes/:id", secure.isAuthenticated,  note.edit);
+router.delete("/notes/:id", secure.isAuthenticated,note.delete);
 
 router.get("/rules", secure.isAuthenticated, note.list)
 

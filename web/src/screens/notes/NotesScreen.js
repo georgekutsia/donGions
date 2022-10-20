@@ -16,20 +16,20 @@ function NotesScreen() {
       
     </div>
         <div className="d-flex">
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(!mode1);setMode2(false);setMode3(false)}}>
-          <span></span><span></span><span></span><span></span>Normal letterssss
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(true);setMode2(false);setMode3(false)}}>
+          <span></span><span></span><span></span><span></span>En pequeño
           </button>
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(!mode2);setMode1(false);}} >
-          <span></span><span></span><span></span><span></span>Big letter
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(true);setMode1(false);setMode3(false)}} >
+          <span></span><span></span><span></span><span></span>Normal
           </button>
-          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode3(!mode3);setMode2(false); setMode1(false)}} >
-          <span></span><span></span><span></span><span></span>Big letter
+          <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode3(true);setMode2(false); setMode1(false)}} >
+          <span></span><span></span><span></span><span></span>Letras grandes
           </button>
           
         </div>
-      {mode1 && <Notes size={"14px"} color={"blue"}/>}
-      {mode2 && <Notes size={"25px"} color={"red"}/>}
-      {mode3 && <Notes size={"45px"} color={"yellow"}/>}
+      {mode1 && <Notes size={"14px"} color={"blue"} width={"200px"} height={"300px"}/>}
+      {mode2 && <Notes size={"25px"} color={"black"}/>}
+      {mode3 && <Notes size={"45px"} color={"red"}/>}
     </div>
   );
 }

@@ -6,7 +6,6 @@ function NoteDetailScreen() {
   return (
     <div>
     <NoteDetail/>
-    ehehehe
     </div>
   )
 }

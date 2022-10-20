@@ -1,166 +1,410 @@
 const dataPresentación = [
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras_tynflv.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta_puoru0.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Reflexio%CC%81n_del_ermitan%CC%83o_z1tlaa.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Pun%CC%83o_sagrado_del_monje_myddnv.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Reflejos_de_maestro_nc7qu4.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Punteri%CC%81a_del_arquero_c3scar.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057531/donGions%20imgs/shop/basico%20todo/Maza.4_gsuo4d.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057531/donGions%20imgs/shop/basico%20todo/Maza_vgfura.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Compa%CC%81s_de_mazmorras_ujqa0k.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067845/donGions%20imgs/shop/loot%20random/Tarro_de_creacio%CC%81n_de_horrores_ulowgf.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_limpias_w8wkz1.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_vampi%CC%81rica_rweybt.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Yelmo_de_Yarn_el_sincero_xqipho.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.36_bydcjb.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.7_kdckug.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Proteccio%CC%81n_del_hechicero_pccprk.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Presteza_en_la_batalla_de_la_rebelio%CC%81n_wvbzyf.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Potencia_de_la_horda_del_desierto_snij3r.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Poder_Loxodo%CC%81n_owo2ps.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057531/donGions%20imgs/shop/basico%20todo/Maza.3_kjx7sj.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057531/donGions%20imgs/shop/basico%20todo/Maza.2_wu5rgw.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Creador_de_explosivos_e5lhyx.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067845/donGions%20imgs/shop/loot%20random/Tarro_de_miel_ma%CC%81gico_sxqng5.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_paciente_h3cnrs.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_santo_tl6ths.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Visio%CC%81n_de_Leyure_ywxam0.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.35_zfnyi4.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.6_ijxksm.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Pasos_del_velocista_rsmhns.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Pericia_del_ladro%CC%81n_Dimir_ph5oda.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Palma_de_la_maestra_Jeskai_c3izic.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Neblina_terrori%CC%81fica_de_los_Djin_xk3kw1.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Maza.1_xydjeu.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Lanza_ufjncw.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Copa_purificadora_pjbeye.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Tambores_de_guerra_bv1xo2.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_hechicero_xx4aod.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_mago_sensato_igj7zb.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Terror_de_Qial_Zima_xdfjb9.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.34_zfbzeq.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.8_pljadf.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Manos_de_cle%CC%81rigo_bm6gtb.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Las_trampas_de_Pieldepiedra_glnsxf.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Magia_del_forjador_qnyk5x.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Maestri%CC%81a_ninja_lkbmci.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha_grbi82.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Lanza.1_se9xxx.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Copa_del_asesino_su3zsi.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Silbato_pfhtly.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_excibicionista_zpgdbd.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_mago_rsh91n.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Regocijo_del_hijo_pro%CC%81digo_xkwct7.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.33_acrogn.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.5_omzyn7.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Ira_de_Angrath_gxzwg0.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_Yetis_zitaat.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_tritones_x3enji.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_tiburones_t9nzfa.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha.5_oyv1sy.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha.4_lzyy41.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Colgante_de_la_fortuna_oanlwk.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Reflejos_temporales_fopzxl.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_defensor_jpygoz.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_mago_diestro_iqkpyl.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Lamento_de_Vanian_ydtchz.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.32_wjygp0.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.4_rxmsmz.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_rinocerontes_dtwrc0.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_perros_klfzny.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_pandas_a6mol0.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_jaguares_qcc2oz.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha.2_ziprm3.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha.3_dthsio.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Colgante_del_aventurero_urypvc.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Soporte_de_las_transmutaciones_pixgpi.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_esquiador_oiaxqs.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_mago_natural_di5pol.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/La_venganza_de_Romatan_tsumff.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.31_n1ut1p.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.3_pmjhry.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_leones_zhuunw.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_lica%CC%81ntropos_dhb72t.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_osos_jliihs.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_hurones_swthcq.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Espada_vjcp43.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057530/donGions%20imgs/shop/basico%20todo/Hacha.1_wz61pv.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Reloj_de_oro_que_sen%CC%83ala_el_tiempo_jwdqta.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_corredor_huxrku.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_mago_esquivo_t8eugj.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_los_resurgidos_r0x9t0.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.29_l9mgbe.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067745/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.1_eyqbui.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_gigantes_xfvgbh.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_gatos_f9mcpz.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_elefantes_nvpx57.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_Espantapa%CC%81jaros_yu46dv.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Espada.4_dlw4gu.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Espada.3_qg9u4l.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Colgante_de_infiltracio%CC%81n_xhktyf.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Pluma_demoni%CC%81aca_njfvol.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_armero_q3sgc6.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_macero_k8k2gc.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_la_penitencia_obvwci.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.28_li6jzn.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_aliga%CC%81tor_kstbah.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_djin_jjdvur.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_conejos_iqlq8i.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_las_aves_dfivyk.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Espada.2_tcedl9.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Daga_fl4cqq.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Catalejomicrosco%CC%81pio_f0kdqp.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Recipiente_con_ojos_d7kuml.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_del_bruto_amtvqy.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_len%CC%83ador_glfhuc.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_las_sombras_bcozax.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.27_p1lmrx.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_cocodrilos_ynpgss.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_chacales_jwz9he.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Furia_del_mago_escurridizo_psjrum.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_las_cobayas_z8tovu.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Daga_fl4cqq.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Espada.1_zaap2p.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Captador_biolo%CC%81gico_quacso.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Pipa_ma%CC%81gica_de_aristo%CC%81crata_qfbkf6.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_defensivas_iltgmj.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_lancero_tvgp4m.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Dorado_de_Lestiar_hryyya.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.24_exiwfe.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Ferocidad_barba%CC%81rica_ycwml4.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Estallido_de_mana%CC%81_del_nigromante_sq0ivm.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Dictado_del_rey_mono_oyhfxz.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Equilibrio_del_bandido_de_Rix_Maadi_gbgs6a.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Caldera_de_venenos_bfxo6b.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Piedra_de_jade_oscuro_njmykd.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_de_Luz_unkytw.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_hechicero_crcy5q.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Deshonra_de_Crusix_vb1l0o.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.26_rpcgqb.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Destreza_del_comandante_yqkf27.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Desafi%CC%81o_del_combatiente_qkar8k.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Defensa_de_la_prole_Temur_vp57la.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Destruccio%CC%81n_Abzana_r2hems.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bru%CC%81jula_de_riquezas_loh0gc.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Ojo_de_Salathan_ifcm2b.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067928/donGions%20imgs/shop/botas/Botas_de_reflejos_se864c.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057702/donGions%20imgs/shop/capas/Capa_del_guerrero_astuto_rv8h4s.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Creasombras_de_Valkar_enmaran%CC%83ado_smwmte.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.25_ieehcw.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Descenso_de_la_rastreadora_uncdts.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Contencio%CC%81n_de_la_vidente_kozyie.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Confusio%CC%81n_acroba%CC%81tica_de_los_Djin_onlh5g.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Centelleo_del_elemental_de_rayo_juk1dl.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Escudo_s8ynhx.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Escudo.1_gxgkew.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bru%CC%81jula_de_poder_zmqww5.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Multicubo_de_cristales_r1nysn.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_de_Dinosaurio_a28yuo.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_bruto_astuto_ltbp5z.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Creacicatrices_pdvwyb.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.19_zarvo8.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Caza_despiadada_de_Surrack_mw5yum.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Baluarte_viashino_be4tec.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Caos_de_la_armera_Rakdos_qfao7k.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Brutalidad_del_ba%CC%81rbado_cp0ojo.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Daga.2_jcsmfr.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Daga.1_k7vyah.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Brujula_de_caza_m7ktfe.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Ojo_de_la_copia_zmzgoc.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_de_apresurado_ks9xnv.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_guerrero_armonioso_eqtulz.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_del_dictador_Morga_tbr1zn.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.23_c8xrcx.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Barrido_de_artista_marcial_j53qln.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Atrocidad_de_Zurgo_Arrancacra%CC%81neos_hhnm3k.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Aterrizaje_go%CC%81lem_yke351.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Asalto_de_la_asesina_fk8rgz.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Basto%CC%81n_f5d6xi.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Armadura_roja_bonita_glpyj6.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bolsa_ma%CC%81gica_de_bolsillos_enormes_lje8dm.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llave_de_arquitecto_imet2d.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_de_ciudad_ddwofb.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_guerrero_a%CC%81gil_hcf4dd.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_sangre_de_jade_o4dfnp.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.22_qyrjtk.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Ansia_vikinga_ogl36k.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_tiro_del_cazador_dn6qeh.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_vampiro_zruou4.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_vigilante_aka1xf.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Basto%CC%81n.2_xy2kwy.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057528/donGions%20imgs/shop/basico%20todo/Basto%CC%81n.1_yeia1s.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bola_de_vapores_q0jtt5.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llave_profe%CC%81tica_aklzec.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Bota_de_pies_ligeros_qj7pdo.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_bruto_armonioso_t5tfov.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_rugido_del_leo%CC%81n_q0aes9.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.20_bzfyh0.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_soldado_nr36yh.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_pistolero_estiloso_qj2ueo.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_protector_uctpus.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_ninja_x7d0ll.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Analizador_de_elementos_r9auzp.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Linterna_de_elemental_de_fuego_plradw.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_conjuntadas_ywon4y.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_bruto_a%CC%81gil_k2kktn.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_rugido_del_leo%CC%81n_q0aes9.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.17_isedrk.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_nigromante_hchjin.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_luchador_dxlmpc.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_mendigo_anfdjv.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_litomante_xiothe.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_resistente_a_la_magia_g54iln.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_labrada.1_v8h4fp.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Analizador_de_escrituras_qpmhxi.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Implemento_de_peso_vpdvnk.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_comunes.2_gskgag.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_arquero_kuutyp.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco_oxipsb.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.21_hl9ajh.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_hoplita_cokios.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_hechicero_fb8zfk.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_guerrero_qghxto.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_guardabosques_ngdt2t.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_rasgada_ypdyif.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_plebeya_eorcne.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Algo_misterioso_q9316o.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067841/donGions%20imgs/shop/loot%20random/Gui%CC%81a_y_proteccio%CC%81n_para_misioneros_nf7c1a.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_comunes.2_gskgag.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_del_ambidiestro_bxlzi7.jpg",
-    casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057725/donGions%20imgs/shop/cascos/Casco_del_pri%CC%81ncipe_de_Catacas_cjcvte.jpg"
+    casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.18_z49w0z.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_grupo_nszqrl.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_gladiador_vinddk.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_francotirador_houf8p.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_escudero_ke5otp.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_pequen%CC%83a_v5qzew.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_provocadora_sniakl.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067841/donGions%20imgs/shop/loot%20random/Garrafa_ma%CC%81gica_de_Jesus_el_mago_bcz5us.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_comunes_jib00x.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_de_tela_comu%CC%81n_njh1b2.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_rejuvenecedor_jvhhli.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.15_yakqxi.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_auromante_iuxfbl.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_coloso_xqot6c.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_alfa_mbgr5x.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_arquero_ponzon%CC%83oso_y3tola.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057527/donGions%20imgs/shop/basico%20todo/Armadura_labrada_kvns5l.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Armadura_aristocra%CC%81tica_wteckh.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Depo%CC%81sito_de_gemas_preciosas_jf1duq.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_comunes.1_ljvtc0.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057701/donGions%20imgs/shop/capas/Capa_de_medianoche_msfd1n.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_Muskan_el_avaricioso_ea3m26.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.14_z7dveu.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_acro%CC%81bata_vwnvat.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_piratas_f9tput.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_druidas_zh7axt.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_ninjas_uoj4yd.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Armadura_de_cuero_oscuro_nteuob.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Armadura_con_huecos_gmiyjp.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Esfera_planar_gugc0s.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067927/donGions%20imgs/shop/botas/Botas_certeras_dcohke.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_ba%CC%81sica_del_espadachi%CC%81n_o7crgh.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.3_xuxapl.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.16_nwu4ct.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_gigantes_jzzgup.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_Djin_qwxnh6.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_Cruzada_lb8fvp.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_sanadora_wbwwx4.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Armadura_con_encaje_gitrmv.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Armadura_a%CC%81gil_t2egm3.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Disco_de_secretos_fiiu40.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057747/donGions%20imgs/shop/cinturon/Cinturo%CC%81n_del_viajero_ixugfx.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_de_la_bestia_do0yyv.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.2_dpuips.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.13_xaeh9x.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_armeros_jt6zas.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_vidente_qqcczw.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_ladrona_etwh7e.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_escolta_uzcwef.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Arma_arrojadiza_lganco.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Arco_.5_dzeygv.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cuerno_de_las_estaciones_ghyady.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057747/donGions%20imgs/shop/cinturon/Cinturo%CC%81n_de_joyero_zt2pxp.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_de_escamas_de_oro_uiy7y7.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.1_uppchh.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.12_shylcg.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_asesina_tidg1b.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Absorcio%CC%81n_del_brujo_sgxgms.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_combate_e%CC%81lfica_o4xdzn.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Allanamiento_del_saqueador_mxz6to.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Arco_secfcz.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057526/donGions%20imgs/shop/basico%20todo/Arco_.4_zfnkzd.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cubo_de_replicaciones_f51ikh.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057747/donGions%20imgs/shop/cinturon/Cinturo%CC%81n_de_escudero_ydmi7j.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_de_jade_ln8dox.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_de_la_vida_ukvf7p.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.8_oejgku.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057525/donGions%20imgs/shop/basico%20todo/Arco_.3_ulefdr.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057525/donGions%20imgs/shop/basico%20todo/Arco_.2_nzyhi8.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cubo_de_los_elementos_zyax5i.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057747/donGions%20imgs/shop/cinturon/Cinturo%CC%81n_del_tatuado_dngklj.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_de_gatillo_ra%CC%81pido_umel7h.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_celestial_n81ab8.jpg"
 },
-  {
+  { 
+    libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.9_wd6eyf.jpg",
+    libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab3:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    hab4:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    armbasic1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057525/donGions%20imgs/shop/basico%20todo/Arco_.1_s7j5td.jpg",
+    armbasic:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057529/donGions%20imgs/shop/basico%20todo/Daga_fl4cqq.jpg",
+    random1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     random:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cristales_trai%CC%81dos_del_nuevo_mundo_yj220v.jpg",
     botas:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057747/donGions%20imgs/shop/cinturon/Cinturo%CC%81n_con_armadura_v4mcf4.jpg",
     capa: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057700/donGions%20imgs/shop/capas/Capa_de_faucesombra_lc8wha.jpg",
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_de_la_energi%CC%81a_grvmnd.jpg"
-}
+},
+
 ]
 
 export default dataPresentación
