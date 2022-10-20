@@ -38,6 +38,7 @@ function PjScreen() {
             <h5>firmeza {info.pj.stats.firm}</h5>
             <h5>temple {info.pj.stats.temple}</h5>
             <h5>parada {info.pj.stats.parry}</h5>
+            <h5>Oros {info.pj.gold}</h5>
           </div>
           <div  className=''>
             <h3>Destacas en {info.pj.character.name} <img src={info.pj.character.image} alt="323" width="100px" /> </h3> 

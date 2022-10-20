@@ -1,6 +1,6 @@
 export {default as PjScreen} from "./pj/PjScreen"
 export {default as PjDetailScreen} from "./pj/PjDetailScreen"
-export {default as InventoryScreen} from "./inventory/Events"
+export {default as EventsScreen} from "./inventory/EventsScreen"
 export {default as ShopScreen} from "./shop/ShopScreen"
 export {default as Shelves} from "./shop/Shelves"
 export {default as FrontpageScreen} from "./frontpage/FrontpageScreen"

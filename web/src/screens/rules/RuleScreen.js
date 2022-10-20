@@ -32,9 +32,14 @@ function RuleScreen() {
         // square-flow      slow-flow
     {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666134847/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-19T011351.446_eeqfuh.png)"} 
     widthBall={"50px"} heigthBall={"60px"} radiusBall={"2px"} idFlow={"square-flow"}/>
-      <div className='container'>
+      <div align="center" className='container'>
         <h1>Manual de instrucciones del juego</h1>
-          <div className='d-flex justify-content-between'> 
+        <div className='bubble-text-manual '>
+        <img className="img-shop-info-manual" alt="Dude" />
+          <h5> Si algo no está escrito aquí, es que no lo has encontrado</h5>
+          <h5>Tienes una barra de navegación con la que encontrar cosas más concretas. Información es poder!</h5>
+        </div>
+          <div className='d-flex mt-5 justify-content-between'> 
           <div>
               <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false)}}>
                   <span></span><span></span><span></span><span></span>Estadísticas básicas
@@ -52,13 +57,15 @@ function RuleScreen() {
                 </button>
                 </div>
           </div>
-        {basic && <Rules/>}
-        {char && <Characters/>}
-        {rLu && <Luck/>}
-        {rCha && <Charisma/>}
-        {rKi && <Kinesthesia/>}
-        {rPer && <Perception/>}
-        {rPre && <Presence/>}
+          <div>
+              {basic && <Rules/>}
+              {char && <Characters/>}
+              {rLu && <Luck/>}
+              {rCha && <Charisma/>}
+              {rKi && <Kinesthesia/>}
+              {rPer && <Perception/>}
+              {rPre && <Presence/>}
+          </div>
       </div>
     </>
 

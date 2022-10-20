@@ -6,7 +6,9 @@ li{
   list-style: none;
 }
 
-
+#eye-login{
+  font-size: 40px;
+}
 
 .login-textarea{
   border-radius: 30px;

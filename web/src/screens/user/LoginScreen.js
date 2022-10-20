@@ -40,7 +40,6 @@ function LoginScreeen() {
         heigthBall={"10px"}
         idFlow={"slow-flow"}
       />
-      <img src=""  alt="" />
         <form className='m-5 login-form-img' onSubmit={handleSubmit(handleLogin)}>
           <div className='login-form-margin d-flex'>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665689975/donGions%20imgs/planeswalkers%20png/pjlog_cg3cdj.png" alt="sorin" height="40px" />
@@ -60,7 +59,7 @@ function LoginScreeen() {
                   required: "Necesitas una contraseña para logarte",
                 })}
               />
-              <Link  onClick={handleShowpass}><i style={{color:"black"}}  className={passShow ? "fa-solid fa-eye-low-vision" : "fa-solid fa-eye"}></i></Link>
+              <Link  onClick={handleShowpass}><i style={{color:"black"}} id="eye-login" className={passShow ? "fa-solid fa-eye-low-vision" : "fa-solid fa-eye"}></i></Link>
               {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
               )}
             </div>

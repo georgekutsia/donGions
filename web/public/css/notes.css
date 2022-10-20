@@ -32,6 +32,15 @@
   width: 200px;
 }
 
+.editor-encabezado{
+  background-color: rgba(255, 255, 255, 0.399);
+  width: 420px;
+  color: rgb(87, 75, 18);
+  text-shadow: black 2px 2px;
+  border-bottom: black dotted 4px;
+  border-radius: 50% / 0 0 100% 100%;
+}
+
 .img-note-position{
   display: flex;
   position: absolute;

@@ -1,0 +1,27 @@
+[
+  {"name": "Sylvok Biblioplex",                         
+    "description": "ljsandljasndklsjandsajlndlaj sndlsajndlajs n dljasndklsjandsajlndlaj sndlsajndldljasndklsjandsajlndlaj sndlsajndldljasndklsjandsajlndlaj sndlsajndldljasndklsjandsajlndlaj sndlsajndldljasndklsjandsajlndlaj sndlsajndl" ,  "enemies": false,    "alies": false,  "weird": true,   "category": "Football",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057875/donGions%20imgs/shop/personajes%20de%20belenon/Sylvok_Biblioplex_mqlnlq.jpg"},
+  {"name": "Ron Piel De Oso",                            
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057874/donGions%20imgs/shop/personajes%20de%20belenon/Ron_piel_de_oso_eyixr5.jpg"},
+  {"name": "Mnum Brazoafortunado",                       
+    "description": "",    "enemies": false,    "alies": true,  "weird": true,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057874/donGions%20imgs/shop/personajes%20de%20belenon/Mnum_brazoafortunado_mmzmiq.jpg"},
+  {"name": "Regente Graga, Cazador De Los Bosques",  
+    "description": "",    "enemies": true,    "alies": false,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057874/donGions%20imgs/shop/personajes%20de%20belenon/Regente_Glarga_cazador_de_los_bosques_wmsaji.jpg"},
+  {"name": "Ludovic, El Loco De Alberignos",  
+    "description": "",    "enemies": true,    "alies": false,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057874/donGions%20imgs/shop/personajes%20de%20belenon/Ludovic_el_loco_de_Alberignos_hdqtfd.jpg"},
+  {"name": "Iara, La Coleccionista De Maravillas",  
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057874/donGions%20imgs/shop/personajes%20de%20belenon/Iara_coleccionista_de_maravillas_enzwjk.jpg"},
+  {"name": "George, Mago Arcano",  
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/George_mago_arcano_yckghj.jpg"},
+  {"name": "Kotan el Loco",  
+    "description": "",    "enemies": false,    "alies": false,  "weird": true,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/Kotan_el_loco_fn3jal.jpg"},
+  {"name": "Bragma, El Inquebrantable",  
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/Bragma_el_inquebrantable_dcnznf.jpg"},
+  {"name": "Alberignos, Maestro de Engranajes",  
+    "description": "",    "enemies": false,    "alies": false,  "weird": true,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/Alberignos_maestro_de_engranajes_yempjf.jpg"},
+  {"name": "Amian",  
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/Amian_egbhat.jpg"},
+  {"name": "Bruja de Gora",  
+    "description": "",    "enemies": false,    "alies": true,  "weird": false,  "category": "Basketball",    "img": "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057873/donGions%20imgs/shop/personajes%20de%20belenon/Bruja_de_gora_shiwkk.jpg"}
+
+]

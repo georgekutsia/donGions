@@ -9,7 +9,6 @@ const [encantamiento, setEncantamiento] = useState(true)
 const [magia, setMagia] = useState(true)
 const [libreria, setLibreria] = useState(true)
 
-
 const handleArmeria = () => {setAlquimia(true); setArmeria(false); setEncantamiento(true);setMagia(true);setLibreria(true);}
 const handleAlquimia = () => {setAlquimia(false); setArmeria(true); setEncantamiento(true);setMagia(true);setLibreria(true)}
 const handleEncantamiento = () => {setAlquimia(true); setArmeria(true); setEncantamiento(false);setMagia(true);setLibreria(true)}

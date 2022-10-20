@@ -27,6 +27,7 @@ export {default as SelectPj} from "./user/register/SelectPj"
 export {default as PjDetail} from "./user/register/PjDetail"
 export {default as Steps} from "./user/register/parts/Steps"
 
+export {default as ImportantCreaturesBelenon} from "./pjs-belenon/ImportantCreaturesBelenon"
 
 export {default as Liliana} from "./user/register/regPj/Liliana"
 export {default as Gideon} from "./user/register/regPj/Gideon"

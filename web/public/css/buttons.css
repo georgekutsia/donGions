@@ -1,3 +1,37 @@
+.b-level-2.b-type-show-creatures {
+    background: transparent;
+    color: #2f90ff;
+    border: 3px solid #03a1f6;
+    position: relative;
+    transform: perspective(1px);
+    overflow: hidden;
+  }
+  
+  .b-level-2.b-type-show-creatures::before {
+    content: "";
+    position: absolute;
+    background: #03a1f6;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%) rotate(135deg) scaleY(0);
+    width: 100%;
+  }
+  
+  .b-level-2.b-type-show-creatures:hover {
+    color: #111;
+  }
+  
+  .b-level-2.b-type-show-creatures:hover::before {
+    transform: translate(-50%, -50%) rotate(135deg) scaleY(4);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .b-level-2.b-type-5:active::before {
+    transform: translate(-50%, -50%) rotate(135deg) scaleY(10);
+  }
 
 .btn-rules-toggle{
     position: relative;
