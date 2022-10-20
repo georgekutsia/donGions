@@ -65,7 +65,7 @@ function LoginScreeen() {
             </div>
           </div>
             <div className="mt-2 ">
-              <button className={"btn-rules-toggle-sub"} type="submit" disabled={!isValid}>
+              <button className={"btn-rules-toggle-sub"} type="submit" >
               <span></span><span></span><span></span><span></span> Conectarse </button>
             </div>
         </form>

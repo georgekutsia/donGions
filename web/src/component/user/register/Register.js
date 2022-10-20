@@ -6,7 +6,7 @@ import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";
 import statistics from "../../../data/pjStats"
 import char from "../../../data/character"
-import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence } from "../../../component"
+import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence, Creator } from "../../../component"
 import RollDice from "../../dice/RollDice";
 
 
@@ -154,14 +154,13 @@ function Register() {
       })
   }
   return (
-    <div align="center" className="form-register">
+    <div align="center" className="form-register wrapper-steps">
       <form onSubmit={handleSubmit(handleRegisterSubmit)} className="mt-3">
 
-      <RollDice finalResult={handleResultDice} />
       {/* paso 1 */}
-        <Steps paso={"Paso 1"} pasoTexto={"Información de registro"}/>
       {/*  nickname */}
-        <div  className="d-flex justify-content-evenly">
+        <Steps paso={"Paso 1"} pasoTexto={"Información de registro"}/>
+        <div className="d-flex justify-content-evenly box-steps">
             <div>
             <h4>Nickname</h4>
               <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder=" Elige un nombre para tu personaje"
@@ -199,48 +198,48 @@ function Register() {
         </div>
         {/* paso 2 */}
                 <Steps paso={"Paso 2"} pasoTexto={"Elige el Planeswalker que te guíe y enseñe"}/>
-<div className="d-flex justify-content-evenly">
-    {pjInfo.map((pjData) =>(
-      <div align="center" key={pjData.name} >
-      <h6 style={{color: `${pjData.style}`}} className="ms-4">{pjData.name} {pjData.surname}</h6>
-      <div className="form-check d-flex">
-              <label className="form-check-label" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
-              onClick={()=> {
-                  if (pjData.name === "Liliana"){
-                    setInfoLili(!infoLili); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  } else if(pjData.name === "Gideon"){
-                    setInfoLili(false); setInfoGid(!infoGid);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  } else if (pjData.name === "Jace"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(!infoJace);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Nissa"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(!infoNissa); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Ral"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(!infoZarek); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Ajani"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(!infoAjani);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Sorin"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(!infoSorin);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Elspeth"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(!infoElspeth);setInfoTeferi(false);setInfoSarkhan(false)
-                  }else if (pjData.name === "Sarkhan"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(!infoSarkhan)
-                  }else if (pjData.name === "Teferi"){
-                    setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(!infoTeferi);setInfoSarkhan(false)
-                  }
-                }
-              }  />
-              </label>
-              <input className="form-check-input radio-register" type="radio" value={pjData.name} name="planeswalkers" id={pjData.name} {...register("planeswalker", {
-              required: "Debes elegir un Planeswalker que te guie",
-            })} />
+                <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
+                <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
+            </Link>
+              {backPlanComp &&  <BackPlan/>}
+        <div className="d-flex justify-content-evenly box-steps">
+            {pjInfo.map((pjData) =>(
+              <div align="center" key={pjData.name} >
+              <h6 style={{color: `${pjData.style}`}} className="ms-4">{pjData.name} {pjData.surname}</h6>
+              <div className="form-check d-flex">
+                      <label className="form-check-label" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
+                      onClick={()=> {
+                          if (pjData.name === "Liliana"){
+                            setInfoLili(true); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          } else if(pjData.name === "Gideon"){
+                            setInfoLili(false); setInfoGid(true);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          } else if (pjData.name === "Jace"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(true);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Nissa"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(true); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Ral"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(true); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Ajani"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(true);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Sorin"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(true);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Elspeth"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(true);setInfoTeferi(false);setInfoSarkhan(false)
+                          }else if (pjData.name === "Sarkhan"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(true)
+                          }else if (pjData.name === "Teferi"){
+                            setInfoLili(false); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(true);setInfoSarkhan(false)
+                          }
+                        }
+                      }  />
+                      </label>
+                      <input className="form-check-input radio-register" type="radio" value={pjData.name} name="planeswalkers" id={pjData.name} {...register("planeswalker", {
+                      required: "Debes elegir un Planeswalker que te guie",
+                    })} />
+                    </div>
+                </div>
+              ))}
             </div>
-      </div>
-    ))}
-</div>
-            <Link className='btn-rules-toggle-show m-2' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
-          <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
-      </Link>
-      {backPlanComp &&  <BackPlan/>}
 
   {infoZarek   && <Ral/>}           {infoLili && <Liliana/>}          {infoGid && <Gideon/>}          {infoAjani   &&  <Ajani/>}          {infoElspeth   && <Elspeth/>}         
   {infoJace   && <Jace/>}          {infoNissa   &&  <Nissa/>}          {infoSarkhan  && <Sarkhan/>}          {infoSorin  &&  <Sorin/>}          {infoTeferi  && <Teferi/>}         
@@ -248,35 +247,35 @@ function Register() {
 {/* paso 3 */}
 <Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar el juego"}/>
 
-<div className="d-flex mb-5 justify-content-evenly">
-    {character.map((char) =>(
-      <div align="center" key={char.name} >
-        <h6 style={{fontSize:"25px"}} className="ms-4 mb-5">{char.name} </h6>
-              <div style={{scale: "2"}} className="form-check d-flex">
-                  <label className="form-check-label" htmlFor={char.name}>  
-                      <img  className={`mt-2 ${borderSelected}`}  src={char.image} alt="character" 
-                      onClick={()=> {
-                          if (char.name === "Suerte"){
-                            setShowSu(!showSu); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
-                          } else if(char.name === "Carisma"){
-                            setShowSu(false); setShowCa(!showCa); setShowPe(false); setShowCi(false); setShowPre(false)
-                          } else if (char.name === "Percepción"){
-                            setShowSu(false); setShowCa(false); setShowPe(!showPe); setShowCi(false); setShowPre(false)
-                          }else if (char.name === "Cinestesia"){
-                            setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(!showCi); setShowPre(false)
-                          } else if (char.name === "Presencia"){
-                            setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(!showPre)
-                          }
-                        }
-                      }  />
-                  </label>
-                  <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
-                  required: "Debes elegir una característica ",
-                })} />
+            <div className="d-flex mb-5 justify-content-evenly box-steps">
+                {character.map((char) =>(
+                  <div align="center" key={char.name} >
+                    <h6 style={{fontSize:"25px"}} className="ms-4 mb-5">{char.name} </h6>
+                          <div style={{scale: "2"}} className="form-check d-flex">
+                              <label className="form-check-label" htmlFor={char.name}>  
+                                  <img  className={`mt-2 ${borderSelected}`}  src={char.image} alt="character" 
+                                  onClick={()=> {
+                                      if (char.name === "Suerte"){
+                                        setShowSu(true); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
+                                      } else if(char.name === "Carisma"){
+                                        setShowSu(false); setShowCa(true); setShowPe(false); setShowCi(false); setShowPre(false)
+                                      } else if (char.name === "Percepción"){
+                                        setShowSu(false); setShowCa(false); setShowPe(true); setShowCi(false); setShowPre(false)
+                                      }else if (char.name === "Cinestesia"){
+                                        setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(true); setShowPre(false)
+                                      } else if (char.name === "Presencia"){
+                                        setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(true)
+                                      }
+                                    }
+                                  }  />
+                              </label>
+                              <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
+                              required: "Debes elegir una característica ",
+                            })} />
+                        </div>
+                  </div>
+                ))}
             </div>
-      </div>
-    ))}
-</div>
 {showSu && <Luck/>}
 {showCi && <Kinesthesia/>}
 {showPre && <Presence/>}
@@ -293,10 +292,10 @@ function Register() {
                   {errors.background && ( <div className="invalid-feedback">{errors.background.message}</div>
           )}
         </div>
-        <div className="mt-2 ">
-          <button className="btn-rules-toggle-sub"  type="submit" disabled={!isValid}>
+      <RollDice finalResult={handleResultDice} />
+        <div className="m-5 box-steps">
+          <button  className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
-        <button>dsads</button>
         </div>
       </form>
     </div>

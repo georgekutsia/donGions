@@ -2,13 +2,13 @@ import Creature from "./CreatureBelenon"
 import data from "../../data/belenonCreaturesData.json"
 import {useEffect, useState} from "react"
 
-function ListCreature({search, enemies, alies}) {
+function ListCreature({search, enemies, alies, weird}) {
     const [productsToShow, setProductsToShow] = useState([])
+
     useEffect(() => {
         const timeout = setTimeout(() => {
             setProductsToShow(data)
-        }, 1500)
-
+        }, 2000)
         return () => {
             clearTimeout(timeout)
         }
@@ -31,7 +31,8 @@ function ListCreature({search, enemies, alies}) {
                     .filter((prod) => prod.name.toLowerCase().includes(search.toLowerCase()))
                         .filter((prod) => (enemies ? prod.enemies : true))
                             .filter((prod) => (alies ? prod.alies : true))
-                                .map((product) =>
+                                .filter((prod) => (weird ? prod.weird : true))
+                                    .map((product) =>
                                         <Creature key={product.img} {...product}/>)}
                 </tbody>
         </table>

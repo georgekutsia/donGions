@@ -18,7 +18,7 @@ function NoteDetail() {
   }, [id]);
 
   const navigation = useNavigate();
-  const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onBlur"});
+  const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onSubmit"});
   const handleNoteSubmit = (data) => {
     noteService.editNote(id, data)
       .then(note => navigation("/notes"))
@@ -36,13 +36,13 @@ function NoteDetail() {
     <div align="center">
         <div>
           <h4>{noteEdit?.title}</h4>
-          <img src={noteEdit?.image} alt="lala" />
+          <img src={noteEdit?.image} alt="lala" width="300px"/>
         </div>
         <div className="note-form-background">
               <h2 className='editor-encabezado'>Puedes editar aquí tus notas</h2>
             <form onSubmit={handleSubmit(handleNoteSubmit)}>
               <div className="input-group ">
-                <input defaultValue={noteEdit?.title}  type="text" className={`form-control ${errors.title ? "is-invalid" : ""}`} placeholder="Nombre del apunte. Max 25 caracteres"
+                <input defaultValue={noteEdit?.title} value={noteEdit?.title} type="text" className={`form-control ${errors.title ? "is-invalid" : ""}`} placeholder="Nombre del apunte. Max 25 caracteres"
                   {...register("title", {
                     required: "Necesitas un nombre para esta nota, será más fácil encontrarla luego",
                     maxLength: {value: 30, message:"Máximo 30 caracteres. Si es tan largo el título, es que es texto que va abajo...",
@@ -72,7 +72,7 @@ function NoteDetail() {
               </div>
               
               <div className="">
-                <input defaultValue={noteEdit?.image}  type="text" className={`form-control ${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
+                <input defaultValue={noteEdit?.image} value={noteEdit?.image}  type="text" className={`form-control ${errors.image ? "is-invalid" : ""}`} placeholder="URL opcional de alguna imágen que represente"
                   {...register("image", 
                   {validate:{ value: (value) =>{
                     if(value){
@@ -89,7 +89,7 @@ function NoteDetail() {
                 {errors.image && (<div className="invalid-feedback">{errors.image.message}</div>)}
               </div>
               <div className="input-group ms-3">
-                  <textarea defaultValue={noteEdit?.description}  className={`form-control ${errors.description ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Descibe lo que quieras. Max 600 caracteres"
+                  <textarea defaultValue={noteEdit?.description} value={noteEdit?.description}  className={`form-control ${errors.description ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Descibe lo que quieras. Max 600 caracteres"
                     {...register("description", {
                       maxLength:{value:600, message: "Máximo 600 caracteres. Los textos pequeños son más fáciles de seguir. Siempre puedes crear otras notas"}
                     })}
@@ -98,7 +98,7 @@ function NoteDetail() {
                 )}
               </div>
               <div className="mt-2 ">
-                <button className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"} type="submit" disabled={!isValid}>
+                <button className="btn-rules-toggle-sub" type="submit">
                 <span></span><span></span><span></span><span></span> Crear Nota</button>
               </div>
             </form>

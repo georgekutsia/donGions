@@ -17,15 +17,15 @@ function NotesScreen() {
       <BackgroundFloatingBuble floatingBalls=
       {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665653141/donGions%20imgs/backgroundEffects/pngwing.com_70_czolhq.png)"} 
       widthBall={"50px"} heigthBall={"100px"} radiusBall={"2px"} idFlow={"square-flow"}/>
-      <center><NoteForm /></center>
+      <div align="center"><NoteForm /></div>
         
       </div>
           <div className="d-flex">
-            <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(true);setMode1(false);setMode3(false)}} >
-            <span></span><span></span><span></span><span></span>Normal
-            </button>
             <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(true);setMode2(false);setMode3(false)}}>
             <span></span><span></span><span></span><span></span>Tabla pequeña
+            </button>
+            <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode2(true);setMode1(false);setMode3(false)}} >
+            <span></span><span></span><span></span><span></span>Tabla Normal
             </button>
             <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode3(true);setMode2(false); setMode1(false)}} >
             <span></span><span></span><span></span><span></span>Tabla grande
@@ -34,9 +34,9 @@ function NotesScreen() {
             <span></span><span></span><span></span><span></span>Normal
             </button> */}
           </div>
-        {mode1 && <Notes size={"14px"} color={"blue"} width={"200px"} height={"300px"}/>}
-        {mode2 && <Notes size={"25px"} color={"black"}/>}
-        {mode3 && <Notes size={"45px"} color={"red"}/>}
+        {mode1 && <Notes size={"10px"} color={"blue"} width={"220px"} height={"310px"}/>}
+        {mode2 && <Notes size={"14px"} color={"black"} width={"300px"} height={"400px"}/>}
+        {mode3 && <Notes size={"19px"} color={"red"}/>}
     </div>
   );
 }

@@ -53,5 +53,5 @@ export {default as BackgroundFloatingBuble} from "./backgrounds.js/BackgroundFlo
 export {default as NoteForm} from "./notes/NoteForm"
 export {default as NoteDetail} from "./notes/NoteDetail"
 export {default as Acordion} from "./acordion/Acordion"
-
+export {default as Creator} from "./creador/Creador"
 

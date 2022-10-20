@@ -9,7 +9,7 @@ function NoteForm() {
 
   const handleNoteSubmit = (data) => {
     noteService.createNote(data)
-      .then(note => navigation("/shop"))
+      .then(note =>  window.location.reload(true))
       .catch(error => {
         if(error.response?.data?.errors){
           const {errors} = error.response.data;

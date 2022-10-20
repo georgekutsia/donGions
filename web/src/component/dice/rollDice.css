@@ -1,7 +1,6 @@
 .roll-dice {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 100vh;
 }
 .roll-dice-container{
   display: flex;

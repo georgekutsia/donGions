@@ -5,7 +5,6 @@ function EventsScreen() {
   return (
     <div>
         <ImportantCreaturesBelenon/>
-        
     </div>
   );
 }

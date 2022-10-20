@@ -56,14 +56,14 @@ const RollDice = ({ sides, finalResult }) => {
   return (
     <>
       <div className="roll-dice">
-        <div className="roll-dice-container">
-          <Die face={String(die1)} rolling={rolling} />
-          <Die face={String(die2)} rolling={rolling} />
-          <Die face={String(die3)} rolling={rolling} />
-          <Die face={String(die4)} rolling={rolling} />
-        </div>
-        <h2 style={{color: "White"}}>{scoreText}: <span className="result-dice">{totalScore}</span> </h2>
-        {diactivate && (
+          <div className="roll-dice-container">
+            <Die face={String(die1)} rolling={rolling} />
+            <Die face={String(die2)} rolling={rolling} />
+            <Die face={String(die3)} rolling={rolling} />
+            <Die face={String(die4)} rolling={rolling} />
+          </div>
+          <h2 style={{color: "White"}}>{scoreText}: <span className="result-dice">{totalScore}</span> </h2>
+          {diactivate && (
           <button onClick={handleRoll} disabled={rolling}>
             {rolling ? <i className="fas fa-spinner fa-spin"></i> : "Tira los dados"}
             

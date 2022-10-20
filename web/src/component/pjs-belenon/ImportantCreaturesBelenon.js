@@ -6,6 +6,7 @@ function ImportantCreaturesBelenon() {
   const [search, setSearch] = useState('')
   const [enemies, setEnemies] = useState(false)
   const [alies, setAlies] = useState(false)
+  const [weird, setWeird] = useState(false)
 
   const[showTable, setShowTable] = useState(false);
   
@@ -16,8 +17,13 @@ function ImportantCreaturesBelenon() {
               class="btn btn-round b-level-2 b-type-show-creatures">Criaturas importantes de Belenon</button>
             </h1>
           </div>
-          <div align="center"> 
-              <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} />
+          <div align="center">
+          {showTable && 
+
+          <div className="m-3">
+              <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />
+          </div> 
+          }
               <div className="bubble-text">
                   <img className="img-shop-info-creature" alt="Dude" />
                   <h5>
@@ -31,7 +37,7 @@ function ImportantCreaturesBelenon() {
                   </h5>
               </div>
               <div className="pt-5">
-                {showTable && <Creatures search={search} enemies={enemies} alies={alies}/>}
+                {showTable && <Creatures search={search} enemies={enemies} alies={alies}  weird={weird}/>}
               </div>
           </div>
     </div>

@@ -1,9 +1,25 @@
 import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate} from "react-router-dom"
 import { AuthContext } from '../../context/AuthContext'
+import * as logService from "../../services/all-services";
 
 function NavBar() {
-    const value = useContext(AuthContext)
+  const navigation = useNavigate();
+
+  const value = useContext(AuthContext)
+    const {user, setUser} = useContext(AuthContext)
+    const handleClick = () => {
+      logService
+        .logout()
+        .then(() => {
+          localStorage.clear();
+          console.log("te has ido")
+          navigation("/authenticate")
+          window.location.reload(true)
+          setUser(null);
+        })
+        .catch(error => console.log(error))
+    }
   return (
     <>
         <nav id='background-navbar' className="navbar navbar-expand-lg navbar-dark border border-top-0 nav-text p-0">
@@ -36,6 +52,7 @@ function NavBar() {
                   <NavLink title={user && user.nickname} onClick={handleLogOut} className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Logout </NavLink>
                 </li> */}
               </ul>
+              <button className='' onClick={handleClick}>Disconect</button>
             </div>
         </nav>
     </>
