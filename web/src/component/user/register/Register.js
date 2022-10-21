@@ -293,8 +293,8 @@ function Register() {
           )}
         </div>
       <RollDice finalResult={handleResultDice} />
-        <div className="m-5 box-steps">
-          <button  className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
+        <div className="mt-5 box-steps">
+          <button  style={{color: "green"}} className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
         </div>
       </form>

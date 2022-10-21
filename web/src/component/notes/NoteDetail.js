@@ -36,7 +36,7 @@ function NoteDetail() {
     <div align="center">
         <div>
           <h4>{noteEdit?.title}</h4>
-          <img src={noteEdit?.image} alt="lala" width="300px"/>
+          <img className='hover-this' src={noteEdit?.image} alt="lala" width="300px" style={{border: "3px white solid"}}/>
         </div>
         <div className="note-form-background">
               <h2 className='editor-encabezado'>Puedes editar aquí tus notas</h2>

@@ -3,7 +3,7 @@ import React from "react";
 
 function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stcharisma, stpresence,stconcentracion}) {
   return (
-    <div>
+    <div className="m-4">
       <div className="iconBar">
         <a className="active" href="/rules">
         <i className="fa-solid fa-folder-tree"></i>

@@ -52,7 +52,7 @@ function NavBar() {
                   <NavLink title={user && user.nickname} onClick={handleLogOut} className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Logout </NavLink>
                 </li> */}
               </ul>
-              <button className='' onClick={handleClick}>Disconect</button>
+              <button className='disconect-button' onClick={handleClick}>Disconect</button>
             </div>
         </nav>
     </>

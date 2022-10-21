@@ -10,4 +10,5 @@ export {default as RuleScreen} from "./rules/RuleScreen"
 export {default as NotesScreen} from "./notes/NotesScreen"
 export {default as NoteDetailScreen} from "./notes/NoteDetailScreen"
 export {default as ArmeriaScreen} from "./shop/ArmeriaScreen"
+export {default as FrontFrontpage} from "./frontpage/FrontFrontpage"
 

@@ -1,366 +1,365 @@
 .b-level-2.b-type-show-creatures {
-    background: transparent;
-    color: #2f90ff;
-    border: 3px solid #03a1f6;
-    position: relative;
-    transform: perspective(1px);
-    overflow: hidden;
-  }
-  
-  .b-level-2.b-type-show-creatures::before {
-    content: "";
-    position: absolute;
-    background: #03a1f6;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    transform: translate(-50%, -50%) rotate(135deg) scaleY(0);
-    width: 100%;
-  }
-  
-  .b-level-2.b-type-show-creatures:hover {
-    color: #111;
-  }
-  
-  .b-level-2.b-type-show-creatures:hover::before {
-    transform: translate(-50%, -50%) rotate(135deg) scaleY(4);
-    transition: transform 0.2s ease-out;
-  }
-  
-  .b-level-2.b-type-5:active::before {
-    transform: translate(-50%, -50%) rotate(135deg) scaleY(10);
-  }
-
-.btn-rules-toggle{
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
-    color: #000000;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
+  background: transparent;
+  color: #2f90ff;
+  border: 3px solid #03a1f6;
+  position: relative;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+.disconect-button:hover{
+    color: white;
     background-color: black;
-    border: none;
-    font-size: 20px
+    transition: all 0.5s ease-out;
 }
-.btn-rules-toggle:hover{
-    background: white;
-    color: #050801;
-    box-shadow: 0 0 5px white,
-                0 0 25px white,
-                0 0 50px white,
-                0 0 200px white;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
-.btn-rules-toggle:nth-child(1){
-    filter: hue-rotate(270deg);
-}
-.btn-rules-toggle:nth-child(2){
-    filter: hue-rotate(110deg);
-}
-.btn-rules-toggle span{
-    position: absolute;
-    display: block;
-}
-.btn-rules-toggle span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#ffffff);
-    animation: animate1 4s linear infinite;
-}
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-.btn-rules-toggle span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#ffffff);
-    animation: animate2 4s linear infinite;
-    animation-delay: 1s;
-}
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-.btn-rules-toggle span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#ffffff);
-    animation: animate3 4s linear infinite;
-    animation-delay: 2s;
-}
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
-.btn-rules-toggle span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#ffffff);
-    animation: animate4 4s linear infinite;
-    animation-delay: 3s;
-}
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
-
-/* sdbnladjsnlasjnljs */
-
-
-.btn-rules-toggle-show{
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
-    color: #000000;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background-color: transparent;
-    border: none;
-    font-size: 28px;
+.frontfront-dongions{
     text-decoration: none;
+    margin-top: 200px;
 }
-.btn-rules-toggle-show:hover{
-    background: white;
-    color: #050801;
-    box-shadow: 0 0 5px white,
-                0 0 25px white,
-                0 0 50px white,
-                0 0 200px white;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+.frontfront-dongions:hover{
+    text-decoration: none;
+    margin-top: 200px;
 }
-.btn-rules-toggle-show:nth-child(1){
-    filter: hue-rotate(270deg);
+
+
+
+.b-level-2.b-type-show-creatures::before {
+  content: "";
+  position: absolute;
+  background: #03a1f6;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(0);
+  width: 100%;
 }
-.btn-rules-toggle-show:nth-child(2){
-    filter: hue-rotate(110deg);
+
+.b-level-2.b-type-show-creatures:hover {
+  color: #111;
 }
-.btn-rules-toggle-show span{
-    position: absolute;
-    display: block;
+
+.b-level-2.b-type-show-creatures:hover::before {
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(4);
+  transition: transform 0.2s ease-out;
 }
-.btn-rules-toggle-show span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#ffffff);
-    animation: animate1 4s linear infinite;
-    color: rgb(3, 2, 13)
+
+.b-level-2.b-type-5:active::before {
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(10);
 }
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
+
+.btn-rules-toggle {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background-color: black;
+  border: none;
+  font-size: 20px;
 }
-.btn-rules-toggle-show span:nth-child(2){
+.btn-rules-toggle:hover {
+  background: white;
+  color: #050801;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 200px white;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.btn-rules-toggle:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.btn-rules-toggle:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.btn-rules-toggle span {
+  position: absolute;
+  display: block;
+}
+.btn-rules-toggle span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+  animation: animate1 4s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.btn-rules-toggle span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffffff);
+  animation: animate2 4s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2 {
+  0% {
     top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#ffffff);
-    animation: animate2 4s linear infinite;
-    animation-delay: 1s;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
 }
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
+.btn-rules-toggle span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffffff);
+  animation: animate3 4s linear infinite;
+  animation-delay: 2s;
 }
-.btn-rules-toggle-show span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#ffffff);
-    animation: animate3 4s linear infinite;
-    animation-delay: 2s;
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
 }
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
+.btn-rules-toggle span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffffff);
+  animation: animate4 4s linear infinite;
+  animation-delay: 3s;
 }
-.btn-rules-toggle-show span:nth-child(4){
+@keyframes animate4 {
+  0% {
     bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#ffffff);
-    animation: animate4 4s linear infinite;
-    animation-delay: 3s;
-}
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
 
 /* sdbnladjsnlasjnljs */
 
+.btn-rules-toggle-show {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  text-decoration: none;
+}
+.btn-rules-toggle-show:hover {
+  background: white;
+  color: #050801;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 200px white;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.btn-rules-toggle-show:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.btn-rules-toggle-show:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.btn-rules-toggle-show span {
+  position: absolute;
+  display: block;
+}
+.btn-rules-toggle-show span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+  animation: animate1 4s linear infinite;
+  color: rgb(3, 2, 13);
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.btn-rules-toggle-show span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffffff);
+  animation: animate2 4s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.btn-rules-toggle-show span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffffff);
+  animation: animate3 4s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.btn-rules-toggle-show span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffffff);
+  animation: animate4 4s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+/* sdbnladjsnlasjnljs */
 
 /* submit button */
-.btn-note-disabled{
-    content: "hey";
-    opacity: 0;
+.btn-note-disabled {
+  content: "hey";
+  opacity: 0;
 }
 
-
-.btn-rules-toggle-sub{
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
-    color: #ffffff;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    border: none;
-    font-size: 20px;
-    color:black;
-    background-color: transparent;
+.btn-rules-toggle-sub {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  color: #ffffff;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border: none;
+  font-size: 20px;
+  color: black;
+  background-color: transparent;
 }
-.btn-rules-toggle-sub:hover{
-    background: rgb(255, 255, 255);
-    color: #050801;
-    box-shadow: 0 0 5px white,
-                0 0 25px white,
-                0 0 50px white,
-                0 0 200px white;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+.btn-rules-toggle-sub:hover {
+  background: rgb(255, 255, 255);
+  color: #050801;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 200px white;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-.btn-rules-toggle-sub:nth-child(1){
-    filter: hue-rotate(270deg);
+.btn-rules-toggle-sub:nth-child(1) {
+  filter: hue-rotate(270deg);
 }
-.btn-rules-toggle-sub:nth-child(2){
-    filter: hue-rotate(110deg);
+.btn-rules-toggle-sub:nth-child(2) {
+  filter: hue-rotate(110deg);
 }
 
-
-
-
-.btn-rules-toggle-sub span{
-    position: absolute;
-    display: block;
+.btn-rules-toggle-sub span {
+  position: absolute;
+  display: block;
 }
-.btn-rules-toggle-sub span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg,transparent,black);
-    animation: animate1 1s linear infinite;
-    
+.btn-rules-toggle-sub span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, black);
+  animation: animate1 1s linear infinite;
 }
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
 }
-.btn-rules-toggle-sub span:nth-child(2){
+.btn-rules-toggle-sub span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, black);
+  animation: animate2 1s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2 {
+  0% {
     top: -100%;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,black);
-    animation: animate2 1s linear infinite;
-    animation-delay: 1s;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
 }
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
+.btn-rules-toggle-sub span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, black);
+  animation: animate3 1s linear infinite;
+  animation-delay: 2s;
 }
-.btn-rules-toggle-sub span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(270deg,transparent,black);
-    animation: animate3 1s linear infinite;
-    animation-delay: 2s;
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
 }
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
+.btn-rules-toggle-sub span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, black);
+  animation: animate4 1s linear infinite;
+  animation-delay: 3s;
 }
-.btn-rules-toggle-sub span:nth-child(4){
+@keyframes animate4 {
+  0% {
     bottom: -100%;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,black);
-    animation: animate4 1s linear infinite;
-    animation-delay: 3s;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
-
 
 /* submit button */

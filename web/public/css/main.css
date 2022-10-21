@@ -5,7 +5,24 @@ a{
 li{
   list-style: none;
 }
-
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.hover-this:hover{
+  scale: 1.5;
+  transition: all ease-in-out 1s;
+}
 #eye-login{
   font-size: 40px;
 }
@@ -33,6 +50,11 @@ li{
   border-radius: 20%;
   animation: border-flicker 3s linear;
 }
+.div-neon:hover {
+  background-color: #ffffff;
+  transition: all 3s ease-in-out;
+}
+
 
 .h1-neon {
   color:#f60000;
