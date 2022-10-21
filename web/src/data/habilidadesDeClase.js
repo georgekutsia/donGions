@@ -1,7 +1,7 @@
 const habilidades = [
   {
     name: "Liliana",
-    nombre: "Resurgir",
+    nombre: "Invasión",
     hab1: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Resurgir_i3eoj4.jpg",
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Malicia_nsqllr.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Invasio%CC%81n_jktdqd.jpg",

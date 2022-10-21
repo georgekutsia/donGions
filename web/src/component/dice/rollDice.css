@@ -21,7 +21,9 @@
 
 .roll-dice button:hover {
   background-color: rgb(255, 251, 0);
-  color: black
+  color: black;
+  transition: all ease-in-out 0.5s;
+  border-radius: 20px;
 }
 .result-dice{
   font-size: 50px;

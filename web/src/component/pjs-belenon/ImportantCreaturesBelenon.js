@@ -1,8 +1,14 @@
 import Creatures from "./ListCreature"
 import Searchbar from "./searchbar"
-import {useState} from "react"
+import {useEffect, useState} from "react"
+import FadeInOut from "../../component/FadeInOut";
 
 function ImportantCreaturesBelenon() {
+  const [showPage, setShowPage] = useState(false)
+  useEffect(() => {
+      setShowPage(true)
+  }, [])
+
   const [search, setSearch] = useState('')
   const [enemies, setEnemies] = useState(false)
   const [alies, setAlies] = useState(false)
@@ -15,16 +21,17 @@ function ImportantCreaturesBelenon() {
           <div align="center">
               <h1><button onClick={() => setShowTable(!showTable)} 
               class="btn btn-round b-level-2 b-type-show-creatures">Criaturas importantes de Belenon</button>
-            </h1>
-          </div>
-          <div align="center">
-          {showTable && 
-
-          <div className="m-3">
-              <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />
-          </div> 
-          }
-              <div className="bubble-text">
+                </h1>
+                </div>
+                <FadeInOut show={showPage} duration={1000}>
+                    <div align="center">
+                <FadeInOut show={showTable} duration={1300}>
+                    {showTable && 
+                    <div className="m-3">
+                        <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />
+                    </div> 
+                    }
+                <div className="bubble-text">
                   <img className="img-shop-info-creature" alt="Dude" />
                   <h5>
                   El nombre y reborde  <span style={{color: "green"}}>verdes</span>  indican que lo considerais un aliado
@@ -36,10 +43,12 @@ function ImportantCreaturesBelenon() {
                   El fondo <span style={{backgroundColor: "purple", color: "black"}}>púrpura</span> significa que no lo veis claro o aún no sabéis 
                   </h5>
               </div>
+                </FadeInOut>
               <div className="pt-5">
-                {showTable && <Creatures search={search} enemies={enemies} alies={alies}  weird={weird}/>}
+                    {showTable && <Creatures search={search} enemies={enemies} alies={alies}  weird={weird}/>}
               </div>
           </div>
+                </FadeInOut>
     </div>
   )
 }

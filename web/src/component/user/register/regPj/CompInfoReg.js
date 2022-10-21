@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import liliana from "../../../../data/habilidadesDeClase"
-function CompInfoReg({describingText, numeroDePj, nombreHabilidad}) {
+function CompInfoReg({describingText, numeroDePj, textColor, nombreHabilidad}) {
   const lili = liliana[`${numeroDePj}`]
   const [pjPlan, setPjPlan] = useState([lili])
 
   return (
     <div className='seccion-habilidades'>
-      <h4>{describingText}</h4>
-      <h4>Todos los personajes tienen 1 carta con habilidad pasiva y su especialidad.</h4>
+      <h5 style={{color:"chocolate"}}> <i style={{color:`${textColor}`}} className="fa-solid fa-hand-sparkles"></i> Todos los personajes tienen 1 carta con habilidad pasiva y su especialidad.</h5>
+      <h5 style={{color:"chocolate"}}>Los 3 colores de la esquina superior indican son su afinidad</h5>
+      <h5 style={{color:`${textColor}`}}>{describingText}</h5>
         {pjPlan.map((image) =>(
           <div key={image.name}> 
-              <h4>Empezarás el juego con la habilidad {image.nombre} y podrás adquirir las otras durante el juego</h4>
+              <h4 style={{color:"chocolate"}}>Empezarás el juego con la habilidad <span style={{color:`${textColor}`}}>{image.nombre} </span> y podrás adquirir las otras durante el juego</h4>
               <img className='habilidades-register' src={image.info} alt="liliana" />
               &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
               <img className='habilidades-register' src={image.hab1} alt="liliana" />

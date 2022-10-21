@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Die from "./Die";
 import "./rollDice.css";
+import FadeInOut from "../../component/FadeInOut";
 
 const RollDice = ({ sides, finalResult }) => {
   const [diactivate, setDiactivate] = useState(true);
@@ -62,11 +63,14 @@ const RollDice = ({ sides, finalResult }) => {
             <Die face={String(die3)} rolling={rolling} />
             <Die face={String(die4)} rolling={rolling} />
           </div>
-          <h2 style={{color: "White"}}>{scoreText}: <span className="result-dice">{totalScore}</span> </h2>
+          <h2 style={{color: "White"}}>{scoreText}: 
+          <FadeInOut show={tries} duration={500}>
+          <span className="result-dice">{totalScore}</span> 
+          </FadeInOut>
+          </h2>
           {diactivate && (
           <button onClick={handleRoll} disabled={rolling}>
             {rolling ? <i className="fas fa-spinner fa-spin"></i> : "Tira los dados"}
-            
           </button>
         )}
 

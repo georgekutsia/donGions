@@ -8,12 +8,39 @@ import statistics from "../../../data/pjStats"
 import char from "../../../data/character"
 import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence, Creator } from "../../../component"
 import RollDice from "../../dice/RollDice";
+import FadeInOut from "../../FadeInOut";
 
 
 
 function Register() {
   const navigation = useNavigate();
   const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
+  const [textValue, setTextValue] = useState('Lugar al azar');
+  const [buttonsText, setButtonText] = useState(true);
+
+  const words = [
+    {text: "Helian: Rioda", key: 1},
+    {text: "Helian: Finderibo", key: 2},
+    {text: "Helian: Gora", key: 3},
+    {text: "Djan: Catacas 2", key: 4},
+    {text: "Djan: Coliseo de la Mente", key: 5},
+    {text: "Djan: Desierto Nembu", key: 7},
+    {text: "Jatang: Tumba de Sastan", key: 8},
+    {text: "Jatang: Plantahelada", key: 9},
+    {text: "Jatang: Meseta Helada", key: 10},
+    {text: "Triven: Bosque de los Árboles Gigantes", key: 11},
+    {text: "Triven: Biorde", key: 12},
+    {text: "Aonan: Escenario Muerto", key: 13},
+    {text: "Aonan: Arpainerme", key: 14},
+    {text: "Aonan: Fortaleza Puntahundida", key: 15},
+  ]
+
+  const changeTextValue = () => {
+    const len = words.length;
+    setTextValue(words[Math.floor(Math.random() * len)].text)
+    setButtonText(false)
+  }
+
 
   const [resultDice, setResultDice] = useState(0)
   const [pjInfo, setPjInfo] = useState([])
@@ -141,6 +168,8 @@ function Register() {
           data = {...data, stats} 
     }
     data.gold = resultDice
+    data.place = textValue
+    console.log("data total", data)
     pjService.registerPj(data)
       .then(note => navigation("/authenticate"))
       .catch(error => {
@@ -201,7 +230,7 @@ function Register() {
                 <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
                 <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
             </Link>
-              {backPlanComp &&  <BackPlan/>}
+
         <div className="d-flex justify-content-evenly box-steps">
             {pjInfo.map((pjData) =>(
               <div align="center" key={pjData.name} >
@@ -240,9 +269,40 @@ function Register() {
                 </div>
               ))}
             </div>
+            <FadeInOut show={backPlanComp}  duration={2000}>
+            {backPlanComp &&  <BackPlan/>}
+            </FadeInOut>
+            <FadeInOut show={infoZarek}  duration={500}>
+              {infoZarek   && <Ral/>}    
+            </FadeInOut>
+            <FadeInOut show={infoLili}  duration={500}>
+            {infoLili && <Liliana/>} 
+            </FadeInOut>
+            <FadeInOut show={infoGid}  duration={500}>
+            {infoGid && <Gideon/>}
+            </FadeInOut>
+            <FadeInOut show={infoAjani}  duration={500}>
+            {infoAjani   &&  <Ajani/>} 
+            </FadeInOut>
+            <FadeInOut show={infoElspeth}  duration={500}>
+            {infoElspeth   && <Elspeth/>}  
+            </FadeInOut>
+            <FadeInOut show={infoJace}  duration={500}>
+            {infoJace   && <Jace/>}
+            </FadeInOut>
+            <FadeInOut show={infoNissa}  duration={500}>
+            {infoNissa   &&  <Nissa/>} 
+            </FadeInOut>
+            <FadeInOut show={infoSarkhan}  duration={500}>
+            {infoSarkhan  && <Sarkhan/>}
+            </FadeInOut>
+            <FadeInOut show={infoSorin}  duration={500}>
+            {infoSorin  &&  <Sorin/>}  
+            </FadeInOut>
+            <FadeInOut show={infoTeferi}  duration={500}>
+            {infoTeferi  && <Teferi/>} 
+            </FadeInOut>
 
-  {infoZarek   && <Ral/>}           {infoLili && <Liliana/>}          {infoGid && <Gideon/>}          {infoAjani   &&  <Ajani/>}          {infoElspeth   && <Elspeth/>}         
-  {infoJace   && <Jace/>}          {infoNissa   &&  <Nissa/>}          {infoSarkhan  && <Sarkhan/>}          {infoSorin  &&  <Sorin/>}          {infoTeferi  && <Teferi/>}         
 
 {/* paso 3 */}
 <Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar el juego"}/>
@@ -253,7 +313,7 @@ function Register() {
                     <h6 style={{fontSize:"25px"}} className="ms-4 mb-5">{char.name} </h6>
                           <div style={{scale: "2"}} className="form-check d-flex">
                               <label className="form-check-label" htmlFor={char.name}>  
-                                  <img  className={`mt-2 ${borderSelected}`}  src={char.image} alt="character" 
+                                  <img  className={`mx-1 ${borderSelected}`}  src={char.image} alt="character" 
                                   onClick={()=> {
                                       if (char.name === "Suerte"){
                                         setShowSu(true); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
@@ -276,13 +336,46 @@ function Register() {
                   </div>
                 ))}
             </div>
-{showSu && <Luck/>}
-{showCi && <Kinesthesia/>}
-{showPre && <Presence/>}
-{showCa && <Charisma/>}
-{showPe && <Perception/>}
+            <FadeInOut show={showSu} duration={500}>
+              {showSu && <Luck/>}
+            </FadeInOut>
+            <FadeInOut show={showCi} duration={500}>
+            {showCi && <Kinesthesia/>}
+            </FadeInOut>
+            <FadeInOut show={showPre} duration={500}>
+            {showPre && <Presence/>}
+              
+            </FadeInOut>
+            <FadeInOut show={showCa} duration={500}>
+            {showCa && <Charisma/>}
+              
+            </FadeInOut>
+            <FadeInOut show={showPe} duration={500}>
+            {showPe && <Perception/>}
+              
+            </FadeInOut>
+
+
+{/* paso 4*/}
+
+<Steps paso={"Paso 4"} pasoTexto={"¿Donde comenzarás tu historia en el plano de Belenon?"}/>
+      <FadeInOut show={!buttonsText} duration={500}>
+
+      <h2 className="result-dice">{textValue}</h2>
+      </FadeInOut>
+
+    {buttonsText  &&
+    <div className="roll-dice">
+      <button  type="button" onClick={changeTextValue}> Lugar al azar</button>
+    </div>
+    }
+
+
+
+<Steps paso={"Paso 5"} pasoTexto={"Tienes hasta 3 tiradas y el resultado de la que te quedes determina el Oro con el que empiezas"}/>
+                  <RollDice finalResult={handleResultDice} />
 {/* paso 5 */}
-<Steps paso={"Paso 5"} pasoTexto={"Puedes crear un trasforndo para tu personaje"}/>
+<Steps paso={"Paso 6"} pasoTexto={"Puedes crear un trasforndo para tu personaje"}/>
         <div >
             <textarea className={`input-register-text ${errors.background ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Opcional. Puedes escribir algo sobre el pasado de tu personaje, sus ambiciones, relaciones, puntos fuertes etc..."
               {...register("background", {
@@ -292,8 +385,7 @@ function Register() {
                   {errors.background && ( <div className="invalid-feedback">{errors.background.message}</div>
           )}
         </div>
-      <RollDice finalResult={handleResultDice} />
-        <div className="mt-5 box-steps">
+          <div className="mt-5 box-steps">
           <button  style={{color: "green"}} className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
           <span></span><span></span><span></span><span></span> Crear Personaje</button>
         </div>

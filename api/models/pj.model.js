@@ -40,47 +40,9 @@ const pjSchema = new Schema(
     stats: Object,
     character: Object,
     mats: Object,
-    // name: String,
-    // image: String,
-    // life: Number,
-    // mana: Number,
-    // actions: Number,
-    // // movimiento
-    // mov: Number,
-    // // alcance al que hace daño
-    // reach: Number,
-    // // la carga del objeto
-    // weight: Number,
-    // // daño físico <-> daño mágico <-> daño a distancia
-    // damFis: Number,
-    // damDist: Number,
-    // damMag: Number,
-    // // acierto físico <-> acierto mágico <-> acierto a distancia
-    // asFis: Number,
-    // adDist: Number,
-    // acMag: Number,
-    // // Precisión <-> velocidad <-> marcialidad
-    // precision: Number,
-    // speed: Number,
-    // marciality: Number,
-    // // esquiva <->  bloqueo <-> parada <-> resistencia
-    // dodge: Number,
-    // block: Number,
-    // parry: Number,
-    // resist: Number,
-    // // reflejos <-> firmeza <-> temple
-    // reflex: Number,
-    // firm: Number,
-    // temple: Number,
-
-    // // suerte <-> carisma <-> percepción <-> cinestesia <-> presencia
-    // luck: Number,
-    // charisma: Number,
-    // perception: Number,
-    // kinesthesia: Number,
-    // presence: Number,
     classHabilities: Array,
     inventory: Array,
+    place: String,
     equipped: {
       head: mongoose.Schema.Types.ObjectId,
       feet: mongoose.Schema.Types.ObjectId,

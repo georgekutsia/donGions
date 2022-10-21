@@ -6,8 +6,9 @@ function Gideon() {
     <div>
           <div>
     <CompInfoReg
+    textColor={"white"}
     numeroDePj={"1"} 
-    describingText={"Gideon es la fuerza inamovible que murió defendiendo "}/>
+    describingText={"Gideon representaba la esperanza para sus aliados y desesperación para sus enemigo. Un ducho hierromante, combatiente cuerpo a cuerpo y estandarte de todo lo justo y bueno"}/>
     </div>
     </div>
   )

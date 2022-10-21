@@ -1,6 +1,7 @@
 import Creature from "./CreatureBelenon"
 import data from "../../data/belenonCreaturesData.json"
 import {useEffect, useState} from "react"
+import FadeInOut from "../../component/FadeInOut";
 
 function ListCreature({search, enemies, alies, weird}) {
     const [productsToShow, setProductsToShow] = useState([])
@@ -18,6 +19,8 @@ function ListCreature({search, enemies, alies, weird}) {
     }
   return(
     <div>
+        <FadeInOut show={productsToShow} duration={500}>
+
         <table className="table"  style={{color:"white", width:"1200px"}}>
             <thead style={{color:"white", fontSize:"30px"}}>
                 <tr>
@@ -36,6 +39,7 @@ function ListCreature({search, enemies, alies, weird}) {
                                         <Creature key={product.img} {...product}/>)}
                 </tbody>
         </table>
+        </FadeInOut>
     </div>
    )
 }

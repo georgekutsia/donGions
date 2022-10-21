@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BackgroundFloatingBuble, Characters, Charisma, Kinesthesia, Luck, NavbarVertical, Notes, Perception, Pj, Presence, SearchRules } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
+import FadeInOut from "../../component/FadeInOut";
 
 function RuleScreen() {
+  const [showPage, setShowPage] = useState(false)
+  useEffect(() => {
+      setShowPage(true)
+  }, [])
   const [basic, setBasic] = useState(true)
   const [char, setChar] = useState(true)
   
@@ -20,6 +25,7 @@ function RuleScreen() {
   const kinesthesia = () => setrKi(!rKi)
   return (
     <>
+        <FadeInOut show={showPage} duration={5000}>
         <NavbarVertical 
             statistics={stats} 
             stpresence={presence} 
@@ -28,11 +34,14 @@ function RuleScreen() {
             stperception={perception} 
             stkinesthesia={kinesthesia}
         />
+        </FadeInOut>
+
         <BackgroundFloatingBuble floatingBalls=
         // square-flow      slow-flow
     {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666134847/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-19T011351.446_eeqfuh.png)"} 
     widthBall={"50px"} heigthBall={"60px"} radiusBall={"2px"} idFlow={"square-flow"}/>
       <div align="center" className='container'>
+      <FadeInOut show={showPage} duration={1000}>
         <h1>Manual de instrucciones del juego</h1>
         <div className='bubble-text-manual '>
         <img className="img-shop-info-manual" alt="Dude" />
@@ -66,6 +75,7 @@ function RuleScreen() {
               {rPer && <Perception/>}
               {rPre && <Presence/>}
           </div>
+        </FadeInOut>
       </div>
     </>
 

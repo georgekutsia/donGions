@@ -59,7 +59,7 @@ function LoginScreeen() {
                   required: "Necesitas una contraseña para logarte",
                 })}
               />
-              <Link  onClick={handleShowpass}><i style={{color:"black"}} id="eye-login" className={passShow ? "fa-solid fa-eye-low-vision" : "fa-solid fa-eye"}></i></Link>
+              <Link  onClick={handleShowpass}><i style={{color:"darkred"}} id="eye-login" className={passShow ? "fa-solid fa-eye-low-vision" : "fa-solid fa-eye"}></i></Link>
               {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
               )}
             </div>

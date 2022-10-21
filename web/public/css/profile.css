@@ -1,7 +1,21 @@
 .profile-image-css{
-  border: 5px solid;
+  border: red 5px solid;
 }
 
 #profile-size-box{
   height: auto;
+  
+}
+
+.stats-salud-block{
+  border: 3px red solid;
+  justify-content: space-evenly;
+  display: flex;
+  background-color: black;
+  width: 600px;
+}
+.stats-salud{
+  border: 3px red solid;
+  width: 200px;
+  font-size: 30px;
 }

@@ -29,11 +29,11 @@ function AuthGuard({ children }) {
 //   sleepTimeCoefY: 0.0025
 // })
 function App() {
-  const value = useContext(AuthContext)
+  const conected = useContext(AuthContext)
 
   return (
     <div className="App" id="cursor-neon">
-    {value.pj && <NavBar/>}
+    {conected.pj && <NavBar/>}
     {/* <NavBar/> */}
           <div className="py-2" >
             <Routes>

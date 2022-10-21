@@ -5,8 +5,9 @@ function Nissa() {
   return (
     <div>
     <CompInfoReg 
+    textColor={"green"}
     numeroDePj={"3"} 
-    describingText={"Con Nissa Vess tendrá algunas habilidades pasivas y otras habilidades de clase que podrás conseguir durante el juego"}/>
+    describingText={"Nissa Revane fue la fuerza primordial que todos los planos necesitaban para sanarse. Maga de la naturaleza, su sanaciones volvían cualquier ser vivo una fuerza temible en combate"}/>
     </div>
   )
 }

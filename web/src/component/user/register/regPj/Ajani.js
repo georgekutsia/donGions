@@ -5,8 +5,9 @@ function Ajani() {
   return (
     <div>
     <CompInfoReg 
+    textColor={"yellow"}
     numeroDePj={"5"} 
-    describingText={"Con Ajani Vess tendrá algunas habilidades pasivas y otras habilidades de clase que podrás conseguir durante el juego"}/>
+    describingText={"Ajani fue admirado en todos los planos que visitó por su devoción a las causas honorables, su lealtad a los amigos y voluntad inquebrantable. Su fuerza física, dominio de las armas y estrategias de combate le conferían victoria en cada combate"}/>
     </div>
   )
 }

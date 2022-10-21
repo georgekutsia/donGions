@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Notes, NoteForm, BackgroundFloatingBuble } from "../../component";
+import FadeInOut from "../../component/FadeInOut";
+
 
 function NotesScreen() {
   const[mode1, setMode1] = useState(false)
   const[mode2, setMode2] = useState(true)
   const[mode3, setMode3] = useState(false)
+  const [showPage, setShowPage] = useState(false)
+  useEffect(() => {
+      setShowPage(true)
+  }, [])
   return (
     <div>
+        <FadeInOut show={showPage} duration={1000}>
+    {showPage && 
+    <>
       <div className="bubble-notes" >
       <img className="img-shop-info-notes" alt="Dude" />
       <h6> Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
@@ -37,6 +46,9 @@ function NotesScreen() {
         {mode1 && <Notes size={"10px"} color={"blue"} width={"220px"} height={"310px"}/>}
         {mode2 && <Notes size={"14px"} color={"black"} width={"300px"} height={"400px"}/>}
         {mode3 && <Notes size={"19px"} color={"red"}/>}
+          </>
+        }
+    </FadeInOut>
     </div>
   );
 }

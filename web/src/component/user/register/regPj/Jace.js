@@ -5,8 +5,9 @@ function Jace() {
   return (
     <div>
     <CompInfoReg 
+    textColor={"dodgerblue"}
     numeroDePj={"2"} 
-    describingText={"Con Jace Vess tendrá algunas habilidades pasivas y otras habilidades de clase que podrás conseguir durante el juego"}/>
+    describingText={`La afirmación que mejor describe a Jac es "nunca perdió un combate para el que estuviera minimamente preparado". Mago mental y diestro en ilusiones, entregó su vida sin dudar a un bien superior`}/>
     </div>
   )
 }
