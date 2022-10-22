@@ -20,6 +20,10 @@ http.interceptors.response.use(
 export function getProfile() {
   return http.get("/profile");
 }
+export function getCards(){
+  return http.get("/cards")
+}
+
 export function getNotes(){
   return http.get("/notes")
 }

@@ -1,7 +1,7 @@
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom'
 import {NavBar} from './component';
 import { PjDetailScreen, PjScreen, FrontpageScreen, NotesScreen, 
-  RegisterScreen, ShopScreen, RuleScreen,  NoteDetailScreen, LoginScreeen, EventsScreen, FrontFrontpage} from "./screens"
+  RegisterScreen, ShopScreen, RuleScreen,  NoteDetailScreen, LoginScreeen, EventsScreen, FrontFrontpage, MonstersScreen} from "./screens"
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from './context/AuthContext';
 // import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
@@ -9,12 +9,16 @@ import { AuthContext } from './context/AuthContext';
 
 function AuthGuard({ children }) {
   const { pj } = useContext(AuthContext);
+  
   if (!pj) {
+
     console.log("no estás autenticado amigo")
     return <Navigate to="/authenticate" />;
   }
   return children;
 }
+
+
 // neonCursor({
 //   el: document.getElementById('cursor-neon'),
 //   shaderPoints: 4,
@@ -47,6 +51,7 @@ function App() {
               <Route path="/authenticate" element={<LoginScreeen/>}/>
               <Route path="/register" element={<RegisterScreen/>}/>
               <Route path="/frontpage" element={<FrontpageScreen/>}/>
+              <Route path="/monsters" element={<AuthGuard><MonstersScreen/></AuthGuard>}/>
               <Route path="/" element={<FrontFrontpage/>} />
             </Routes>
           </div>

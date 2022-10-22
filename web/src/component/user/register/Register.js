@@ -192,7 +192,7 @@ function Register() {
         <div className="d-flex justify-content-evenly box-steps">
             <div>
             <h4>Nickname</h4>
-              <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder=" Elige un nombre para tu personaje"
+              <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder="Elige un nombre para tu personaje"
                 {...register("nickname", {
                   required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
                   unique: "El nombre debe ser único",
@@ -201,6 +201,7 @@ function Register() {
               />
               {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
               )}
+            <h6 style={{fontStyle:"italic", color:"grey"}}>Tipografía afectada por mayúsculas y minúsculas </h6>
             </div>
             {/* password */}
             <div>
@@ -387,7 +388,7 @@ function Register() {
         </div>
           <div className="mt-5 box-steps">
           <button  style={{color: "green"}} className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
-          <span></span><span></span><span></span><span></span> Crear Personaje</button>
+          <span></span><span></span><span></span><span></span>Paso 7:  Crear Personaje</button>
         </div>
       </form>
     </div>

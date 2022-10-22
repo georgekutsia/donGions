@@ -26,14 +26,13 @@ function EstadisticasPj() {
               <div className="nombre-concepto-blanco" style={{color:"red"}}> Daño:<span className="definicion-concepto" > Físico, mágico o a distancia. Lo marcan las estadísticas básicas del personaje más otros modificadores de equipo, arma, habilidad etc.</span></div> 
               <div className="nombre-concepto-negro" style={{color:"orange",}}> Carga:<span className="definicion-concepto"> Es la cantidad de objetos que puede tener equipados a la vez. La mayoría de los objetos llevan un número que representa la carga que tiene. 
               La carga total de tu equipo no puede superar la carga de tu personaje. El resto puede ir en la mochila y ser re-equipados. También marca la cantidad de Hechizos que se pueden transportar y objetos de arma o armadura que se puede llevar en la mochila.</span></div> 
-          
+
+              <div className="nombre-concepto-negro" style={{color:"burlywood"}}> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
               <div className="nombre-concepto-negro" style={{color:"rgb(247, 0, 255)"}}> <span>Movimiento:</span><span className="definicion-concepto" id="s-acciones">
               Las cuadrículas que te puedes desplazar. A mayor cantidad de puntos de movimiento, mayor<button className='btn-rules-toggle nombre-concepto-blanco' style={{ fontSize:"20px"}} onClick={()=>setMoves(!moves)}>
           <span></span><span></span><span></span><span></span>Velocidad
           </button></span></div> 
-
               {moves && <MovesPlus/>}
-              
               <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
                   <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(220, 10, 90)"}} onClick={()=>setBrake(!brake)}>
               <span></span><span></span><span></span><span></span>Rotura: </button>

@@ -7,7 +7,7 @@ import * as logService from "../../services/all-services";
 function NavBar() {
   const navigation = useNavigate();
 
-  const value = useContext(AuthContext)
+  const loged = useContext(AuthContext)
     const {user, setUser} = useContext(AuthContext)
     const handleClick = () => {
       logService
@@ -21,6 +21,7 @@ function NavBar() {
         })
         .catch(error => console.log(error))
     }
+    console.log(loged.pj.admin )
   return (
     <>
         <nav id='background-navbar' className="navbar navbar-expand-lg navbar-dark border border-top-0 nav-text p-0">
@@ -44,9 +45,14 @@ function NavBar() {
                 <li className="nav-item px-3">
                   <NavLink to="/notes" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Notes </NavLink>
                 </li>
+                {loged.pj.admin && 
+                <li className="nav-item px-3">
+                  <NavLink to="/monsters" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Monsters </NavLink>
+                </li>
+                }
               </ul>
           </div>
-              <button className='disconect-button' onClick={handleClick}>{value.pj.nickname}</button>
+              <button className='disconect-button d-flex' onClick={handleClick}>{loged.pj.nickname}<i style={{fontSize:"40px"}} className="fa-solid fa-right-from-bracket"></i></button>
         </nav>
     </>
   )

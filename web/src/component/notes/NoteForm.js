@@ -35,6 +35,8 @@ function NoteForm() {
           )}
         </div>
                 <div className="d-flex pt-2">
+                <input type="checkbox" className="btn-check" value="Personaje" id="extra" {...register("category")}/>
+                <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="extra"> Extra</label><br></br>
                 <input type="checkbox" className="btn-check" value="Personaje" id="person" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2"  htmlFor="person"> Personaje</label><br></br>
                 <input type="checkbox" className="btn-check" value="Lugar" id="place" {...register("category")}/>
@@ -50,7 +52,6 @@ function NoteForm() {
                 <input type="checkbox" className="btn-check" value="Extra" id="extra" {...register("category",
                 {required:"necesitas elegir una opción"}
                 )}/>
-                <label style={{border: "black"}} className="btn btn-outline- p-2" htmlFor="extra"> Extra</label><br></br>
         </div>
         
         <div className="">

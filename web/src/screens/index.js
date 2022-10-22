@@ -11,6 +11,7 @@ export {default as NotesScreen} from "./notes/NotesScreen"
 export {default as NoteDetailScreen} from "./notes/NoteDetailScreen"
 export {default as ArmeriaScreen} from "./shop/ArmeriaScreen"
 export {default as FrontFrontpage} from "./frontpage/FrontFrontpage"
+export {default as MonstersScreen} from "./monsters/MonstersScreen"
 
 
 
@@ -18,7 +19,7 @@ export {default as Character} from "./pj/parts/Character"
 export {default as Equiped} from "./pj/parts/Equiped"
 export {default as Inventory} from "./pj/parts/Inventory"
 export {default as Materials} from "./pj/parts/Materials"
-export {default as StatsPlusAc} from "./pj/parts/StatsPlusAc"
 export {default as StatsPlusFight} from "./pj/parts/StatsPlusFight"
 export {default as StatsSalud} from "./pj/parts/StatsSalud"
 export {default as StatsDam} from "./pj/parts/StatsDam"
+export {default as StatsDefence} from "./pj/parts/StatsDefence"
