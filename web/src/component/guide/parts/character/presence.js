@@ -7,7 +7,7 @@ function Presence() {
       <div className='d-flex justify-content-evenly'> </div>
         <div align="center"><span className='texto-resaltado-suerte-stats'> Puedes tener amenaza positiva o negativa que afecta de forma opuesta a esta característica </span>
         </div>
-        <article align="center" className='background-list-actions'>
+        <article id="s-presencia" align="center" className='background-list-actions'>
         &nbsp;&nbsp;&nbsp; Durante el combate, las criaturas son más propensas a atacar a los jugadores que han hecho más daño a la criatura 
         <span style={{fontStyle: "italic", color:"	lightyellow"}}> (generado más amenaza)</span>, aunque algunos reaccionan a veces a otras cosas<span style={{fontStyle: "italic", color:"	lightyellow"}}> (cierto tipo de magia, acciones etc)</span>. 
         Presencia es una habilidad que genera Amezada adicional, llama la atención sobre el jugador etc.  

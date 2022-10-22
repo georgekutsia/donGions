@@ -2,8 +2,13 @@
 a{
   text-decoration: none
 }
+
 li{
   list-style: none;
+}
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
 }
 .my-node-enter {
   opacity: 0;

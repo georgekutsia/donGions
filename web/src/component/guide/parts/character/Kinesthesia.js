@@ -12,7 +12,7 @@ function Kinesthesia() {
         <Link className='texto-resaltado-sobreesfuerzo' onClick={() => setEffor(!effort)}>Sobreesfuerzo</Link> </div>
       </div>
         {effort && <Effort/>}
-          <article align="center" className='background-list-actions'>
+          <article id="s-cinestesia" align="center" className='background-list-actions'>
           &nbsp;&nbsp;&nbsp; Los jugadores con Cinestesia obtienen mejores habilidades físicas para movimientos que en principio escapan a sus capacidades. Con varios puntos de cinestesia,
           solo te delimita tu imaginación a la hora de luchar, escapar o en general, rolear 
           </article>

@@ -24,8 +24,8 @@ function ListCreature({search, enemies, alies, weird}) {
         <table className="table"  style={{color:"white", width:"1200px"}}>
             <thead style={{color:"white", fontSize:"30px"}}>
                 <tr>
-                    <th>Name</th>
-                    <th>Price</th>
+                    <th>Nombre</th>
+                    <th>Conocimientos sobre la criatura</th>
                     <th>Imágen</th>
                 </tr>
             </thead>

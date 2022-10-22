@@ -3,15 +3,14 @@ import React from 'react'
 function Perception() {
   return (
     <div style={{backgroundColor:"rgb(26, 16, 5)"}} className='background-rule-info '>
-      <h1 align="center" className='texto-resaltado-percepcion'>Percepción</h1> 
-    <div className='d-flex justify-content-evenly'>
-      <div><h4 className='rules-show-shadow'>1-12- <span >Nada</span></h4> </div>
-      <div><h4 className='rules-show-shadow'>13-17-<span >Poca Información</span></h4> </div>
-      <div><h4 className='rules-show-shadow'>18-19 -<span >Información Útil</span></h4> </div>
-      <div><h4 className='rules-show-shadow'>20+ -<span >Mucha información </span></h4> </div>
-
+        <h1 align="center" className='texto-resaltado-percepcion'>Percepción</h1> 
+      <div className='d-flex justify-content-evenly'>
+        <div><h4 className='rules-show-shadow'>1-12- <span >Nada</span></h4> </div>
+        <div><h4 className='rules-show-shadow'>13-17-<span >Poca Información</span></h4> </div>
+        <div><h4 className='rules-show-shadow'>18-19 -<span >Información Útil</span></h4> </div>
+        <div><h4 className='rules-show-shadow'>20+ -<span >Mucha información </span></h4> </div>
     </div>
-        <article align="center" className='background-list-actions'>
+        <article id="s-percepcion" align="center" className='background-list-actions'>
         &nbsp;&nbsp;&nbsp; Al explorar, investigar o luchar, los jugadores con buena percepción tienes mucha ventaja para salir victoriosos en cada situación. Usa las tiradas de percepción 
         para obtener ventajas durante el combate, encontrar pistas o incluso encontrar una forma de sobrevivir una situación aparentemente imposible
         </article>

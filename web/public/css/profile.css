@@ -1,7 +1,53 @@
+
+
+
+
+
+.btn-rest-stats{
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  width: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.btn-rest-stats:hover{
+  border: 2px white solid;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.103);
+
+}
+.btn-add-stats{
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  width: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.btn-add-stats:hover{
+  transition: all 0.2s ease-in-out;
+  border: 2px white solid;
+  background-color: rgba(255, 255, 255, 0.103);
+  
+}
+.btn-reset-stats{
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  width: 76px;
+  padding-top: 10px;
+  border-radius: 40px;
+}
+.btn-reset-stats:hover{
+  background-color: rgba(255, 255, 255, 0.103);
+
+}
+
 .profile-image-css{
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
-  margin: 40px;
+  margin: 40px 0px 30px 200px;
 }
 .profile-image-css:hover{
   border-radius: 40px;
@@ -15,31 +61,46 @@
 }
 
 .stats-salud-block{
-  justify-content: space-evenly;
   display: flex;
   background-color: black;
+  margin: 0;
+  /* background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
+  background-repeat: no-repeat;
+  background-size: 100px; */
+}
+.stats-defence-block{
+  display: flex;
+  background-color: black;
+  margin: 0;
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
+  
 }
 .stats-salud{
   border: 1px rgb(0, 238, 255) solid;
-  width: 301px;
-  font-size: 30px;
+  width: 406.5px;
+  font-size: 27px;
+  padding: 3px;
 }
 .stats-damage-block{
-  justify-content: space-evenly;
   display: flex;
   background-color: black;
 }
 .stats-damage{
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446628/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-20T033745.714_pxwxl1.png");
+  background-repeat: no-repeat;
+  background-size: 49px; 
+  background-position: 203px;
   border: 3px rgb(0, 238, 255) solid;
-  width: 205px;
+  width: 275px;
   font-size: 20px;
+  padding: 2px;
 }
 .stats-chars-box{
   background-color: black;
   width: 200px;
   font-size: 20px;
   position: absolute;
-  margin-left: 510px;
+  margin-left: 20px;
   margin-top: 60px;
 }
 .stats-chars{
@@ -69,6 +130,7 @@ transition: all 0.4s ease-in-out;
 color: black
 }
 .button-show-chars{
+  margin-top:100px;
   color: white;
   font-size: 40px;
   opacity: 0.3;

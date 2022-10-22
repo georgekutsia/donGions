@@ -8,24 +8,48 @@ function NotesScreen() {
   const[mode1, setMode1] = useState(false)
   const[mode2, setMode2] = useState(true)
   const[mode3, setMode3] = useState(false)
+  const [dude, setDude] = useState(true)
+
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
+      setTimeout(() => {
+        setDude(false)
+      }, 6000)
   }, [])
+
   return (
     <div>
         <FadeInOut show={showPage} duration={1000}>
     {showPage && 
     <>
-      <div className="bubble-notes" >
-      <img className="img-shop-info-notes" alt="Dude" />
-      <h6> Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
-      <h6>También tienes la opción de personalizar detalles visuales</h6>
+    <div className="ms-4">
+      <Link  onClick={()=> setDude(!dude)}>
+        {dude ?  
+      <FadeInOut show={showPage} duration={200}>
+            <i  className="button-show-dude-up fa-solid fa-angles-left" style={{animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
+        </FadeInOut>
+            : 
+            <FadeInOut show={showPage} duration={200}>
+            <i className="button-show-dude-down fa-solid fa-angles-right fa-fade" style={{animationDirection: "reverse", animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
+          </FadeInOut>
+            }</Link>
       </div>
-      <div className="ms-5">
+      {dude && 
+        <>
+        <FadeInOut show={showPage} duration={1000}>
+          <div className="bubble-notes" >
+              <img className="img-shop-info-notes" alt="Dude" />
+              <h6> Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
+              <h6>También tienes la opción de personalizar detalles visuales</h6>
+          </div>
+        </FadeInOut>
+        </>      
+      }
       <BackgroundFloatingBuble floatingBalls=
       {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665653141/donGions%20imgs/backgroundEffects/pngwing.com_70_czolhq.png)"} 
       widthBall={"50px"} heigthBall={"100px"} radiusBall={"2px"} idFlow={"square-flow"}/>
+      <div className="ms-5">
       <div align="center"><NoteForm /></div>
         
       </div>

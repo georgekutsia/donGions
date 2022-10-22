@@ -1,3 +1,19 @@
+.button-show-dude-up{
+  font-size: 30px;
+  color: lightblue;
+}
+.button-show-dude-down{
+  color: lightblue;
+  font-size: 30px;
+  opacity: 0.6;
+}
+
+
+.fa-fa-fa-spins{
+  animation-iteration-count: 2;
+  animation-duration: 3s;
+}
+
 
 .iconBar {
   width: 120px;

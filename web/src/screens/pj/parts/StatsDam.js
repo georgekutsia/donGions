@@ -1,17 +1,18 @@
 import React from 'react'
+import ButtonCounts from "./ButtonCounts";
 
 function StatsDam({ddFis, ddMag, ddDist, daFis, daMag, daDist}) {
   return (
     <div>
       <div className="stats-damage-block">
-          <div className="stats-damage">D. físico: <span style={{color:"red"}}>{ddFis}</span>  </div>
-          <div className="stats-damage">D. mágico: <span style={{color:"red"}}>{ddMag}</span></div>
-          <div className="stats-damage">D. a distancia: <span style={{color:"red"}}>{ddDist}</span></div>
+          <div className="stats-damage d-flex justify-content-between">Daño Físico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={ddFis} dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
+          <div className="stats-damage d-flex justify-content-between">Daño Mágico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={ddMag} dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
+          <div className="stats-damage d-flex justify-content-between">Daño Distan: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={ddDist} dead="fa-0"  colorDead="grey" colorText={"red"}/></span>  </div>
       </div>
-      <div className="stats-damage-block">
-          <div className="stats-damage">Ac físico: <span style={{color:"darksalmon"}}>{daFis}</span>  </div>
-          <div className="stats-damage">Ac mágico: <span style={{color:"darksalmon"}}>{daMag}</span></div>
-          <div className="stats-damage">Ac a distancia: <span style={{color:"darksalmon"}}>{daDist}</span></div>
+    <div className="stats-damage-block">
+    <div className="stats-damage d-flex justify-content-between">Ac Físico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={daFis} dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
+          <div className="stats-damage d-flex justify-content-between">Ac Mágico: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={daMag} dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
+          <div className="stats-damage d-flex justify-content-between">Ac Distan: <span style={{transform: "scale(0.7)"}}><ButtonCounts max={20} stat={daDist} dead="fa-0"  colorDead="grey" colorText={"darksalmon"}/></span>  </div>
       </div>
     </div>
   )

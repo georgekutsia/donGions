@@ -24,7 +24,6 @@ export {default as NavbarVertical} from "./guide/NavbarVertical"
 export {default as EstadisticasPj} from "./guide/EstadisticasPj"
 export {default as Register} from "./user/register/Register"
 export {default as SelectPj} from "./user/register/SelectPj"
-export {default as PjDetail} from "./user/register/PjDetail"
 export {default as Steps} from "./user/register/parts/Steps"
 
 export {default as ImportantCreaturesBelenon} from "./pjs-belenon/ImportantCreaturesBelenon"

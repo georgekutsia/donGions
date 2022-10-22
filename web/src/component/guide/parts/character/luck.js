@@ -11,7 +11,7 @@ function Luck() {
       <div><h4 className='rules-show-shadow'>20+ -<span>Muy Raro</span></h4> </div>
 
     </div>
-        <article align="center" className='background-list-actions'>
+        <article id="s-suerte" align="center" className='background-list-actions'>
         &nbsp;&nbsp;&nbsp; La suerte puede cambiar por completo tus probabilidades de supervivencia y calidad de combate, 
         además de añadir más recompensas para tu equipo y convertirte en el primero en iniciar las acciones. A veces usarás dado de 20 para poner a prueba tu suerte.
         </article>
