@@ -3,9 +3,9 @@ import ButtonCounts from "./ButtonCounts";
 
 function StatsSalud({dLevel, dLife, dMana, dMove, dActions, dReach, dWeight, dName, dSurname, dColor, hand}) {
   return (
-    <div style={{border:`3px ${dColor} solid`}}>
+    <div style={{border:`3px ${dColor} solid` }}>
       <h5 className="position-relative d-flex flex-row-reverse" >Nivel: {dLevel}</h5>
-      <h2 > {dName} {dSurname}  </h2>
+      <text className="plans-name"> {dName} {dSurname}  </text>
       <div style={{border:`3px ${dColor} solid`}} className="stats-salud-block">
         <div className="">
           <div className="stats-salud d-flex justify-content-between">Vida: <span style={{color:"rgb(0, 245, 0)"}}><ButtonCounts max={dLife} stat={dLife} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>

@@ -1,8 +1,14 @@
 
+.plans-name{
+  font-family: alkalami;
+  font-size: 60px;
+  text-shadow: 2px 2px grey, 4px 4px rgb(48, 45, 45), 6px 6px grey;
 
+}
 
-
-
+.change-background-profile{
+  font-size: 40px;
+}
 .btn-rest-stats{
   background-color: transparent;
   transition: all 0.2s ease-in-out;
@@ -58,38 +64,47 @@
 #profile-size-box{
   height: auto;
   padding: 20px;
+  text-shadow: 1px 1px grey;
 }
-
+.ddFis{
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
 .stats-salud-block{
   display: flex;
   background-color: black;
   margin: 0;
-  /* background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
-  background-repeat: no-repeat;
-  background-size: 100px; */
+
 }
 .stats-defence-block{
   display: flex;
   background-color: black;
   margin: 0;
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
-  
 }
 .stats-salud{
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461663/donGions%20imgs/backgroundEffects/dsa914.411_l6xp0l.png");
+  background-size: cover;
   border: 1px rgb(0, 238, 255) solid;
   width: 406.5px;
   font-size: 27px;
   padding: 3px;
+}
+.stats-defense{
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461261/donGions%20imgs/backgroundEffects/meral_kcimmw.png");
+  border: 1px rgb(0, 238, 255) solid;
+  width: 406.5px;
+  font-size: 27px;
+  padding: 3px;
+  
 }
 .stats-damage-block{
   display: flex;
   background-color: black;
 }
 .stats-damage{
-  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446628/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-20T033745.714_pxwxl1.png");
-  background-repeat: no-repeat;
-  background-size: 49px; 
-  background-position: 203px;
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461441/donGions%20imgs/backgroundEffects/dsa_gsdxir.png");
   border: 3px rgb(0, 238, 255) solid;
   width: 275px;
   font-size: 20px;
@@ -112,7 +127,9 @@
   
 }
 .inner-box-stats{
-  border: 3px rgb(0, 238, 255) solid;
+  border: 20px rgb(0, 238, 255) ridge;
+  border-radius: 10px;
+  padding: 10px;
 }
 .button-mostrar-mejoradas{
   text-decoration: none;

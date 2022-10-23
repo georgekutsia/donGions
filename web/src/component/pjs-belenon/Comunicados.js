@@ -1,12 +1,11 @@
 import React from 'react'
 
-function PugStars() {
-  
+function Comunicados() {
   return (
     <div>
-      
+      sad
     </div>
   )
 }
 
-export default PugStars
+export default Comunicados

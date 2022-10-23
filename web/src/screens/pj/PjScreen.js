@@ -14,12 +14,20 @@ function PjScreen() {
   const [showPlusStats, setShowPlusStats] = useState(false)
   const [char, setChar] = useState(false)
   const [dispStats, setDispStats] = useState(true)
+  const [back, setBack] = useState(false)
   
   useEffect(() => {
       setShowPage(true)
   }, [])
   return (
-    <div className="moving-background-scenary" id='profile-size-box' align="center">
+    <div className={back ? "moving-background-scenary" : "moving-background-part"} id='profile-size-box' align="center">
+        <div className='d-flex change-background-profile'>
+        <div>
+              <Link style={{color:"grey"}} onClick={()=> setBack(!back)}>{back ? 
+              <i  className="fa-solid fa-moon"></i>: <i className="fa-solid fa-mountain-sun"></i>}
+              </Link>
+        </div>
+        </div>
         <div className='d-flex'>
               <Link onClick={() => setDispStats(!dispStats)}> 
               <img className='profile-image-css' style={{border:`${info.pj.stats.style} 3px solid`}} width="360px" src={info.pj.stats.image} alt="dasda" />
@@ -33,29 +41,35 @@ function PjScreen() {
               }
         </div>
         {!dispStats &&
-        <div style={{backgroundColor:"black"}}>
+        <div  style={{backgroundColor:"black", width:"680px"}}>
             <div className='d-flex' style={{border:"3px solid white"}}>
-                <h4 className='ps-2'>Vida: {info.pj.stats.life}</h4>
-                <h4 className='ps-2'>Mana: {info.pj.stats.mana}</h4>
-                <h4 className='ps-2'>Movimiento: {info.pj.stats.move}</h4>
-                <h4 className='ps-2'>Apellido{info.pj.stats.surname}</h4>
-                <h4 className='ps-2'>Nombre {info.pj.stats.name} </h4>
-                <h4 className='ps-2'>Acciones: {info.pj.stats.actions}</h4>
-                <h4 className='ps-2'>Alcance: {info.pj.stats.reach}</h4>
-                <h4 className='ps-2'>Carga: {info.pj.stats.weight}</h4>
-                <h4 className='ps-2'>Nivel: {info.pj.character.level}</h4>
+                <h4 className='ps-5'>Vida: {info.pj.stats.life}</h4>
+                <h4 className='ps-5'>Mana: {info.pj.stats.mana}</h4>
+                <h4 className='ps-5'>Movimiento: {info.pj.stats.move}</h4>
+                <h4 className='ps-5'>Apellido{info.pj.stats.surname}</h4>
+            </div>
+                <div className='d-flex' style={{border:"3px solid white"}}>
+                <h4 className='ps-5'>Nombre {info.pj.stats.name} </h4>
+                <h4 className='ps-5'>Acciones: {info.pj.stats.actions}</h4>
+                <h4 className='ps-5'>Alcance: {info.pj.stats.reach}</h4>
+                <h4 className='ps-5'>Carga: {info.pj.stats.weight}</h4>
+                </div>
+            <div className='d-flex' style={{border:"3px solid white"}}>
+                <h4 className='ps-5'>Nivel: {info.pj.character.level}</h4>
+                <h4 className='ps-5'>Esquiva: {info.pj.stats.dodge}</h4>
+                <h4 className='ps-5'>Bloqueo: {info.pj.stats.block}</h4>
+                <h4 className='ps-5'>Parada: {info.pj.stats.parry}</h4>
             </div>
             <div className='d-flex' style={{border:"3px solid white"}}>
-                <h4 className='ps-2'>Esquiva: {info.pj.stats.dodge}</h4>
-                <h4 className='ps-2'>Bloqueo: {info.pj.stats.block}</h4>
-                <h4 className='ps-2'>Parada: {info.pj.stats.parry}</h4>
-                <h4 className='ps-2'>Resistencia: {info.pj.stats.resist}</h4>
-                <h4 className='ps-2'>Velocidad: {info.pj.stats.speed}</h4>
-                <h4 className='ps-2'>Precisión: {info.pj.stats.precision}</h4>
-                <h4 className='ps-2'>Reflejos: {info.pj.stats.reflex}</h4>
-                <h4 className='ps-2'>Firmeza: {info.pj.stats.firm}</h4>
-                <h4 className='ps-2'>Temple: {info.pj.stats.temple}</h4>
-                <h4 className='ps-2'>Marcialidad: {info.pj.stats.marciality}</h4>
+                <h4 className='ps-5'>Resistencia: {info.pj.stats.resist}</h4>
+                <h4 className='ps-5'>Velocidad: {info.pj.stats.speed}</h4>
+                <h4 className='ps-5'>Precisión: {info.pj.stats.precision}</h4>
+                <h4 className='ps-5'>Reflejos: {info.pj.stats.reflex}</h4>
+            </div>
+            <div className='d-flex' style={{border:"3px solid white"}}>
+                <h4 className='ps-5'>Firmeza: {info.pj.stats.firm}</h4>
+                <h4 className='ps-5'>Temple: {info.pj.stats.temple}</h4>
+                <h4 className='ps-5'>Marcialidad: {info.pj.stats.marciality}</h4>
             </div>
         </div>
         }
@@ -63,7 +77,7 @@ function PjScreen() {
     <div>
       <FadeInOut show={showPage} duration={1200}>
         <div className='big-box-stats float-start'>
-            <div  className='float-start inner-box-stats'>
+            <div  className='float-start inner-box-stats mb-5'>
               <StatsSalud 
               dLife={info.pj.stats.life} dMana={info.pj.stats.mana} dMove={info.pj.stats.move} dSurname={info.pj.stats.surname}  dName={info.pj.stats.name}
               dActions={info.pj.stats.actions} dReach={info.pj.stats.reach} dWeight={info.pj.stats.weight} dColor={info.pj.stats.style} dLevel={info.pj.character.level}/>
@@ -74,7 +88,6 @@ function PjScreen() {
               <Link onClick={() => setShowPlusStats(!showPlusStats)} className='button-mostrar-mejoradas'>Mostrar las estadísticas mejoradas</Link>
               {showPlusStats && 
                 <FadeInOut show={showPage} duration={1000}>
-                <div></div>
                   <StatsPlusFight dSpeed={info.pj.stats.speed} dPrecision={info.pj.stats.precision}  dReflex={info.pj.stats.reflex} 
                             dFirm={info.pj.stats.firm} dTemple={info.pj.stats.temple} dMarciality={info.pj.stats.marciality}/>
                       </FadeInOut>

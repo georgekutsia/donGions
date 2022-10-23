@@ -9,10 +9,9 @@ function EventsScreen() {
   }, [])
   return (
     <div>
-    <FadeInOut show={showPage} duration={1000}>
-        <ImportantCreaturesBelenon/>
-    </FadeInOut>
-
+      <FadeInOut show={showPage} duration={1000}>
+          <ImportantCreaturesBelenon/>
+      </FadeInOut>
     </div>
   );
 }

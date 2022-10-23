@@ -45,7 +45,7 @@ function ShopScreen() {
             </>
           )}
         <h1 align="center" className="name-shop">
-          Tienda de Patek el Ruinafortunas
+          Tienda de Patek  Ruinafortunas
         </h1>
         </FadeInOut>
       </div>

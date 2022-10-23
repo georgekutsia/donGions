@@ -51,7 +51,6 @@ function NotesScreen() {
       widthBall={"50px"} heigthBall={"100px"} radiusBall={"2px"} idFlow={"square-flow"}/>
       <div className="ms-5">
       <div align="center"><NoteForm /></div>
-        
       </div>
           <div className="d-flex">
             <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>{setMode1(true);setMode2(false);setMode3(false)}}>
