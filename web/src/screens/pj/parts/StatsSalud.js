@@ -1,21 +1,62 @@
-import React from "react";
+import React, { useContext } from "react";
 import ButtonCounts from "./ButtonCounts";
+import { AuthContext } from '../../../context/AuthContext'
 
-function StatsSalud({dLevel, dLife, dMana, dMove, dActions, dReach, dWeight, dName, dSurname, dColor, hand}) {
+function StatsSalud() {
+  const stats = useContext(AuthContext)
+  const st = stats.pj.stats 
+  const eq = stats.pj.equipped
+
+
+  const tLife = st.life + +eq.life
+  let tlcolor = "white"
+  if(tLife > st.life){
+    tlcolor = "lightgreen"
+  }
+  const tMana = st.mana + +eq.mana
+  let tmcolor = "white"
+  if(tMana > st.mana){
+    tmcolor = "rgb(0, 229, 255)"
+  }
+  const tWeight = st.weight + +eq.weight
+  let twcolor = "white"
+  if(tWeight > st.weight){
+    twcolor = "chocolate"
+  }
+  const tActions = st.actions + +eq.actions
+  let tacolor = "white"
+  if(tActions > st.actions){
+    tacolor = "yellow"
+  }
+  const tMove = st.move + +eq.move
+  let tmocolor = "white"
+  if(tMove > st.move){
+    tmocolor = "violet"
+  }
+  const tReach = st.reach + +eq.reach
+  let trcolor = "white"
+  if(tReach > st.reach){
+    trcolor = "burlywood"
+  }
+
+
+
+
   return (
-    <div style={{border:`3px ${dColor} solid` }}>
-      <h5 className="position-relative d-flex flex-row-reverse" >Nivel: {dLevel}</h5>
-      <text className="plans-name"> {dName} {dSurname}  </text>
-      <div style={{border:`3px ${dColor} solid`}} className="stats-salud-block">
-        <div className="">
-          <div className="stats-salud d-flex justify-content-between">Vida: <span style={{color:"rgb(0, 245, 0)"}}><ButtonCounts max={dLife} stat={dLife} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>
-          <div className="stats-salud d-flex justify-content-between">Carga: <span style={{color:"orange"}}><ButtonCounts max={20} stat={dWeight} dead="fa-weight-hanging" colorDead="grey" colorText={"orange"}/></span></div>
-          <div className="stats-salud d-flex justify-content-between">Mov.: <span style={{color:"rgb(247, 0, 255"}}><ButtonCounts max={20} stat={dMove} dead="fa-shoe-prints" colorDead="grey" colorText={"rgb(247, 0, 255"}/></span></div>
+    <div style={{border:`3px ${st.style} solid` }}>
+      <h5 className="position-relative d-flex flex-row-reverse" >Nivel: {stats.pj.character.level}</h5>
+      <h5 className="position-relative d-flex flex-row" >Life equipo: {eq.life}</h5>
+      <div className="plans-name"> {st.name} {st.surname}  </div>
+      <div style={{border:`3px ${st.style} solid`}} className="stats-salud-block">
+        <div>
+          <div className="stats-salud d-flex justify-content-between" style={{color:`${tlcolor}`}}>Vida: <span><ButtonCounts stat={tLife} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>
+          <div className="stats-salud d-flex justify-content-between" style={{color:`${twcolor}`}}>Carga: <span><ButtonCounts  stat={tWeight} dead="fa-weight-hanging" colorDead="grey" colorText={"orange"}/></span></div>
+          <div className="stats-salud d-flex justify-content-between" style={{color:`${tmocolor}`}}>Mov.: <span style={{color:"rgb(247, 0, 255"}}><ButtonCounts stat={tMove} dead="fa-shoe-prints" colorDead="grey" colorText={"rgb(247, 0, 255"}/></span></div>
         </div>
-        <div className="">
-          <div className="stats-salud d-flex justify-content-between">Maná: <span style={{color:"#00e5ff"}}><ButtonCounts max={dMana} stat={dMana} dead="fa-droplet-slash" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
-          <div className="stats-salud d-flex justify-content-between">Acciones: <span style={{color:"yellow"}}><ButtonCounts max={20} stat={dActions} dead="fa-bolt" colorDead="grey" colorText={"yellow"}/></span></div>
-          <div className="stats-salud d-flex justify-content-between">Alcance:  <span style={{color:"burlywood"}}><ButtonCounts max={dMana} stat={dReach} dead="fa-hands-clapping" colorDead="grey" colorText={"burlywood"}/></span></div>
+        <div>
+          <div className="stats-salud d-flex justify-content-between" style={{color:`${tmcolor}`}}>Maná: <span style={{color:"#00e5ff"}}><ButtonCounts stat={tMana} dead="fa-droplet-slash" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
+          <div className="stats-salud d-flex justify-content-between" style={{color:`${tacolor}`}}>Acciones: <span style={{color:"yellow"}}><ButtonCounts stat={tActions} dead="fa-bolt" colorDead="grey" colorText={"yellow"}/></span></div>
+          <div className="stats-salud d-flex justify-content-between"  style={{color:`${trcolor}`}}>Alcance:  <span style={{color:"burlywood"}}><ButtonCounts stat={st.reach} dead="fa-hands" colorDead="grey" colorText={"burlywood"}/></span></div>
         </div>
       </div>
     </div>

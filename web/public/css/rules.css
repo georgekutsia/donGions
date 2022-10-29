@@ -7,13 +7,19 @@
   font-size: 30px;
   opacity: 0.6;
 }
-
+.nav-show-stats-rules{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
 
 .fa-fa-fa-spins{
   animation-iteration-count: 2;
   animation-duration: 3s;
 }
-
+.margin-rules-borrom{
+  margin-bottom: 100px;
+}
 
 .iconBar {
   width: 120px;

@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { AuthContext } from '../../../context/AuthContext'
 
-function ButtonCounts({max, stat, dead, colorDead, colorText}) {
+
+function ButtonCounts({ stat, dead, colorDead, colorText}) {
   const [count, setCount] = useState(stat);
-  const maximum = max - 0.5
 
   const reset = () => setCount(stat);
-  const countUp = () => setCount((countPrev) => countPrev < maximum ? countPrev + 1 : countPrev);
-  const countUpH = () => setCount((countPrev) => countPrev < max ? countPrev + 0.5 : countPrev);
+  const countUp = () => setCount((countPrev) => countPrev < stat ? countPrev + 1 : countPrev);
+  const countUpH = () => setCount((countPrev) => countPrev < stat ? countPrev + 0.5 : countPrev);
+
+  
   const countDown = () => setCount((countPrev) => countPrev > 0.5 ? countPrev - 1 : countPrev);
   const countDownH = () => setCount((countPrev) => countPrev > 0.4 ? countPrev - 0.5 : countPrev);
 
@@ -15,8 +18,8 @@ function ButtonCounts({max, stat, dead, colorDead, colorText}) {
         <button style={{transform: "scale(0.4)", margin:"-15px"}} className="btn-rest-stats" onClick={countDownH} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
         <button className="btn-rest-stats" onClick={countDown} disabled={count === 0}><i className="fa-solid fa-minus"></i></button>
         <button style={{color:`${colorText}`}} className="btn-reset-stats" onClick={reset}><h1> {count !==0  ? count :<i style={{color:`${colorDead}`}} className={`fa-solid ${dead}`}></i>}</h1></button>
-        <button  className="btn-add-stats" onClick={countUp} disabled={count === max}><i className="fa-solid fa-plus"></i></button>
-        <button style={{transform: "scale(0.4)", margin:"-15px"}}  className="btn-add-stats" onClick={countUpH} disabled={count === max}><i className="fa-solid fa-plus"></i></button>
+        <button  className="btn-add-stats" onClick={countUp} disabled={count === 20}><i className="fa-solid fa-plus"></i></button>
+        <button style={{transform: "scale(0.4)", margin:"-15px"}}  className="btn-add-stats" onClick={countUpH} disabled={count === stat}><i className="fa-solid fa-plus"></i></button>
     </div>
   )
 }

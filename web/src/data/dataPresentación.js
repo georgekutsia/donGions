@@ -1,5 +1,8 @@
 const dataPresentación = [
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Yelmo_de_Glarga_regente_de_los_bosques_avt8nu.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Alimento_completo.1_odf7am.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067844/donGions%20imgs/shop/loot%20random/Piedra_vhwzh1.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras_tynflv.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta_puoru0.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Reflexio%CC%81n_del_ermitan%CC%83o_z1tlaa.jpg",
@@ -15,6 +18,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Yelmo_de_Yarn_el_sincero_xqipho.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Susurro_de_Gria_regente_de_la_niebla_bwxy6b.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Alimento_completo.2_hzcquf.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Piedra.1_o5ekqv.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.36_bydcjb.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.7_kdckug.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057918/donGions%20imgs/shop/habiliades%20compartidas/Proteccio%CC%81n_del_hechicero_pccprk.jpg",
@@ -30,6 +36,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Visio%CC%81n_de_Leyure_ywxam0.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Tela_de_Caira_regente_de_tentaciones_vesoc6.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida.4_mbo9vp.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Palo_o4vyfz.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.35_zfnyi4.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.6_ijxksm.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Pasos_del_velocista_rsmhns.jpg",
@@ -45,6 +54,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Terror_de_Qial_Zima_xdfjb9.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Ojos_gemelos_de_Voltira_y_Gonia_ce0fgg.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Alimento_completo_whm7me.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Pegamento_fuerte_cazklv.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.34_zfbzeq.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.8_pljadf.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Manos_de_cle%CC%81rigo_bm6gtb.jpg",
@@ -60,6 +72,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057728/donGions%20imgs/shop/cascos/Regocijo_del_hijo_pro%CC%81digo_xkwct7.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Injerto_de_valita_regente_de_cuerpos_oee2os.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida.1_cptx9e.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Palo.1_kk66nq.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.33_acrogn.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.5_omzyn7.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057917/donGions%20imgs/shop/habiliades%20compartidas/Ira_de_Angrath_gxzwg0.jpg",
@@ -75,6 +90,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Lamento_de_Vanian_ydtchz.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Libro_de_Sista_regente_de_los_monstruos_voa7tg.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida.3_erwmdr.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Lumbre.1_x9ocvs.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.32_wjygp0.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.4_rxmsmz.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_rinocerontes_dtwrc0.jpg",
@@ -90,6 +108,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/La_venganza_de_Romatan_tsumff.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Ojo_de_Volgagria_zs7in7.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida.2_r66dv9.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067843/donGions%20imgs/shop/loot%20random/Lumbre_rrmibi.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.31_n1ut1p.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067746/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.3_pmjhry.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_leones_zhuunw.jpg",
@@ -105,6 +126,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_los_resurgidos_r0x9t0.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/La%CC%81tigo_de_Erebos_wdnzuf.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida.5_s9cclz.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llaves_oetuxg.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067749/donGions%20imgs/shop/libros/Frases_inspiradoras.29_l9mgbe.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067745/donGions%20imgs/shop/libros/Frases_inspiradoras_pa%CC%81gina_corrupta.1_eyqbui.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057916/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_gigantes_xfvgbh.jpg",
@@ -120,6 +144,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_la_penitencia_obvwci.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Coraza_de_Sastan_el_purificador_feq3cs.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Bebida_g5ryxk.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llaves.4_y4thed.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.28_li6jzn.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_aliga%CC%81tor_kstbah.jpg",
@@ -135,6 +162,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Ima%CC%81gen_de_las_sombras_bcozax.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Destello_de_Crislan_kzwuee.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.1_ughtls.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llaves.3_rmkufq.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.27_p1lmrx.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Habilidad_de_los_cocodrilos_ynpgss.jpg",
@@ -150,6 +180,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057727/donGions%20imgs/shop/cascos/Dorado_de_Lestiar_hryyya.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Garra_de_Amir_regente_del_subsuelo_fhcvpg.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.3_a6i2sl.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llaves.2_tpx8gs.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.24_exiwfe.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057915/donGions%20imgs/shop/habiliades%20compartidas/Ferocidad_barba%CC%81rica_ycwml4.jpg",
@@ -165,6 +198,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Deshonra_de_Crusix_vb1l0o.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Filo_de_la_reina_su%CC%81cubo_meih6j.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.2_pnczgw.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Llaves.1_mz7vye.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.26_rpcgqb.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Destreza_del_comandante_yqkf27.jpg",
@@ -180,6 +216,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Creasombras_de_Valkar_enmaran%CC%83ado_smwmte.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067848/donGions%20imgs/shop/objetos%20especiales/Colmillo_de_Volta_regente_de_las_sombras_auslm8.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.4_mwdzfx.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067842/donGions%20imgs/shop/loot%20random/Ladrillo_dikvky.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.25_ieehcw.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057914/donGions%20imgs/shop/habiliades%20compartidas/Descenso_de_la_rastreadora_uncdts.jpg",
@@ -195,6 +234,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Creacicatrices_pdvwyb.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Canto_de_Madpark_el_grosero_aw7a3o.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.5_vfqlyi.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067841/donGions%20imgs/shop/loot%20random/Hueso_rze973.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.19_zarvo8.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Caza_despiadada_de_Surrack_mw5yum.jpg",
@@ -210,6 +252,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_del_dictador_Morga_tbr1zn.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_letal_cjjjbb.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida_kxohjh.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067841/donGions%20imgs/shop/loot%20random/Hueso.1_flt2zg.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.23_c8xrcx.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Barrido_de_artista_marcial_j53qln.jpg",
@@ -225,6 +270,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_sangre_de_jade_o4dfnp.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_intocable_qglqsl.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.6_q9bzq8.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067841/donGions%20imgs/shop/loot%20random/Ganzu%CC%81a_multiusos_ctlalb.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.22_qyrjtk.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057913/donGions%20imgs/shop/habiliades%20compartidas/Ansia_vikinga_ogl36k.jpg",
@@ -240,6 +288,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_rugido_del_leo%CC%81n_q0aes9.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_de_campeonato_kgfxbl.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Alimento_completo.1_odf7am.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cuerda_htbbcp.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.20_bzfyh0.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_soldado_nr36yh.jpg",
@@ -255,6 +306,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_rugido_del_leo%CC%81n_q0aes9.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_de_muerte_segura_fbxtcq.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.9_fiqxoq.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cuerda.3_nual5g.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.17_isedrk.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_nigromante_hchjin.jpg",
@@ -270,6 +324,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco_oxipsb.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_aterradora_ylwvmx.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/Alimento_completo_whm7me.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cuerda.2_hdil6j.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.21_hl9ajh.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057912/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_hoplita_cokios.jpg",
@@ -285,6 +342,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067847/donGions%20imgs/shop/objetos%20especiales/Armadura_adaptativa_g3jpa5.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.7_ts6hvo.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067840/donGions%20imgs/shop/loot%20random/Cuerda.1_elrxpz.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067748/donGions%20imgs/shop/libros/Frases_inspiradoras.18_z49w0z.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_grupo_nszqrl.jpg",
@@ -300,6 +360,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_rejuvenecedor_jvhhli.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057604/donGions%20imgs/shop/cachivaches/Trompeta_del_escudero_olqvbd.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.8_holst6.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bomba_de_humo_oiv0j5.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.15_yakqxi.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_auromante_iuxfbl.jpg",
@@ -315,6 +378,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Corona_de_Muskan_el_avaricioso_ea3m26.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057603/donGions%20imgs/shop/cachivaches/Pluma_posei%CC%81da_del_escriba_yg4fng.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067838/donGions%20imgs/shop/loot%20random/Comida.10_iaklng.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067837/donGions%20imgs/shop/loot%20random/Bomba_de_humo.1_uzcbwx.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.14_z7dveu.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057911/donGions%20imgs/shop/habiliades%20compartidas/Ansia_del_acro%CC%81bata_vwnvat.jpg",
@@ -330,6 +396,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.3_xuxapl.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067639/donGions%20imgs/shop/escudos/Escudo_visionario_f5vuey.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida.11_f8oe4k.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Barra_mjwmcg.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.16_nwu4ct.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_gigantes_jzzgup.jpg",
@@ -345,6 +414,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.2_dpuips.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067637/donGions%20imgs/shop/escudos/Escudo_del_agresor_hhtmti.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida.13_i0ul11.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067836/donGions%20imgs/shop/loot%20random/Barra.1_o7ci6s.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.13_xaeh9x.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057910/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_los_armeros_jt6zas.jpg",
@@ -360,6 +432,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057726/donGions%20imgs/shop/cascos/Casco.1_uppchh.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida.12_yhcwuc.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/100_Canicas.1_awz0df.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.12_shylcg.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666057909/donGions%20imgs/shop/habiliades%20compartidas/Ansia_de_la_asesina_tidg1b.jpg",
@@ -375,6 +450,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_de_la_vida_ukvf7p.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida.14_dfr80t.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/50_Canicas.2_ep85c8.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.8_oejgku.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
@@ -390,6 +468,9 @@ const dataPresentación = [
     casco: "https://res.cloudinary.com/dfrda73uc/image/upload/v1666057724/donGions%20imgs/shop/cascos/Aspecto_celestial_n81ab8.jpg"
 },
   { 
+    special:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
+    trastero2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067839/donGions%20imgs/shop/loot%20random/Comida.16_vfd4gc.jpg",
+    trastero1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067835/donGions%20imgs/shop/loot%20random/100_Canicas_u80anl.jpg",
     libros1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666067747/donGions%20imgs/shop/libros/Frases_inspiradoras.9_wd6eyf.jpg",
     libros2:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",
     hab1:"https://res.cloudinary.com/dfrda73uc/image/upload/v1666213384/donGions%20imgs/shop/Objeto_en_Fabricacion_ddmyg8.jpg",

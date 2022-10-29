@@ -6,7 +6,7 @@ import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";
 import statistics from "../../../data/pjStats"
 import char from "../../../data/character"
-import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence, Creator } from "../../../component"
+import { Teferi, Sorin, Sarkhan, Ral, Nissa, Jace, Elspeth, Ajani, Gideon, Liliana, Steps, BackPlan, Luck, Kinesthesia, Charisma, Perception, Presence } from "../../../component"
 import RollDice from "../../dice/RollDice";
 import FadeInOut from "../../FadeInOut";
 
@@ -17,6 +17,7 @@ function Register() {
   const {register, handleSubmit, setError, control, formState: { errors, isValid },} = useForm({mode: "onBlur"});
   const [textValue, setTextValue] = useState('Lugar al azar');
   const [buttonsText, setButtonText] = useState(true);
+  const [chests, setChests] = useState(true);
 
   const words = [
     {text: "Helian: Rioda", key: 1},
@@ -34,14 +35,48 @@ function Register() {
     {text: "Aonan: Arpainerme", key: 14},
     {text: "Aonan: Fortaleza Puntahundida", key: 15},
   ]
-
+  const equippedDataBase={
+    mana:0,
+    life:0,
+    weight:0,
+    actions:0,
+    reach:0,
+    move:0,
+    damFis:0,
+    damDist:0,
+    damMag:0,
+    acFis:0,
+    acDist:0,
+    acMag:0,
+    precision:0,
+    speed:0,
+    marciality:0,
+    block:0,
+    dodge:0,
+    parry:0,
+    resist:0,
+    reflex:0,
+    firm:0,
+    temple:0
+  }
+  const matsForReg = {
+       Lana: Math.floor(Math.random() * 15),
+       Cuero: Math.floor(Math.random() * 10),
+       Seda: Math.floor(Math.random() * 3),
+       Lingotes: Math.floor(Math.random() * 5),
+       Gema: Math.floor(Math.random() * 5),
+       Engranajes: Math.floor(Math.random() * 3),
+       Pintura: Math.floor(Math.random() * 2),
+       Tierra: Math.floor(Math.random() * 2),
+        Infusión: 0,
+        Encantamiento: 0,
+       Pólvora: Math.floor(Math.random() * 10),
+  }
   const changeTextValue = () => {
     const len = words.length;
     setTextValue(words[Math.floor(Math.random() * len)].text)
     setButtonText(false)
   }
-
-
   const [resultDice, setResultDice] = useState(0)
   const [pjInfo, setPjInfo] = useState([])
   useEffect(() => {
@@ -169,7 +204,11 @@ function Register() {
     }
     data.gold = resultDice
     data.place = textValue
-    console.log("data total", data)
+    data.mats = matsForReg
+    data.equipped = equippedDataBase
+    if(chests){
+      data.mats ={Lana: 0,Cuero: 0,Seda: 0,Lingotes: 0,Gema: 0,Engranajes: 0,Pintura: 0,Tierra: 0,Infusión: 0,Encantamiento: 0,Pólvora: 0}
+    }
     pjService.registerPj(data)
       .then(note => navigation("/authenticate"))
       .catch(error => {
@@ -231,7 +270,6 @@ function Register() {
                 <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
                 <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
             </Link>
-
         <div className="d-flex justify-content-evenly box-steps">
             {pjInfo.map((pjData) =>(
               <div align="center" key={pjData.name} >
@@ -370,13 +408,27 @@ function Register() {
       <button  type="button" onClick={changeTextValue}> Lugar al azar</button>
     </div>
     }
-
-
-
-<Steps paso={"Paso 5"} pasoTexto={"Tienes hasta 3 tiradas y el resultado de la que te quedes determina el Oro con el que empiezas"}/>
-                  <RollDice finalResult={handleResultDice} />
 {/* paso 5 */}
-<Steps paso={"Paso 6"} pasoTexto={"Puedes crear un trasforndo para tu personaje"}/>
+        <Steps style={{width:"200px"}} paso={"Paso 5"} pasoTexto={`¡Elige una de las mochilas! Viene con una colección aleatoria de materiales.`} />
+        <FadeInOut show={chests} duration={3500}>
+            <div className= {chests ? "register-mats-box-text" : "register-mats-box-text fa fa-spin-pulse"}>
+                <Link onClick={()=> setChests(false)} className="fa fa-bounce"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666574106/donGions%20imgs/shop%20dude/pngwing.com_-_2022-10-24T031435.134_p5llb5.png" alt="treasure 1" width="100px" /></Link>
+                <Link onClick={()=> setChests(false)} className="fa mx-5 fa-bounce"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666574106/donGions%20imgs/shop%20dude/pngwing.com_-_2022-10-24T031437.996_mckgmi.png" alt="treasure 2" width="100px"/></Link>
+                <Link onClick={()=> setChests(false)} className="fa fa-bounce"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666574106/donGions%20imgs/shop%20dude/pngwing.com_-_2022-10-24T031442.431_y2jlho.png" alt="treasure 3" width="100px"/></Link>
+            </div>
+        </FadeInOut>
+
+    {!chests && 
+      <FadeInOut show={!chests} duration={3500}>
+    <h2 style={{color:"chocolate", textShadow:"2px 2px black", marginTop:"150px"}}>Haré que te lo manden a tus aposentos. Ya te queda menos<img width="90px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex192_ooh6ju_cos14i.png" alt="Lala" /></h2>
+    </FadeInOut>
+
+    }
+{/* paso 6 */}
+<Steps paso={"Paso 6"} pasoTexto={"Tienes hasta 3 tiradas y el resultado de la que te quedes determina el Oro con el que empiezas"}/>
+                  <RollDice finalResult={handleResultDice} />
+{/* paso 7 */}
+<Steps paso={"Paso 7"} pasoTexto={"Puedes crear un trasforndo para tu personaje"}/>
         <div >
             <textarea className={`input-register-text ${errors.background ? "is-invalid" : ""}`}  cols="20" rows="4" placeholder="Opcional. Puedes escribir algo sobre el pasado de tu personaje, sus ambiciones, relaciones, puntos fuertes etc..."
               {...register("background", {
@@ -388,7 +440,7 @@ function Register() {
         </div>
           <div className="mt-5 box-steps">
           <button  style={{color: "green"}} className={isValid ? "btn-rules-toggle-sub" : "btn-note-disabled"}  type="submit" disabled={!isValid}>
-          <span></span><span></span><span></span><span></span>Paso 7:  Crear Personaje</button>
+          <span></span><span></span><span></span><span></span> Crear Personaje</button>
         </div>
       </form>
     </div>

@@ -10,6 +10,8 @@ import FadeInOut from "../../component/FadeInOut";
 import ArmeriaScreen from "./ArmeriaScreen";
 import Books from "./BooksScreen";
 import HabilityScreen from "./HabilityScreen";
+import TrasteroScreen from "./TrasteroScreen";
+import SpecialScreens from "./SpecialScreen";
 
 function ShopScreen() {
   const [showPage, setShowPage] = useState(false);
@@ -17,9 +19,11 @@ function ShopScreen() {
     setShowPage(true);
   }, []);
 
-  const [armeria, setArmeria] = useState(true);
+  const [armeria, setArmeria] = useState(false);
   const [hability, setHability] = useState(false);
   const [book, setBook] = useState(false);
+  const [trast, setTrast] = useState(false);
+  const [special, setSpecial] = useState(true);
 
   const showArm = () => setArmeria(true);
   const hideArm = () => setArmeria(false);
@@ -27,6 +31,10 @@ function ShopScreen() {
   const hideBook = () => setBook(false);
   const showHab = () => setHability(true);
   const hideHab = () => setHability(false);
+  const showTrast = () => setTrast(true);
+  const hideTrast = () => setTrast(false);
+  const showSpecial = () => setSpecial(true)
+  const hideSpecial = () => setSpecial(false)
 
   return (
     <div align="center">
@@ -41,6 +49,10 @@ function ShopScreen() {
                 habOff={hideHab}
                 bookOn={showBook}
                 bookOff={hideBook}
+                trastOn={showTrast}
+                trastOff={hideTrast}
+                speOn={showSpecial}
+                speOff={hideSpecial}
               />
             </>
           )}
@@ -49,13 +61,20 @@ function ShopScreen() {
         </h1>
         </FadeInOut>
       </div>
-
+      <FadeInOut show={special} duration={200}>
+        <div style={{marginBottom:"200px"}}>{special && <SpecialScreens />}</div>
+      </FadeInOut>
+      <FadeInOut show={trast} duration={200}>
+        <div style={{marginBottom:"200px"}}>{trast && <TrasteroScreen />}</div>
+      </FadeInOut>
       <FadeInOut show={armeria} duration={200}>
-        <div>{armeria && <ArmeriaScreen />}</div>
+        <div style={{marginBottom:"200px"}}>{armeria && <ArmeriaScreen />}</div>
       </FadeInOut>
+
       <FadeInOut show={hability} duration={200}>
-        {hability && <HabilityScreen />}
+      <div style={{marginBottom:"200px"}}>{hability && <HabilityScreen />}</div>
       </FadeInOut>
+
       <FadeInOut show={book} duration={200}>
         {book && <Books />}
       </FadeInOut>

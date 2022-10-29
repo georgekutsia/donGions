@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const bcrypt = require("bcryptjs");
 
 const EMAIL_PATTERN =
-  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const PW_PATTERN = /^.{8,}$/;
 const WORK_FACTOR = 10;
 
@@ -24,7 +24,7 @@ const pjSchema = new Schema(
     contact: {
       type: String,
       required:
-        "Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
+      "Tendrás actualizaciones y premios adicionales al registrarte con mail, pero podrás usar el mismo mail para crearte varios personajes",
       trim: true,
       lowercase: true,
       match: [EMAIL_PATTERN, "Correo electrónico no válido"],
@@ -38,20 +38,21 @@ const pjSchema = new Schema(
       ],
     },
     stats: Object,
+    equipped: Object,
     character: Object,
     mats: Object,
     classHabilities: Array,
     inventory: Array,
     place: String,
-    equipped: {
-      head: mongoose.Schema.Types.ObjectId,
-      feet: mongoose.Schema.Types.ObjectId,
-      hands: mongoose.Schema.Types.ObjectId,
-      back: mongoose.Schema.Types.ObjectId,
-      body: mongoose.Schema.Types.ObjectId,
-      fingers: [mongoose.Schema.Types.ObjectId],
-      misc: [mongoose.Schema.Types.ObjectId],
-    },
+    // equipped: {
+    //   head: mongoose.Schema.Types.ObjectId,
+    //   feet: mongoose.Schema.Types.ObjectId,
+    //   hands: mongoose.Schema.Types.ObjectId,
+    //   back: mongoose.Schema.Types.ObjectId,
+    //   body: mongoose.Schema.Types.ObjectId,
+    //   fingers: [mongoose.Schema.Types.ObjectId],
+    //   misc: [mongoose.Schema.Types.ObjectId],
+    // },
     gold: Number,
     level: Number,
     admin: {

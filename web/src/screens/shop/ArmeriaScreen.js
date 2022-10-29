@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { SwordsBall } from '../../component'
 import data from "../../data/dataPresentación"
-import Shelves from './Shelves'
+
 function ArmeriaScreen() {
   const [obs, setObs] = useState([])
   useEffect(() => {

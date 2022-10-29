@@ -1,8 +1,12 @@
 /* * {
-  cursor: url("/fire.cur"), not-allowed
+  cursor: url("/sword3Cur.cur"), not-allowed
+}
+Link{
+  cursor: url("/shieldCur.cur"), not-allowed
+
 }
 a{
-  cursor: url("/explosion.cur"), not-allowed
+  cursor: url("/shieldCur.cur"), not-allowed
 }
 button:hover{
   cursor: url("/explosion.cur"), not-allowed

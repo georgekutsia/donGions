@@ -11,17 +11,20 @@ const creator = require("../middlewares/card.auth.mid")
 router.post("/register", auth.register)
 router.post("/authenticate", auth.authenticate)
 router.delete("/logout", auth.logout)
+router.get("/profile/:id", secure.isAuthenticated, auth.detailPj)
+router.patch("/profile/:id", secure.isAuthenticated, auth.editPj)
+  
 
-router.get("/cards",  secure.isAuthenticated, secure.isAdmin, cards.list)
-router.post("/cards",  secure.isAuthenticated, cards.create)
-router.get("/cards/:id",  secure.isAuthenticated, cards.detail)
-router.patch("/cards/:id", secure.isAuthenticated,  cards.edit)
+router.get("/cards", secure.isAuthenticated, secure.isAdmin, cards.list)
+router.post("/cards", secure.isAuthenticated, cards.create)
+router.get("/cards/:id", secure.isAuthenticated, cards.detail)
+router.patch("/cards/:id", secure.isAuthenticated, cards.edit)
 router.delete("/cards/:id", secure.isAuthenticated, cards.delete)
 
 router.get("/notes",  secure.isAuthenticated, note.list);
-router.post("/notes", secure.isAuthenticated,  note.create);
-router.get("/notes/:id", secure.isAuthenticated,  note.detail);
-router.patch("/notes/:id", secure.isAuthenticated,  note.edit);
+router.post("/notes", secure.isAuthenticated, note.create);
+router.get("/notes/:id", secure.isAuthenticated, note.detail);
+router.patch("/notes/:id", secure.isAuthenticated, note.edit);
 router.delete("/notes/:id", secure.isAuthenticated,note.delete);
 
 router.get("/rules", secure.isAuthenticated, note.list)

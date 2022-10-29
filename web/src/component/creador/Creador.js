@@ -2,7 +2,7 @@ import React from "react";
 
 function Creador() {
   return (
-    <div className="d-flex justify-content-evenly box-steps-creator p-2"  >
+    <div className="d-flex justify-content-evenly box-steps-creator-rules "  >
       <div>
         <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-chalkboard-user"></i> Diseño y creación: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
         <h5> <i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-user-tie"></i> Director ejecutivo: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>

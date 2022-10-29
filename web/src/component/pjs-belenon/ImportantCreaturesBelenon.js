@@ -14,20 +14,26 @@ function ImportantCreaturesBelenon() {
   const [enemies, setEnemies] = useState(false)
   const [alies, setAlies] = useState(false)
   const [weird, setWeird] = useState(false)
-  const [comunicado, setComunicado] = useState(true)
+  const [comunicado, setComunicado] = useState(false)
 
   const[showTable, setShowTable] = useState(false);
   
   return(
       <div align="center">
-          <div  className="d-flex">
+          <div  className="d-flex justify-content-evenly">
               <h1><button onClick={() => setShowTable(!showTable)} 
-              className="btn btn-round b-level-2 b-type-show-creatures">Criaturas importantes de Belenon</button>
-                </h1>
+              className="btn btn-round b-level-2 b-type-show-creatures">Criaturas  de Belenon</button>
+              </h1>
               <h1 ><button onClick={() => setComunicado(!comunicado)} 
-              className="btn btn-round b-level-2 b-type-show-creatures">Comunicados de George</button>
+              className="btn btn-round b-level-2 b-type-show-creatures" >Comunicados de George</button>
                 </h1>
-                </div>
+                <h1 ><button onClick={() => setComunicado(!comunicado)} 
+              className="btn btn-round b-level-2 b-type-show-creatures">Pruebas y adivinanzas</button>
+                </h1>
+                <h1 ><button onClick={() => setComunicado(!comunicado)} 
+              className="btn btn-round b-level-2 b-type-show-creatures">Misiones</button>
+                </h1>
+            </div>
                 {comunicado && 
                   <FadeInOut show={showPage} duration={1000}>
                         <div>
@@ -35,10 +41,6 @@ function ImportantCreaturesBelenon() {
                         </div>
                 </FadeInOut>
                 }
-
-
-
-
                 <FadeInOut show={showPage} duration={1000}>
                     <div align="center">
                 <FadeInOut show={showTable} duration={1300}>

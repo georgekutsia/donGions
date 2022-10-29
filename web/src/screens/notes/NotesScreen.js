@@ -40,8 +40,8 @@ function NotesScreen() {
         <FadeInOut show={showPage} duration={1000}>
           <div className="bubble-notes" >
               <img className="img-shop-info-notes" alt="Dude" />
-              <h6> Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
-              <h6>También tienes la opción de personalizar detalles visuales</h6>
+              <h6>&nbsp;&nbsp; Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
+              <h6>&nbsp;&nbsp;También tienes la opción de personalizar detalles visuales</h6>
           </div>
         </FadeInOut>
         </>      

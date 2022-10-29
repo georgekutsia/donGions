@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from "react";
-import { getProfile } from "../services/all-services";
 export const AuthContext = createContext();
 
 function AuthContextProvider({ children }) {

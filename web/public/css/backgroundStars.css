@@ -1305,6 +1305,219 @@
 }
 
 
+
+
+.basic-basic {
+  content:"";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: plan10 11s linear infinite;
+  margin-left: 100%;
+}
+.basic-basic:nth-child(1) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646801/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231944.417_lxy1zk.png");
+  top: calc(50% - 0px);
+  left: calc(50% - 100px);
+  animation-delay: -1s;
+}
+.basic-basic:nth-child(2) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646801/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231529.938_xxi0n8.png");
+  top: calc(50% - 70px);
+  left: calc(50% - 350px);
+  animation-delay: -7.5s;
+}
+.basic-basic:nth-child(3) {
+  content: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646801/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231723.568_uehyzt.png");
+  top: calc(50% - -20px);
+  left: calc(50% - -520px);
+  animation-delay: -2s;
+}
+.basic-basic:nth-child(4) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646801/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T232406.214_gbxkxk.png");
+  top: calc(50% - 40);
+  left: calc(50% - -606px);
+  animation-delay: -3s;
+}
+.basic-basic:nth-child(5) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646801/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T232104.235_g0xasv.png");
+  top: calc(50% - 66px);
+  left: calc(50% - -466px);
+  animation-delay: -4s;
+}
+.basic-basic:nth-child(6) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231512.708_ooawtg.png");
+  top: calc(50% - 65px);
+  left: calc(50% - 1448px);
+  animation-delay: -4.5s;
+}
+.basic-basic:nth-child(7) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231317.869_go3nnc.png");
+  left: calc(50% - 129px);
+  top: calc(50% - 65px);
+  animation-delay: -4.9s;
+}
+.basic-basic:nth-child(8) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231142.955_ucgysp.png");
+  top: calc(50% -  28px);
+  left: calc(50% - 9px);
+  animation-delay: -6.7s;
+}
+.basic-basic:nth-child(9) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231848.200_rub74c.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -239px);
+  animation-delay: -5.8s;
+}
+.basic-basic:nth-child(10) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231328.165_zosv7p.png");
+  top: calc(50% -  -28px);
+  left: calc(50% - -659px);
+  animation-delay: -6.3s;
+}
+.basic-basic:nth-child(11) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646802/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T231030.479_dt8kqc.png");
+  top: calc(50% -  -98px);
+  left: calc(50% - -709px);
+  animation-delay: -14.2s;
+}
+.basic-basic:nth-child(12) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646803/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T230830.579_flnyj2.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -800px);
+  animation-delay: -7s;
+}
+.basic-basic:nth-child(13) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646803/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T230843.532_unobgh.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -909px);
+  animation-delay: -3.4s;
+}
+.basic-basic:nth-child(14) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666646804/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T230807.473_cnf5ai.png");
+  top: calc(50% -  0px);
+  left: calc(50% - -1000px);
+  animation-delay: -0.9s;
+}
+.basic-basic:nth-child(15) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666647214/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T233315.301_o52g7t.png");
+  top: calc(50% -  0px);
+  left: calc(50% - -600px);
+  animation-delay: -0.1s;
+}
+.basic-basic:nth-child(16) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666647214/donGions%20imgs/balllOfThings/food/pngwing.com_-_2022-10-24T233323.689_tirihq.png");
+  top: calc(50% -  0px);
+  left: calc(50% - -100px);
+  animation-delay: -8s;
+}
+
+
+
+
+
+
+
+
+.special-special {
+  content:"";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: plan10 11s linear infinite;
+  margin-left: 100%;
+}
+.special-special:nth-child(1) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651709/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T002932.302_wgv3et.png");
+  top: calc(50% - 0px);
+  left: calc(50% - 100px);
+  animation-delay: -1s;
+}
+.special-special:nth-child(2) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651709/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T002833.960_ltokvo.png");
+  top: calc(50% - 70px);
+  left: calc(50% - 350px);
+  animation-delay: -7.5s;
+}
+.special-special:nth-child(3) {
+  content: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651709/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T002906.766_zphf9s.png");
+  top: calc(50% - -20px);
+  left: calc(50% - -520px);
+  animation-delay: -2s;
+}
+.special-special:nth-child(4) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651703/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T003317.616_mb9gv3.png");
+  top: calc(50% - 40);
+  left: calc(50% - -606px);
+  animation-delay: -3s;
+}
+.special-special:nth-child(5) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651697/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004238.027_beoiyw.png");
+  top: calc(50% - 66px);
+  left: calc(50% - -466px);
+  animation-delay: -4s;
+}
+.special-special:nth-child(6) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651697/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T003428.046_lgomd4.png");
+  top: calc(50% - 65px);
+  left: calc(50% - 1448px);
+  animation-delay: -4.5s;
+}
+.special-special:nth-child(7) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651709/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T002849.905_soy3e0.png");
+  left: calc(50% - 129px);
+  top: calc(50% - 65px);
+  animation-delay: -4.9s;
+}
+.special-special:nth-child(8) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004243.945_r3eib0.png");
+  top: calc(50% -  28px);
+  left: calc(50% - 9px);
+  animation-delay: -6.7s;
+}
+.special-special:nth-child(9) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004522.308_oyqezc.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -239px);
+  animation-delay: -5.8s;
+}
+.special-special:nth-child(10) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T003630.313_tc72sv.png");
+  top: calc(50% -  -28px);
+  left: calc(50% - -659px);
+  animation-delay: -6.3s;
+}
+.special-special:nth-child(11) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004339.376_fnlku6.png");
+  top: calc(50% -  -98px);
+  left: calc(50% - -709px);
+  animation-delay: -14.2s;
+}
+.special-special:nth-child(12) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004317.634_u1ht3x.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -800px);
+  animation-delay: -7s;
+}
+.special-special:nth-child(13) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T003634.836_t2xw5j.png");
+  top: calc(50% -  28px);
+  left: calc(50% - -909px);
+  animation-delay: -3.4s;
+}
+.special-special:nth-child(14) {
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666651696/donGions%20imgs/balllOfThings/special/pngwing.com_-_2022-10-25T004400.162_txnjup.png");
+  top: calc(50% -  0px);
+  left: calc(50% - -1000px);
+  animation-delay: -0.9s;
+}
+
+
+
+
+
 @keyframes plan10 {
   0% {
     transform: scale(0) rotateZ(45deg) translate(-300px);

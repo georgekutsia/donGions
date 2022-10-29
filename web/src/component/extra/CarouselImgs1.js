@@ -72,7 +72,7 @@ function CarouselImgs1() {
               <img src="https://media2.giphy.com/media/Q66MGiD0g83ogQRqkZ/giphy.gif?cid=790b7611880b383952caa148fa869125d811647c63a11719&rid=giphy.gif&ct=g" className="d-block float-start px-5" height="200px" alt="..."/>
               <img src="https://media1.giphy.com/media/8nXWIge0vmfCfwZhwV/giphy.gif?cid=790b761142e005651fea22ce5d814d6e5d0ba735ec071810&rid=giphy.gif&ct=g" className="d-block float-end px-5" height="200px" alt="..."/>
               <div className="carousel-caption d-none d-md-block">
-                <h4>¿En grupo o slitario?</h4>
+                <h4>¿En grupo o solitario?</h4>
                 <p>En grupo solo os limita vuestra imaginación<br /> sobre cómo combinar vuestras habilidades <br /> En solitario y rodeado de enemigos, <br /> no necesitas controlarte...</p>
               </div>
             </div>

@@ -48,6 +48,13 @@
   right: 12px;
   top: 5px
 }
+.delete-note-position{
+  display: flex;
+  position: absolute;
+  width: 30px;
+  right: 12px;
+  bottom: 5px
+}
 
 #note-transform {
   position: relative;

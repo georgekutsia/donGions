@@ -14,7 +14,9 @@ function RegisterScreen() {
   const [intro, setIntro] = useState(true)
   const [buttonSkip, setButtonSkip] = useState(true)
   const [buttons, setButtons] = useState(false)
-
+  const [inspi1, setInpsi1] = useState(false)
+  const [inspi2, setInpsi2] = useState(false)
+  const [inspi3, setInpsi3] = useState(false)
   useEffect(() => {
       setButtons(true)
   }, []);
@@ -25,7 +27,17 @@ function RegisterScreen() {
       setShowVideosBiblioplex(true);
       setShowRegister(true)
   }
-
+  const handelInspi = () => {
+    setTimeout(() => {
+       setInpsi1(!inspi1)
+     }, 300)
+     setTimeout(() => {
+       setInpsi2(!inspi2)
+     }, 500)
+     setTimeout(() => {
+       setInpsi3(!inspi3)
+     }, 700)
+   }
   setTimeout(() => {
       setShowCarousel(true);
   }, 17000); 
@@ -88,6 +100,29 @@ function RegisterScreen() {
                         {showCarousel && <CarouselImgs1/>}
                   </div>
       </FadeInOut>
+        </div>
+        {showVideosBiblioplex && 
+        <button className='btn-rules-toggle' style={{color:"blue"}} onClick={handelInspi}>
+                  <span></span><span></span><span></span><span></span>Inspírate un poco más...
+              </button>
+        }
+        <div>
+        <FadeInOut show={inspi1} duration={200}>
+            {inspi1 &&
+            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.42.46_dl8bcg.png" alt="inspire 1" />
+            }
+        </FadeInOut>
+      <FadeInOut show={inspi2} duration={200}>
+            {inspi2 &&
+            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698261/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.02_gpniud.png" alt="inspire 2" />
+              }
+            </FadeInOut>
+      <FadeInOut show={inspi3} duration={200}>
+            {inspi3 &&
+
+            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.10_qvo0xf.png" alt="inspire 3" />
+            }
+        </FadeInOut>
         </div>
             {showVid &&  <VideoComp/>}
     <FadeInOut show={showRegister} duration={5000}>

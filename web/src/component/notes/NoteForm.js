@@ -35,23 +35,20 @@ function NoteForm() {
           )}
         </div>
                 <div className="d-flex pt-2">
-                <input type="checkbox" className="btn-check" value="Personaje" id="extra" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Extra-" id="extra" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="extra"> Extra</label><br></br>
-                <input type="checkbox" className="btn-check" value="Personaje" id="person" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Personaje-" id="person" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2"  htmlFor="person"> Personaje</label><br></br>
-                <input type="checkbox" className="btn-check" value="Lugar" id="place" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Lugar-" id="place" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="place"> Lugar</label><br></br>
-                <input type="checkbox" className="btn-check" value="Evento" id="event" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Evento-" id="event" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="event"> Evento</label><br></br>
-                <input type="checkbox" className="btn-check" value="Criatura" id="creature" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Criatura-" id="creature" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="creature"> Criatura</label><br></br>
-                <input type="checkbox" className="btn-check" value="Misión" id="mission" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Misión-" id="mission" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="mission"> Misión</label><br></br>
-                <input type="checkbox" className="btn-check" value="Prueba" id="riddle" {...register("category")}/>
+                <input type="checkbox" className="btn-check" value="Prueba-" id="riddle" {...register("category")}/>
                 <label style={{border: "black"}} className="btn btn-outline-dark p-2" htmlFor="riddle"> Prueba</label><br></br>
-                <input type="checkbox" className="btn-check" value="Extra" id="extra" {...register("category",
-                {required:"necesitas elegir una opción"}
-                )}/>
         </div>
         
         <div className="">

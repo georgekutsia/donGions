@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 
+.bulala{
+  width: 260px;
+  display: flex;
+}
+
 .disconect-button:hover{
     color: white;
     background-color: black;

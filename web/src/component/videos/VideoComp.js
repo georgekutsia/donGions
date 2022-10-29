@@ -11,7 +11,7 @@ useEffect(() => {
 
 <div>
   {vid.map((v) =>(
-      <video className='video-controls-plan' controls poster={v.img}>
+      <video key={v.video} className='video-controls-plan' controls poster={v.img}>
         <source src={v.video} type="video/mp4"/>
       </video>
   ))}

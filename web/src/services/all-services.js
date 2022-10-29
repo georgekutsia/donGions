@@ -20,6 +20,17 @@ http.interceptors.response.use(
 export function getProfile() {
   return http.get("/profile");
 }
+
+
+
+export function detailPj(id){
+return http.get(`/profile/${id}`)
+}
+
+export function editPj(id, data){
+return http.patch(`/profile/${id}`, data)
+}
+
 export function getCards(){
   return http.get("/cards")
 }
@@ -38,6 +49,9 @@ export function createNote(id) {
   return http.post('/notes', id)
 }
 
+export function deleteNote(id){
+  return http.delete("/notes", id)
+}
 
 export function registerPj(data) {
   // pj.image = pj.image[0]

@@ -59,14 +59,27 @@
 }
 
 .bubble-text-manual {
-  position: relative;
+  position: absolute;
   width: 620px;
   height: 110px;
   background: #32557f;
   border-radius: 10px;
   font-size: 20px;
   padding: 10px;
+  margin-left: 17%;
 }
+.bubble-text-pj{
+  position: absolute;
+  width: 620px;
+  height: 110px;
+  background: #32557f;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 30%;
+}
+
+
 .bubble-text-manual::after {
   content: "";
   position: absolute;
@@ -93,7 +106,7 @@
   position: absolute;
   margin-left: 200px;
   width: 300px;
-  height: 140px;
+  height: 160px;
   background: #32557f;
   border-radius: 10px;
   padding: 10px;
@@ -126,6 +139,23 @@
   top: 0px;
   width: 120px;
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271498/donGions%20imgs/shop%20dude/Ex13_keatuu_irpgng.png");
+}
+
+.img-shop-info-pj{
+  display: flex;
+  position: absolute;
+  left: 630px;
+  top: 0px;
+  width: 90px;
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271498/donGions%20imgs/shop%20dude/Ex10_k2xuwb_ksybbc.png");
+}
+.img-shop-info-pj:hover{
+  display: flex;
+  position: absolute;
+  left: 630;
+  top: 0px;
+  width: 80px;
+  content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex18_q3z97f_doruls.png");
 }
 
 

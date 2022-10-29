@@ -1,4 +1,5 @@
 export {default as PjScreen} from "./pj/PjScreen"
+export {default as PjDetailScreen} from "./pj/PjDetailScreen"
 export {default as EventsScreen} from "./inventory/EventsScreen"
 export {default as ShopScreen} from "./shop/ShopScreen"
 export {default as Shelves} from "./shop/Shelves"
@@ -15,7 +16,6 @@ export {default as MonstersScreen} from "./monsters/MonstersScreen"
 
 
 export {default as Character} from "./pj/parts/Character"
-export {default as Equiped} from "./pj/parts/Equiped"
 export {default as Inventory} from "./pj/parts/Inventory"
 export {default as Materials} from "./pj/parts/Materials"
 export {default as StatsPlusFight} from "./pj/parts/StatsPlusFight"

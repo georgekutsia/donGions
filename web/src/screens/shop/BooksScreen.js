@@ -22,7 +22,7 @@ function Books() {
                 </div>
             </div>
         </div>
-        <h5 className='title-shop big-armario'>Capas Hechizadas</h5>
+        <h5 className='title-shop big-armario'>Páginas malditas</h5>
           <div align="center" >
             <div>
                 <div style={{borderColor:"maroon"}} className='scrolling-space m-1'>
