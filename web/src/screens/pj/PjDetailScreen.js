@@ -237,7 +237,7 @@ const handleSubmitEquipped = (data) => {
                 </div>
                 <div >
                     <button  className='custom-btn btn-submit-equip' type='submit'>Equipar</button>
-                    <Link  className='custom-btn-return btn-return-equip'>Regresar</Link>
+                    <Link  className='custom-btn-return btn-return-equip' to="/profile">Regresar</Link>
                 </div>
           </div>
       </form>

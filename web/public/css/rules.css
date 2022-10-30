@@ -330,3 +330,10 @@ ul li span{
 
 
 /* backgrounds */
+
+#extra-list ul{
+    text-align: left;
+    margin-left: 40px;
+    font-size: 20px;
+}
+

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, Kinesthesia, Luck, NavbarVertical, Notes, Perception, Pj, Presence, SearchRules } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, ExtraInfo, Kinesthesia, Luck, NavbarVertical, Perception, Presence } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
@@ -164,6 +164,9 @@ const handleExplo= () => {
       <FadeInOut show={rPre} duration={400}>
               {rPre && <Presence/>}
         </FadeInOut>
+      <FadeInOut show duration={400}>
+              { <ExtraInfo/>}
+      </FadeInOut>
         {/* explor start */}
         <div>
         <FadeInOut show={expl1} duration={400}>
