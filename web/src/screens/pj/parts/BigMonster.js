@@ -26,7 +26,7 @@ function BigMonster({countMonster}) {
 
 
   return (
-    <div className='d-flex' style={{width:"90%"}}>
+    <div className='d-flex big-monster-scroller' style={{width:"90%"}}>
         <div style={{borderRadius:"5px", backgroundColor: `rgb(${a}, ${j}, ${c})`, margin:"2px", }}>
             <Link  className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Monstraco 1</Link>
               {showMonster1 &&

@@ -1,14 +1,13 @@
-.background-pj-text-area{
-  margin: 30px 0 0 120px;
-  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130985/donGions%20imgs/shop/wood_rs0mwz.jpg");
-  width: 60%;
-  max-height: 50%;
-  overflow: hidden;
-  position: absolute;
-  z-index: 50;
-  border: 2px white double;
-  border-radius: 10px;
+.big-monster-scroller{
+  overflow: auto;
+  white-space: nowrap;
 }
+.monster-scroller{
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
 .background-pj-text-area h2{
 background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666130956/donGions%20imgs/shop/wood_b25uub.jpg");
 width: 250px;
@@ -18,9 +17,8 @@ border-radius: 10px;
 
 .div-counter-monster{
   background-color: rgb(65, 75, 73);
-  padding: 10px;
   border-radius: 15px;
-  margin: 1px;
+  width: 100%;
 }
 .monsters-counter-pj {
   background-color: rgb(48, 60, 57);
@@ -28,6 +26,7 @@ border-radius: 10px;
   position: absolute;
   width: 30px;
   right: 0px;
+  height: 80%;
   padding: 5px 10px;
   margin-top: 40px;
   border-radius: 20px;
@@ -35,14 +34,16 @@ border-radius: 10px;
   transition: all 1s ease-in-out;
   color: rgb(243, 73, 73);
   overflow: hidden;
+  white-space: nowrap;
 }
 .monsters-counter-pjs {
   background-color: rgb(48, 60, 57);
   display: flex;
   position: absolute;
   margin-top: 40px;
-  width: 850px;
+  width: 50%;
   right: 10px;
+  height: 80%;
   padding: 5px 10px;
   border-radius: 20px;
   border: 3px solid rgb(8, 44, 15);
@@ -50,36 +51,35 @@ border-radius: 10px;
   color: rgb(243, 73, 73);
   transition: all 0.6s ease-in-out;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .nav-items-pj {
   display: flex;
   position: absolute;
-  font-size: 10px;
-  margin: 0px;
+  font-size: 0.5vw;
   text-decoration: none;
   flex-direction: column;
   transition: all 1s ease-in-out;
-  transition-delay: 2s;
-  width: 70px;
-  border: 2px rgba(128, 128, 128, 0.316) solid;
+  transition-delay: 1s;
+  z-index: 20;
 }
 .nav-items-pj:hover {
-  margin: 0;
-  font-size: 40px;
+  font-size: 3vw;
   transition: all 0.4s ease-in-out;
 }
 
 .nav-items-pj-item {
   margin: 1px;
   color: grey;
+  z-index: 20;
 }
 
 .monsters-counter-pj:hover {
   right: 00px;
   transition: all 0.6s ease-in-out;
   overflow: hidden;
-  width: 290px;
+  width: 50%;
 }
 
 .link-name-monster {
@@ -88,7 +88,7 @@ border-radius: 10px;
   color: white;
   font-size: 25px;
   text-shadow: 2px 2px green, 1px 1px rgb(32, 83, 3);
-  overflow: hidden;
+  display: inline-block;
 }
 .link-name-monster-show {
   display: flex;
@@ -101,7 +101,6 @@ border-radius: 10px;
   font-size: 30px;
   text-shadow: 2px 2px green, 1px 1px rgb(32, 83, 3);
   transition: all 0.6s ease-in-out;
-  overflow: hidden;
 }
 .link-name-monster-show:hover {
   display: flex;
@@ -117,7 +116,7 @@ border-radius: 10px;
 
 .plans-name {
   font-family: alkalami;
-  font-size: 60px;
+  font-size: 4vw;
   text-shadow: 2px 2px grey, 4px 4px rgb(48, 45, 45), 6px 6px grey;
 }
 
@@ -128,8 +127,8 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 50px;
-  margin: 5px;
+  width: 30%;
+  padding: 0;
   border-radius: 10px;
 }
 .btn-rest-stats:hover {
@@ -141,8 +140,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 50px;
-  margin: 5px;
+  width: 30%;
   border-radius: 10px;
 }
 .btn-add-stats:hover {
@@ -154,7 +152,7 @@ border-radius: 10px;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   color: white;
-  width: 76px;
+  width: 30%;
   padding-top: 10px;
   border-radius: 40px;
 }
@@ -162,34 +160,35 @@ border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.103);
 }
 .box-img-planeswalker {
-  margin-top: 200px;
+  margin-top: 3%;
 }
 
 .box-small-stats-div {
-  transform: scale(0.5);
+  width: 30%;
+  min-width: 200px;
   transition: all 1s ease-in-out;
-  background-color: yellow;
-  width: 500px;
-  margin-right: 65%;
+  float: inline-start;
+  
 }
 .box-big-stats-div {
-  transform: scale(1);
   transition: all 1s ease-in-out;
-  align-items: center;
-  display: flex;
-  width: 978px;
 }
 
 .profile-image-css-smoll {
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
-  margin: 90px 60% -60px 120px;
-  transition: all 1s ease-in-out;
-  transform: scale(0.4);
+  width: 35vw;
+  min-width: 200px;
+  float: left;
+  border-radius: 15px;
+  transform: scale(0.5);
 }
+
 .profile-image-css {
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
+  width: 35vw;
+  min-width: 200px;
 }
 .profile-image-css:hover {
   border-radius: 40px;
@@ -199,8 +198,9 @@ border-radius: 10px;
 
 #profile-size-box {
   height: auto;
-  padding: 20px;
+  padding: 0.5%;
   text-shadow: 1px 1px grey;
+  text-align: center;
 }
 .ddFis {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
@@ -208,9 +208,17 @@ border-radius: 10px;
   background-size: 100px;
 }
 .stats-salud-block {
-  display: flex;
   background-color: black;
   margin: 0;
+  padding:0;
+}
+.stats-salud {
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461663/donGions%20imgs/backgroundEffects/dsa914.411_l6xp0l.png");
+  background-size: cover;
+  border: 1px rgb(0, 238, 255) solid;
+  width: 100%;
+  font-size: 3vmax;
+  padding: 13px;
 }
 .stats-defence-block {
   display: flex;
@@ -218,30 +226,22 @@ border-radius: 10px;
   margin: 0;
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666446283/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-22T154416.136_g5otzs.png");
 }
-.stats-salud {
-  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461663/donGions%20imgs/backgroundEffects/dsa914.411_l6xp0l.png");
-  background-size: cover;
-  border: 1px rgb(0, 238, 255) solid;
-  width: 406.5px;
-  font-size: 27px;
-  padding: 3px;
-}
 .stats-defense {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461261/donGions%20imgs/backgroundEffects/meral_kcimmw.png");
   border: 1px rgb(0, 238, 255) solid;
-  width: 406.5px;
-  font-size: 27px;
+  width: 100%;
+  font-size: 3vmax;
   padding: 3px;
 }
 .stats-damage-block {
-  display: flex;
   background-color: black;
+  width: 100%;
 }
 .stats-damage {
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666461441/donGions%20imgs/backgroundEffects/dsa_gsdxir.png");
   border: 3px rgb(0, 238, 255) solid;
-  width: 275px;
-  font-size: 20px;
+  width: 100%;
+  font-size: 3vmax;
   padding: 2px;
 }
 .stats-chars-box {
@@ -275,6 +275,11 @@ border-radius: 10px;
   border: 20px rgb(74, 82, 83) ridge;
   border-radius: 10px;
   padding: 10px;
+  width: 90%;
+  height: 500px;
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 500px;
 }
 .button-mostrar-mejoradas {
   text-decoration: none;

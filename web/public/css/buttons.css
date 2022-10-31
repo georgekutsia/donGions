@@ -11,7 +11,11 @@
   width: 260px;
   display: flex;
 }
-
+.disconect-button{
+  max-height: 3.5vw;
+  max-width: 14vw;
+  font-size: 2vw;
+}
 .disconect-button:hover{
     color: white;
     background-color: black;

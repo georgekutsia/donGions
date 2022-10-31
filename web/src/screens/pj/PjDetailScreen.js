@@ -30,7 +30,7 @@ const handleSubmitEquipped = (data) => {
     <div className='background-pjdetail'>
     <FadeInOut show duration={800}>
         <div className='p-3'>
-            <h3  align="center">Elige un número de -5 a 15</h3>
+            <h5  align="center">Elige un número de -5 a 15</h5>
             <h3 align="center">Debe existir un valor en la casilla</h3>
         </div>
         <form  className="form-edit-pj" onSubmit={handleSubmit(handleSubmitEquipped)} >
@@ -50,7 +50,7 @@ const handleSubmitEquipped = (data) => {
                 </div>
               </div>
               <div>
-              <h5 className="pj-edit-text" align="center"> Maná <i className="pj-edit-fa fa-solid fa-droplet"></i></h5>
+              <h5 className="pj-edit-text" align="center">Maná <i className="pj-edit-fa fa-solid fa-droplet"></i></h5>
                 <div className="input-group equipped-form">
                       <input type="number" defaultValue={info.pj.equipped.mana}  className={`equipped-form`} placeholder="Nombre del apunte. Max 25 caracteres"
                         {...register("equipped.mana", {
@@ -235,7 +235,7 @@ const handleSubmitEquipped = (data) => {
                         />
                     </div>
                 </div>
-                <div >
+                <div className='m-2'>
                     <button  className='custom-btn btn-submit-equip' type='submit'>Equipar</button>
                     <Link  className='custom-btn-return btn-return-equip' to="/profile">Regresar</Link>
                 </div>

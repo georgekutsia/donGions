@@ -40,15 +40,15 @@
 
 #background-navbar{
   font-family: 'Rubik Maze', cursive;
-  display: flex;
   color: rgba(255, 255, 255, 0.335);
-  font-size: 26px;
+  font-size: 2vw;
   padding: 0px;
   box-shadow: 0 30px 40px rgba(250,250,250,.1);
   text-shadow: 0 0 5px #000000, 0 0 20px #000, 0 0 30px #000;
-  background-size: 20px 20px;
+  background-size: 1vw 1vw;
   background-image: linear-gradient(to right,#302b2b31 1px,transparent 1px), linear-gradient(to bottom,#b2a8a82d 1px,transparent 1px);
-
+  overflow: auto;
+  white-space: nowrap;
 }
 
 @keyframes example {
@@ -73,6 +73,18 @@
   color: white;
   animation-iteration-count: infinite;
 }
+.background-navbar-ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.background-navbar-ul li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #background-navbar-shop{
   font-family: 'Rubik Maze', cursive;
   display: flex;

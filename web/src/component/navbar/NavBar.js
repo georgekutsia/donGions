@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate} from "react-router-dom"
 import { AuthContext } from '../../context/AuthContext'
 import * as logService from "../../services/all-services";
-
+import MediaQuery from 'react-responsive'
 
 function NavBar() {
   const navigation = useNavigate();
@@ -13,8 +13,8 @@ function NavBar() {
     const handleClick = () => {
       logService
         .logout()
-        .then((data) => {
-          localStorage.clear(data);
+        .then(() => {
+          localStorage.clear();
           console.log("te has ido")
           navigation("/authenticate")
           window.location.reload(true)
@@ -24,38 +24,34 @@ function NavBar() {
     }
   return (
     <>
-        <nav id='background-navbar' className=" navbar-expand-lg">
-          <div className="container-fluid justify-content-around">
-              <ul className=" navbar-nav justify-content-around">
-                <li className="nav-item ">
+        <nav id='background-navbar'>
+            <ul className="background-navbar-ul">
+                <li>
                   <NavLink to="/frontpage" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Frontpage</NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink to="/eventos" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Eventos</NavLink>
                 </li>
-                <li className="nav-item  ">
-                  <NavLink to="/profile" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} ><h2>Perfil</h2></NavLink>
+                <li className=" ">
+                  <NavLink to="/profile" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Perfil</NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink to="/shop" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Tienda </NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink to="/rules" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Manual </NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink to="/notes" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Notes </NavLink>
                 </li>
                 {loged.pj.admin && 
-                <li className="nav-item ">
+                <li>
                   <NavLink to="/monsters" className={({isActive}) => isActive ? "nav-link nav-glow-selected active" : "nav-link bouncing"} >Monsters </NavLink>
                 </li>
                 }
-              </ul>
-          </div>
-          <div>
               <button className='disconect-button d-flex' onClick={handleClick}>{loged.pj.nickname}
-              <i style={{fontSize:"40px"}} className="fa-solid fa-right-from-bracket"></i></button>
-          </div>
+              <i className="fa-solid fa-right-from-bracket"></i></button>
+              </ul>
         </nav>
     </>
   )

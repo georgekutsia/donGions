@@ -38,12 +38,12 @@ console.log(eq)
   <div >
     <div  style={{border:`3px ${dColor} solid`}}   className="stats-salud-block">
       <div  className="">
-      <div className="stats-defense d-flex justify-content-between"  style={{color:`${dodgeColor}`}}>Esquiva: <span ><ButtonCounts max={20} stat={dDodge} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
-      <div className="stats-defense d-flex justify-content-between"  style={{color:`${resistColor}`}}>Resistencia: <span ><ButtonCounts max={20} stat={dResist} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
+      <div className="stats-defense justify-content-between"  style={{color:`${dodgeColor}`}}>Esquiva: <span ><ButtonCounts max={20} stat={dDodge} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
+      <div className="stats-defense justify-content-between"  style={{color:`${resistColor}`}}>Resistencia: <span ><ButtonCounts max={20} stat={dResist} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
       </div>
       <div   className="">
-      <div className="stats-defense d-flex justify-content-between"  style={{color:`${blockColor}`}}>Bloqueo: <span ><ButtonCounts max={20} stat={dBlock} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
-      <div className="stats-defense d-flex justify-content-between"  style={{color:`${parryColor}`}}>Parada: <span ><ButtonCounts max={20} stat={dParry} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
+      <div className="stats-defense justify-content-between"  style={{color:`${blockColor}`}}>Bloqueo: <span ><ButtonCounts max={20} stat={dBlock} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
+      <div className="stats-defense justify-content-between"  style={{color:`${parryColor}`}}>Parada: <span ><ButtonCounts max={20} stat={dParry} dead="fa-skull-crossbones"  colorDead="green" colorText={"darksalmon"}/></span>  </div>
 
       </div>
     </div>
