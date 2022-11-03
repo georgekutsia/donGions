@@ -13,24 +13,48 @@
   width: 50%;
   padding-bottom: 15px;
 }
-
+.char-register-name{
+  font-size: calc(16px + 0.5vw);
+}
+.char-register{
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: auto;
+  width: 90%;
+  max-width: 950px;
+  justify-content: space-around;
+}
+.habilidades-register-main{
+  border-radius: 15px;
+  width: 150%;
+  max-width: 220px;
+  transition: all .2s ease-in-out; 
+}
+.habilidades-register-main:hover{
+  width: 200%;
+  max-width: 320px
+}
 
 .habilidades-register{
   border-radius: 15px;
-  width: 200px;
-  transition: all .2s ease-in-out; 
+  width: 40%;
+  max-width: 160px;
+  transition: all .6s ease-in-out; 
 }
 .habilidades-register:hover{
- transform: scale(2)
+  width: 200%;
+  max-width: 220px;
+  transition: all .6s ease-in-out; 
 }
 .seccion-habilidades{
   background-color: rgba(128, 128, 128, 0.206);
   border: 4px solid black;
   border-radius: 20px;
-  width: 1200px;
+  width: 90%;
   height: 500px;
   font-family: 'Times New Roman', Times, serif;
-  padding: 20px;
+  font-size: calc(10px + 1vw);
+  padding: 10px;
   z-index: 3;
 }
 .steps-margins{
@@ -67,14 +91,15 @@
   
 }
 .radio-register{
-  margin: -13px;
+  left: -43px;
 }
 .input-register{
   border-radius: 20px;
   width: 100%;
 }
 .input-register-text{
-  width: 900px;
+  width: 90%;
+  max-width: 800px;
 }
 .form-register{
 background: url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665739227/donGions%20imgs/backgroundEffects/pngwing.com_74_kievyi.png);
@@ -221,14 +246,24 @@ background-size: cover;
 	margin-top: 35px;
 	font-size: calc(10px + 1vw);
 }
+.paso-description2{
+	margin-top: 10px;
+	font-size: calc(10px + 1vw);
+}
 .choose-plans{
   white-space: nowrap;
   overflow: auto;
-  width: 2200px;
+  max-width: 90%;
 }
 .choose-plans-each{
   display: inline-block;
+  margin-right: 100px;
 }
+.choose-plans-each-one{
+margin-right: 20px;
+}
+
+
 .box-steps {
   border: 0.35rem solid;
   padding-bottom: 20px;

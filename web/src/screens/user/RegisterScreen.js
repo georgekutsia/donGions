@@ -6,7 +6,7 @@ import FadeInOut from '../../component/FadeInOut';
 import VideoComp from '../../component/videos/VideoComp';
 
 function RegisterScreen() {
-  const [showInfo, setShowInfo] = useState(true)
+  const [showInfo, setShowInfo] = useState(false)
   const [showVid, setShowVid] = useState(false)
   const [showCarousel, setShowCarousel] = useState(false)
   const [showVideosBiblioplex, setShowVideosBiblioplex] = useState(false)
@@ -85,27 +85,14 @@ function RegisterScreen() {
                     </div>
                 }
       </FadeInOut>
-      
-        <div className='m-1'>
-        <BackgroundFloatingBuble
-            floatingBalls={
-              "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666052942/donGions%20imgs/balllOfThings/pngwing.com_75_dvpaei.png)"
-            }
-            widthBall={"20px"}
-            heigthBall={"20px"}
-            idFlow={"circle-container"}
-          />
-    <FadeInOut show={showCarousel} duration={5000}>
-                  <div>
-                        {showCarousel && <CarouselImgs1/>}
-                  </div>
-      </FadeInOut>
-        </div>
+      <FadeInOut show={showVideosBiblioplex} duration={1000}>
         {showVideosBiblioplex && 
         <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(10px + 0.5vw)"}}  onClick={handelInspi}>
                   <span></span><span></span><span></span><span></span>Inspírate un poco más...
               </button>
         }
+      </FadeInOut>
+
         <div>
         <FadeInOut show={inspi1} duration={200}>
             {inspi1 &&
@@ -138,9 +125,9 @@ function RegisterScreen() {
         {showInfo &&  <Register/>}
       </FadeInOut>
         </div>
-        <FadeInOut show="buttons" duration={16000}>
+        {/* <FadeInOut show="buttons" duration={16000}>
               <Creator/>
-        </FadeInOut>
+        </FadeInOut> */}
     </div>
   )
 }

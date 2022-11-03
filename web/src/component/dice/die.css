@@ -1,5 +1,5 @@
 .die-1{
-  font-size: 6em;
+  font-size: calc(40px + 8vw);
   padding: 0.25em;
   color: green;
 }

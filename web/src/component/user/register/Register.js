@@ -269,15 +269,15 @@ function Register() {
         </div>
         {/* paso 2 */}
                 <Steps paso={"Paso 2"} pasoTexto={"Elige el Planeswalker que te guíe y enseñe"}/>
-                <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
+                <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)", fontSize:"calc(6px + 0.5vw)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
                 <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
             </Link>
-        <div className="d-flex justify-content-evenly box-steps choose-plans">
+        <div className="d-flex box-steps choose-plans">
             {pjInfo.map((pjData) =>(
-              <div className="choose-plan-each" align="center" key={pjData.name} >
-              <h6 style={{color: `${pjData.style}`}} className="ms-4">{pjData.name} {pjData.surname}</h6>
-              <div className="form-check d-flex">
-                      <label className="form-check-label" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
+              <div className="choose-plan-each" key={pjData.name} >
+              <h6 style={{color: `${pjData.style}`}} className="ms-2">{pjData.name} {pjData.surname}</h6>
+              <div className="form-check d-flex choose-plan-each-one">
+                      <label className="form-check-label choose-plans-each-one" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
                       onClick={()=> {
                           if (pjData.name === "Liliana"){
                             setInfoLili(true); setInfoGid(false);  setInfoJace(false);  setInfoNissa(false); setInfoZarek(false); setInfoAjani(false);setInfoSorin(false);setInfoElspeth(false);setInfoTeferi(false);setInfoSarkhan(false)
@@ -303,7 +303,7 @@ function Register() {
                         }
                       }  />
                       </label>
-                      <input className="form-check-input radio-register" type="radio" value={pjData.name} name="planeswalkers" id={pjData.name} {...register("planeswalker", {
+                      <input className="form-check-input radio-register" type="radio" hidden value={pjData.name} name="planeswalkers" id={pjData.name} {...register("planeswalker", {
                       required: "Debes elegir un Planeswalker que te guie",
                     })} />
                     </div>
@@ -346,34 +346,33 @@ function Register() {
 
 
 {/* paso 3 */}
-<Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar"}/>
-
-            <div className="d-flex mb-5 justify-content-evenly box-steps">
-                {character.map((char) =>(
-                  <div align="center" key={char.name} >
-                    <h6 style={{fontSize:"25px"}} className="ms-4 mb-5">{char.name} </h6>
-                          <div style={{scale: "2"}} className="form-check d-flex">
-                              <label className="form-check-label" htmlFor={char.name}>  
-                                  <img  className={`mx-1 ${borderSelected}`}  src={char.image} alt="character" 
-                                  onClick={()=> {
-                                      if (char.name === "Suerte"){
-                                        setShowSu(true); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
-                                      } else if(char.name === "Carisma"){
-                                        setShowSu(false); setShowCa(true); setShowPe(false); setShowCi(false); setShowPre(false)
-                                      } else if (char.name === "Percepción"){
-                                        setShowSu(false); setShowCa(false); setShowPe(true); setShowCi(false); setShowPre(false)
-                                      }else if (char.name === "Cinestesia"){
-                                        setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(true); setShowPre(false)
-                                      } else if (char.name === "Presencia"){
-                                        setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(true)
-                                      }
+        <Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar"}/>
+          <div className="d-flex box-steps char-register">
+              {character.map((char) =>(
+                <div  key={char.name} >
+                  <div className="char-register-name" >{char.name}</div>
+                        <div className="form-check  d-flex">
+                            <label className="form-check-label" htmlFor={char.name}>  
+                                <img  className={` ${borderSelected}`}  src={char.image} alt="character" 
+                                onClick={()=> {
+                                    if (char.name === "Suerte"){
+                                      setShowSu(true); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(false)
+                                    } else if(char.name === "Carisma"){
+                                      setShowSu(false); setShowCa(true); setShowPe(false); setShowCi(false); setShowPre(false)
+                                    } else if (char.name === "Percepción"){
+                                      setShowSu(false); setShowCa(false); setShowPe(true); setShowCi(false); setShowPre(false)
+                                    }else if (char.name === "Cinestesia"){
+                                      setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(true); setShowPre(false)
+                                    } else if (char.name === "Presencia"){
+                                      setShowSu(false); setShowCa(false); setShowPe(false); setShowCi(false); setShowPre(true)
                                     }
-                                  }  />
-                              </label>
-                              <input className="form-check-input radio-register" type="radio" value={char.name} name="character" id={char.name} {...register("character", {
-                              required: "Debes elegir una característica ",
-                            })} />
-                        </div>
+                                  }
+                                }  />
+                            </label>
+                            <input className="form-check-input radio-register" hidden type="radio" value={char.name} name="character" id={char.name} {...register("character", {
+                            required: "Debes elegir una característica ",
+                          })} />
+                      </div>
                   </div>
                 ))}
             </div>
@@ -401,8 +400,7 @@ function Register() {
 
 <Steps paso={"Paso 4"} pasoTexto={"¿Donde comenzarás tu historia en el plano de Belenon?"}/>
       <FadeInOut show={!buttonsText} duration={500}>
-
-      <h2 className="result-dice">{textValue}</h2>
+      <div style={{fontSize:"calc(20px + 4vw)"}} className="result-dice">{textValue}</div>
       </FadeInOut>
 
     {buttonsText  &&
@@ -411,7 +409,7 @@ function Register() {
     </div>
     }
 {/* paso 5 */}
-        <Steps style={{width:"200px"}} paso={"Paso 5"} pasoTexto={`¡Elige una de las mochilas! Viene con una colección aleatoria de materiales.`} />
+        <Steps style={{width:"100%"}} paso={"Paso 5"} pasoTexto={`¡Elige uno de los cofres!`} pasoTexto2={`Viene con una colección aleatoria de materiales.`} />
         <FadeInOut show={chests} duration={3500}>
             <div className= {chests ? "register-mats-box-text" : "register-mats-box-text fa fa-spin-pulse"}>
                 <Link onClick={()=> setChests(false)} className="fa fa-bounce"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666574106/donGions%20imgs/shop%20dude/pngwing.com_-_2022-10-24T031435.134_p5llb5.png" alt="treasure 1" width="100px" /></Link>
@@ -422,7 +420,7 @@ function Register() {
 
     {!chests && 
       <FadeInOut show={!chests} duration={3500}>
-    <h2 style={{color:"chocolate", textShadow:"2px 2px black", marginTop:"150px"}}>Haré que te lo manden a tus aposentos. Ya te queda menos<img width="90px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex192_ooh6ju_cos14i.png" alt="Lala" /></h2>
+    <h2 style={{color:"chocolate", textShadow:"2px 2px black", marginTop:"50px"}}>Haré que te lo manden a tus aposentos. Ya te queda menos<img width="90px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex192_ooh6ju_cos14i.png" alt="Lala" /></h2>
     </FadeInOut>
 
     }

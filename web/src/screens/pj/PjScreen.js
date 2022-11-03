@@ -28,9 +28,9 @@ console.log("valor", value)
   const [char, setChar] = useState(false)
   const [dispStats, setDispStats] = useState(false)
   const [back, setBack] = useState(false)
-  const [dude, setDude] = useState(false)
+  const [dude, setDude] = useState(true)
   const [showMonster1, setShowMonster1] = useState(true)
-  const [chest, setChest] = useState(true)
+  const [chest, setChest] = useState(false)
   const [smoller, setSmoller] = useState(true)
   const [background, setBackground] = useState(false)
   const [showBigMonster, setShowBigMonster] = useState(false)
@@ -39,7 +39,7 @@ console.log("valor", value)
 
   useEffect(() => {
     setShowPage(true)
-    setDude(false)
+    setDude(true)
 
     setTimeout(() => {
       setDude(false)
@@ -78,10 +78,10 @@ console.log("valor", value)
                 {dude?
                     <div className="bubble-text-pj" >
                         <img className="img-shop-info-pj" alt="Dude" />
-                        <h6> ¡Ya estás aquí! </h6>
-                        <h6>En tu perfil puedes llevar las cuentas de tu personaje, el inventario y algunas cosas mas. 
-                            Verás una lista de los materiales que tienes y podrás añadir otras.</h6>
-                            <h6>También podrás llevar las cuentas de algunos monstrous con los que luchas</h6>
+                        <div> ¡Ya estás aquí! </div>
+                        <div>En tu perfil puedes llevar las cuentas de tu personaje, el inventario y algunas cosas mas. 
+                            Verás una lista de los materiales que tienes y podrás añadir otras.</div>
+                            <div>También podrás llevar las cuentas de algunos monstrous con los que luchas</div>
                     </div>: ""
                 }
           </FadeInOut>
@@ -114,12 +114,7 @@ console.log("valor", value)
                         <StatsDefence/>
                   </div>
               </div>
-        {/* <Inventory/>
-          <div className='d-'>
-            <h5>marcialidad {statis.marciality}</h5>
-            <h5>Oros {info.pj.gold}</h5>
-            <h5>Lugar {info.pj.place}</h5>
-          </div>  */}
+            {/* <h5>Lugar {info.pj.place}</h5> */}
               </FadeInOut>
             </div>
             }

@@ -71,14 +71,14 @@
   z-index: 10;
 }
 .bubble-text-pj{
-  position: absolute;
-  width: 620px;
-  height: 110px;
+  width: 70%;
+  max-width: 600px;
+  height: 30%;
   background: #32557f;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: calc(10px + 0.3vw);
   padding: 10px;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 
@@ -150,9 +150,10 @@
 .img-shop-info-pj{
   display: flex;
   position: absolute;
-  left: 630px;
-  top: 0px;
-  width: 90px;
+  top: 4%;
+  margin-left: -60px;
+  width: calc(20px + 10%);
+  max-width: 80px;
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271498/donGions%20imgs/shop%20dude/Ex10_k2xuwb_ksybbc.png");
 }
 .img-shop-info-pj:hover{

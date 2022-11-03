@@ -16,7 +16,7 @@ function ImportantCreaturesBelenon() {
   const [weird, setWeird] = useState(false)
   const [comunicado, setComunicado] = useState(false)
 
-  const[showTable, setShowTable] = useState(true);
+  const[showTable, setShowTable] = useState(false);
   
   return(
       <div align="center">

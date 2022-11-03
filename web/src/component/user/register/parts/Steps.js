@@ -10,7 +10,7 @@ function Steps({paso, pasoTexto, pasoTexto2}) {
             <h3>{paso}</h3>
         </div> 
         <div className="paso-description">{pasoTexto}</div>
-        <div className="paso-description">{pasoTexto2}</div>
+        <div className="paso-description2">{pasoTexto2}</div>
     </div>
   );
 }
