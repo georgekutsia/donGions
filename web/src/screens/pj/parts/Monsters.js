@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ButtonMonstersCount from './ButtonMonstersCount'
 import FadeInOut from "../../../component/FadeInOut";
 
-function Monsters({countMonster}) {
+function Monsters() {
   const [showMonster1, setShowMonster1] = useState(false)
   const [showMonster2, setShowMonster2] = useState(false)
   const [showMonster3, setShowMonster3] = useState(false)

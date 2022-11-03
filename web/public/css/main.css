@@ -29,29 +29,38 @@ button:disabled {
   transition: all ease-in-out 1s;
 }
 #eye-login{
-  font-size: 40px;
+  font-size: calc(16px + 1vw);
 }
-
+.login-input{
+  text-align: left;
+  margin: 0px;
+  padding: 0px
+}
 .login-textarea{
   border-radius: 30px;
   background-color: transparent;
   text-align: center;
-  
+  width: 80%;
+  max-height: 40px;
 }
 .login-form-margin{
-  padding-top:20px;
-  padding-left: 10%;
+  padding-top: calc(50px + 1vw);
+  padding-left: 2%;
+  padding-bottom: 30%;
+  display: flex;
+  justify-content: center;
 }
 .login-form-img{
-  width: 700px;
+  width: 90%;
+  max-width: 600px;
   background-image: url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665687324/donGions%20imgs/planeswalkers%20png/plan111_oeh6h8.jpg);
   background-size: cover;
   border-radius: 40px;
   height: 300px;
 }
 .div-neon {
-  width:900px;
-  margin-top:5%;
+  width:50%;
+  margin-top: calc(50px + 10%);
   border-radius: 20%;
   animation: border-flicker 3s linear;
 }
@@ -65,7 +74,7 @@ button:disabled {
   color:#f60000;
   font-family: 'Tangerine';
   font-weight: 900;
-  font-size:124px;
+  font-size: calc(20px + 4vw);
   letter-spacing:5px;
   animation: text-flicker 8s linear infinite;
 }
@@ -310,8 +319,8 @@ border: none
 
 
 .video-controls-plan{
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 100px;
   transition: all .6s ease-in-out; 
   border: 10px white double;
 }
@@ -320,3 +329,4 @@ border: none
   border-radius: 1%;
   border: rgb(2, 160, 212) 5px solid;
 }
+

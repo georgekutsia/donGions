@@ -13,9 +13,9 @@ function StatsPlusFight() {
         speedColor = "green"
       }
   return (
-    <div>
+    <div className='d-flex'>
       <div className="stats-damage-block">
-          <div style={{color:`${speedColor}`}} className="stats-damage">Velocidad: <span >{plusSpeed}</span>  </div>
+          <div style={{color:`${speedColor}`}} className="stats-damage">Velocidad: <span >{plusSpeed}</span></div>
           <div className="stats-damage">Precisión: <span >{st.precision}</span></div>
           <div className="stats-damage">Marcialidad: <span>{st.marciality}</span></div>
       </div>

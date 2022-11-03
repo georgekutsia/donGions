@@ -86,7 +86,7 @@ const handleSubmitEquipped = (data) => {
                 </div>
               </div>
               <div>
-              <h5 className="pj-edit-text" align="center">Acc. <i className="pj-edit-fa fa-solid fa-bolt"></i></h5>
+              <h5 className="pj-edit-text" align="center">Acción <i className="pj-edit-fa fa-solid fa-bolt"></i></h5>
                 <div className="input-group equipped-form">
                       <input type="number"defaultValue={info.pj.equipped.actions}  className={`equipped-form`} placeholder="Nombre del apunte. Max 25 caracteres"
                         {...register("equipped.actions", {

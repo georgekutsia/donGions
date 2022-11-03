@@ -12,7 +12,7 @@ function TrasteroScreen() {
   return (
     <>
           <SwordsBall  ballDiv={"sky-sword"} ballImgs={"basic-basic"}/>
-          <h5 className='title-shop big-armario' style={{backgroundSize:"470px"}} >Objetos y útiles</h5>
+          <h5 className='title-shop big-armario'  >Objetos y útiles</h5>
           <div align="center">
               <div style={{borderColor:"olive"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper">
@@ -22,7 +22,7 @@ function TrasteroScreen() {
                     </div>
               </div>
           </div>
-          <h5 className='title-shop big-armario' style={{backgroundSize:"500px"}} >Comida y bebida</h5>
+          <h5 className='title-shop big-armario'  >Comida y bebida</h5>
           <div align="center">
               <div style={{borderColor:"olive"}} className='scrolling-space m-1'>
                     <div className="scrolling-wrapper">

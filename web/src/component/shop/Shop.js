@@ -8,7 +8,7 @@ const [alquimia, setAlquimia] = useState(true)
 const [encantamiento, setEncantamiento] = useState(true)
 const [magia, setMagia] = useState(true)
 const [libreria, setLibreria] = useState(true)
-const [trastero, setTrastero] = useState(true)
+const [trastero, setTrastero] = useState(false)
 const [special, setSpecial] = useState(true)
 
 const handleArmeria = () => {setAlquimia(true); setArmeria(false); setEncantamiento(true);setMagia(true);setLibreria(true); setTrastero(true); setSpecial(true)}
@@ -23,33 +23,30 @@ const handleSpecial= () => {setAlquimia(true); setArmeria(true); setEncantamient
 
   return (
     <>
-        <nav id='background-navbar-shop' className=" navbar-expand-lg">
-          <div className="container-fluid justify-content-around">
-              <ul className="navbar-nav justify-content-around">
-                <li className="nav-item">
+        <nav id='background-navbar-shop' >
+              <ul>
+                <li >
                   <NavLink onClick={() => {handleTrastero(); trastOn(); armOff(); habOff(); bookOff(); speOff()}} className={trastero ? "pages-shop": "pages-shop-selected"}>Básico... </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink onClick={() => {handleArmeria(); armOn(); habOff(); bookOff();trastOff(); speOff()}} 
-                  className={armeria ? "pages-shop": `pages-shop-selected ${armOn}`} >Armería</NavLink>
+                <li >
+                  <NavLink onClick={() => {handleArmeria(); armOn(); habOff(); bookOff();trastOff(); speOff()}} className={armeria ? "pages-shop": `pages-shop-selected ${armOn}`} >Armería</NavLink>
                 </li>
-                <li className="nav-item">
+                <li >
                   <NavLink onClick={handleAlquimia} className={alquimia ? "pages-shop": "pages-shop-selected"}>Alquímia</NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink onClick={handleEncantamiento} className={encantamiento ? "pages-shop": "pages-shop-selected"}>Encantamientos</NavLink>
                 </li>
-                <li className="nav-item ">
+                <li>
                   <NavLink onClick={()=> {handleSpecial();trastOff(); armOff(); habOff(); bookOff(); speOn()}} className={special ? "pages-shop": "pages-shop-selected"}>ZonaVIP</NavLink>
                 </li>
-                <li className="nav-item">
+                <li >
                   <NavLink  onClick={()=> {handleMagia();trastOff(); armOff(); habOn(); bookOff(); speOff()}} className={magia ? "pages-shop": "pages-shop-selected"}>Magia </NavLink>
                 </li>
-                <li className="nav-item">
+                <li >
                   <NavLink  onClick={()=> {handleBook();trastOff(); armOff(); habOff(); bookOn(); speOff()}} className={libreria ? "pages-shop": "pages-shop-selected"}>Librería </NavLink>
                 </li>
               </ul>
-            </div>
         </nav>
     </>
   )

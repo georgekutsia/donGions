@@ -17,11 +17,11 @@
 
 .bubble-text {
   position: relative;
-  width: 620px;
-  height: 110px;
+  width: 90%;
+  max-width: 500px;
+  height: 20%;
   background: #32557f;
   border-radius: 10px;
-  font-size: 20px;
   padding: 10px;
 }
 
@@ -60,13 +60,15 @@
 
 .bubble-text-manual {
   position: absolute;
-  width: 620px;
-  height: 110px;
+  width: 30%;
+  height: 20%;
+  min-width: 250px;
   background: #32557f;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: calc(12px + 0.5vw);
   padding: 10px;
-  margin-left: 17%;
+  margin-left: 2%;
+  z-index: 10;
 }
 .bubble-text-pj{
   position: absolute;
@@ -104,12 +106,16 @@
 .bubble-notes {
   position: relative;
   position: absolute;
-  margin-left: 200px;
-  width: 300px;
-  height: 160px;
+  margin-left: 15%;
+  font-size: calc(14px + 0.2vw);
+  width: 65%;
+  max-width: 400px;
+  height: 25%;
+  max-height: 200px;
   background: #32557f;
   border-radius: 10px;
   padding: 10px;
+  z-index: 20;
 }
 .bubble-notes::before {
   content: '';
@@ -127,9 +133,9 @@
 .img-shop-info-notes{
   display: flex;
   position: absolute;
-  left: -100px;
-  top: 0px;
-  width: 90px;
+  left: -70px;
+  top: 30px;
+  width: 60px;
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271498/donGions%20imgs/shop%20dude/Ex11_xlccj5_f9cj2l.png");
 }
 .img-shop-info-notes:hover{

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import * as noteService from "../../services/all-services";
 import Actions from "../guide/parts/toggle-info/Actions";
 
-function Notes({size,color, width, height}) {
+function Notes({size,color, width, height, maxWidth, minWidth}) {
   const [notes, setNotes] = useState([]);
   useEffect(() => {
     noteService
@@ -15,7 +15,6 @@ function Notes({size,color, width, height}) {
    noteService
       .deleteNote()
       .then(() => {
-        console.log("te has ido")
         window.location.reload(true)
       })
       .catch(error => console.log(error))
@@ -25,9 +24,9 @@ function Notes({size,color, width, height}) {
   }
   return (
     <div>
-      <div className="panels m-5 justify-content-evenly" >
+      <div className="panels justify-content-evenly" >
         {notes.map((note) => (
-            <div style={{transform:"rotate(2deg)",color:`${color}`, fontSize:`${size}`, width:`${width}`, height:`${height}`}} className="panel m-2 p-3 " id="note-transform" key={note.id}>
+            <div style={{transform:"rotate(2deg)",color:`${color}`, fontSize:`${size}`, width:`${width}`, height:`${height}`, maxWidth:`${maxWidth}`, minWidth:`${minWidth}` }} className="panel m-2 p-3 " id="note-transform" key={note.id}>
               <Link to={`/notes/${note.id}`} >
                 <img src={note.image} alt="Imagen" className="img-note-position"/>
               </Link>

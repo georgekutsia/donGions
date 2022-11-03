@@ -26,15 +26,16 @@ console.log("valor", value)
   const [showPage, setShowPage] = useState(false)
   const [showPlusStats, setShowPlusStats] = useState(false)
   const [char, setChar] = useState(false)
-  const [dispStats, setDispStats] = useState(true)
+  const [dispStats, setDispStats] = useState(false)
   const [back, setBack] = useState(false)
   const [dude, setDude] = useState(false)
   const [showMonster1, setShowMonster1] = useState(true)
-  const [chest, setChest] = useState(false)
-  const [smoller, setSmoller] = useState(false)
+  const [chest, setChest] = useState(true)
+  const [smoller, setSmoller] = useState(true)
   const [background, setBackground] = useState(false)
   const [showBigMonster, setShowBigMonster] = useState(false)
-  const [showMonster, setShowMonster] = useState(true)
+  const [showMonster, setShowMonster] = useState(false)
+  const [sideBar, setSideBar] = useState(false)
 
   useEffect(() => {
     setShowPage(true)
@@ -47,16 +48,16 @@ console.log("valor", value)
   return (
     <FadeInOut show={showPage} duration={800}>
         <div className={back ? "moving-background-scenary" : "moving-background-part"} id='profile-size-box'>
-            <div className="nav-items-pj">
+            <div className= {sideBar ?  "nav-items-pj-long":"nav-items-pj"}    >
                 <Link className='nav-items-pj-item' style={{color:"grey"}} onClick={()=> setBack(!back)}>{back ?<i className="fa-solid fa-moon"></i>: <i className="fa-solid fa-mountain-sun"></i>} </Link>
-                <Link className='nav-items-pj-item' onClick={()=> setDude(!dude)}>{dude ? <i className="fa-solid fa-angles-up fa-spin" style={{color:"green"}}></i>: <i className="fa-solid fa-angles-down"></i>}</Link>
+                <Link className='nav-items-pj-item' onClick={()=> setDude(!dude)}>{dude ? <i className="fa-solid fa-user-tie fa-spin" style={{color:"green"}}></i>: <i className="fa-solid fa-user-tie"></i>}</Link>
                 <Link className='nav-items-pj-item' onClick={()=> setShowBigMonster(!showBigMonster)}>{showBigMonster ? <i className="fa-solid fa-spaghetti-monster-flying fa-spin" style={{color:"chocolate"}}></i>: <i className="fa-solid fa-spaghetti-monster-flying"></i>}</Link>
                 <Link className='nav-items-pj-item' onClick={()=> setShowMonster(!showMonster)}>{showMonster ? <i className="fa-solid fa-ghost fa-spin" style={{color:"teal"}}></i>: <i className="fa-solid fa-ghost"></i>}</Link>
                 <Link className='nav-items-pj-item' onClick={()=> setBackground(!background)}>{background ? <i className="fa-solid fa-book-open fa-spin" style={{color:"red"}}></i>: <i className="fa-solid fa-book-open "></i>}</Link>
-                <Link className='nav-items-pj-item' onClick={()=> setChar(!char)}>{char ? <i className="fa-solid fa-hurricane fa-spin" style={{color:"blue"}}></i>: <i className="fa-solid fa-hurricane"></i>}</Link>
                 <Link className="nav-items-pj-item" onClick={() => setSmoller(!smoller)}>{smoller? <i className="fa-solid fa-down-left-and-up-right-to-center"></i>:<i className="fa-solid fa-down-left-and-up-right-to-center fa-spin" style={{color:"yellow"}}></i>}</Link>
                 <Link className='nav-items-pj-item' onClick={()=> setChest(!chest)}>{chest ? <i className="fa-solid fa-toolbox fa-spin" style={{color:"violet"}}></i>: <i className="fa-solid fa-toolbox"></i>}</Link>
                 <Link className='nav-items-pj-item' to={`/profile/${info.pj.id}`} ><i className="fa-solid fa-person-booth"></i></Link>
+                <Link className='nav-items-pj-item-long' onClick={()=> setSideBar(!sideBar)}>{sideBar ? <i className="fa-solid fa-x" style={{color:"white"}}></i>: <i className="fa-solid fa-angles-down"></i>}</Link>
             </div>
             {showBigMonster && 
             <FadeInOut show={showBigMonster} duration={400}>
@@ -71,18 +72,6 @@ console.log("valor", value)
                       <Monsters mc={counterForMonster}/>
                 </div>
             </div>
-          }
-        <FadeInOut show={background} duration={400}>
-              <div>
-                      <Background/>
-              </div>
-              </FadeInOut>
-          {chest &&
-            <FadeInOut show={showPage} duration={1000}>
-                    <div className={smoller ? 'material-container': "material-container-smoller"}>
-                            <Materials/> 
-                    </div>
-            </FadeInOut> 
           }
         <FadeInOut show={showPage} duration={1000}>
           <FadeInOut show={dude} duration={400}>
@@ -102,28 +91,27 @@ console.log("valor", value)
                 <Link onClick={() => setDispStats(!dispStats)}> 
                 <img className={smoller ?'profile-image-css':"profile-image-css-smoll"} style={{border:`${statis.style} 3px solid`}}  src={statis.image} alt="dasda" />
                 </Link>
-                <div className='stats-chars-box'>
-                    {char &&
-                      <FadeInOut show={showPage} duration={200}>
-                          <Character/>
-                      </FadeInOut>
-                    }
-                </div>
           </div>
             {dispStats &&
           <div  className={smoller ? "box-big-stats-div":"box-small-stats-div"}>
             <FadeInOut show={showPage} duration={1200}>
               <div align="center">
                   <div className='inner-box-stats' style={{ border :`2px ${statis.style} ridge`}}>
-                        <StatsSalud/>
-                        <StatsDam />
-                        <StatsDefence/>
-                        <Link onClick={() => setShowPlusStats(!showPlusStats)} className='button-mostrar-mejoradas'>Mostrar las estadísticas mejoradas</Link>
+                        <Link onClick={() => setShowPlusStats(!showPlusStats)} className='button-mostrar-mejoradas mx-4'>Estadísticas Mejoradas</Link>
+                        <Link onClick={() => setChar(!char)} className='button-mostrar-mejoradas'>Carácter</Link>
                         {showPlusStats && 
                           <FadeInOut show={showPage} duration={1000}>
                             <StatsPlusFight/>
                           </FadeInOut>
                         }
+                        {char && 
+                          <FadeInOut show={showPage} duration={1000}>
+                            <Character/>
+                          </FadeInOut>
+                        }
+                        <StatsSalud/>
+                        <StatsDam />
+                        <StatsDefence/>
                   </div>
               </div>
         {/* <Inventory/>
@@ -135,6 +123,18 @@ console.log("valor", value)
               </FadeInOut>
             </div>
             }
+            {chest &&
+            <FadeInOut show duration={1000}>
+                    <div className='material-container'>
+                            <Materials/> 
+                    </div>
+            </FadeInOut> 
+          }        
+          <FadeInOut show={background} duration={400}>
+              <div align="center">
+                      <Background/>
+              </div>
+              </FadeInOut>
         </FadeInOut>
       </div>
     </FadeInOut> 

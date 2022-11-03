@@ -21,11 +21,10 @@ function ListCreature({search, enemies, alies, weird}) {
     <div>
         <FadeInOut show={productsToShow} duration={500}>
 
-        <table className="table"  style={{color:"white", width:"1200px"}}>
-            <thead style={{color:"white", fontSize:"30px"}}>
+        <table className="table-event-creature">
+            <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Conocimientos sobre la criatura</th>
+                    <th>Descripción</th>
                     <th>Imágen</th>
                 </tr>
             </thead>

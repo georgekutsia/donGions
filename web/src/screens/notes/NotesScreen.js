@@ -5,8 +5,8 @@ import FadeInOut from "../../component/FadeInOut";
 
 
 function NotesScreen() {
-  const[mode1, setMode1] = useState(false)
-  const[mode2, setMode2] = useState(true)
+  const[mode1, setMode1] = useState(true)
+  const[mode2, setMode2] = useState(false)
   const[mode3, setMode3] = useState(false)
   const [dude, setDude] = useState(true)
 
@@ -27,11 +27,11 @@ function NotesScreen() {
       <Link  onClick={()=> setDude(!dude)}>
         {dude ?  
       <FadeInOut show={showPage} duration={200}>
-            <i  className="button-show-dude-up fa-solid fa-angles-left" style={{animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
+            <i  className="button-show-dude-up fa-solid fa-user-tie fa-spin" style={{animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
         </FadeInOut>
             : 
             <FadeInOut show={showPage} duration={200}>
-            <i className="button-show-dude-down fa-solid fa-angles-right fa-fade" style={{animationDirection: "reverse", animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
+            <i className="button-show-dude-down fa-solid fa-user-tie fa-fade" style={{animationDirection: "reverse", animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
           </FadeInOut>
             }</Link>
       </div>
@@ -40,8 +40,8 @@ function NotesScreen() {
         <FadeInOut show={showPage} duration={1000}>
           <div className="bubble-notes" >
               <img className="img-shop-info-notes" alt="Dude" />
-              <h6>&nbsp;&nbsp; Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </h6>
-              <h6>&nbsp;&nbsp;También tienes la opción de personalizar detalles visuales</h6>
+              <div>&nbsp;&nbsp; Apunta las cosas importantes!! No necesitas añadir imágen ni descripción. Luego podrás pinchar en el icono superior derecho de cada nota para editarlo </div>
+              <div>&nbsp;&nbsp;También tienes la opción de personalizar detalles visuales</div>
           </div>
         </FadeInOut>
         </>      
@@ -49,7 +49,7 @@ function NotesScreen() {
       <BackgroundFloatingBuble floatingBalls=
       {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665653141/donGions%20imgs/backgroundEffects/pngwing.com_70_czolhq.png)"} 
       widthBall={"50px"} heigthBall={"100px"} radiusBall={"2px"} idFlow={"square-flow"}/>
-      <div className="ms-5">
+      <div className="ms-1">
       <div align="center"><NoteForm /></div>
       </div>
           <div className="d-flex">
@@ -66,7 +66,7 @@ function NotesScreen() {
             <span></span><span></span><span></span><span></span>Normal
             </button> */}
           </div>
-        {mode1 && <Notes size={"10px"} color={"blue"} width={"220px"} height={"310px"}/>}
+        {mode1 && <Notes size={"calc(10px + 0.5vw)"} color={"blue"} width={"30%"} height={"200px"} minWidth={""} maxWidth={"250px"}/>}
         {mode2 && <Notes size={"14px"} color={"black"} width={"300px"} height={"400px"}/>}
         {mode3 && <Notes size={"19px"} color={"red"}/>}
           </>

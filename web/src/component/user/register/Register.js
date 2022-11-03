@@ -228,51 +228,53 @@ function Register() {
       {/* paso 1 */}
       {/*  nickname */}
         <Steps paso={"Paso 1"} pasoTexto={"Información de registro"}/>
-        <div className="d-flex justify-content-evenly box-steps">
-            <div>
-            <h4>Nickname</h4>
-              <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder="Elige un nombre para tu personaje"
-                {...register("nickname", {
-                  required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
-                  unique: "El nombre debe ser único",
-                  maxLength:{value:20, message:"El nombre debe tener menos de 20 caracteres"}
-                })}
-              />
-              {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
-              )}
+        <div className="box-steps">
+            <div className="d-flex justify-content-evenly">
+                <div>
+                <h4>Nickname</h4>
+                  <input  type="text" className={`input-register ${errors.nickname ? "is-invalid" : ""}`} placeholder="Único"
+                    {...register("nickname", {
+                      required: "Necesitas un nombre para tu personaje. Puede ser el tuyo",
+                      unique: "El nombre debe ser único",
+                      maxLength:{value:20, message:"El nombre debe tener menos de 20 caracteres"}
+                    })}
+                  />
+                  {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
+                  )}
+                </div>
+                {/* password */}
+                <div>
+                <h4>Contraseña</h4>
+                  <input  type="password" className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder="Único"
+                    {...register("password", {
+                      required: "Necesitas proporcionar un correo para las actualizaciones",
+                    })}
+                  />
+                  {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
+                  )}
+                </div>
+                {/* email-contact */}
+                <div>
+                <h4>E-mail</h4>
+                  <input  type="email" className={`input-register ${errors.contact ? "is-invalid" : "repite"}`} placeholder="No único"
+                    {...register("contact", {
+                      required: "Necesitas proporcionar un correo para las actualizaciones",
+                    })}
+                  />
+                  {errors.contact && ( <div className="invalid-feedback">{errors.contact.message}</div>
+                  )}
+                </div>
+            </div>
             <h6 style={{fontStyle:"italic", color:"grey"}}>Tipografía afectada por mayúsculas y minúsculas </h6>
-            </div>
-            {/* password */}
-            <div>
-            <h4>Contraseña</h4>
-              <input  type="password" className={`input-register ${errors.password ? "is-invalid" : ""}`} placeholder=" Una contraseña para tus secretos"
-                {...register("password", {
-                  required: "Necesitas proporcionar un correo para las actualizaciones",
-                })}
-              />
-              {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
-              )}
-            </div>
-            {/* email-contact */}
-            <div>
-            <h4>E-mail</h4>
-              <input  type="email" className={`input-register ${errors.contact ? "is-invalid" : "repite"}`} placeholder=" Podrás usarlo para varios personajes"
-                {...register("contact", {
-                  required: "Necesitas proporcionar un correo para las actualizaciones",
-                })}
-              />
-              {errors.contact && ( <div className="invalid-feedback">{errors.contact.message}</div>
-              )}
-            </div>
         </div>
         {/* paso 2 */}
                 <Steps paso={"Paso 2"} pasoTexto={"Elige el Planeswalker que te guíe y enseñe"}/>
                 <Link className='btn-rules-toggle-show' style={{color:"rgb(20, 251, 190)"}} onClick={() => setBackPlanComp(!backPlanComp)}>
                 <span></span><span></span><span></span><span></span>Comparar estadísticas de los Planeswalker
             </Link>
-        <div className="d-flex justify-content-evenly box-steps">
+        <div className="d-flex justify-content-evenly box-steps choose-plans">
             {pjInfo.map((pjData) =>(
-              <div align="center" key={pjData.name} >
+              <div className="choose-plan-each" align="center" key={pjData.name} >
               <h6 style={{color: `${pjData.style}`}} className="ms-4">{pjData.name} {pjData.surname}</h6>
               <div className="form-check d-flex">
                       <label className="form-check-label" htmlFor={pjData.name}>  <img className={borderSelected} style={{borderColor: `${pjData.style}`}} src={pjData.image}alt="planeswalker" 
@@ -344,7 +346,7 @@ function Register() {
 
 
 {/* paso 3 */}
-<Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar el juego"}/>
+<Steps paso={"Paso 3"} pasoTexto={"Elige un rasgo de personalidad y obten +1 al comenzar"}/>
 
             <div className="d-flex mb-5 justify-content-evenly box-steps">
                 {character.map((char) =>(

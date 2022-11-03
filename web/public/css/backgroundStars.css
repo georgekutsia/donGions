@@ -707,7 +707,7 @@
 }
 .ball-ball:nth-child(139) {
   top: calc(50% - 12px);
-  left: calc(50% - 3p9x);
+  left: calc(50% - 3px);
   animation-delay: -1998ms;
 }
 .ball-ball:nth-child(140) {
@@ -717,7 +717,7 @@
 }
 .ball-ball:nth-child(141) {
   top: calc(50% - -48px);
-  left: calc(50% - 3p9x);
+  left: calc(50% - 3px);
   animation-delay: -2280ms;
 }
 .ball-ball:nth-child(142) {

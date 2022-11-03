@@ -33,7 +33,7 @@ function LoginScreeen() {
     })
 }
   return (
-    <center>
+    <div align="center" >
             <BackgroundFloatingBuble
         floatingBalls={
           "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665733888/donGions%20imgs/planeswalkers%20png/pngwing.com_73_klyr29.png)"
@@ -42,20 +42,18 @@ function LoginScreeen() {
         heigthBall={"10px"}
         idFlow={"slow-flow"}
       />
-        <form className='m-5 login-form-img' onSubmit={handleSubmit(handleLogin)}>
-          <div className='login-form-margin d-flex'>
+        <form className='m-1 login-form-img' onSubmit={handleSubmit(handleLogin)}>
+          <div className='login-form-margin'>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665689975/donGions%20imgs/planeswalkers%20png/pjlog_cg3cdj.png" alt="sorin" height="40px" />
-            <div className="input-group">
-              <input  type="text" className={`login-textarea ${errors.nickname ? "is-invalid" : ""}`} placeholder="Nickname..."
-                {...register("nickname", {
-                  required: "¿Cual es el nombre que pusiste a tu personaje?",
-                })}
-              />
-              {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
-              )}
-            </div>
+              <div className="login-input">
+                <input  type="text" className={`login-textarea ${errors.nickname ? "is-invalid" : ""}`} placeholder="Nickname..."
+                  {...register("nickname", {
+                    required: "¿Cual es el nombre que pusiste a tu personaje?",})}/>
+                {errors.nickname && ( <div className="invalid-feedback">{errors.nickname.message}</div>
+                )}
+              </div>
             <img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1665690302/donGions%20imgs/planeswalkers%20png/pngwing.com_72_b53gkz.png" alt="sorin" height="40px" />
-            <div className="input-group ">
+            <div className="login-input">
               <input  type={passShow ? "text" : "password"} className={`login-textarea ${errors.password ? "is-invalid" : ""}`} placeholder="password..."
                 {...register("password", {
                   required: "Necesitas una contraseña para logarte",
@@ -65,15 +63,15 @@ function LoginScreeen() {
               {errors.password && ( <div className="invalid-feedback">{errors.password.message}</div>
               )}
             </div>
-          </div>
-            <div className="mt-2 ">
+        </div>
+            <div>
               <button className={"btn-rules-toggle-sub"} type="submit" >
               <span></span><span></span><span></span><span></span> Conectarse </button>
             </div>
         </form>
 
     <NeonDonGions/>
-    </center>
+    </div>
   )
 }
 

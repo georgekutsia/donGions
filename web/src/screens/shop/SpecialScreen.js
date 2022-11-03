@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { SwordsBall } from '../../component'
 import data from "../../data/dataPresentación"
-import Shelves from './Shelves'
 function SpecialScreens() {
   const [obs, setObs] = useState([])
   useEffect(() => {
@@ -10,7 +9,7 @@ function SpecialScreens() {
   return (
     <div align="center" >
         <SwordsBall  ballDiv={"sky-sword"} ballImgs={"special-special"}/>
-        <h5 className='title-shop big-armario'  style={{backgroundSize:"600px"}}>Libros de Inspiración</h5>
+        <h5 className='title-shop' >Objetos Especiales</h5>
           <div align="center" >
             <div>
                 <div style={{borderColor:"maroon"}} className='scrolling-space m-1'>

@@ -45,6 +45,7 @@ function StatsSalud() {
   return (
     <div >
       <h6 className="d-flex flex-row-reverse" >Nivel: {stats.pj.character.level}</h6>
+      <h6 className="d-flex flex-row-reverse" >Oros: {stats.pj.gold}</h6>
       <div className="plans-name"> {st.name} {st.surname} </div>
       <div  className="stats-salud-block">
         <div>

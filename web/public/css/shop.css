@@ -41,11 +41,19 @@
 .title-shop {
   font-family: "Blaka", cursive;
   text-align: center;
-  font-size: 70px;
+  font-size: calc(20px + 2.5vw);
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 20px;
   color: rgb(255, 205, 113);
   text-shadow: 8px 5px 3px rgb(15, 67, 79);
+  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666129238/donGions%20imgs/shop/pngwing.com_-_2022-10-18T233709.140_imjlkq.png");
+  background-size: 100%;
+  max-width: 60%;
+  min-width: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .name-shop {
@@ -53,7 +61,7 @@
   padding-top: 30px;
   text-shadow: 2px 2px rgb(134, 83, 6);
   text-shadow: 4px 4px rgb(134, 83, 6);
-  font-size: 40px;
+  font-size: calc(30px + 0.7vw);
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666115633/donGions%20imgs/backgroundEffects/pngwing.com_82_gsdfvi.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -81,20 +89,12 @@
   text-shadow: 1px 1px rgb(255, 231, 194);
   text-shadow: 2px 2px rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 32px;
 }
+
 .pages-shop-selected:hover {
   font-family: rubik moonrocks;
   color: rgb(135, 127, 127);
   text-shadow: 1px 1px rgb(134, 83, 6);
   text-shadow: 2px 2px rgb(134, 83, 6);
   text-decoration: none;
-}
-.big-armario {
-  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666129238/donGions%20imgs/shop/pngwing.com_-_2022-10-18T233709.140_imjlkq.png");
-  background-size: 520px;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
 }

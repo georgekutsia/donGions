@@ -13,11 +13,11 @@
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1667047063/donGions%20imgs/backgroundEffects/equippeda_ogptvp.jpg");
   width: 100%;
   height: 100%;
-
+  padding: 10px;
   min-height: 900px;
 }
 .pj-edit-fa{
-  font-size: 25px;
+  font-size: calc(23px + .5vw);
   animation: fluido0 10s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(105, 105, 105), #ffffff, rgb(37, 37, 37),rgb(122, 121, 122), #ffffff, rgb(0, 0, 0),rgb(100, 100, 105), #ffffff, rgb(65, 63, 64));
   background-size: 300%;
@@ -33,7 +33,7 @@
 }
 
 .pj-edit-text {
-  font-size: calc(18px + .5vw);
+  font-size: calc(15px + .5vw);
   animation: fluido0 20s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(214, 206, 214), #00e5ff, rgb(104, 103, 110), #ffffff, rgb(11, 251, 199));
   background-size: 300%;

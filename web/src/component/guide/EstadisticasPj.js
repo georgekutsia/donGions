@@ -10,7 +10,7 @@ function EstadisticasPj() {
   const [combat, setCombat] = useState(false)
   return (
     <>
-      <div className="gran-div background-rule-info">
+      <div className="background-rule-info">
           <div className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
           <div className="nombre-concepto-blanco" style={{color:"#00e5ff"}}> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, se recupera un punto de maná. </span></div> 
           <div className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 

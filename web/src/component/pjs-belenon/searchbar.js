@@ -6,9 +6,9 @@ function Searchbar({enemies, alies, weird,  search, setSearch, filterEnemies, fi
         </div>
         <input type="checkbox" className="form-checkbox-input" checked={enemies} onChange={(event) =>filterEnemies(event.target.checked)} id="enemies"/>
         <label  htmlFor="enemies">Enemigos</label>
-        <input type="checkbox" className="form-checkbox-input ms-5" checked={alies} onChange={(event) =>filterAlies(event.target.checked)} id="alies"/>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={alies} onChange={(event) =>filterAlies(event.target.checked)} id="alies"/>
         <label htmlFor="alies">Aliados</label>
-        <input type="checkbox" className="form-checkbox-input ms-5" checked={weird} onChange={(event) =>filterWeird(event.target.checked)} id="weird"/>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={weird} onChange={(event) =>filterWeird(event.target.checked)} id="weird"/>
         <label htmlFor="weird">Neutral/No se sabe</label>
     </div>
   )

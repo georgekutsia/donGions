@@ -6,7 +6,7 @@ import FadeInOut from '../../component/FadeInOut';
 import VideoComp from '../../component/videos/VideoComp';
 
 function RegisterScreen() {
-  const [showInfo, setShowInfo] = useState(false)
+  const [showInfo, setShowInfo] = useState(true)
   const [showVid, setShowVid] = useState(false)
   const [showCarousel, setShowCarousel] = useState(false)
   const [showVideosBiblioplex, setShowVideosBiblioplex] = useState(false)
@@ -55,38 +55,38 @@ function RegisterScreen() {
 
   return (
     <div align="center" style={{paddingBottom:"129px"}}>
-    <FadeInOut show={buttons} duration={2500}>
-    {buttons &&
-        <div className='d-flex'>
-            <Link className='btn-rules-toggle' to="/frontpage" style={{color:"rgb(143, 201, 190)", fontSize:"16px", textDecoration:"none" }} onClick={handleSkip}>
-                            <span></span><span></span><span></span><span></span>Regresar a la página de inicio
-            </Link>
-        </div>
-    }
-        <div className='d-flex p-5 flex-row-reverse'>
-            {buttons && buttonSkip &&
-              <Link className='btn-rules-toggle' style={{color:"rgb(143, 21, 190)", fontSize:"16px", textDecoration:"none" }} onClick={handleSkip}>
-                              <span></span><span></span><span></span><span></span>Saltar el video de introducción
-              </Link>
+        <FadeInOut show={buttons} duration={2500}>
+            {buttons &&
+                <div className='d-flex'>
+                    <Link className='btn-rules-toggle' to="/frontpage" style={{color:"rgb(143, 201, 190)", fontSize:"calc(10px + 1vw)", textDecoration:"none" }} onClick={handleSkip}>
+                                    <span></span><span></span><span></span><span></span>Regresar a la página de inicio
+                    </Link>
+                </div>
             }
-        </div>
-      </FadeInOut>
+            <div className='d-flex p-5 flex-row-reverse'>
+                {buttons && buttonSkip &&
+                  <Link className='btn-rules-toggle' style={{color:"rgb(143, 21, 190)", fontSize:"calc(10px + 0.5vw)", textDecoration:"none" }} onClick={handleSkip}>
+                                  <span></span><span></span><span></span><span></span>Saltar intro
+                  </Link>
+                }
+            </div>
+          </FadeInOut>
                 {intro &&
           <video 
-                src="https://res.cloudinary.com/dfrda73uc/video/upload/v1666304598/videos/Grabacio%CC%81n_de_pantalla_2022-10-21_a_las_0.21.07_qlg8jm.mov"
-                width="500" autoPlay muted >
-        </video> }
+                  src="https://res.cloudinary.com/dfrda73uc/video/upload/v1666304598/videos/Grabacio%CC%81n_de_pantalla_2022-10-21_a_las_0.21.07_qlg8jm.mov"
+                  width="100%" style={{maxWidth:"500px"}} autoPlay muted >
+          </video> }
       <FadeInOut show={showVideosBiblioplex} duration={5000}>
                 {showVideosBiblioplex && 
                   <div >
-                  <Link className='btn-rules-toggle' style={{color:"rgb(201, 21, 190)", fontSize:"25px", textDecoration:"none" }} onClick={()=>setShowVid(!showVid)}>
+                  <Link className='btn-rules-toggle' style={{color:"rgb(201, 21, 190)", fontSize:"calc(10px + 0.5vw)", textDecoration:"none" }} onClick={()=>setShowVid(!showVid)}>
                       <span></span><span></span><span></span><span></span>Archivos recuperados de Alberignos
                   </Link>
                     </div>
                 }
       </FadeInOut>
       
-        <div className='m-5'>
+        <div className='m-1'>
         <BackgroundFloatingBuble
             floatingBalls={
               "url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666052942/donGions%20imgs/balllOfThings/pngwing.com_75_dvpaei.png)"
@@ -102,32 +102,32 @@ function RegisterScreen() {
       </FadeInOut>
         </div>
         {showVideosBiblioplex && 
-        <button className='btn-rules-toggle' style={{color:"blue"}} onClick={handelInspi}>
+        <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(10px + 0.5vw)"}}  onClick={handelInspi}>
                   <span></span><span></span><span></span><span></span>Inspírate un poco más...
               </button>
         }
         <div>
         <FadeInOut show={inspi1} duration={200}>
             {inspi1 &&
-            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.42.46_dl8bcg.png" alt="inspire 1" />
+            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.42.46_dl8bcg.png" alt="inspire 1" />
             }
         </FadeInOut>
       <FadeInOut show={inspi2} duration={200}>
             {inspi2 &&
-            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698261/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.02_gpniud.png" alt="inspire 2" />
+            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698261/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.02_gpniud.png" alt="inspire 2" />
               }
             </FadeInOut>
       <FadeInOut show={inspi3} duration={200}>
             {inspi3 &&
 
-            <img className='m-2' width="900px" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.10_qvo0xf.png" alt="inspire 3" />
+            <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.43.10_qvo0xf.png" alt="inspire 3" />
             }
         </FadeInOut>
         </div>
             {showVid &&  <VideoComp/>}
     <FadeInOut show={showRegister} duration={5000}>
           <div>
-                  {showRegister &&  <Link className='btn-rules-toggle' style={{color:"rgb(190, 251, 190)", fontSize:"30px", textDecoration:"none"}} onClick={()=>setShowInfo(!showInfo)}>
+                  {showRegister &&  <Link className='btn-rules-toggle' style={{color:"rgb(190, 251, 190)", fontSize:"calc(15px + 0.5vw)", textDecoration:"none"}} onClick={()=>setShowInfo(!showInfo)}>
                   <span></span><span></span><span></span><span></span>Comenzar con el Registro
               </Link>}
           </div>

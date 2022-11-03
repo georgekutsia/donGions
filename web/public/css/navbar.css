@@ -86,15 +86,28 @@
 }
 
 #background-navbar-shop{
+  overflow: auto;
+  white-space: nowrap;
   font-family: 'Rubik Maze', cursive;
-  display: flex;
-  font-size: 26px;
-  width: 1400px;
+  font-size: calc(12px + .5vw);
+  width: 100%;
   text-shadow: 0 0 5px #fd0101, 0 0 20px #000, 0 0 30px #000;
   background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666112584/donGions%20imgs/backgroundEffects/dsadsa_oixewe.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: rgba(230, 220, 220, 0.313)
+}
+
+#background-navbar-shop ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#background-navbar-shop ul{
+  margin-left: 300px;
+  margin-right: 300px;
+  display: flex;
+  justify-content:space-around;
+  list-style-type:none;
 }
 
 @keyframes example {

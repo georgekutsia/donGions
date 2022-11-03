@@ -22,8 +22,8 @@ function ShopScreen() {
   const [armeria, setArmeria] = useState(false);
   const [hability, setHability] = useState(false);
   const [book, setBook] = useState(false);
-  const [trast, setTrast] = useState(false);
-  const [special, setSpecial] = useState(true);
+  const [trast, setTrast] = useState(true);
+  const [special, setSpecial] = useState(false);
 
   const showArm = () => setArmeria(true);
   const hideArm = () => setArmeria(false);
@@ -57,7 +57,7 @@ function ShopScreen() {
             </>
           )}
         <h1 align="center" className="name-shop">
-          Tienda de Patek  Ruinafortunas
+          Tienda de <br /> Patek <br /> Ruinafortunas
         </h1>
         </FadeInOut>
       </div>

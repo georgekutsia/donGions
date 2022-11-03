@@ -16,7 +16,7 @@ function ImportantCreaturesBelenon() {
   const [weird, setWeird] = useState(false)
   const [comunicado, setComunicado] = useState(false)
 
-  const[showTable, setShowTable] = useState(false);
+  const[showTable, setShowTable] = useState(true);
   
   return(
       <div align="center">
@@ -24,15 +24,6 @@ function ImportantCreaturesBelenon() {
               <h1><button onClick={() => setShowTable(!showTable)} 
               className="btn btn-round b-level-2 b-type-show-creatures">Criaturas  de Belenon</button>
               </h1>
-              <h1 ><button onClick={() => setComunicado(!comunicado)} 
-              className="btn btn-round b-level-2 b-type-show-creatures" >Comunicados de George</button>
-                </h1>
-                <h1 ><button onClick={() => setComunicado(!comunicado)} 
-              className="btn btn-round b-level-2 b-type-show-creatures">Pruebas y adivinanzas</button>
-                </h1>
-                <h1 ><button onClick={() => setComunicado(!comunicado)} 
-              className="btn btn-round b-level-2 b-type-show-creatures">Misiones</button>
-                </h1>
             </div>
                 {comunicado && 
                   <FadeInOut show={showPage} duration={1000}>
@@ -45,21 +36,15 @@ function ImportantCreaturesBelenon() {
                     <div align="center">
                 <FadeInOut show={showTable} duration={1300}>
                     {showTable && 
-                    <div className="m-3">
+                    <div className="m-1">
                         <Searchbar  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />
                     </div> 
                     }
                 <div className="bubble-text">
                   <img className="img-shop-info-creature" alt="Dude" />
-                  <h5>
-                  El nombre y reborde  <span style={{color: "green"}}>verdes</span>  indican que lo considerais un aliado
-                  </h5>
-                  <h5>
-                  El nombre y reborde <span style={{color: "red"}}>rojo</span> indican que lo considerais un enemigo
-                  </h5>
-                  <h5>
-                  El fondo <span style={{backgroundColor: "purple", color: "black"}}>púrpura</span> significa que no lo veis claro o aún no sabéis 
-                  </h5>
+                  <div style={{fontSize:"calc(12px + 0.5vw)"}}> <span style={{color: "green"}}>verdes</span>  indica que lo considerais aliado</div>
+                  <div style={{fontSize:"calc(12px + 0.5vw)"}}><span style={{color: "red"}}>rojo</span> indican que lo considerais enemigo</div>
+                  <div style={{fontSize:"calc(12px + 0.5vw)"}}>El fondo <span style={{backgroundColor: "purple", color: "black"}}>púrpura</span> significa que no estáis seguros</div>
               </div>
                 </FadeInOut>
               <div className="pt-5">

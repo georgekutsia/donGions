@@ -7,7 +7,12 @@
   width: 400px;
   display: flex;
 }
-
+.carousel-caption-div{
+  font-size: calc(4px + 1vw);
+  text-align: center;
+  width: 50%;
+  padding-bottom: 15px;
+}
 
 
 .habilidades-register{
@@ -66,7 +71,7 @@
 }
 .input-register{
   border-radius: 20px;
-  width: 300px;
+  width: 100%;
 }
 .input-register-text{
   width: 900px;
@@ -77,9 +82,9 @@ background-size: cover;
 }
 
 .black-mirror {
-  margin-top:100px;
+  margin-top: 100px;
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 50px;
+  font-size: calc(20px + 4vw);
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.02em;
@@ -212,11 +217,22 @@ background-size: cover;
   --c1: rgba(168, 239, 255, 1);
   --c2: rgba(168, 239, 255, 0.1);
 }
-
-
+.paso-description{
+	margin-top: 35px;
+	font-size: calc(10px + 1vw);
+}
+.choose-plans{
+  white-space: nowrap;
+  overflow: auto;
+  width: 2200px;
+}
+.choose-plans-each{
+  display: inline-block;
+}
 .box-steps {
   border: 0.35rem solid;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
   animation: borderRotate var(--d) linear infinite forwards;
   width: 100%;

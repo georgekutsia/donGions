@@ -1,3 +1,13 @@
+
+.img-rules-inspi{
+  margin: 5px;
+  width: 90%;
+  display: inline-block;
+}
+.img-rules-inspi:hover{
+  transform: scale(1.2);
+}
+
 .button-show-dude-up{
   font-size: 30px;
   color: lightblue;
@@ -8,10 +18,12 @@
   opacity: 0.6;
 }
 .nav-show-stats-rules{
+  font-size: calc(13px + 1vw);
   display: flex;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 1%;
 }
+
 
 .fa-fa-fa-spins{
   animation-iteration-count: 2;
@@ -22,8 +34,9 @@
 }
 
 .iconBar {
-  width: 120px;
+  width: 10%;
   position: fixed;
+  z-index: 10;
 }
 
 .iconBar a {
@@ -34,6 +47,9 @@
   color: white;
   font-size: 25px;
   text-decoration: none;
+  text-shadow: 2px 2px black;
+  text-align: left;
+
 }
 .rules-show-shadow{
   color: rgb(111, 110, 107);
@@ -44,30 +60,29 @@
   color: rgb(122, 3, 37);
 }
 
-.gran-div{
-  margin-left: 80px;
-  margin-right: 80px;
-}
+
 .nombre-concepto-blanco{
-display: flex;
-font-size: 30px;
+font-size: calc(16px + 0.8vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 1px white;
+border-bottom: white 1px solid;
+
 }
 .nombre-concepto-negro{
-display: flex;
-font-size: 30px;
+font-size: calc(16px + 0.8vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
+border-bottom: white 1px solid;
+
 }
 .definicion-concepto{
 color:white;
-display: flex;
+text-align: justify;
 margin-left: 10px;
 margin-top: 10px;
-font-size: 20px;
+font-size: calc(12px + 0.9vw);
 -webkit-text-stroke: 0 white;
 }
 
@@ -308,9 +323,9 @@ font-size: 20px;
 /* degradado */
 
 .background-rule-info{
+    width: 100%;
+    min-width: 400px;
     padding: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 50px;
     background-size: 50px 40px;
     background-image: linear-gradient(to right,#6a6060c0 1px,transparent 1px), linear-gradient(to bottom,#b2a8a856 1px,transparent 1px);
@@ -318,8 +333,8 @@ font-size: 20px;
 }
 .background-list-actions{
   background-color: rgba(164, 164, 164, 0.208);
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   list-style:none;
   padding: 10px;
   font-size: 18px;
