@@ -34,9 +34,9 @@
 }
 
 .iconBar {
-  width: 10%;
   position: fixed;
   z-index: 10;
+  backdrop-filter: blur(3px);
 }
 
 .iconBar a {

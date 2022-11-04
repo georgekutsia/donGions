@@ -11,6 +11,7 @@ export {default as NoteDetailScreen} from "./notes/NoteDetailScreen"
 export {default as ArmeriaScreen} from "./shop/ArmeriaScreen"
 export {default as FrontFrontpage} from "./frontpage/FrontFrontpage"
 export {default as MonstersScreen} from "./monsters/MonstersScreen"
+export {default as DongionsDetail} from "./frontpage/DongionsDetail"
 
 
 

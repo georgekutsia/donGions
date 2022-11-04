@@ -92,7 +92,13 @@ function RegisterScreen() {
               </button>
         }
       </FadeInOut>
-
+      <div className='m-1'>
+    <FadeInOut show={showCarousel} duration={5000}>
+                  <div>
+                        {showCarousel && <CarouselImgs1/>}
+                  </div>
+      </FadeInOut>
+        </div>
         <div>
         <FadeInOut show={inspi1} duration={200}>
             {inspi1 &&

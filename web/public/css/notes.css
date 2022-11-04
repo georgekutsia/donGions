@@ -58,7 +58,6 @@
 .img-note-position{
   display: flex;
   position: absolute;
-  width: 30px;
   right: 12px;
   top: 5px
 }
@@ -79,12 +78,6 @@
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
   box-shadow: 3px 3px rgba(255, 255, 255, 0.662);
   border: 5px solid rgb(255, 255, 255);
-  transform: rotate(0deg);
-}
-
-.margin-for-notes{
-  margin-left: 200px;
-  margin-top:100px
 }
 
 .panels {

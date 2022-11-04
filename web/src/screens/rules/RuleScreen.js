@@ -95,21 +95,23 @@ const handleExplo= () => {
       <div align="center" className='container'>
       <FadeInOut show={showPage} duration={1000}>
         <div style={{fontSize:"calc(12px + 2.5vw)"}}> Manual de instrucciones del juego</div>
-        <Link  onClick={()=> setDude(!dude)}>
-        {dude ?  
-      <FadeInOut show={showPage} duration={200}>
-            <i  className="button-show-dude-up fa-solid fa-user-tie fa-spin" style={{animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
-        </FadeInOut>
-            : 
-            <FadeInOut show={showPage} duration={200}>
-            <i className="button-show-dude-down fa-solid fa-user-tie fa-fade" style={{animationDirection: "reverse", animationDuration: "1.3s", animationIterationCount:"forever"}}></i> 
-          </FadeInOut>
-            }</Link>
-
+        <div style={{width:"10%"}}> 
+            <Link   onClick={()=> setDude(!dude)}>
+            {dude ?  
+              <FadeInOut show={showPage} duration={200}>
+                <i   className="button-show-dude-up fa-solid fa-user-tie fa-spin" ></i> 
+                </FadeInOut>
+                : 
+                <FadeInOut show={showPage} duration={200}>
+                <i className="button-show-dude-down fa-solid fa-user-tie fa-fade"></i> 
+              </FadeInOut>
+                }
+            </Link>
+        </div>
         {dude &&  
       <FadeInOut show={showPage} duration={400}>
         <div className='bubble-text-manual '>
-        <img className="img-shop-info-manual" alt="Dude" />
+          <img className="img-shop-info-manual" alt="Dude" />
           <div> Si algo no está escrito aquí, es que no lo has encontrado</div>
           <div>Tienes una barra de navegación a la izquierda con la que encontrar cosas más concretas. Información es poder! Y poder es dinero!</div>
         </div>

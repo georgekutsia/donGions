@@ -8,8 +8,8 @@ function NavbarVertical({ statistics, stkinesthesia,stperception, stluck, stchar
   return (
     <div className="m-1">
       <div className="iconBar">
-        <Link onClick={() => setNav(!nav)} className="active" ><h4>Navbar</h4>
-        <i className="fa-solid fa-folder-tree"></i>
+        <Link onClick={() => setNav(!nav)} className="active" >
+        <i className={!nav ? "fa-solid fa-folder-tree":"fa-solid fa-folder-minus"}></i>
         </Link>
             {nav &&
                 <>

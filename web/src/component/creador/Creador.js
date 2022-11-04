@@ -1,29 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Creador() {
   return (
-    <div className="d-flex justify-content-evenly box-steps-creator-rules "  >
-      <div>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-chalkboard-user"></i> Diseño y creación: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5> <i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-user-tie"></i> Director ejecutivo: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-house-flag"></i> Campear en CodePen: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-      </div>
-      <div>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-lightbulb"></i> Idea original: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5> <i  style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-circle-exclamation"></i> Culpable de todos los fallos: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5> <i  style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-photo-film"></i> Ver más codigo que la familia: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-
-      </div>
-      <div>
-        <h5><i style={{color: "rgb(1, 251, 218)"}}  className="fa-solid fa-handshake-angle"></i> Ayuda indispensable: <span style={{color: "rgb(1, 251, 218)"}}> IronHack Crew 4/22</span></h5>
-        <h5> <i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-pen-to-square"></i> Edición y montaje: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5> <i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-hurricane fa-spin"></i> Icono que gira: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-      </div>
-      <div>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-keyboard"></i> Escribir mucho código: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-copy"></i>  Copiar y pegar mucha URL: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-        <h5><i style={{color: "rgb(1, 251, 218)"}} className="fa-solid fa-font-awesome"></i> Mucho fa fa-icons: <span style={{color: "rgb(1, 251, 218)"}}> Gio</span></h5>
-      </div>
+    <div className="justify-content-evenly box-steps-creator-rules "  >
+          <div>Tanto los personajes como parte del lore pertenecen a "Wizard Of The Coast LLC, subsidiario de Hashbro, Inc. Todos los derechos reservados"</div>
+          <div>Esta página web no está afiliada ni respaldad por ellos, es un proyecto personal, no lucrativo y esta página web es solo una herramienta</div>
+          <div>Este un proyecto personal de un juego de rol basado en el mundo de MTG para el que he usado imágenes, animaciones y formato del juego de Magic. </div>
+          <div>Si Wizard Of The Coast LLC o algún otro artista o autor NO QUIERE que use las imágenes, puede contactar conmigo en <i className="fa-solid fa-envelope"> dongionscreator@gmail.com</i> </div>
+          <div>Para más información sobre la naturaleza de esta página y del juego dejo aquí el link <Link to={"/dongionsdDetail"}> <i className="fa-regular fa-file-lines"></i></Link></div>
+          
     </div>
   );
 }

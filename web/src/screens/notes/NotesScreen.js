@@ -66,9 +66,9 @@ function NotesScreen() {
             <span></span><span></span><span></span><span></span>Normal
             </button> */}
           </div>
-        {mode1 && <Notes size={"calc(10px + 0.5vw)"} color={"blue"} width={"30%"} height={"200px"} minWidth={""} maxWidth={"250px"}/>}
-        {mode2 && <Notes size={"14px"} color={"black"} width={"300px"} height={"400px"}/>}
-        {mode3 && <Notes size={"19px"} color={"red"}/>}
+        {mode1 && <Notes size={"calc(10px + 0.1vw)"} color={"blue"} width={"30%"} height={"250px"}  maxWidth={"170px"} imgWidth={"20%"}/>}
+        {mode2 && <Notes size={"calc(14px + 0.5vw)"} color={"black"} width={"48%"} height={"300px"} maxWidth={"250px"} imgWidth={"23%"} />}
+        {mode3 && <Notes size={"calc(16px + 0.5vw)"} color={"red"} width={"95%"} height={"400px"} maxWidth={"450px"} imgWidth={"27%"}/>}
           </>
         }
     </FadeInOut>
