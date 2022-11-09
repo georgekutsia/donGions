@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink, useNavigate} from "react-router-dom"
-
+import React, { Component }  from 'react';
 
 function Shop({armOn, armOff, habOn, habOff, bookOn, bookOff, trastOn, trastOff, speOn, speOff }) {
 const [armeria, setArmeria] = useState(true)

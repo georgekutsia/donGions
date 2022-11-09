@@ -32,6 +32,7 @@ module.exports.detail = (req, res, next) => {
     .then((note) => {
       if (note) {
         res.json(note);
+        console.log("por queeee", note)
       } else {
         res.status(404).json({ message: "Página no encontrada" });
       }

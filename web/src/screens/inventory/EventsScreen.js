@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BackgroundFloatingBuble, ImportantCreaturesBelenon } from "../../component";
+import { BackgroundFloatingBuble, ImportantCreaturesBeleron } from "../../component";
 import FadeInOut from "../../component/FadeInOut";
 
 function EventsScreen() {
@@ -18,7 +18,7 @@ function EventsScreen() {
         idFlow={"circle-container"}
       />
       <FadeInOut show={showPage} duration={1000}>
-          <ImportantCreaturesBelenon/>
+          <ImportantCreaturesBeleron/>
       </FadeInOut>
     </div>
   );

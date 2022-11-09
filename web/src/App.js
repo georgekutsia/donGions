@@ -1,4 +1,5 @@
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom'
+import React, { Component }  from 'react';
 import {NavBar} from './component';
 import { PjScreen, FrontpageScreen, NotesScreen, PjDetailScreen,
   RegisterScreen, ShopScreen, RuleScreen,  NoteDetailScreen, LoginScreeen, EventsScreen, FrontFrontpage, MonstersScreen, DongionsDetail} from "./screens"

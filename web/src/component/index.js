@@ -27,8 +27,8 @@ export {default as Register} from "./user/register/Register"
 export {default as SelectPj} from "./user/register/SelectPj"
 export {default as Steps} from "./user/register/parts/Steps"
 
-export {default as ImportantCreaturesBelenon} from "./pjs-belenon/ImportantCreaturesBelenon"
-export {default as Comunicados} from "./pjs-belenon/Comunicados"
+export {default as ImportantCreaturesBeleron} from "./pjs-beleron/ImportantCreaturesBeleron"
+export {default as Comunicados} from "./pjs-beleron/Comunicados"
 
 export {default as Liliana} from "./user/register/regPj/Liliana"
 export {default as Gideon} from "./user/register/regPj/Gideon"

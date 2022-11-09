@@ -212,7 +212,7 @@ function Register() {
     pjService.registerPj(data)
       .then(note => navigation("/authenticate"))
       .catch(error => {
-        if(error.response?.data?.errors){
+        if(error.response.data.errors){
           const {errors} = error.response.data;
           Object.keys(error.response.data.errors)
             .forEach((error) => {
@@ -398,7 +398,7 @@ function Register() {
 
 {/* paso 4*/}
 
-<Steps paso={"Paso 4"} pasoTexto={"¿Donde comenzarás tu historia en el plano de Belenon?"}/>
+<Steps paso={"Paso 4"} pasoTexto={"¿Donde comenzarás tu historia en el plano de Beleron?"}/>
       <FadeInOut show={!buttonsText} duration={500}>
       <div style={{fontSize:"calc(20px + 4vw)"}} className="result-dice">{textValue}</div>
       </FadeInOut>

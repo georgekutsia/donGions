@@ -76,7 +76,7 @@ function CarouselImgs1() {
               <img src="https://giffiles.alphacoders.com/174/174162.gif" className="d-block float-end" width="20%" alt="..."/>
               <div className="carousel-caption-div">
                 <h6>¿Curiosidad?</h6>
-                <p>Explora Belenon y descubre sus ciudades, historia, <br /> paisajes, secretos y pecados...</p>
+                <p>Explora Beleron y descubre sus ciudades, historia, <br /> paisajes, secretos y pecados...</p>
               </div>
             </div>
           </div>

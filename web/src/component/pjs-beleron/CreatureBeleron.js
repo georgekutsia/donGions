@@ -1,4 +1,6 @@
-function CreatureBelenon({name, description, img, weird, enemies}) {
+import React, { Component }  from 'react';
+
+function CreatureBeleron({name, description, img, weird, enemies}) {
 
 
   return(
@@ -9,9 +11,9 @@ function CreatureBelenon({name, description, img, weird, enemies}) {
             </div> 
             <br />
           {description}</td>
-          <td><img style={{border:enemies ? "5px solid red" : "5px solid green"}} className="creatures-belenon-list-img" src={img} alt="Criaturas" /></td>
+          <td><img style={{border:enemies ? "5px solid red" : "5px solid green"}} className="creatures-beleron-list-img" src={img} alt="Criaturas" /></td>
       </tr>
   )
 }
 
-export default CreatureBelenon
+export default CreatureBeleron

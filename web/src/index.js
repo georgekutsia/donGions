@@ -6,10 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 import {BrowserRouter as Router} from "react-router-dom"
 import AuthContextProvider from './context/AuthContext';
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
     
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

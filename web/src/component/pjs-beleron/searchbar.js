@@ -1,8 +1,9 @@
+import React, { Component }  from 'react';
 function Searchbar({enemies, alies, weird,  search, setSearch, filterEnemies, filterAlies, filterWeird}) {
   return(
     <div>
         <div>
-            <input  type="text" className="search-bar-creatures-belenon" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
+            <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
         </div>
         <input type="checkbox" className="form-checkbox-input" checked={enemies} onChange={(event) =>filterEnemies(event.target.checked)} id="enemies"/>
         <label  htmlFor="enemies">Enemigos</label>

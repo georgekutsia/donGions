@@ -1,7 +1,8 @@
-import Creature from "./CreatureBelenon"
-import data from "../../data/belenonCreaturesData.json"
+import Creature from "./CreatureBeleron"
+import React, { Component }  from 'react';
+import data from "../../data/beleronCreaturesData.json"
 import {useEffect, useState} from "react"
-import FadeInOut from "../../component/FadeInOut";
+import FadeInOut from "../FadeInOut";
 
 function ListCreature({search, enemies, alies, weird}) {
     const [productsToShow, setProductsToShow] = useState([])

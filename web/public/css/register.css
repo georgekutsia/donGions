@@ -289,9 +289,7 @@ margin-right: 20px;
   padding: 2px;
 
 }
-.box-steps-creator-rules div { 
-  display: block; 
-}
+
 
 .box-steps-creator-rules {
   padding: 2px;
@@ -306,7 +304,7 @@ margin-right: 20px;
   bottom: 2px;
   transition: all .4s ease-in-out; 
   opacity: 1;
-  font-size: calc(8px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
 }
 
 .box-steps-creator:nth-child(2) {

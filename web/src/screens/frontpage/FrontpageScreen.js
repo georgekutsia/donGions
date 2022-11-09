@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BackgroundFloatingBuble, NeonDonGions, BlackMirror,} from "../../component";
+import Creador from "../../component/creador/Creador";
 import FadeInOut from "../../component/FadeInOut";
 
 
@@ -26,6 +27,9 @@ function FrontpageScreen() {
       <NeonDonGions />
     </>
     }
+    </FadeInOut>
+    <FadeInOut show duration={2000}>
+      <Creador/>
     </FadeInOut>
     </div>
   );

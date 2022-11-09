@@ -1,10 +1,11 @@
 import Creatures from "./ListCreature"
+import React, { Component }  from 'react';
 import Searchbar from "./searchbar"
 import {useEffect, useState} from "react"
-import FadeInOut from "../../component/FadeInOut";
+import FadeInOut from "../FadeInOut";
 import Comunicados from "./Comunicados";
 
-function ImportantCreaturesBelenon() {
+function ImportantCreaturesBeleron() {
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
@@ -22,7 +23,7 @@ function ImportantCreaturesBelenon() {
       <div align="center">
           <div  className="d-flex justify-content-evenly">
               <h1><button onClick={() => setShowTable(!showTable)} 
-              className="btn btn-round b-level-2 b-type-show-creatures">Criaturas  de Belenon</button>
+              className="btn btn-round b-level-2 b-type-show-creatures">Criaturas  de Beleron</button>
               </h1>
             </div>
                 {comunicado && 
@@ -56,4 +57,4 @@ function ImportantCreaturesBelenon() {
   )
 }
 
-export default ImportantCreaturesBelenon
+export default ImportantCreaturesBeleron
