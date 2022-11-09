@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+a{
+  text-decoration: none
+}
+
+li{
+  list-style: none;
+}
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.hover-this:hover{
+  scale: 1.5;
+  transition: all ease-in-out 1s;
+}
+#eye-login{
+  font-size: calc(16px + 1vw);
+}
+.login-input{
+  text-align: left;
+  margin: 0px;
+  padding: 0px
+}
+.login-textarea{
+  border-radius: 30px;
+  background-color: transparent;
+  text-align: center;
+  width: 80%;
+  max-height: 40px;
+}
+.login-form-margin{
+  padding-top: calc(50px + 1vw);
+  padding-left: 2%;
+  padding-bottom: 30%;
+  display: flex;
+  justify-content: center;
+}
+.login-form-img{
+  width: 90%;
+  max-width: 600px;
+  background-image: url(https://res.cloudinary.com/dfrda73uc/image/upload/v1665687324/donGions%20imgs/planeswalkers%20png/plan111_oeh6h8.jpg);
+  background-size: cover;
+  border-radius: 40px;
+  height: 300px;
+}
+.div-neon {
+  width:50%;
+  margin-top: calc(50px + 10%);
+  border-radius: 20%;
+  animation: border-flicker 3s linear;
+}
+.div-neon:hover {
+  background-color: #ffffff;
+  transition: all 3s ease-in-out;
+}
+
+
+.h1-neon {
+  color:#f60000;
+  font-family: 'Tangerine';
+  font-weight: 900;
+  font-size: calc(20px + 4vw);
+  letter-spacing:5px;
+  animation: text-flicker 8s linear infinite;
+}
+#offset {
+  animation: letter-flicker 10s linear infinite;
+}
+#donset {
+  animation: don-flicker 5s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgb(255, 0, 0);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(255, 0, 0);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(255, 0, 0)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0)
+  }
+  100% {
+    opacity:.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border:1px solid #ff0c0c;
+
+  }
+  22% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border:2px solid #ff0c0c;
+
+  }
+  24% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border:1px solid #ff0c0c;
+
+  }
+  
+  28% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border:2px solid #ff0c0c;
+
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border:1px solid #ff0c0c;
+
+  }
+  100% {
+    opacity:0;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+-moz-box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+box-shadow: 0px 0px 78px 4px rgba(255, 0, 0);
+border: none
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  23% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  43% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  58% {
+    opacity:0.2;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  59% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  61% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  63% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+}
+@keyframes don-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  23% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  43% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  58% {
+    opacity:0.2;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  59% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  61% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  63% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(255, 0, 0);
+  }
+}
+
+.background-frontpage{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/348/438/417/buildings-castle-clouds-creepy-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+
+.video-controls-plan{
+  width: 20%;
+  height: 100px;
+  transition: all .6s ease-in-out; 
+  border: 10px white double;
+}
+
+.video-controls-plan:hover{
+  border-radius: 1%;
+  border: rgb(2, 160, 212) 5px solid;
+}
+
