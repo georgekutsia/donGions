@@ -6,6 +6,7 @@ const logger = require("morgan")
 require("./config/db.config")
 
 const app = express()
+app.use(express.static(`${__dirname}/react-app`));
 
 app.use((req, res, next) => {
   res.set("Access-Control-Allow-Origin", "http://localhost:3000");
@@ -25,8 +26,10 @@ app.use(loadPj)
 const routes = require("./config/routes.config");
 const { default: mongoose } = require("mongoose");
 app.use("/api/v1", routes)
+app.get('/*', (req, res) => {
+  res.sendFile(`${__dirname}/react-app/index.html`);
+})
 
-app.use((req, res, next) => next(createError(404, "Intentas acceder a un lugar prohibido sin rutas ni caminos")))
 
 app.use((error, req, res, next) => {
   res.status(error.status || 500);

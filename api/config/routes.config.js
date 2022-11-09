@@ -33,5 +33,6 @@ router.post("/profile", auth.profile )
 router.post("/equipped",  )
 
 
+router.use((req, res, next) => next(createError(404, "Intentas acceder a un lugar prohibido sin rutas ni caminos")))
 
 module.exports = router
