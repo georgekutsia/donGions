@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "27b20b04d4e6d5c65354",
+    "revision": "b70ee6152c119f2f3252",
     "url": "/donGions/static/css/main.e43e2cea.chunk.css"
   },
   {
-    "revision": "27b20b04d4e6d5c65354",
-    "url": "/donGions/static/js/main.27b20b04.chunk.js"
+    "revision": "b70ee6152c119f2f3252",
+    "url": "/donGions/static/js/main.b70ee615.chunk.js"
   },
   {
     "revision": "599995f5c63098e6b233",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/donGions/static/js/runtime~main.490e9b22.js"
   },
   {
-    "revision": "bd51474ba59cb1beb06349798da628f0",
+    "revision": "7c06d44caa4cb540e6dd722e5b04c387",
     "url": "/donGions/index.html"
   }
 ];
