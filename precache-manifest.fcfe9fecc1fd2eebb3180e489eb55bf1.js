@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/donGions/static/js/runtime~main.490e9b22.js"
   },
   {
-    "revision": "6cfdde7bc637faa3f5119bd08f44186a",
+    "revision": "5f50b3193b6f08dc882cd7ecd3904322",
     "url": "/donGions/index.html"
   }
 ];
