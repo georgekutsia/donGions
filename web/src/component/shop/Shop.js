@@ -1,13 +1,13 @@
 import { useState } from "react"
-import { Link, NavLink, useNavigate} from "react-router-dom"
-import React, { Component }  from 'react';
+import { NavLink} from "react-router-dom"
+import React from 'react';
 
 function Shop({armOn, armOff, habOn, habOff, bookOn, bookOff, trastOn, trastOff, speOn, speOff }) {
 const [armeria, setArmeria] = useState(true)
 const [alquimia, setAlquimia] = useState(true)
 const [encantamiento, setEncantamiento] = useState(true)
 const [magia, setMagia] = useState(true)
-const [libreria, setLibreria] = useState(true)
+const [libreria, setLibreria] = useState(true) 
 const [trastero, setTrastero] = useState(false)
 const [special, setSpecial] = useState(true)
 

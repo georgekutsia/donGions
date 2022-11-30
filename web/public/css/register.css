@@ -299,7 +299,7 @@ margin-right: 20px;
   animation: borderRotate var(--d) linear infinite forwards;
   background-color: black;
   width: 100%;
-  height: 10%;
+  height: calc(20px + 4vw);
   position: fixed;
   bottom: 2px;
   transition: all .4s ease-in-out; 

@@ -24,8 +24,6 @@ export function getProfile() {
   return http.get("/profile");
 }
 
-
-
 export function detailPj(id){
 return http.get(`/profile/${id}`)
 }

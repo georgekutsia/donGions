@@ -8,7 +8,6 @@ function RuleScreen() {
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
-
       setTimeout(() => {
         setDude(false)
       }, 5000)
