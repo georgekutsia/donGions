@@ -9,7 +9,7 @@ const app = express()
 // app.use(express.static(`${__dirname}/react-app`));
 
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "http://localhost:3000", "https://georgekutsia.github.io/donGions/");
+  res.set("Access-Control-Allow-Origin", "http://localhost:3099", "https://georgekutsia.github.io/donGions/");
   res.set("Access-Control-Allow-Headers", "content-type");
   res.set("Access-Control-Allow-Methods", "GET,POST,DELETE,PATCH");
   res.set("Access-Control-Allow-Credentials", "true");

@@ -115,7 +115,6 @@ const handleExplo= () => {
           <div>Tienes una barra de navegación a la izquierda con la que encontrar cosas más concretas. Información es poder! Y poder es dinero!</div>
         </div>
         </FadeInOut>
-
         }
           <div className='nav-show-stats-rules'> 
             <div>
