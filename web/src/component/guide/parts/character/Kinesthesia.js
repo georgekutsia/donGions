@@ -21,6 +21,7 @@ function Kinesthesia() {
             <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Permite bloquear y parar por la espalda. La disminución de la defensa tras fracasar la esquiva disminuye en 1</li>
             <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Tras fallar en un ataque cuerpo a cuerpo, puedes atacar con acción gratuita con otra parte del cuerpo por cada punto </li>
             <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Cada punto de Cinestesia aumenta en 1 el acierto otorgado por Euforia y puedes lanzar 2 armas arrojadizas a la vez.</li>
+            <li><i className="fa-solid fa-dumbbell"></i>&nbsp;	Disminuye en 1 punto el requisito para que algo cuente como crítico, incluso resultados de dados naturales</li>
             <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Puedes usar los artefactos con activación desde tu mochila que tengan igual o menor carga que tus puntos de cinestesia.
                                                                         Lo mismo pasa con lanzar armas o activar otras habilidades de objetos</li>
             <li><i className="fa-solid fa-dumbbell"></i>&nbsp; Los jugadores con <span style={{color:"green"}}>Cinestesia</span> que también tienen <span style={{color:"rgb(237, 0, 254)"}}>Suerte</span>, tienen mejores oportunidades para evitar explosiones o ataques 
