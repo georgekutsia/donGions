@@ -9,6 +9,7 @@ export {default as MovesPlus} from "./guide/parts/toggle-info/Speed"
 export {default as Brake} from "./guide/parts/toggle-info/Brake"
 export {default as Enfoque} from "./guide/parts/toggle-info/Enfoque"
 export {default as Effort} from "./guide/parts/toggle-info/Effort"
+export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
 
 

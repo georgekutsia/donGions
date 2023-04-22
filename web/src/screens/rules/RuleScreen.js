@@ -136,7 +136,7 @@ const handleExplo= () => {
               <div>
                 <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
                 onClick={()=>{ setBasic(true); setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setInpsi1(true);setInpsi2(true);setInpsi3(true);setExpl1(true);setExpl2(true);setExpl3(true);setExpl4(true);setExpl5(true);setExpl6(true);   }}>
-                      <span></span><span></span><span></span><span></span>Abrir todo 
+                      <span></span><span></span><span></span><span></span>Abrir 
                 </button>
                 <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
                 onClick={()=>{setChar(false); setBasic(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false);  }}>

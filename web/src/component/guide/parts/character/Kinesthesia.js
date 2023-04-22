@@ -7,6 +7,7 @@ function Kinesthesia() {
   return (
       <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
         <h1 align="center" className='texto-resaltado-cinestesia'>Cinestesia</h1> 
+        <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682203259/donGions%20imgs/characters/cinestesia_eaf6yp.jpg" alt="Charisma"/>
       <div className='d-flex justify-content-evenly'>
         <div><span className='texto-resaltado-suerte-stats'> Cada punto de Cinestesia aumenta +2 el acierto al hacer movimientos con </span>
         <Link className='texto-resaltado-sobreesfuerzo' onClick={() => setEffor(!effort)}>Sobreesfuerzo</Link> </div>

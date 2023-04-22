@@ -352,3 +352,11 @@ ul li span{
     font-size: 20px;
 }
 
+
+.character-images{
+  width: 20vw;
+  height: 20vw;
+  max-width: 250px;
+  max-height: 250px;
+  min-width: 80px;
+}

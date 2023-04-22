@@ -11,9 +11,8 @@ function Enfoque() {
       <div><h4 className='rules-show-shadow'>12</h4> <span className='texto-resaltado-concentracion'>Crítico</span></div>
     </div>
     
-    <div><h3 className='rules-show-shadow'> Rotura de las armas</h3></div>
-    <article> Las armas cuerpo a cuerpo marcan su probabilidad de romperse si fallas. Debes superar con el dado lo que marca el arma para que no se rompa al impactar.
-      Las flechas también pueden romperse, pero normalmente recargan al comienzo de cada combate automágicamente (algunas armas tienen su propia forma de recarga)</article>
+    <div><h3 className='rules-show-shadow'> Enfoque</h3></div>
+    <article>El enfoque añade + X a la tirada de concentración. Cada punto extra después de 12 se convierte en daño.</article>
 </div>
   )
 }

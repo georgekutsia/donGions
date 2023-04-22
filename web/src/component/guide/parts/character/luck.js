@@ -4,6 +4,7 @@ function Luck() {
   return (
     <div style={{backgroundColor:"rgb(16, 4, 14)"}} className='background-rule-info'>
       <h1 align="center" className='texto-resaltado-suerte'>Suerte</h1> 
+      <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682202306/donGions%20imgs/characters/luck_fvyffm.png" alt="Charisma"/>
     <div className='d-flex justify-content-evenly'>
       <div><h4 className='rules-show-shadow'>1-11 - <span>Común</span></h4> </div>
       <div><h4 className='rules-show-shadow'>12-16 -<span>Poco Común</span></h4> </div>
