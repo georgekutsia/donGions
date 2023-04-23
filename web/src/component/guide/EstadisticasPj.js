@@ -39,11 +39,14 @@ function EstadisticasPj() {
                   </span>
                   </div> 
               {brake && <Brake/>}
-              <div className="nombre-concepto-blanco" style={{color:"rgb(227, 182, 200)"}}><i className="fa-solid fa-crosshairs"></i> Acierto:<span className="definicion-concepto">Hay 3 tipos de acierto: cuerpo a cuerpo(físico), a distancia y mágico. Los aciertos marcan cuánto hace falta superar en una tirada de dados por acierto para impactar con el daño. Más detalle en la página de Combate</span></div> 
-              <div className="nombre-concepto-blanco" style={{color:"rgb(227, 182, 200)"}}><i className="fa-solid fa-shield-halved"></i> Defensas:<span className="definicion-concepto">Hay 4 tipos de defensa: esquiva, bloqueo, parada y resistencia. Las defensas marcan cuánto hace falta superar en una tirada de dados por acierto para evitar el daño. 
-                </span></div> 
+              <div className="nombre-concepto-blanco" style={{color:"rgb(227, 182, 200)"}}><i className="fa-solid fa-crosshairs"></i> Acierto:<span className="definicion-concepto">Hay 3 tipos de acierto: cuerpo a cuerpo(físico), a distancia y mágico. Los aciertos marcan cuánto hace falta superar en una tirada de dados por acierto para impactar con el daño.</span>
                 <a className='btn-rules-toggle nombre-concepto-blanco' style={{ fontSize:"20px"}} onClick={()=>setCombat(!combat)} href="#combat">
-          <span></span><span></span><span></span><span></span> Mas detalle en la página de Combate</a>
+                <span></span><span></span><span></span><span></span> Mas detalle en la página de Combate</a>
+              </div> 
+              <div className="nombre-concepto-blanco" style={{color:"rgb(227, 182, 200)"}}><i className="fa-solid fa-shield-halved"></i> Defensas:<span className="definicion-concepto">Hay 4 tipos de defensa: esquiva, bloqueo, parada y resistencia. Las defensas marcan cuánto hace falta superar en una tirada de dados por acierto para evitar el daño. 
+                <a className='btn-rules-toggle nombre-concepto-blanco' style={{ fontSize:"20px"}} onClick={()=>setCombat(!combat)} href="#combat">
+                <span></span><span></span><span></span><span></span> Mas detalle en la página de Combate</a>
+                </span></div> 
               
               <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
                 <button id="s-concentracion" className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setFocus(!focus)}>

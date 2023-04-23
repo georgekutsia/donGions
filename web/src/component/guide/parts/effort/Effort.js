@@ -7,11 +7,11 @@ function effort() {
         <h1 id="s-cinestesia" align="center" className='texto-resaltado-esfuerzo'> Esfuerzo</h1> 
         <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682214408/donGions%20imgs/characters/2ae9b3fd2ac21fc31bf24dd8c7a030fb_besi5u.png" alt="Charisma"/>
       <div className='d-flex justify-content-evenly'>
-        <div><span className='texto-resaltado-suerte-stats'> Puedes hacer doble o incluso triple esfuerzo, dependiendo de tu nivel</span>
+        <div><span className='texto-resaltado-suerte-stats'> Puedes hacer simple,  doble o incluso triple esfuerzo, dependiendo de tu nivel</span>
       </div>
       </div>
           <article  align="center" className='background-list-actions'>
-          &nbsp;&nbsp;&nbsp; El esfuerzo amplifica el efecto de cualquier acción básica y cuesta 1 esencia y no consume acciones. Debajo del 50% de vida consumen 2 esencias y por debajo de 20%, consume 3 esencias.
+          &nbsp;&nbsp;&nbsp; El esfuerzo amplifica el efecto de cualquier acción básica, cuesta 1 esencia y no consume acciones. Debajo del 50% de vida consumen 2 esencias y por debajo de 20%, consume 3 esencias.
           </article>
           
           <ul>
