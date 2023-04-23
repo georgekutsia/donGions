@@ -6,14 +6,14 @@ function Kinesthesia() {
   const [effort, setEffor] = useState(true)
   return (
       <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
-        <h1 align="center" className='texto-resaltado-cinestesia'>Cinestesia</h1> 
-        <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682203259/donGions%20imgs/characters/cinestesia_eaf6yp.jpg" alt="Charisma"/>
+        <h1 id="s-cinestesia" align="center" className='texto-resaltado-cinestesia'>Cinestesia</h1> 
+        <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682213946/donGions%20imgs/characters/cinestesia_wmgk8s.png" alt="Charisma"/>
       <div className='d-flex justify-content-evenly'>
         <div><span className='texto-resaltado-suerte-stats'> Cada punto de Cinestesia aumenta +2 el acierto al hacer movimientos con </span>
         <Link className='texto-resaltado-sobreesfuerzo' onClick={() => setEffor(!effort)}>Sobreesfuerzo</Link> </div>
       </div>
         {effort && <Effort/>}
-          <article id="s-cinestesia" align="center" className='background-list-actions'>
+          <article  align="center" className='background-list-actions'>
           &nbsp;&nbsp;&nbsp; Los jugadores con Cinestesia obtienen mejores habilidades físicas para movimientos que en principio escapan a sus capacidades. Con varios puntos de cinestesia,
           solo te delimita tu imaginación a la hora de luchar, escapar o en general, rolear 
           </article>

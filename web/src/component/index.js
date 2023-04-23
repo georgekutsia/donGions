@@ -8,7 +8,7 @@ export {default as Actions} from "./guide/parts/toggle-info/Actions"
 export {default as MovesPlus} from "./guide/parts/toggle-info/Speed"
 export {default as Brake} from "./guide/parts/toggle-info/Brake"
 export {default as Enfoque} from "./guide/parts/toggle-info/Enfoque"
-export {default as Effort} from "./guide/parts/toggle-info/Effort"
+export {default as ExtraEffort} from "./guide/parts/toggle-info/Effort"
 export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
 
@@ -19,6 +19,8 @@ export {default as Charisma} from "./guide/parts/character/Charisma"
 export {default as Presence} from "./guide/parts/character/Presence"
 export {default as Kinesthesia} from "./guide/parts/character/Kinesthesia"
 export {default as Perception} from "./guide/parts/character/Perception"
+
+export {default as Effort} from "./guide/parts/effort/Effort"
 
 export {default as SearchRules} from "./search-bars/SearchRules"
 export {default as NavbarVertical} from "./guide/NavbarVertical"

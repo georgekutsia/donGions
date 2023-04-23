@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Effort() {
+function ExtraEffort() {
   return (
     <div align="center"  className='background-list-actions'>
         <center><h3 className='rules-show-shadow'>Sobreesfuerzo</h3></center>
@@ -10,4 +10,4 @@ function Effort() {
   )
 }
 
-export default Effort
+export default ExtraEffort

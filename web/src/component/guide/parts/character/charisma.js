@@ -3,12 +3,12 @@ import React from 'react'
 function Charisma() {
   return (
       <div style={{backgroundColor:"rgb(3, 2, 13)"}} className='background-rule-info'>
-        <h1 align="center" className='texto-resaltado-carisma'>Carisma</h1> 
-        <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682203262/donGions%20imgs/characters/charisma_lp9vkz.jpg" alt="Charisma"/>
+        <h1 id="s-carisma" align="center" className='texto-resaltado-carisma'>Carisma</h1> 
+        <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682213943/donGions%20imgs/characters/charisma_rhhckb.png" alt="Charisma"/>
       <div className='d-flex justify-content-evenly'>
         <div><span className='texto-resaltado-suerte-stats'>Cada 3 tatuajes te mejoran el carisma 1 punto</span> </div>
       </div>
-          <article id="s-carisma" align="center" className='background-list-actions'>
+          <article  align="center" className='background-list-actions'>
           &nbsp;&nbsp;&nbsp; Los jugadores con Carisma tienene incrementadas las pruebas de inspiración, intimidación, engaño, negociación, distracción etc. 
           </article>
           <ul>

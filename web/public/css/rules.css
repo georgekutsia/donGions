@@ -54,6 +54,7 @@
 .rules-show-shadow{
   color: rgb(111, 110, 107);
   text-shadow: #dfdbdb 1px 1px;
+  font-size: calc(14px + 1.3vw);
 }
 .iconBar a:hover {
   background-color: #ffffff;
@@ -62,7 +63,7 @@
 
 
 .nombre-concepto-blanco{
-font-size: calc(16px + 0.8vw);
+font-size: calc(12px + 1.2vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 1px white;
@@ -70,7 +71,7 @@ border-bottom: white 1px solid;
 
 }
 .nombre-concepto-negro{
-font-size: calc(16px + 0.8vw);
+font-size: calc(12px + 1.2vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
@@ -82,7 +83,7 @@ color:white;
 text-align: justify;
 margin-left: 10px;
 margin-top: 10px;
-font-size: calc(12px + 0.9vw);
+font-size: calc(10px + 0.9vw);
 -webkit-text-stroke: 0 white;
 }
 
@@ -167,7 +168,7 @@ font-size: calc(12px + 0.9vw);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: calc(10px + 0.5vw);
 }
 
 @keyframes fluido1 {
@@ -182,7 +183,7 @@ font-size: calc(12px + 0.9vw);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: calc(10px + 1.2vw);
 }
 
 @keyframes fluido4 {
@@ -193,6 +194,15 @@ font-size: calc(12px + 0.9vw);
 .texto-resaltado-cinestesia {
   animation: fluido9 10s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(4, 186, 4), rgb(6, 58, 6));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.texto-resaltado-esfuerzo {
+  animation: fluido9 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, rgb(186, 40, 64), rgb(200, 221, 6));
   background-size: 300%;
   -webkit-background-clip: text;
           background-clip: text;
@@ -354,9 +364,11 @@ ul li span{
 
 
 .character-images{
-  width: 20vw;
   height: 20vw;
-  max-width: 250px;
   max-height: 250px;
   min-width: 80px;
+}
+.concentration-results div{
+  background-color: black;
+  border: 0.4px dashed;
 }
