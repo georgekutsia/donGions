@@ -12,6 +12,7 @@ export {default as ExtraEffort} from "./guide/parts/toggle-info/Effort"
 export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
 
+export {default as NonSpecific} from "./guide/parts/non-specific/NonSpecific"
 
 export {default as Characters} from "./guide/parts/character/Characters"
 export {default as Luck} from "./guide/parts/character/Luck"

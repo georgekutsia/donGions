@@ -76,14 +76,21 @@ font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
 border-bottom: white 1px solid;
-
 }
+.nombre-stat-negro{
+font-size: calc(12px + 0.7vw);
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+-webkit-text-stroke: 0.3px  rgb(124, 121, 121);
+border-bottom: white 1px solid;
+}
+
 .definicion-concepto{
 color:white;
 text-align: justify;
 margin-left: 10px;
 margin-top: 10px;
-font-size: calc(10px + 0.6vw);
+font-size: calc(12px + 0.6vw);
 -webkit-text-stroke: 0 white;
 }
 
@@ -170,6 +177,24 @@ font-size: calc(10px + 0.6vw);
   -webkit-text-fill-color: transparent;
   font-size: calc(12px + 0.5vw);
 }
+.texto-resaltado-modifican {
+  animation: fluido1 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #bdbb8c, rgb(146, 247, 22));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(12px + 1.5vw);
+}
+.texto-resaltado-no-especificados {
+  animation: fluido1 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #03d9ff, rgb(119, 168, 167));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(12px + 1.5vw);
+}
 .texto-resaltado-ataques{
   animation: fluido1 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #ff1e00, rgb(112, 18, 18));
@@ -177,6 +202,28 @@ font-size: calc(10px + 0.6vw);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: calc(12px + 1.2vw);
+  margin-top: 20px;
+}
+.texto-resaltado-ataques-potenciados{
+  animation: fluido1 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ff1e00, rgb(112, 18, 18));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: white 2px 2px;
+  font-size: calc(12px + 0.9vw);
+}
+
+.texto-resaltado-defensas-potenciados{
+  animation: fluido1 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #07e721, rgb(3, 77, 32));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: white 2px 2px;
   font-size: calc(12px + 0.9vw);
 }
 .texto-resaltado-defensas{
@@ -186,7 +233,8 @@ font-size: calc(10px + 0.6vw);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: calc(12px + 0.9vw);
+  font-size: calc(12px + 1.2vw);
+  margin-top: 20px;
 }
 
 @keyframes fluido1 {
@@ -411,4 +459,28 @@ ul li span{
 .concentration-results div{
   background-color: black;
   border: 0.4px dashed;
+}
+.combat-separation div{
+  margin: 10px 10px;
+}
+.combat-separation div img{
+  margin-top: 20px;
+}
+.componente-ataque{
+  background-color: rgba(81, 3, 3, 0.336);
+  border-radius: 20px;
+}
+.componente-defensa{
+  background-color: rgba(3, 68, 7, 0.336);
+  border-radius: 20px;
+}
+.ataque-potenciado-titulo{
+  font-size: calc(12px + 1vw) ;
+}
+.ataque-potenciado-texto{
+  font-size: calc(12px + 0.5vw) ;
+}
+.ataque-potenciado{
+padding-left: 10% ;
+padding-right: 10% ;
 }

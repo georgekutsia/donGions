@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, ExtraInfo, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
@@ -8,7 +8,6 @@ function RuleScreen() {
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
-
       setTimeout(() => {
         setDude(false)
       }, 5000)
@@ -35,8 +34,8 @@ function RuleScreen() {
   const [rKi, setrKi] = useState(false)
 
   const [rEffort, setREffort] = useState(false)
-  const [rCombat, setRCombat] = useState(true)
-
+  const [rCombat, setRCombat] = useState(false)
+  const [rNonSpecific, setRNonSpecific] = useState(true)
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
   const charisma = () => setrCha(true)
@@ -45,6 +44,7 @@ function RuleScreen() {
   const kinesthesia = () => setrKi(true)
   const effort = () =>setREffort(true)
   const combat = () =>setRCombat(true)
+
 
   const handelInspi = () => {
  setTimeout(() => {
@@ -178,6 +178,9 @@ const handleExplo= () => {
         </FadeInOut>
       <FadeInOut show={rPre} duration={400}>
               {rPre && <Presence/>}
+        </FadeInOut>
+      <FadeInOut show={rNonSpecific} duration={400}>
+              {rNonSpecific && <NonSpecific/>}
         </FadeInOut>
       {/* <FadeInOut show duration={400}>
               { <ExtraInfo/>}
