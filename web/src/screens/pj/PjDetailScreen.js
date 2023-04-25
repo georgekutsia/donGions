@@ -25,7 +25,6 @@ const handleSubmitEquipped = (data) => {
       }
     })
 }
-
   return (
     <div className='background-pjdetail'>
     <FadeInOut show duration={800}>

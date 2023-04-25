@@ -9,6 +9,7 @@
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "framer-motion": "^7.4.0",
+    "iconoir-react": "^6.6.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
@@ -34,7 +35,6 @@
       "react-app",
       "react-app/jest"
     ]
-    
   },
   "browserslist": {
     "production": [

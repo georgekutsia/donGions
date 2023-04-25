@@ -13,6 +13,7 @@ export {default as Focus} from "./guide/parts/toggle-info/Enfoque"
 export {default as Combat} from "./guide/parts/fight/Combat"
 
 export {default as NonSpecific} from "./guide/parts/non-specific/NonSpecific"
+export {default as EquipmentAbilities} from "./guide/parts/equipment-abilities/EquipmentAbilities"
 
 export {default as Characters} from "./guide/parts/character/Characters"
 export {default as Luck} from "./guide/parts/character/Luck"
@@ -60,3 +61,8 @@ export {default as NoteDetail} from "./notes/NoteDetail"
 export {default as Acordion} from "./acordion/Acordion"
 export {default as Creator} from "./creador/Creador"
 
+
+export {default as WeaponAbility} from "./guide/parts/equipment-abilities/weapon-ability/weaponAbility"
+export {default as ShieldAbility} from "./guide/parts/equipment-abilities/weapon-ability/shieldAbility"
+export {default as WeaponDistanceAbility} from "./guide/parts/equipment-abilities/weapon-ability/weaponDistanceAbility"
+export {default as WeaponThrowAbility} from "./guide/parts/equipment-abilities/weapon-ability/weaponThrowAbility"

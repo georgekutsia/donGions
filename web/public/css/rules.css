@@ -484,11 +484,20 @@ ul li span{
   width: 20%;
   height: 25%;
   max-width: 150px;
+  transition: all ease-in-out 0.2s;
+}
+.combat-images:hover{
+scale:2.5
 }
 .combat-images-right{
   width: 20%;
   height: 25%;
   max-width: 150px;
+  transition: all ease-in-out 0.2s;
+
+}
+.combat-images-right:hover{
+scale:2.5
 }
 .concentration-results div{
   background-color: black;
@@ -517,7 +526,7 @@ padding-right: 10% ;
 }
 .text-npc{
 text-align: left;
-margin: 0px 100px;
+margin: 0px 1vw;
 }
 .text-npc div{
 margin-top: 20px;
