@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc } from '../../component'
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
@@ -35,7 +35,9 @@ function RuleScreen() {
 
   const [rEffort, setREffort] = useState(false)
   const [rCombat, setRCombat] = useState(false)
-  const [rNonSpecific, setRNonSpecific] = useState(true)
+  const [rNonSpecific, setRNonSpecific] = useState(false)
+  const [rNpc, setRNpc] = useState(true)
+
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
   const charisma = () => setrCha(true)
@@ -121,32 +123,38 @@ const handleExplo= () => {
         }
           <div className='nav-show-stats-rules'> 
             <div>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false)}}>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Básico
                     </button>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(!rCombat)}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Combate
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(!rCombat);setRNonSpecific(false);setRNpc(false)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-arrows"></i>Combate
                     </button>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setChar(!char); setBasic(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false)}}>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setChar(!char); setBasic(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-hurricane"></i>Carácter
                     </button>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> {handelInspi(); setBasic(false); setChar(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false)}}>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=>{setChar(false); setBasic(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(!rNpc)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
+                    </button>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> {handelInspi(); setBasic(false); setChar(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>¡Inspírate!
                     </button>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> {handleExplo(); setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false)}}>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> {handleExplo(); setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
                     </button>
-                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> { setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(!rEffort); setRCombat(false)}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Esfuerzo
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> { setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(!rEffort); setRCombat(false);setRNonSpecific(false);setRNpc(false)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-child-reaching"></i>Esfuerzo
+                    </button>
+                    <button className='btn-rules-toggle' style={{color:"grey"}} onClick={()=> { setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(!rNonSpecific);setRNpc(false)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-hands-asl-interpreting"></i>Conceptos
                     </button>
               </div>
               <div>
                 <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{ setBasic(true); setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setInpsi1(true);setInpsi2(true);setInpsi3(true);setExpl1(true);setExpl2(true);setExpl3(true);setExpl4(true);setExpl5(true);setExpl6(true); setREffort(true); setRCombat(true) }}>
+                onClick={()=>{setChar(true); setBasic(true);setInpsi1(true);setInpsi2(true);setInpsi3(true);setExpl1(true);setExpl2(true);setExpl3(true);setExpl4(true);setExpl5(true);setExpl6(true); setREffort(true); setRCombat(true);setRNpc(true);setRNonSpecific(true) }}>
                       <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
                 </button>
                 <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{setChar(false); setBasic(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false)  }}>
+                onClick={()=>{setChar(false); setBasic(false);  setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNpc(false);setRNonSpecific(false)  }}>
                       <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
                 </button>
               </div>
@@ -160,6 +168,9 @@ const handleExplo= () => {
         </FadeInOut>
       <FadeInOut show={rEffort} duration={400}>
               {rEffort && <Effort/>}
+        </FadeInOut>
+      <FadeInOut show={rNpc} duration={400}>
+              {rNpc && <Npc/>}
         </FadeInOut>
       <FadeInOut show={char} duration={400}>
               {char && <Characters/>}

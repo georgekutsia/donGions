@@ -50,16 +50,19 @@ function Combat() {
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Precisión:</div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;La cantidad de dados que se lanzan para el acierto. Con precisión +2 se lanzan 3 dados de 20 para el acierto y se elige el resultado más conveniente para la situación</div>
+                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325507/donGions%20imgs/ruleImages/precision_oig57o.jpg" alt="Bloqueo"/>
                   </div>
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Velocidad:</div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;La cantidad de dados que cuentan para el daño en el acierto. De nada sirve ser rápido si no tienes precisión en los ataques. Si un jugador tiene 3 en precisión y 2 en velocidad, de los 4 dados que se lancen
                     para el acierto, puede elegir hasta 2 adicionales que le contarán como daño acertado.</div>
+                  <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325242/donGions%20imgs/ruleImages/velocidad_npwsxf.jpg" alt="Bloqueo"/>
                   </div>
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Marcialidad:</div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;Al luchar desarmado, obtienes un D4 para incrementar la esquiva. D6 en el nivel 2. D8 en el 3. 
                     Tras una esquiva crítica o por encima de 23, puedes contraatacar con ataque físico gratuito.</div>
+                  <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682324910/donGions%20imgs/ruleImages/marcialidad_cu2yvy.jpg" alt="Bloqueo"/>
                   </div>
                 </div>
               </div>
@@ -78,7 +81,7 @@ function Combat() {
                 </div> 
               </div>
               <div className='d-flex'>
-                  <img className='combat-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682285955/donGions%20imgs/ruleImages/bloqueo_qso5e1.jpg" alt="Bloqueo"/>
+                  <img className='combat-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682324649/donGions%20imgs/ruleImages/bloqueo_hafq0a.jpg" alt="Bloqueo"/>
                   <div className="definicion-concepto"> <span className="nombre-concepto-blanco" style={{color:"green"}}>Bloqueo:</span>  <span> Con escudos. Reduce el daño físico o de armas a distancia recibido
                   en porcentaje, indicado sobre los escudos. Si no está indicado, reduce 60% del daño. 
                   En bloqueo crítico reduce el daño otro 40%. El bloqueo que mitiga daño por encima del 100%, devuelve el daño extra mitigado a la criatura. No puedes bloquear por la espalda sin <span style={{color:"lime"}}> Cinestesia</span></span>
@@ -104,14 +107,17 @@ function Combat() {
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Reflejos:</div>
                     <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por esquiva y tus habilidades de movimiento</div>
+                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/reflejos_mnk9g8.jpg" alt="Bloqueo"/>
                   </div>
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Firmeza:</div>
                     <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por bloqueo y parada y algunas habilidades de armas y escudos</div>
+                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325904/donGions%20imgs/ruleImages/firmeza_bfhmxe.jpg" alt="Bloqueo"/>
                   </div>
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Temple:</div>
-                    <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por resistencia y el efecto que tienen</div>
+                    <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por resistencia y el efecto aumentado que tienen</div>
+                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/temple_ynn3nt.jpg" alt="Bloqueo"/>
                   </div>
                 </div>
               </div>

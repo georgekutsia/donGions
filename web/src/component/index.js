@@ -22,6 +22,7 @@ export {default as Kinesthesia} from "./guide/parts/character/Kinesthesia"
 export {default as Perception} from "./guide/parts/character/Perception"
 
 export {default as Effort} from "./guide/parts/effort/Effort"
+export {default as Npc} from "./guide/parts/npc/Npc"
 
 export {default as SearchRules} from "./search-bars/SearchRules"
 export {default as NavbarVertical} from "./guide/NavbarVertical"

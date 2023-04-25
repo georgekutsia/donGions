@@ -77,6 +77,13 @@ font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
 border-bottom: white 1px solid;
 }
+.nombre-npc-negro{
+font-size: calc(12px + 0.8vw);
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+-webkit-text-stroke: 0.3px  rgb(0, 0, 0);
+border-bottom: white 1px solid;
+}
 .nombre-stat-negro{
 font-size: calc(12px + 0.7vw);
 font-weight: bolder;
@@ -168,6 +175,15 @@ font-size: calc(12px + 0.6vw);
 }
 
 
+.texto-resaltado-npc {
+  animation: fluido1 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #9e3602, rgb(1, 121, 206), rgb(206, 1, 59), rgb(1, 206, 11));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(12px + 1.5vw);
+}
 .texto-resaltado-degradado {
   animation: fluido1 4s ease-in-out infinite;
   background: linear-gradient(-45deg, #f3eb08, rgb(255, 255, 255));
@@ -451,7 +467,25 @@ ul li span{
   max-height: 250px;
   min-width: 80px;
 }
+.npc-images{
+  width: 29%;
+  height: 25%;
+  margin-right: 20px;
+  max-width: 100px;
+  min-width: 60px;
+  min-height: 60px;
+  transition: all ease-in-out 0.2s;
+}
+.npc-images:hover{
+  scale: 2.5;
+}
 .combat-images{
+  margin-top:30px;
+  width: 20%;
+  height: 25%;
+  max-width: 150px;
+}
+.combat-images-right{
   width: 20%;
   height: 25%;
   max-width: 150px;
@@ -462,9 +496,6 @@ ul li span{
 }
 .combat-separation div{
   margin: 10px 10px;
-}
-.combat-separation div img{
-  margin-top: 20px;
 }
 .componente-ataque{
   background-color: rgba(81, 3, 3, 0.336);
@@ -483,4 +514,11 @@ ul li span{
 .ataque-potenciado{
 padding-left: 10% ;
 padding-right: 10% ;
+}
+.text-npc{
+text-align: left;
+margin: 0px 100px;
+}
+.text-npc div{
+margin-top: 20px;
 }
