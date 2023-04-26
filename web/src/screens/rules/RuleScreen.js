@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, EquipmentAbilities } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc } from '../../component'
 import { Equipment } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";

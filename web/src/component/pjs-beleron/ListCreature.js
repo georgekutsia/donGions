@@ -1,5 +1,5 @@
 import Creature from "./CreatureBeleron"
-import React, { Component }  from 'react';
+import React  from 'react';
 import data from "../../data/beleronCreaturesData.json"
 import {useEffect, useState} from "react"
 import FadeInOut from "../FadeInOut";

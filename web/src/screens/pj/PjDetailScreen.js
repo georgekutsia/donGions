@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
-import { useNavigate, useParams } from 'react-router';
+import { useNavigate } from 'react-router';
 import { AuthContext } from '../../context/AuthContext'
 import * as services from "../../services/all-services"
 import FadeInOut from "../../component/FadeInOut";

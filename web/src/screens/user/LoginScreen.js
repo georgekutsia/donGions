@@ -14,7 +14,7 @@ function LoginScreeen() {
   const navigation = useNavigate()
   const value = useContext(AuthContext)
   
-  const {register, handleSubmit, setError, formState: { errors, isValid },} = useForm({mode: "onBlur"});
+  const {register, handleSubmit, setError, formState: { errors },} = useForm({mode: "onBlur"});
 
   const handleLogin = (data) => {
       login.login(data)

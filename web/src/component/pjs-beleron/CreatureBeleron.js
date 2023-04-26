@@ -1,4 +1,5 @@
-import React, { Component }  from 'react';
+import React  from 'react';
+// import React, { Component }  from 'react';
 
 function CreatureBeleron({name, description, img, weird, enemies}) {
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function ButtonCounts({ dead, colorDead, colorText, tu0}) {
   const [count, setCount] = useState(0);

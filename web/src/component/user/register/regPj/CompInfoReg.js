@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import liliana from "../../../../data/habilidadesDeClase"
-function CompInfoReg({describingText, numeroDePj, textColor, nombreHabilidad}) {
+function CompInfoReg({describingText, numeroDePj, textColor}) {
   const lili = liliana[`${numeroDePj}`]
   const [pjPlan, setPjPlan] = useState([lili])
 

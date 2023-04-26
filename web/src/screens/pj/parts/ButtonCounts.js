@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { AuthContext } from '../../../context/AuthContext'
+import React, { useState } from 'react'
+// import { AuthContext } from '../../../context/AuthContext'
 
 
 function ButtonCounts({ stat, dead, colorDead, colorText}) {

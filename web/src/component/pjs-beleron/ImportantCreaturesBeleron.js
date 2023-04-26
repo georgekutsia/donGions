@@ -1,5 +1,6 @@
 import Creatures from "./ListCreature"
-import React, { Component }  from 'react';
+// import React, { Component }  from 'react';
+import React from 'react';
 import Searchbar from "./searchbar"
 import {useEffect, useState} from "react"
 import FadeInOut from "../FadeInOut";

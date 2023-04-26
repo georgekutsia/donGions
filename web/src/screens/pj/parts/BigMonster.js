@@ -15,7 +15,7 @@ import FadeInOut from "../../../component/FadeInOut";
   const i = Math.floor(Math.random() * 130)
   const j = Math.floor(Math.random() * 130)
 
-function BigMonster({countMonster}) {
+function BigMonster() {
   const [showMonster1, setShowMonster1] = useState(false)
   const [showMonster2, setShowMonster2] = useState(false)
   const [showMonster3, setShowMonster3] = useState(false)

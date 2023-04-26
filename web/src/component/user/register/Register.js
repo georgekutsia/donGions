@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm, } from "react-hook-form";
-import { Link, NavLink} from "react-router-dom"
+import { Link} from "react-router-dom"
 
 import * as pjService from "../../../services/all-services"
 import { useNavigate } from "react-router";

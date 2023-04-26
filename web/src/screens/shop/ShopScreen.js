@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Shop, SwordsBall, WordCloud } from "../../component";
-import {
-  CSSTransition,
-  SwitchTransition,
-  Transition,
-} from "react-transition-group";
+import { Shop} from "../../component";
+// import {
+//   CSSTransition,
+//   SwitchTransition,
+//   Transition,
+// } from "react-transition-group";
 import FadeInOut from "../../component/FadeInOut";
 
 import ArmeriaScreen from "./ArmeriaScreen";

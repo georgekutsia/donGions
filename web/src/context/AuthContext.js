@@ -1,5 +1,6 @@
-import { createContext, useState, useEffect } from "react";
-import React, { Component }  from 'react';
+import { createContext, useState } from "react";
+// import React, { Component }  from 'react';
+import React from 'react';
 export const AuthContext = createContext();
 
 function AuthContextProvider({ children }) {

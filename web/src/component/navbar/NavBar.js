@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { Link, NavLink, useNavigate} from "react-router-dom"
+import { NavLink, useNavigate} from "react-router-dom"
 import { AuthContext } from '../../context/AuthContext'
 import * as logService from "../../services/all-services";
-import MediaQuery from 'react-responsive'
+// import MediaQuery from 'react-responsive'
 
 function NavBar() {
   const navigation = useNavigate();

@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 function Searchbar({enemies, alies, weird,  search, setSearch, filterEnemies, filterAlies, filterWeird}) {
   return(
     <div>
