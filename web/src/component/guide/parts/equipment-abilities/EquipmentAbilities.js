@@ -6,7 +6,7 @@ function EquipmentAbilities({imageAbility, equipCost,equipCostAlt, titleEquip, t
       <ul className='text-npc'>
         <div className='d-flex'>
         <img className='ability-images' src={imageAbility} alt="" />
-        <li>&nbsp;<span className='nombre-npc-negro' style={{color:"darkkhaki", borderBottom:"none"}}> {titleEquip} <img src={equipCost} alt={equipCostAlt} width="18vw"/> </span>{textEquip} <u>{textEquip1}</u> {textEquip2} <br /> &nbsp;&nbsp;&nbsp;{textEquip3}</li>
+        <li className='ability-background-text-size'>&nbsp;<span className='nombre-npc-negro' style={{color:"darkkhaki", borderBottom:"none"}}> {titleEquip} <img src={equipCost} alt={equipCostAlt} width="23vw"/> </span>{textEquip} <u>{textEquip1}</u> {textEquip2} <br /> &nbsp;&nbsp;&nbsp;{textEquip3}</li>
         </div>
       </ul>
     </>

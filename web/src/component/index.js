@@ -14,6 +14,7 @@ export {default as Combat} from "./guide/parts/fight/Combat"
 
 export {default as NonSpecific} from "./guide/parts/non-specific/NonSpecific"
 export {default as EquipmentAbilities} from "./guide/parts/equipment-abilities/EquipmentAbilities"
+export {default as ArmorAbilities} from "./guide/parts/equipment-abilities/ArmorAbilities"
 
 export {default as Characters} from "./guide/parts/character/Characters"
 export {default as Luck} from "./guide/parts/character/Luck"
@@ -66,3 +67,7 @@ export {default as WeaponAbility} from "./guide/parts/equipment-abilities/weapon
 export {default as ShieldAbility} from "./guide/parts/equipment-abilities/weapon-ability/shieldAbility"
 export {default as WeaponDistanceAbility} from "./guide/parts/equipment-abilities/weapon-ability/weaponDistanceAbility"
 export {default as WeaponThrowAbility} from "./guide/parts/equipment-abilities/weapon-ability/weaponThrowAbility"
+
+export {default as HeavyArmor} from "./guide/parts/equipment-abilities/armor-ability/HeavyArmor"
+export {default as LightArmor} from "./guide/parts/equipment-abilities/armor-ability/LightArmor"
+export {default as MediumArmor} from "./guide/parts/equipment-abilities/armor-ability/MediumArmor"

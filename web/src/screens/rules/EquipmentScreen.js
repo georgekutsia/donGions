@@ -1,6 +1,6 @@
 import React from 'react'
 import { WeaponAbility, ShieldAbility, WeaponDistanceAbility, WeaponThrowAbility } from '../../component'
-function Equipment() {
+function EquipmentScreen() {
   return (
     <div>
       <WeaponAbility/>
@@ -11,4 +11,4 @@ function Equipment() {
   )
 }
 
-export default Equipment
+export default EquipmentScreen

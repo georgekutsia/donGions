@@ -77,8 +77,15 @@ font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
 border-bottom: white 1px solid;
 }
+.nombre-esfuerzo-negro{
+font-size: calc(12px + 0.9vw);
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+-webkit-text-stroke: 0.3px  rgb(0, 0, 0);
+border-bottom: white 1px solid;
+}
 .nombre-npc-negro{
-font-size: calc(12px + 0.8vw);
+font-size: calc(19px + 0.8vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
@@ -195,9 +202,21 @@ font-size: calc(12px + 0.6vw);
   margin-right: 10%;
   font-size: calc(12px + 0.5vw);
 }
-.texto-resaltado-modifican {
+.texto-resaltado-degradado-subrayado {
   animation: fluido1 4s ease-in-out infinite;
-  background: linear-gradient(-45deg, #bdbb8c, rgb(146, 247, 22));
+  background: linear-gradient(-45deg, #f39108, rgb(154, 120, 75));
+  background-size: 300%;
+  text-decoration: underline;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: calc(12px + 0.5vw);
+}
+.texto-resaltado-modifican {
+  animation: fluido1 19s ease-in-out infinite;
+  background: linear-gradient(-45deg, #bdbb8c, rgb(49, 79, 13));
   background-size: 300%;
   -webkit-background-clip: text;
           background-clip: text;
@@ -482,12 +501,13 @@ scale:2
 .character-images{
   height: 20vw;
   max-height: 250px;
+  min-height: 130px;
   min-width: 80px;
   transition: all ease-in-out 0.2s;
-  border-radius: 50%;
+  margin: 0px 15px;
 }
 .character-images:hover{
-scale:2
+scale:1.5
 }
 .npc-images{
   width: 29%;
@@ -552,4 +572,29 @@ margin: 0px 1vw;
 }
 .text-npc div{
 margin-top: 20px;
+}
+.ability-background-text-size{
+  background-color: rgba(51, 51, 82, 0.232);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: calc(10px + 0.6vw);
+}  
+
+
+.titulo-pagina {
+  font-size: calc(20px + 1vw);
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+.titulo-pagina:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 3px;
 }

@@ -9,12 +9,11 @@ function NoteForm() {
 
   const handleNoteSubmit = (data) => {
     noteService.createNote(data)
-      .then(note =>  window.location.reload(true))
+      .then(noteService =>  window.location.reload(true))
       .catch(error => {
-        if(error.response.data.errors){
+        if(error.response && error.response.data && error.response.data.errors){
           const {errors} = error.response.data;
-          Object.keys(error.response.data.errors)
-            .forEach((error) => {
+          Object.keys(errors).forEach((error)=> {
               setError(error, { message: errors[error].message})
           })
         }

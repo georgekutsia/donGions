@@ -16,10 +16,10 @@ const handleSubmitEquipped = (data) => {
   services.editPj(info.pj.id, data)
     .then(data = navigation("/profile"))
     .catch(error => {
-      if(error.response.data.errors){
+      // if(error.response.data.errors){
+      if(error.response && error.response.data && error.response.data.errors){
         const {errors} = error.response.data;
-        Object.keys(error.response.data.errors)
-          .forEach((error) => {
+        Object.keys(errors).forEach((error) => {
             setError(error, { message: errors[error].message})
         })
       }
