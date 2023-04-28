@@ -51,37 +51,44 @@ function RuleScreen() {
   const combat = () =>setRCombat(true)
 
 
-  const handelInspi = () => {
+
+  const handelInspiOff = (onOff) => {
  setTimeout(() => {
-    setInpsi1(!inspi1)
+    setInpsi1(!onOff)
   }, 200)
   setTimeout(() => {
-    setInpsi2(!inspi2)
+    setInpsi2(!onOff)
   }, 400)
   setTimeout(() => {
-    setInpsi3(!inspi3)
+    setInpsi3(!onOff)
   }, 600)
 }
-const handleExplo= () => {
+
+const handleExploOff= (onOf) => {
   setTimeout(() => {
-    setExpl1(!expl1)
+    setExpl1(!onOf)
   }, 300)
   setTimeout(() => {
-    setExpl2(!expl2)
+    setExpl2(!onOf)
   }, 400)
   setTimeout(() => {
-    setExpl3(!expl3)
+    setExpl3(!onOf)
   }, 500)
   setTimeout(() => {
-    setExpl4(!expl4)
+    setExpl4(!onOf)
   }, 600)
   setTimeout(() => {
-    setExpl5(!expl5)
+    setExpl5(!onOf)
   }, 700)
   setTimeout(() => {
-    setExpl6(!expl6)
+    setExpl6(!onOf)
   }, 800)
-
+}
+const handleingOn = () =>{
+  handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true)
+}
+const handleingOff = () =>{
+  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -126,44 +133,44 @@ const handleExplo= () => {
         }
           <div className='nav-show-stats-rules'> 
             <div>
-                    <button className={basic ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setBasic(!basic); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={basic ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setBasic(!basic)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Básico
                     </button>
-                    <button className={rCombat ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(!rCombat);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={rCombat ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRCombat(!rCombat)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-arrows"></i>Combate
                     </button>
-                    <button className={rEquipment ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(!rEquipment); setRArmor(false)}}>
+                    <button className={rEquipment ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREquipment(!rEquipment)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-group-arrows-rotate"></i>Equipo
                     </button>
-                    <button className={rArmor ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(!rArmor)}}>
+                    <button className={rArmor ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRArmor(!rArmor)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-shirt"></i>Armadura
                     </button>
-                    <button className={char ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setChar(!char); setBasic(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={char ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setrCha(!rCha)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-hurricane"></i>Carácter
                     </button>
-                    <button className={rNpc ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{setChar(false); setBasic(false); setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(!rNpc); setREquipment(false); setRArmor(false)}}>
+                    <button className={rNpc ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNpc(!rNpc)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
                     </button>
-                    <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=> {handelInspi(); setBasic(false); setChar(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handelInspiOff(!true);}}>
                         <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>¡Inspírate!
                     </button>
-                    <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=> {handleExplo(); setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handleExploOff(!true);}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
                     </button>
-                    <button className={rEffort ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=> { setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(!rEffort); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={rEffort ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREffort(!rEffort)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-child-reaching"></i>Esfuerzo
                     </button>
-                    <button className={rNonSpecific ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=> {handleExplo(); setBasic(false); setChar(false); setInpsi1(false);setInpsi2(false);setInpsi3(false); setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(!rNonSpecific);setRNpc(false); setREquipment(false); setRArmor(false)}}>
+                    <button className={rNonSpecific ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNonSpecific(!rNonSpecific)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-hands-asl-interpreting"></i>Conceptos
                     </button>
               </div>
               <div>
                 <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{setChar(true); setBasic(true);setInpsi1(true);setInpsi2(true);setInpsi3(true);setExpl1(true);setExpl2(true);setExpl3(true);setExpl4(true);setExpl5(true);setExpl6(true); setREffort(true); setRCombat(true);setRNpc(true);setRNonSpecific(true); setREquipment(true) }}>
+                onClick={()=>{handleingOn()}}>
                       <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
                 </button>
                 <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{setChar(false); setBasic(false);  setInpsi1(false);setInpsi2(false);setInpsi3(false);setExpl1(false);setExpl2(false);setExpl3(false);setExpl4(false);setExpl5(false);setExpl6(false); setREffort(false); setRCombat(false);setRNpc(false);setRNonSpecific(false); setREquipment(false)  }}>
+                onClick={()=>{handleingOff()}}>
                       <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
                 </button>
               </div>
