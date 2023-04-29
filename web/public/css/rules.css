@@ -221,7 +221,7 @@ font-size: calc(12px + 0.6vw);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(18px + 1.5vw);
 }
 .texto-resaltado-no-especificados {
   animation: fluido1 4s ease-in-out infinite;
@@ -306,6 +306,15 @@ font-size: calc(12px + 0.6vw);
 .texto-resaltado-esfuerzo {
   animation: fluido9 10s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(186, 40, 64), rgb(200, 221, 6));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.texto-resaltado-dados {
+  animation: fluido9 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, rgb(193, 190, 191), rgb(29, 29, 28), rgb(255, 255, 251));
   background-size: 300%;
   -webkit-background-clip: text;
           background-clip: text;
@@ -509,6 +518,17 @@ scale:2
 .character-images:hover{
 scale:1.5
 }
+.dice-images{
+  height: 20vw;
+  max-height: 250px;
+  min-height: 150px;
+  min-width: 100px;
+  transition: all ease-in-out 0.2s;
+  margin: 0px 15px;
+}
+.dice-images:hover{
+scale:2.2
+}
 .npc-images{
   width: 29%;
   height: 25%;
@@ -563,8 +583,8 @@ scale:2.5
   font-size: calc(12px + 0.5vw) ;
 }
 .ataque-potenciado{
-padding-left: 10% ;
-padding-right: 10% ;
+padding-left: 10px ;
+padding-right: 10px ;
 }
 .text-npc{
 text-align: left;

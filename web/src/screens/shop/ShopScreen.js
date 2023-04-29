@@ -56,9 +56,10 @@ function ShopScreen() {
               />
             </>
           )}
-        <h1 align="center" className="name-shop">
-          Tienda de <br /> Patek <br /> Ruinafortunas
-        </h1>
+          <div className="shop-div"> 
+              <img className="shop-board" align="center" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666115633/donGions%20imgs/backgroundEffects/pngwing.com_82_gsdfvi.png"  alt="" />
+              <h1 align="center" className="name-shop"> Tienda de <br /> Patek <br /> Ruinafortunas</h1>
+          </div>
         </FadeInOut>
       </div>
       <FadeInOut show={special} duration={200}>

@@ -12,7 +12,7 @@ function DongionsDetail() {
           <article>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esta página es el proyecto final de un bootcamp de desarrollo web y un hobbie que llevo años desarrollando. 
           Es un juego de rol basado en parte en MTG, un juego que llevo disfrutando más de una decada y quería llevar a algo más complejo, duradero,
           en el que desarrollar mis propias historias y compartir con mis amigos. Esta página web es la herramienta que siempre quise crear para que 
-          los jugadores pudieran tener una forma fácil de encontrar la información que necesitan durante el juego y también llevar .</article>
+          los jugadores pudieran tener una forma fácil de encontrar la información que necesitan durante el juego y también llevar ciertas cuentas.</article>
         </div>
         <div className='dongionsdetail-box-parts'  >
           <div className='dongionsdetail-title'>&nbsp;&nbsp;&nbsp;&nbsp;¿Para qué se usa? </div>
@@ -30,7 +30,7 @@ function DongionsDetail() {
           lore de MTG, pero intenté ser lo mas fiel posible a sus personalidades y forma de luchar)</span>. Cada jugador, tras afiliarse o entrar en comunión con un planeswalker, adquiere ciertas estadísticas básicas, 
           alguna habilidad para usar en combate y adquiere nociones de combate. Repito, los jugadores son ellos mismos, con sus conocimientos y habilidades del mundo real, que son 
           inspirados, ayudados y guiados por los Planeswalkers. Así que los jugadores que saben hablar idiomas, escalar, cocinar, arreglar aparatos, usar armas etc podrán usar esas acciones
-          con un bonus en el juego</article>
+          con un bonus en el juego.</article>
           <article>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </article>
         </div>
         <div className='dongionsdetail-box-parts'  >
@@ -39,7 +39,7 @@ function DongionsDetail() {
           suficientes conocimientos para diseñar un juego desde cero. He usado un programa que permite crear cartas con formato parecido a las del juego
           Magic The Gathering, pero las distintas partes no significan ni indican lo mismo en los dos juegos. Las reglas del juego, la jugabilidad, la historia,
           el desarrollo y personajes secundarios son mios. He usado imágenes de algunos personajes simplemente para tener fotos de referencia para que 
-          los jugadores puedan ponerle cara a esos personajes, pero el resto de la historia no tiene nada que ver en su mayoría</article>
+          los jugadores puedan ponerle cara a esos personajes, pero el resto de la historia no tiene nada que ver en su mayoría.</article>
         </div>
         
     

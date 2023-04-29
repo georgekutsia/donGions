@@ -6,7 +6,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Malicia_nsqllr.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Invasio%CC%81n_jktdqd.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/l_Indiferencia_p4dism.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Liliana_Vess_kdstmr.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLliliana_tpqiaf.jpg",
   },
   {
     name: "Gideon",
@@ -15,7 +15,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/g_Fuerza_v2z0xi.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/g_Deslumbrar_kf7wjm.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/g_Ascennsio%CC%81n_uxuwwd.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951814/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Gideon_Jura_v0exyn.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLgideon_ky0gzi.jpg",
   },
   {
     name: "Jace",
@@ -24,7 +24,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/j_Arrebatar_eqsdwp.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/j_Telequinesis_vu0cjn.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/j_Voluntad_x2biga.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Jace_Beleren_sbwu7g.jpg"
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725009/donGions%20imgs/b%C3%A1sico%20personajes/PLjace_qwkwl8.jpg"
   },
   {
     name: "Nissa",
@@ -33,7 +33,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/n_Diezmar_i9fh9o.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/n_Astucia_c6sssw.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/n_Fortuna_reuiit.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Nissa_Revane_tadc0q.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLnissa_rvztk6.jpg",
   },
   {
     name: "Ral",
@@ -42,7 +42,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/r_Rela%CC%81mpago_od0jc4.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/r_Maestri%CC%81a_mgqjzp.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948257/donGions%20imgs/habilidades%20de%20clase/r_Ingenio_fiw4yc.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Ral_Zarek_kb67ht.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLral_ox9aeg.jpg",
   },
   {
     name: "Ajani",
@@ -51,7 +51,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948255/donGions%20imgs/habilidades%20de%20clase/a_Introspeccio%CC%81n_pr7b2r.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948255/donGions%20imgs/habilidades%20de%20clase/a_Sigilo_j0rdf5.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948255/donGions%20imgs/habilidades%20de%20clase/a_Liderazgo_litqke.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951814/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Ajani_Melena_Dorada_rcvrb8.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLajani_cigoss.jpg",
   },
   {
     name: "Sorin",
@@ -60,7 +60,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/s_Intimidacio%CC%81n_ug0rea.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/s_Desprecio_qhgasr.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/s_Altarneri%CC%81a_p8kvlh.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Sorin_Markov_eqwni1.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLsorin_uce2n1.jpg",
   },
   {
     name: "Elspeth",
@@ -69,7 +69,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/e_Determinacio%CC%81n_mtwhcn.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/e_Destreza_j0org2.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948256/donGions%20imgs/habilidades%20de%20clase/e_Aprehender_lhyd0e.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951814/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Elspeth_Tirel_vlwtga.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLelspeth_sm2sdh.jpg",
   },
   {
     name: "Sarkhan",
@@ -78,7 +78,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948259/donGions%20imgs/habilidades%20de%20clase/sh_Velocidad_zxdoew.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/sh_Leccio%CC%81n_uuremd.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948258/donGions%20imgs/habilidades%20de%20clase/sh_Brutalidad_jkap33.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Sarkhan_Vol_uqhaom.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725007/donGions%20imgs/b%C3%A1sico%20personajes/PLsarkhan_mqeb0v.jpg",
   },
   {
     name: "Teferi",
@@ -87,7 +87,7 @@ const habilidades = [
     hab2: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948259/donGions%20imgs/habilidades%20de%20clase/t_Portal_euca8r.jpg",
     hab3: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948259/donGions%20imgs/habilidades%20de%20clase/t_Fulgor_wwttsl.jpg",
     hab4: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665948259/donGions%20imgs/habilidades%20de%20clase/t_Aceleracio%CC%81n_mfzbgh.jpg",
-    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1665951815/donGions%20imgs/b%C3%A1sico%20personajes/Espi%CC%81ritu_de_Teferi_Akosa_czsni3.jpg",
+    info: "https://res.cloudinary.com/dfrda73uc/image/upload/v1682725008/donGions%20imgs/b%C3%A1sico%20personajes/PLteferi_gg2xln.jpg",
   },
 ];
 

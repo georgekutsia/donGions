@@ -7,7 +7,7 @@ function CompInfoReg({describingText, numeroDePj, textColor}) {
   return (
     <div className='seccion-habilidades'>
       <div style={{color:"chocolate"}}> <i style={{color:`${textColor}`}} className="fa-solid fa-hand-sparkles"></i> Todos los personajes tienen 1 carta con habilidad pasiva y su especialidad.</div>
-      <div style={{color:"chocolate"}}>Los 3 colores de la esquina superior indicana su afinidad</div>
+      <div style={{color:"chocolate"}}>Los 3 colores de la esquina superior indican su afinidad</div>
       <div style={{color:`${textColor}`}}>{describingText}</div>
         {pjPlan.map((image) =>(
           <div key={image.name}> 

@@ -71,3 +71,5 @@ export {default as WeaponThrowAbility} from "./guide/parts/equipment-abilities/w
 export {default as HeavyArmor} from "./guide/parts/equipment-abilities/armor-ability/HeavyArmor"
 export {default as LightArmor} from "./guide/parts/equipment-abilities/armor-ability/LightArmor"
 export {default as MediumArmor} from "./guide/parts/equipment-abilities/armor-ability/MediumArmor"
+
+export {default as Dice} from "./guide/parts/dice/Dice"

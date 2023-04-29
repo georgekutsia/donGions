@@ -55,20 +55,39 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
+.shop-div{
+  justify-content: center;
+  display: flex;
+}
+.shop-board{
+  position: absolute;
+  display: block;
+  width: 30%;
+  min-width: 450px;
+  height: 220px;
+  z-index: -2;
+  margin: auto;
+}
 
 .name-shop {
   font-family: rubik moonrocks;
   padding-top: 30px;
+  font-variation-settings: "wght" 311;
   text-shadow: 2px 2px rgb(134, 83, 6);
   text-shadow: 4px 4px rgb(134, 83, 6);
   font-size: calc(30px + 0.7vw);
-  background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666115633/donGions%20imgs/backgroundEffects/pngwing.com_82_gsdfvi.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 330px;
-  height: 250px;
-}
+  /* background-image: url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666115633/donGions%20imgs/backgroundEffects/pngwing.com_82_gsdfvi.png"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  width: 430px;
+  height: 200px;
+  transition: 700ms ease;
 
+}
+.name-shop:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 10px;
+}
 .pages-shop {
   font-family: rubik moonrocks;
   color: white;

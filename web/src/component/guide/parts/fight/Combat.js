@@ -116,7 +116,7 @@ function Combat() {
                   </div>
                   <div className='d-flex'>
                     <div className='ataque-potenciado-titulo'>Temple:</div>
-                    <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por resistencia y el efecto aumentado que tienen</div>
+                    <div className='ataque-potenciado-texto'><div className='ataque-potenciado-titulo'>Temple:</div>la cantidad de dados que se tiran por resistencia y el efecto aumentado que tienen</div>
                     <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/temple_ynn3nt.jpg" alt="Bloqueo"/>
                   </div>
                 </div>

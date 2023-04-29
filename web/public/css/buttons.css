@@ -165,7 +165,7 @@
   letter-spacing: 4px;
   overflow: hidden;
   background-color: black;
-  border: none;
+  border: 30px;
   font-size: calc(10px + 0.5vw);
 }
 .btn-rules-toggle:hover {
