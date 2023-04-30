@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BackgroundFloatingBuble, ImportantCreaturesBeleron } from "../../component";
+import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds } from "../../component";
 import FadeInOut from "../../component/FadeInOut";
 
 function EventsScreen() {
@@ -17,9 +17,14 @@ function EventsScreen() {
         heigthBall={"15px"}
         idFlow={"circle-container"}
       />
-      <FadeInOut show={showPage} duration={1000}>
-          <ImportantCreaturesBeleron/>
-      </FadeInOut>
+      <div className="d-flex justify-content-evenly">
+          <FadeInOut show={showPage} duration={1000}>
+              <ImportantCreaturesBeleron />
+          </FadeInOut>
+          <FadeInOut show={showPage} duration={1000}>
+              <Guilds/>
+          </FadeInOut>
+      </div>
     </div>
   );
 }

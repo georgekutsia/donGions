@@ -48,21 +48,27 @@ function Combat() {
                 <h1 id="s-potenciados" align="center" className='texto-resaltado-ataques-potenciados'> Ataques básicos potenciados:</h1>
                 <div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Precisión:</div>
-                    <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;La cantidad de dados que se lanzan para el acierto. Con precisión +2 se lanzan 3 dados de 20 para el acierto y se elige el resultado más conveniente para la situación</div>
-                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325507/donGions%20imgs/ruleImages/precision_oig57o.jpg" alt="Bloqueo"/>
+                    <div>
+                      <div className='ataque-potenciado-titulo'>Precisión:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325507/donGions%20imgs/ruleImages/precision_oig57o.jpg" alt="Bloqueo"/>
+                    </div>
+                    <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;La cantidad de dados que se lanzan para el acierto. Con precisión +2 se lanzan 3 dados de 20 para el acierto y se elige el resultado que más conveniene para la situación</div>
                   </div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Velocidad:</div>
+                    <div>
+                      <div className='ataque-potenciado-titulo'>Velocidad:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325242/donGions%20imgs/ruleImages/velocidad_npwsxf.jpg" alt="Bloqueo"/>
+                    </div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;La cantidad de dados que cuentan para el daño en el acierto. De nada sirve ser rápido si no tienes precisión en los ataques. Si un jugador tiene 3 en precisión y 2 en velocidad, de los 4 dados que se lancen
                     para el acierto, puede elegir hasta 2 adicionales que le contarán como daño acertado.</div>
-                  <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325242/donGions%20imgs/ruleImages/velocidad_npwsxf.jpg" alt="Bloqueo"/>
                   </div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Marcialidad:</div>
+                    <div>
+                      <div className='ataque-potenciado-titulo'>Marcialidad:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682324910/donGions%20imgs/ruleImages/marcialidad_cu2yvy.jpg" alt="Bloqueo"/>
+                    </div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;Al luchar desarmado, obtienes un D4 para incrementar la esquiva. D6 en el nivel 2. D8 en el 3. 
-                    Tras una esquiva crítica o por encima de 23, puedes contraatacar con ataque físico gratuito.</div>
-                  <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682324910/donGions%20imgs/ruleImages/marcialidad_cu2yvy.jpg" alt="Bloqueo"/>
+                    Tras una esquiva crítica o por encima de 23, puedes usar un contraataque físico gratuito.</div>
                   </div>
                 </div>
               </div>
@@ -105,19 +111,25 @@ function Combat() {
                 <h1 id="s-potenciados" align="center" className='texto-resaltado-defensas-potenciados'> Defensas básicas potenciadas:</h1>
                 <div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Reflejos:</div>
-                    <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por esquiva y tus habilidades de movimiento</div>
-                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/reflejos_mnk9g8.jpg" alt="Bloqueo"/>
+                    <div>
+                      <div className='ataque-potenciado-titulo'>Reflejos:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/reflejos_mnk9g8.jpg" alt="Bloqueo"/>
+                    </div>
+                    <div className='ataque-potenciado-texto'>La cantidad de dados que se tiran por esquiva y tus habilidades de movimiento</div>
                   </div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Firmeza:</div>
-                    <div className='ataque-potenciado-texto'>la cantidad de dados que se tiran por bloqueo y parada y algunas habilidades de armas y escudos</div>
-                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325904/donGions%20imgs/ruleImages/firmeza_bfhmxe.jpg" alt="Bloqueo"/>
+                  <div>
+                      <div className='ataque-potenciado-titulo'>Firmeza:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325904/donGions%20imgs/ruleImages/firmeza_bfhmxe.jpg" alt="Bloqueo"/>
+                    </div>
+                    <div className='ataque-potenciado-texto'>La cantidad de dados que se tiran por bloqueo y parada y algunas habilidades de armas y escudos</div>
                   </div>
                   <div className='d-flex'>
-                    <div className='ataque-potenciado-titulo'>Temple:</div>
-                    <div className='ataque-potenciado-texto'><div className='ataque-potenciado-titulo'>Temple:</div>la cantidad de dados que se tiran por resistencia y el efecto aumentado que tienen</div>
-                    <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/temple_ynn3nt.jpg" alt="Bloqueo"/>
+                    <div>
+                      <div className='ataque-potenciado-titulo'>Temple:</div>
+                      <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682325901/donGions%20imgs/ruleImages/temple_ynn3nt.jpg" alt="Bloqueo"/>
+                    </div>
+                    <div className='ataque-potenciado-texto'><div className='ataque-potenciado-titulo'>Temple:</div>La cantidad de dados que se tiran por resistencia y el efecto aumentado que tienen</div>
                   </div>
                 </div>
               </div>

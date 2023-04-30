@@ -552,8 +552,7 @@ scale:2.2
 scale:2.5
 }
 .combat-images-right{
-  width: 20%;
-  height: 25%;
+  width: 100%;
   max-width: 150px;
   transition: all ease-in-out 0.2s;
 
@@ -581,10 +580,11 @@ scale:2.5
 }
 .ataque-potenciado-texto{
   font-size: calc(12px + 0.5vw) ;
+  padding-top: 20px;
 }
 .ataque-potenciado{
-padding-left: 10px ;
-padding-right: 10px ;
+width: 80%;
+min-width: 340px;
 }
 .text-npc{
 text-align: left;
