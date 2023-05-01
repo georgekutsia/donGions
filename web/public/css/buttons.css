@@ -1,10 +1,12 @@
 .b-level-2.b-type-show-creatures {
+  margin-top: 30px;
   background: transparent;
   color: #006eeb;
   border: 3px solid #16252d;
   position: relative;
   transform: perspective(1px);
   overflow: hidden;
+  font-size: calc(10px + 0.6vw);
 }
 
 .bulala{

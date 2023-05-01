@@ -16,7 +16,7 @@ function ListGuild({search, enemies, alies, weird}) {
         }
     }, [])
     if (NPC.length === 0){
-        return <center className="mt-5"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666263239/donGions%20imgs/loading-62_jrtslx.gif" width="300px" alt="Loading img" /></center>
+        return <center className="mt-5"><img src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682904601/donGions%20imgs/loading2_s9mu8u.gif" width="200px" alt="Loading img" /></center>
     }
   return(
     <div>

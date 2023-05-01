@@ -22,7 +22,6 @@ function ImportantCreaturesBeleron() {
   
   return(
       <div align="center">
-
                 {/* {comunicado && 
                   <FadeInOut show={showPage} duration={1000}>
                         <div>
