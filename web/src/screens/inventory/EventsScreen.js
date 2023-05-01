@@ -7,6 +7,8 @@ function EventsScreen() {
   useEffect(() => {
       setShowPage(true)
   }, [])
+  const[showGuilds, setShowGuilds] = useState(false);
+  const[showNPC, setShowNPC] = useState(false);
   return (
     <div>
       <BackgroundFloatingBuble
@@ -18,13 +20,24 @@ function EventsScreen() {
         idFlow={"circle-container"}
       />
       <div className="d-flex justify-content-evenly">
-          <FadeInOut show={showPage} duration={1000}>
+
+      <div  className="d-flex justify-content-evenly">
+            <h1><button onClick={() => {setShowNPC(!showNPC); setShowGuilds(false)}} 
+            className="btn btn-round b-level-2 b-type-show-creatures">Criaturas de Beleron</button>
+            </h1>
+        </div>
+          <div  className="d-flex justify-content-evenly">
+            <h1><button onClick={() => {setShowGuilds(!showGuilds); setShowNPC(false)}} 
+            className="btn btn-round b-level-2 b-type-show-creatures">Guilds</button>
+            </h1>
+          </div>
+      </div>
+          <FadeInOut show={showNPC} duration={500}>
               <ImportantCreaturesBeleron />
           </FadeInOut>
-          <FadeInOut show={showPage} duration={1000}>
+          <FadeInOut show={showGuilds} duration={500}>
               <Guilds/>
           </FadeInOut>
-      </div>
     </div>
   );
 }

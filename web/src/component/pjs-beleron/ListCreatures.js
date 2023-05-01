@@ -10,7 +10,7 @@ function ListCreatures({search, enemies, alies, weird}) {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setNPC(data)
-        }, 2000)
+        }, 500)
         return () => {
             clearTimeout(timeout)
         }

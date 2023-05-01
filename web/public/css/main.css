@@ -46,7 +46,7 @@ button:disabled {
 .login-form-margin{
   padding-top: calc(50px + 1vw);
   padding-left: 2%;
-  padding-bottom: 30%;
+  padding-bottom: 25%;
   display: flex;
   justify-content: center;
 }

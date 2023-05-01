@@ -38,7 +38,6 @@ export function getCards(){
 export function getNotes(){
   return http.get("/notes")
 }
-
 export function getNote(id){
   return http.get(`/notes/${id}`)
 }

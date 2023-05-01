@@ -33,7 +33,7 @@ function Notes({size,color, width, height, maxWidth, minWidth, imgWidth}) {
               <h6>{capitilize(note.title)}</h6>
               <div>{note.category}</div>
               <div>{note.description}</div>
-              <Link style={{color:"red"}} onClick={handleClick} className="delete-note-position"><i className="fa-solid fa-trash-can"></i></Link>
+              <button style={{color:"red"}} onClick={handleClick} className="delete-note-position"><i className="fa-solid fa-trash-can"></i></button>
             </div>
         ))}
       </div>

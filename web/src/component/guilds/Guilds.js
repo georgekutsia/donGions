@@ -19,28 +19,20 @@ function Guilds() {
   
   return(
       <div align="center">
-        <div  className="d-flex justify-content-evenly">
-            <h1><button onClick={() => setShowTable(!showTable)} 
-            className="btn btn-round b-level-2 b-type-show-creatures">Guilds</button>
-            </h1>
-        </div>
-          <FadeInOut show={showPage} duration={1000}>
+          <FadeInOut show={true} duration={1000}>
               <div align="center">
-          <FadeInOut show={showTable} duration={1300}>
-              {showTable && 
           <div className="m-1">
               <SearchGuild  search={search} setSearch={setSearch} filterEnemies={setEnemies} enemies={enemies} filterAlies={setAlies} alies={alies} filterWeird={setWeird} weird={weird} />
           </div> 
-              }
-          {/* <div className="bubble-text">
+              
+          <div className="bubble-text">
             <img className="img-shop-info-creature" alt="Dude" />
             <div style={{fontSize:"calc(12px + 0.5vw)"}}> <span style={{color: "green"}}>verdes</span>  indica que lo considerais aliado</div>
             <div style={{fontSize:"calc(12px + 0.5vw)"}}><span style={{color: "red"}}>rojo</span> indican que lo considerais enemigo</div>
             <div style={{fontSize:"calc(12px + 0.5vw)"}}>El fondo <span style={{backgroundColor: "purple", color: "black"}}>púrpura</span> significa que no estáis seguros</div>
-          </div> */}
-          </FadeInOut>
+          </div>
         <div className="pt-5">
-              {showTable && <ListGuilds search={search} enemies={enemies} alies={alies}  weird={weird}/>}
+              <ListGuilds search={search} enemies={enemies} alies={alies}  weird={weird}/>
         </div>
         </div>
           </FadeInOut>

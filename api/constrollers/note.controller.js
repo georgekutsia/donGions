@@ -60,3 +60,11 @@ module.exports.delete = (req, res, next) => {
     .then(() => res.status(204).send())
     .catch(next);
 };
+
+// module.exports.delete = (req, res, next) => {
+//   // Note.findByIdAndDelete({ _id: req.note.id })
+//   const { id } = req.params;
+//   Note.findByIdAndDelete(id)
+//   .then(() => res.status(204).json("nota eliminada"))
+//     .catch(next);
+// };
