@@ -24,3 +24,8 @@
   .responsive-tf {
     display: flex;
   }
+.div-list-creatures{
+  margin-top: 30px;
+  width: 70%;
+  min-width: 390px;
+}

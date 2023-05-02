@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Guild({name, description, img, weird, enemies}) {
+function Guild({name, description, img, weird, enemies, where}) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -20,6 +20,7 @@ function Guild({name, description, img, weird, enemies}) {
     </div>
     <div className="p-2">
       <div style={{color:enemies ? "red" : "green", fontSize: "calc(15px + 0.9vw)" }}> {name} </div> 
+      <div style={{color:"white"}}>Se pueden encontar en {where}</div>  
       {description}
     </div>
   </td>

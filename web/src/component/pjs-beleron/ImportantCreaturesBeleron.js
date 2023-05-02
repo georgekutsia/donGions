@@ -40,7 +40,7 @@ function ImportantCreaturesBeleron() {
             <div style={{fontSize:"calc(12px + 0.5vw)"}}>El fondo <span style={{backgroundColor: "purple", color: "black"}}>púrpura</span> significa que no estáis seguros</div>
           </div>
           </FadeInOut>
-        <div className="pt-5">
+        <div className="div-list-creatures" >
               <Creatures search={search} enemies={enemies} alies={alies}  weird={weird}/>
         </div>
         </div>

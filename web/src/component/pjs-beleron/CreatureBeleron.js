@@ -13,7 +13,7 @@ function CreatureBeleron({name, description, img, weird, enemies}) {
   }, []);
   return(
 <tr style={{backgroundColor: weird ? "rgb(52, 6, 52, 0.5)" : "", borderTop: "1px solid white"}}>
-  <td className={isSmallScreen ? "responsive-td" : "responsive-tf"} style={{width:"100%", minWidth:"150px", fontSize:"calc(12px+0.5vw)", paddingLeft:"10px", textAlign:"justify"}}>
+  <td className={isSmallScreen ? "responsive-td" : "responsive-tf"} style={{width:isSmallScreen ? "100%":"90%", minWidth:"150px", fontSize:"calc(12px+0.5vw)", paddingLeft:"10px", textAlign:"justify"}}>
     <div align="center">
       <img style={{border:enemies ? "5px solid red" : "5px solid green"}} className="creatures-beleron-list-img"  src={img} alt="Criaturas" />
     </div>

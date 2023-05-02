@@ -1,23 +1,22 @@
 .img-shop-info-creature{
   display: flex;
   position: absolute;
-  right: -100px;
-  top: 0px;
-  width: 90px;
+  right: -90px;
+  top: 10px;
+  width: calc(40px + 3vw);
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex19_cdlfnd_nr1otj.png");
 }
 .img-shop-info-creature:hover{
   display: flex;
   position: absolute;
-  right: -100px;
-  top: 0px;
-  width: 90px;
+  right: -90px;
+  top: 10px;
+  width: calc(40px + 3vw);
   content:url("https://res.cloudinary.com/dfrda73uc/image/upload/v1666271499/donGions%20imgs/shop%20dude/Ex192_ooh6ju_cos14i.png");
 }
-
 .bubble-text {
   position: relative;
-  width: 90%;
+  width: 50%;
   max-width: 500px;
   height: 20%;
   background: #32557f;
