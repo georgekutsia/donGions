@@ -21,14 +21,34 @@ function Guilds() {
   const [techno, setTechno] = useState(false);
   const [defence, setDefence] = useState(false);
   const [explor, setExplor] = useState(false);
-  const [movimiento, setMovimiento] = useState(false);
+  const [move, setMove] = useState(false);
   const [vida, setVida] = useState(false);
   const [mana, setMana] = useState(false);
   const [restore, setRestore] = useState(false);
   const [cards, setCards] = useState(false);
   const [gems, setGems] = useState(false);
-  const [otro3, setOtro3] = useState(false);
+  const [companion, setCompanion] = useState(false);
+  const [gun, setGun] = useState(false);
+  const [tatu, setTatu] = useState(false);
+  const [throww, setThroww] = useState(false);
+  const [action, setAction] = useState(false);
+  const [ability, setAbility] = useState(false);
+  const [light, setLight] = useState(false);
+  const [dice, setDice] = useState(false);
+  const [concent, setConcent] = useState(false);
+  const [money, setMoney] = useState(false);
+  const [maz, setMaz] = useState(false);
+  const [mutate, setMutate] = useState(false);
+  const [hit, setHit] = useState(false);
+  const [heal, setHeal] = useState(false);
+  const [weight, setWeight] = useState(false);
+  const [maz1, setMaz1] = useState(false);
+  const [maz2, setMaz2] = useState(false);
+  const [maz3, setMaz3] = useState(false);
+  const [maz4, setMaz4] = useState(false);
+  const [nonDefined, setNonDefined] = useState(false);
   const [where, setWhere] = useState(false);
+
   const [comunicado, setComunicado] = useState(false);
   const [showTable, setShowTable] = useState(false);
   return (
@@ -65,8 +85,8 @@ function Guilds() {
               defence={defence}
               filterExplor={setExplor}
               explor={explor}
-              filterMovimiento={setMovimiento}
-              movimiento={movimiento}
+              filterMove={setMove}
+              move={move}
               filterVida={setVida}
               vida={vida}
               filterMana={setMana}
@@ -77,16 +97,51 @@ function Guilds() {
               cards={cards}
               filterGems={setGems}
               gems={gems}
-              filterOtro3={setOtro3}
-              otro3={otro3}
+              filterCompanion={setCompanion}
+              companion={companion}
+              filterGun={setGun}
+              gun={gun}
+              filterTatu={setTatu}
+              tatu={tatu}
+              filterThroww={setThroww}
+              throww={throww}
+              filterAction={setAction}
+              action={action}
+              filterAbility={setAbility}
+              ability={ability}
+              filterLight={setLight}
+              light={light}
+              filterDice={setDice}
+              dice={dice}
+              filterConcent={setConcent}
+              concent={concent}
+              filterMoney={setMoney}
+              money={money}
+              filterMaz={setMaz}
+              maz={maz}
+              filterMutate={setMutate}
+              mutate={mutate}
+              filterHit={setHit}
+              hit={hit}
+              filterHeal={setHeal}
+              heal={heal}
+              filterWeight={setWeight}
+              weight={weight}
+              filterMaz1={setMaz1}
+              maz1={maz1}
+              filterMaz2={setMaz2}
+              maz2={maz2}
+              filterMaz3={setMaz3}
+              maz3={maz3}
+              filterMaz4={setMaz4}
+              maz4={maz4}
+              filterNonDefined={setNonDefined}
+              nonDefined={nonDefined}
             />
           </div>
           {/* <div className="bubble-text">
             <img className="img-shop-info-creature" alt="Dude" />
-            <div style={{ fontSize: "calc(12px + 0.5vw)" }}> {" "} <span style={{ color: "green" }}>verdes</span> indica que loconsiderais aliado</div>
-            <div style={{ fontSize: "calc(12px + 0.5vw)" }}><span style={{ color: "red" }}>rojo</span> indican que loconsiderais enemigo</div>
-            <div style={{ fontSize: "calc(12px + 0.5vw)" }}>El fondo{" "}<span style={{ backgroundColor: "purple", color: "black" }}>púrpura</span>{" "}significa que no estáis seguros
-            </div>
+            <div > Puedes buscar por nombre o por ciudad. También puedes filtrar en base a qué te interesa que tenga el gremio. Puedes seleccionar varios filtros a la vez </div>
           </div> */}
           <div className="div-list-creatures">
             <ListGuilds
@@ -104,13 +159,32 @@ function Guilds() {
               techno={techno}
               defence={defence}
               explor={explor}
-              movimiento={movimiento}
+              move={move}
               vida={vida}
               mana={mana}
               restore={restore}
               cards={cards}
               gems={gems}
-              otro3={otro3}
+              companion={companion}
+              gun={gun}
+              tatu={tatu}
+              throww={throww}
+              action={action}
+              ability={ability}
+              light={light}
+              dice={dice}
+              concent={concent}
+              money={money}
+              maz={maz}
+              mutate={mutate}
+              hit={hit}
+              heal={heal}
+              weight={weight}
+              maz1={maz1}
+              maz2={maz2}
+              maz3={maz3}
+              maz4={maz4}
+              nonDefined={nonDefined}
             />
           </div>
         </div>

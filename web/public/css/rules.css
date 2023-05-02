@@ -618,3 +618,58 @@ margin-top: 20px;
   font-variation-settings: "wght" 582; 
   letter-spacing: 3px;
 }
+.nombre-gremio {
+  font-size: calc(16px + 0.6vw);
+  font-family: 'Gambetta', serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-weight: 700;
+  font-variation-settings: "wght" 311;
+  color: PaleGoldenRod;
+  outline: none;
+}
+
+.nombre-gremio:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+.ubicacion-gremio{
+  font-size: calc(14px + 0.5vw);
+  font-family: 'Gambetta', serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  color: PaleGoldenRod;
+  outline: none;
+}
+
+.ubicacion-gremio:hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+.selectedGuild{
+  color: rgb(15, 230, 245);
+  border-bottom: 2px solid rgb(5, 81, 102);
+  margin: 0px 10px;
+  padding: 0px 5px;
+  font-weight: 500;
+  animation: shaking 0.2s;
+}
+.notSelectedGuild{
+  color: rgb(240, 222, 199);
+  margin: 0px 10px;
+  padding: 0px 5px;
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.448);
+  animation: deshaking 0.2s;
+}
+@keyframes shaking {
+  0% { transform: translate(0, 0)  }
+  25% { transform: translate(8px, 0)  }
+  50% { transform: translate(0, 0) }
+  75% { transform: translate(-8px, 0)  }
+  100% { transform: translate(0, 0)  }
+}
+@keyframes deshaking {
+  0% { transform: rotate(0deg)  }
+  100% { transform: rotate(720deg)  }
+}

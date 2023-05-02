@@ -19,8 +19,8 @@ function Guild({name, description, img, weird, enemies, where}) {
       <img style={{border:enemies ? "5px solid red" : "5px solid green"}} className="creatures-beleron-list-img"  src={img} alt="Criaturas" />
     </div>
     <div className="p-2">
-      <div style={{color:enemies ? "red" : "green", fontSize: "calc(15px + 0.9vw)" }}> {name} </div> 
-      <div style={{color:"white"}}>Se pueden encontar en {where}</div>  
+      <div className="nombre-gremio"> {name} </div> 
+      <div className="ubicacion-gremio">Se pueden encontar en {where}</div>  
       {description}
     </div>
   </td>
