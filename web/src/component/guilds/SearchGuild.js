@@ -1,9 +1,9 @@
 import React from 'react';
-function SearchGuild({ search, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, movimiento, otro4, setSearch, filterCharacter, filterDamage, filterFood, filterWhere, filterPotions, filterExplosives, filterDistance, filterMele, filterMagic, filterBook, filterTechno, filterDefence,filterExplor,filterMovimiento,filterOtro4}) {
+function SearchGuild({ search, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, movimiento, vida, mana, restore, cards, gems, otro3, setSearch, filterCharacter, filterDamage, filterFood, filterWhere, filterPotions, filterExplosives, filterDistance, filterMele, filterMagic, filterBook, filterTechno, filterDefence,filterExplor,filterMovimiento,filterVida,filterMana, filterRestore,filterCards,filterGems,filterOtro3}) {
   return(
     <div>
         <div>
-            <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
+          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre" value={search} onChange={(event) => setSearch(event.target.value)}/>
         </div>
         <input type="checkbox" className="form-checkbox-input ms-2" checked={where} onChange={(event) =>filterWhere(event.target.checked)} id="where"/>
         <label htmlFor="where">Lugar</label>
@@ -33,8 +33,18 @@ function SearchGuild({ search, food, character, damage, where, potions, explosiv
         <label htmlFor="explor">explorar</label>
         <input type="checkbox" className="form-checkbox-input ms-2" checked={movimiento} onChange={(event) =>filterMovimiento(event.target.checked)} id="movimiento"/>
         <label htmlFor="movimiento">movimiento</label>
-        <input type="checkbox" className="form-checkbox-input ms-2" checked={otro4} onChange={(event) =>filterOtro4(event.target.checked)} id="otro4"/>
-        <label htmlFor="otro4">otro4</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={vida} onChange={(event) =>filterVida(event.target.checked)} id="vida"/>
+        <label htmlFor="vida">vida</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={mana} onChange={(event) =>filterMana(event.target.checked)} id="mana"/>
+        <label htmlFor="mana">mana</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={restore} onChange={(event) =>filterRestore(event.target.checked)} id="restore"/>
+        <label htmlFor="restore">restore</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={cards} onChange={(event) =>filterCards(event.target.checked)} id="cards"/>
+        <label htmlFor="cards">cards</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={gems} onChange={(event) =>filterGems(event.target.checked)} id="gems"/>
+        <label htmlFor="gems">gems</label>
+        <input type="checkbox" className="form-checkbox-input ms-2" checked={otro3} onChange={(event) =>filterOtro3(event.target.checked)} id="otro3"/>
+        <label htmlFor="otro3">otro3</label>
     </div>
   )
 }

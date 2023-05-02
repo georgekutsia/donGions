@@ -22,7 +22,12 @@ function Guilds() {
   const [defence, setDefence] = useState(false);
   const [explor, setExplor] = useState(false);
   const [movimiento, setMovimiento] = useState(false);
-  const [otro4, setOtro4] = useState(false);
+  const [vida, setVida] = useState(false);
+  const [mana, setMana] = useState(false);
+  const [restore, setRestore] = useState(false);
+  const [cards, setCards] = useState(false);
+  const [gems, setGems] = useState(false);
+  const [otro3, setOtro3] = useState(false);
   const [where, setWhere] = useState(false);
   const [comunicado, setComunicado] = useState(false);
   const [showTable, setShowTable] = useState(false);
@@ -62,8 +67,18 @@ function Guilds() {
               explor={explor}
               filterMovimiento={setMovimiento}
               movimiento={movimiento}
-              filterOtro4={setOtro4}
-              otro4={otro4}
+              filterVida={setVida}
+              vida={vida}
+              filterMana={setMana}
+              mana={mana}
+              filterRestore={setRestore}
+              restore={restore}
+              filterCards={setCards}
+              cards={cards}
+              filterGems={setGems}
+              gems={gems}
+              filterOtro3={setOtro3}
+              otro3={otro3}
             />
           </div>
           {/* <div className="bubble-text">
@@ -90,7 +105,12 @@ function Guilds() {
               defence={defence}
               explor={explor}
               movimiento={movimiento}
-              otro4={otro4}
+              vida={vida}
+              mana={mana}
+              restore={restore}
+              cards={cards}
+              gems={gems}
+              otro3={otro3}
             />
           </div>
         </div>

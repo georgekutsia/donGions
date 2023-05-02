@@ -4,7 +4,7 @@ import data from "../../data/guildsPactsData.json"
 import {useEffect, useState} from "react"
 import FadeInOut from "../FadeInOut";
 
-function ListGuild({search, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, movimiento, otro4 }) {
+function ListGuild({search, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, movimiento, vida, mana, restore, cards, gems, otro3 }) {
     const [guild, setGuild] = useState([])
 
     useEffect(() => {
@@ -39,7 +39,12 @@ function ListGuild({search, food, character, damage, where, potions, explosives,
                                                                     .filter((pact) => (defence ? pact.defence : true))
                                                                         .filter((pact) => (explor ? pact.explor : true))
                                                                             .filter((pact) => (movimiento ? pact.movimiento : true))
-                                                                                .filter((pact) => (otro4 ? pact.otro4 : true))
+                                                                                .filter((pact) => (vida ? pact.vida : true))
+                                                                                    .filter((pact) => (mana ? pact.mana : true))
+                                                                                        .filter((pact) => (restore ? pact.restore : true))
+                                                                                            .filter((pact) => (cards ? pact.cards : true))
+                                                                                                .filter((pact) => (gems ? pact.gems : true))
+                                                                                                    .filter((pact) => (otro3 ? pact.otro3 : true))
                                                                                     .map((guilds) =>
                                                                                         <Creature key={guilds.name} {...guilds}/>)}
                 </tbody>
