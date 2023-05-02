@@ -73,6 +73,9 @@ export {default as LightArmor} from "./guide/parts/equipment-abilities/armor-abi
 export {default as MediumArmor} from "./guide/parts/equipment-abilities/armor-ability/MediumArmor"
 
 export {default as Dice} from "./guide/parts/dice/Dice"
+export {default as Dungeon} from "./guide/parts/dungeon/Dungeon"
+
+
 export {default as Guilds} from "./guilds/Guilds"
 export {default as ListGuilds} from "./guilds/ListGuild"
 export {default as Searchbar} from "./pjs-beleron/searchbar"

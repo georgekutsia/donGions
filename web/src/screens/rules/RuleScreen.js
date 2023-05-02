@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
@@ -41,6 +41,7 @@ function RuleScreen() {
   const [rNpc, setRNpc] = useState(false)
   const [rEquipment, setREquipment] = useState(false)
   const [rArmor, setRArmor] = useState(false)
+  const [rDungeon, setRDungeon] = useState(false)
 
   const stats = () => setBasic(true)
   const presence = () => setrPre(true)
@@ -86,10 +87,10 @@ const handleExploOff= (onOf) => {
   }, 800)
 }
 const handleingOn = () =>{
-  handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true)
+  handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true)
 }
 const handleingOff = () =>{
-  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false)
+  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -164,6 +165,9 @@ const handleingOff = () =>{
                     <button className={rNonSpecific ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNonSpecific(!rNonSpecific)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-hands-asl-interpreting"></i>Conceptos
                     </button>
+                    <button className={rDungeon ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRDungeon(!rDungeon)}}>
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-archway"></i>Mazmorras
+                    </button>
                     <button className={rDice ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRDice(!rDice)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-dice"></i>Dados
                     </button>
@@ -215,6 +219,9 @@ const handleingOff = () =>{
         </FadeInOut>
       <FadeInOut show={rPre} duration={400}>
               {rPre && <Presence/>}
+        </FadeInOut>
+      <FadeInOut show={rDungeon} duration={400}>
+              {rDungeon && <Dungeon/>}
         </FadeInOut>
       <FadeInOut show={rNonSpecific} duration={400}>
               {rNonSpecific && <NonSpecific/>}
