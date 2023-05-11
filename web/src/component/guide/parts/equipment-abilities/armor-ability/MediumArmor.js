@@ -6,7 +6,7 @@ function mediumArmour() {
     <>
     <br />
       <>
-        <h1 id="s-cinestesia" align="center" className='texto-resaltado-modifican'> Armaduras ligera</h1>
+        <h1 id="s-cinestesia" align="center" className='texto-resaltado-modifican'> Armaduras media</h1>
         <img  className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682640467/donGions%20imgs/habilidadesarmaduras/media5_qx9qpr.png" alt="armadura pesada" />
         <img  className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682640471/donGions%20imgs/habilidadesarmaduras/media9_eprwus.png" alt="armadura pesada" />
         <img  className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682640462/donGions%20imgs/habilidadesarmaduras/media1_vkp3fy.png" alt="armadura pesada" />

@@ -46,7 +46,7 @@ function shieldAbility() {
         }
         titleEquip={"Acometida:"}
         textEquip={
-          "Ocasionas daño igual a la carga del escudo. Interrumpe lanzamiento de hechizos (silencia a la criatura ese turno) y/o la desorienta durante las próximas acciónes. Si pagas el doble del coste de esta habilidad, también aumenta tu daño sobre esa criatura igual a un D4 por nivel este turno."
+          "Ocasionas daño igual a la carga del escudo. Interrumpe lanzamiento de hechizos (silencia a la criatura ese turno) y/o la desorienta durante las próximas acciónes(igual a tu bloqueo). Si pagas el doble del coste de esta habilidad, también aumenta tu daño sobre esa criatura igual a un D4 por nivel este turno."
         }
       />
       <EquipmentAbilities
@@ -58,7 +58,7 @@ function shieldAbility() {
         }
         titleEquip={"Choque:"}
         textEquip={
-          "Chocas el escudo con la criatura. Ocasiona daño igual a tu bloqueo adicional. Si usas choque después de bloquear la criatura, aumenta el daño en D4 por cada nivel que tengas"
+          "Chocas el escudo con la criatura. Ocasiona daño igual a tu bloqueo adicional. Si usas choque después justo de bloquear, aumenta el daño en D4 por cada nivel que tengas."
         }
       />
       <EquipmentAbilities

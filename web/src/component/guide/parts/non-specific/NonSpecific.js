@@ -11,7 +11,7 @@ function NonSpecific() {
             <br />
             &nbsp;&nbsp;&nbsp; Para que un jugador sufra daño crítico, debe recibir daño igual a al menos la mitad de su vida. 
             <br />
-            &nbsp;&nbsp;&nbsp;Acierto crítico otorga 2 dados de 4 a jugadores de nivel 0, que incrementa en 1 dado adicional por nivel.
+            &nbsp;&nbsp;&nbsp;Acierto crítico otorga 1 dado de 4 al jugador por cada punto de daño que fuera a hacer el arma. Por ejemplo, si el arma tiene como estadística 4 puntos de daño, el el jugador lanzará 4 dados de 4 y ese será el daño que cuenta
             <br />
             &nbsp;&nbsp;&nbsp;Daño crítico con armas cuerpo a cuerpo y a distancia causa heridas y/o daños graves en las criaturas 
             </li>
