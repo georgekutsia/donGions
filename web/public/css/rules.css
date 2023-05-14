@@ -677,48 +677,135 @@ margin-top: 20px;
 
 .talent-div{
   width: 70%;
+  text-decoration: none;
+  color: white;
+  margin-top: 50px;
 }
 .talent-name{
-  margin-top: 20px;
-  border: 2px solid white;
-  background-color: grey;
-  border-radius: 40px;
-  font-size: calc(16px + 1vw);
-  width: 200px;
+color: white;
+font-size: calc(16px + 1.5vw);
 }
-.talent-name:hover{
-background-color: rgb(29, 9, 9);
-}
+
 .talent-first{
 margin-top: 40px;
 display: flex;
 justify-content: space-around;
-
 }
+
 .talent-first div{
 border: 2px solid white;
 border-radius: 40px;
 font-size: calc(10px + 1vw);
 width: 100px;
 }
+
+@keyframes shining1 {
+  0% {
+    background-color: #41006d; /* Light green background */
+    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #a312e1; /* Light blue background */
+    box-shadow: 0 0 20px #9306f1, 0 0 40px #aa06f0; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #41006d; /* Green background */
+    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    color: white;
+  }
+}
+@keyframes shining2 {
+  0% {
+    background-color: #6d0000; /* Light green background */
+    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #ec0a0a; /* Light blue background */
+    box-shadow: 0 0 20px #f10a06, 0 0 40px #f10a06; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #6d0000; /* Green background */
+    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    color: white;
+  }
+}
+@keyframes shining3 {
+  0% {
+    background-color: #f19008; /* Light green background */
+    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #ffcf0d; /* Light blue background */
+    box-shadow: 0 0 20px #ecc834, 0 0 40px #ecc834; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #f19008; /* Green background */
+    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    color: white;
+  }
+}
+.talent-items{
+  text-decoration: none;
+  font-size: calc(14px + 0.5vw);
+  padding: 5px 10px;
+  color: white;
+  border: 1px black solid;
+  border-radius: 50px;
+}
 .talent-first-1{
-  background: linear-gradient(to right, blue, green, yellow);
+  background: linear-gradient(to right, black, black, black, black, #9306f1, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 300px;
+  box-shadow: 2px 2px white;
+  transition: 0.5s ease-in-out;
 }
-.talent-first-1:hover{
+.talent-first-1:hover + .talent-first-1-article{
   animation: moveGradient 1s ease-in-out infinite;
-  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  display: none;
+}
+.talent-first-selected{
+  animation: shining1 5s infinite;
+}
+.disabled-buttons[disabled]{
+  color: black;
 }
 .talent-first-2{
-  background: linear-gradient(to right, red, yellow);
+  background: linear-gradient(to right, black, black, black, black, #f10a06, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 300px;
+  box-shadow: 2px 2px white;
+  transition: 0.5s ease-in-out;
+}
+.talent-first-2:hover{
+  animation: moveGradient 1s ease-in-out infinite;
+  letter-spacing: 1px;
+  color: white;
+}
+.talent-second-selected{
+  animation: shining2 5s infinite;
 }
 .talent-first-3{
-  background: linear-gradient(to right, grey, red);
+  background: linear-gradient(to right, black, black, black, black, #f19008, black, black, black, black);
   animation: moveGradient 3s ease-in-out infinite;
   background-size: 300px;
+  box-shadow: 2px 2px white;
+  transition: 0.5s ease-in-out;
+}
+.talent-first-3:hover{
+  animation: moveGradient 1s ease-in-out infinite;
+  letter-spacing: 1px;
+  color: white;
+}
+.talent-third-selected{
+  animation: shining3 5s infinite;
 }
 @keyframes moveGradient {
   0% {
