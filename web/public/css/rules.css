@@ -674,3 +674,60 @@ margin-top: 20px;
   0% { transform: rotate(0deg)  }
   100% { transform: rotate(720deg)  }
 }
+
+.talent-div{
+  width: 70%;
+}
+.talent-name{
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: grey;
+  border-radius: 40px;
+  font-size: calc(16px + 1vw);
+  width: 200px;
+}
+.talent-name:hover{
+background-color: rgb(29, 9, 9);
+}
+.talent-first{
+margin-top: 40px;
+display: flex;
+justify-content: space-around;
+
+}
+.talent-first div{
+border: 2px solid white;
+border-radius: 40px;
+font-size: calc(10px + 1vw);
+width: 100px;
+}
+.talent-first-1{
+  background: linear-gradient(to right, blue, green, yellow);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 300px;
+}
+.talent-first-1:hover{
+  animation: moveGradient 1s ease-in-out infinite;
+  font-weight: 900;
+}
+.talent-first-2{
+  background: linear-gradient(to right, red, yellow);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 300px;
+}
+.talent-first-3{
+  background: linear-gradient(to right, grey, red);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 300px;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
