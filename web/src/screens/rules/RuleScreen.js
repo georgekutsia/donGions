@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents } from '../../component'
+import { BackgroundFloatingBuble, Characters, Charisma, Creator, NonSpecific, Kinesthesia, Luck, NavbarVertical, Perception, Presence, Effort, Combat, Npc, Dice, Dungeon, Talents, SorinMarkov } from '../../component'
 import { EquipmentScreen, ArmorScreen } from '../index';
 import Rules from '../../component/guide/EstadisticasPj'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';
+import JaceBeleren from '../../component/guide/talents/TalentPlanes/JaceBeleren';
+import AjaniGoldmane from '../../component/guide/talents/TalentPlanes/AjaniGoldmane';
+import TeferiAkosa from '../../component/guide/talents/TalentPlanes/TeferiAkosa';
 
 function RuleScreen() {
   const [showPage, setShowPage] = useState(false)
@@ -53,7 +56,10 @@ function RuleScreen() {
   const effort = () =>setREffort(true)
   const combat = () =>setRCombat(true)
 
-
+  const [onMark, setOnMark] = useState(false)
+  const [onJace, setOnJace] = useState(false)
+  const [onTeferi, setOnTeferi] = useState(false)
+  const [onAjani, setOnAjani] = useState(false)
 
   const handelInspiOff = (onOff) => {
  setTimeout(() => {
@@ -87,11 +93,15 @@ const handleExploOff= (onOf) => {
     setExpl6(!onOf)
   }, 800)
 }
+const handlePlansOn = ()=>{
+  setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false)
+}
+
 const handleingOn = () =>{
   handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
 }
 const handleingOff = () =>{
-  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(true)
+  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -172,7 +182,7 @@ const handleingOff = () =>{
                     <button className={rDice ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRDice(!rDice)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-dice"></i>Dados
                     </button>
-                    <button className={rDice ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
+                    <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-brands fa-connectdevelop"></i>Talentos
                     </button>
               </div>
@@ -234,7 +244,26 @@ const handleingOff = () =>{
               {rDice && <Dice/>}
         </FadeInOut>
       <FadeInOut show={rTalent} duration={400}>
-              {rTalent && <Talents/>}
+      <div >
+      <div>
+        <button onClick={()=>{handlePlansOn(); setOnMark(!onMark)}} style={{color:"maroon"}} className={onMark? 'talent-name-selected':'talent-name'}>Sorin Markov</button>
+        <button onClick={()=>{handlePlansOn();setOnTeferi(!onTeferi)}} style={{color:"moccasin"}} className={onTeferi? 'talent-name-selected':'talent-name'}>Teferi Akosa</button>
+        <button onClick={()=>{handlePlansOn();setOnJace(!onJace)}} style={{color:"blue"}} className={onJace? 'talent-name-selected':'talent-name'}>Jace Beleren</button>
+        <button onClick={()=>{handlePlansOn();setOnAjani(!onAjani)}} style={{color:"yellow"}} className={onAjani? 'talent-name-selected':'talent-name'}>Ajani Goldmane</button>
+      </div>
+      <FadeInOut show={onMark} duration={400}>
+              {onMark && <SorinMarkov/> }
+        </FadeInOut>
+        <FadeInOut show={onTeferi} duration={400}>
+              {onTeferi && <TeferiAkosa/> }
+        </FadeInOut>
+        <FadeInOut show={onJace} duration={400}>
+              {onJace && <JaceBeleren/> }
+        </FadeInOut>
+        <FadeInOut show={onAjani} duration={400}>
+              {onAjani && <AjaniGoldmane/> }
+        </FadeInOut>
+      </div>
         </FadeInOut>
       {/* <FadeInOut show duration={400}>
               { <ExtraInfo/>}

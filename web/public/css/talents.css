@@ -1,0 +1,239 @@
+.talent-div{
+  width: 70%;
+  text-decoration: none;
+  color: white;
+  margin-top: 50px;
+}
+.talent-name{
+font-size: calc(14px + 0.6vw);
+text-decoration: none;
+background-color: black;
+padding: 3px 15px;
+border: none;
+border-bottom: 2px solid white;
+}
+.talent-name-selected{
+font-size: calc(14px + 0.6vw);
+text-decoration: none;
+background-color: transparent;
+padding: 3px 15px;
+border: none;
+animation: shake-rotate 2s infinite
+}
+.talent-name:hover{
+transform: rotate(2deg);
+border-bottom: 2px dotted white;
+}
+@keyframes shake-rotate {
+  0% {
+    transform: translate(0, 0) rotate(-2deg);
+  }
+  25% {
+    transform: translate(5px, 0) rotate(0);
+  }
+  50% {
+    transform: translate(0, 0) rotate(2deg);
+  }
+  75% {
+    transform: translate(-5px, 0) rotate(0);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-2deg);
+  }
+}
+
+
+.talent-first{
+margin-top: 40px;
+display: flex;
+justify-content: space-around;
+border: none;
+}
+
+.talent-first div{
+border: 2px solid white;
+border-radius: 40px;
+font-size: calc(10px + 1vw);
+width: 100px;
+}
+
+@keyframes shining {
+  0% {
+    background-color: #ffffff; /* Light green background */
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; /* Add shadow */
+    color: black;
+  }
+  50% {
+    background-color: #ffffff; /* Light blue background */
+    box-shadow: 0 0 20px #ffffff, 0 0 40px ffffff#aa06f0; /* Add shadow */
+    color: black;
+  }
+  100% {
+    background-color: #ffffff; /* Green background */
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; /* Add shadow */
+    color: black;
+  }
+}
+@keyframes shining1 {
+  0% {
+    background-color: #41006d; /* Light green background */
+    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #a312e1; /* Light blue background */
+    box-shadow: 0 0 20px #9306f1, 0 0 40px #aa06f0; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #41006d; /* Green background */
+    box-shadow: 0 0 10px #41006d, 0 0 20px #41006d; /* Add shadow */
+    color: white;
+  }
+}
+@keyframes shining2 {
+  0% {
+    background-color: #6d0000; /* Light green background */
+    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #ec0a0a; /* Light blue background */
+    box-shadow: 0 0 20px #f10a06, 0 0 40px #f10a06; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #6d0000; /* Green background */
+    box-shadow: 0 0 10px #6d0000, 0 0 20px #6d0000; /* Add shadow */
+    color: white;
+  }
+}
+@keyframes shining3 {
+  0% {
+    background-color: #f19008; /* Light green background */
+    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #ffcf0d; /* Light blue background */
+    box-shadow: 0 0 20px #ecc834, 0 0 40px #ecc834; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #f19008; /* Green background */
+    box-shadow: 0 0 10px #f19008, 0 0 20px #f19008; /* Add shadow */
+    color: white;
+  }
+}
+@keyframes shining4 {
+  0% {
+    background-color: #0b0b0a; /* Light green background */
+    box-shadow: 0 0 10px #0b0b0a, 0 0 20px #0b0b0a; /* Add shadow */
+    color: white;
+  }
+  50% {
+    background-color: #212020; /* Light blue background */
+    box-shadow: 0 0 20px #212020, 0 0 40px #212020; /* Add shadow */
+    color: white;
+  }
+  100% {
+    background-color: #0b0b0a; /* Green background */
+    box-shadow: 0 0 10px #0b0b0a, 0 0 20px #0b0b0a; /* Add shadow */
+    color: white;
+  }
+}
+.talent-items{
+  text-decoration: none;
+  font-size: calc(14px + 0.5vw);
+  padding: 5px 10px;
+  color: white;
+  border: 1px black solid;
+  border-radius: 50px;
+  box-shadow: 3px 3px white;
+  transition: 0.2s ease-in-out;
+}
+.talent-items:hover{
+  animation: moveGradient 1s ease-in-out infinite;
+  box-shadow: 1px 1px white;
+  background-color: rgb(0, 0, 0);
+  border: 1px white double;
+}
+.talent-first-1{
+  background: linear-gradient(to right, black, black, black, black, #9306f1, black, black, black, black);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 400px;
+  color:white
+}
+
+.talent-first-selected{
+  animation: shining1 5s infinite;
+  color:white
+}
+
+.talent-first-2{
+  background: linear-gradient(to right, black, black, black, black, #f10a06, black, black, black, black);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 400px;
+}
+
+.talent-second-selected{
+  animation: shining2 5s infinite;
+}
+.talent-first-3{
+  background: linear-gradient(to right, black, black, black, black, #f19008, black, black, black, black);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 400px;
+}
+
+.talent-third-selected{
+  animation: shining3 5s infinite;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.talent-text{
+  margin: 15px 15%;
+  text-indent: 40px;
+  text-align: justify;
+}
+
+/* Talent itemmmmmssssssss */
+/* Talent itemmmmmssssssss */
+/* Talent itemmmmmssssssss */
+.button-talent-item{
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+}
+.button-talent-item-selected{
+  background-color: black;
+  border-radius: 10px;
+  animation: shining 5s infinite;
+  margin-top: 10px;
+
+}
+
+.talent-tree-div-1{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.talent-text1{
+  margin: 20px 0px;
+}
+
+.talentSecond{
+display: flex;
+justify-content: space-evenly;
+}

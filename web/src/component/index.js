@@ -81,3 +81,8 @@ export {default as ListGuilds} from "./guilds/ListGuild"
 export {default as Searchbar} from "./pjs-beleron/searchbar"
 export {default as SearchGuild} from "./guilds/SearchGuild"
 export {default as Talents} from "./guide/talents/Talent"
+export {default as TalentItem} from "./guide/talents/TalentItem"
+export {default as TalentTree1} from "./guide/talents/TalentTree1"
+export {default as TalentText} from "./guide/talents/TalentText"
+
+export {default as SorinMarkov} from "./guide/talents/TalentPlanes/SorinMarkov"
