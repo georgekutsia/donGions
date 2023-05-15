@@ -18,7 +18,7 @@ text-decoration: none;
 background-color: transparent;
 padding: 3px 15px;
 border: none;
-animation: shake-rotate 2s infinite
+animation: shake-rotate 0.8s infinite
 }
 .talent-name:hover{
 transform: rotate(2deg);
@@ -234,6 +234,7 @@ width: 100px;
 }
 
 .talentSecond{
+margin-top: 20px;
 display: flex;
 justify-content: space-evenly;
 }

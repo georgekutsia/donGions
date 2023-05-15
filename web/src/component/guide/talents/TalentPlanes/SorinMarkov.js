@@ -1,24 +1,44 @@
-import React from 'react'
-import { useState } from 'react'
-import Talent from '../Talent'
-import TalentItem from '../TalentItem'
-import TalentText from '../TalentText'
+import React from "react";
+import { useState } from "react";
+import Talent from "../Talent";
+import TalentItem from "../TalentItem";
+import TalentText from "../TalentText";
 
 function SorinMarkov() {
-  const [active, setActive] = useState(false)
-  
+  const [active, setActive] = useState(false);
+
   return (
     <div>
-      <Talent talentfirs1={"Sangromante"} talentfirst2={"Luchador"} talentfirst3={"arquero"} 
-        text1={"Obtienes +2 en daño de hechizos y adquieres las habilidades de Sangromancia"} 
-        text2={"Puedes tirar concentración para daño y aprendes una habilidad adicional de Sorín"} 
+      <Talent
+        talentfirst1={"Sangromante"}
+        talentfirst2={"Luchador"}
+        talentfirst3={"Arquero"}
+        text1={
+          "Obtienes +2 en daño de hechizos y adquieres los hechizos de Sangromancia"
+        }
+        text2={
+          "Puedes tirar concentración para daño y aprendes una habilidad adicional de Sorín"
+        }
         text3={"Obtienes +D4 para daño a distancia y un dado de Aptitud"}
-        talentSecond1={"Daño incrementado"} talentSecond2={"al fin"} talentSecond3={"al fin"} talentSecond4={"al fin"}
-        talentSecond5={"al fin"} talentSecond6={"al fin"} talentSecond7={"al fin"} talentSecond8={"al fin"}
-        talentSecond9={"al fin"} talentSecond10={"al fin"} talentSecond11={"al fin"} talentSecond12={"al fin"}
+
+        talSecond1={""}
+        talSecond2={""}
+        talSecond3={"al fin"}
+        talSecond4={"al fin"}
+        talSecond5={"al fin"}
+        talSecond6={"al fin"}
+        talThird1={"buuulala"}
+        talThird2={"buuulala"}
+        talThird3={"buuulala"}
+        talThird4={"buuulala"}
+        talThird5={"buuulala"}
+        talThird6={"buuulala"}
+        talThird7={"buuulala"}
+        talThird8={"buuulala"}
+        talThird9={"buuulala"}
       />
     </div>
-  )
+  );
 }
 
-export default SorinMarkov
+export default SorinMarkov;

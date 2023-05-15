@@ -1,11 +1,21 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-function TalentItem({itemOption}) {
-  const [one, setOne] = useState(false)
+function TalentItem({ itemOption, onItemClick }) {
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleClick = () => {
+    setIsSelected(!isSelected);
+    onItemClick();
+  };
+
   return (
-    <button onClick={()=> setOne(!one)} className={one? 'button-talent-item-selected':'button-talent-item'}>{itemOption}</button>
-  )
+    <button
+      className={isSelected ? 'button-talent-item-selected' : 'button-talent-item'}
+      onClick={handleClick}
+    >
+      {itemOption}
+    </button>
+  );
 }
 
-export default TalentItem
+export default TalentItem;

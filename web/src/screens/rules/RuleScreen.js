@@ -16,6 +16,8 @@ function RuleScreen() {
         setDude(false)
       }, 5000)
   }, [])
+
+
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
