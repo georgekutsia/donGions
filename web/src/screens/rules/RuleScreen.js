@@ -58,7 +58,7 @@ function RuleScreen() {
   const effort = () =>setREffort(true)
   const combat = () =>setRCombat(true)
 
-  const [onMark, setOnMark] = useState(false)
+  const [onMark, setOnMark] = useState(true)
   const [onJace, setOnJace] = useState(false)
   const [onTeferi, setOnTeferi] = useState(false)
   const [onAjani, setOnAjani] = useState(false)
@@ -185,7 +185,7 @@ const handleingOff = () =>{
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-dice"></i>Dados
                     </button>
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-brands fa-connectdevelop"></i>Talentos
+                        <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Talentos
                     </button>
               </div>
               <div>

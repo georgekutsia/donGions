@@ -230,11 +230,42 @@ width: 100px;
   justify-content: space-around;
 }
 .talent-text1{
-  margin: 20px 0px;
+  margin: 10px 20px;
+  width: 65%;
+  font-size: calc(10px + 0.4vw);
+  display: flex;
+  position: relative;
 }
 
 .talentSecond{
-margin-top: 20px;
+margin-top: 30px;
 display: flex;
 justify-content: space-evenly;
+}
+
+.line-conections {
+  display: flex;
+  position: absolute;
+  border: 1px solid;
+  overflow: hidden; /* Para ocultar el exceso del gradiente */
+  width: 100%;
+  max-width: 800px;
+  z-index: -2;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 400%; }
+  100% { background-position: 400% 0%; }
+}
+
+.line-conections::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, blue, white, blue);
+  background-size: 700% 500%; /* Ajusta el tamaño según sea necesario */
+  animation: gradientAnimation 10s linear infinite; /* Ajusta la duración y el tipo de animación según sea necesario */
 }

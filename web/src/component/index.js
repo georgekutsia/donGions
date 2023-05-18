@@ -3,6 +3,7 @@ export {default as NeonDonGions} from "./frontpage/NeonDonGions"
 export {default as FramerMotion} from "./motions/FramerMotion"
 export {default as NavBar} from "./navbar/NavBar"
 export {default as Shop} from "./shop/Shop"
+export {default as LineConect} from "./extra/buttons/LineConect"
 
 export {default as Actions} from "./guide/parts/toggle-info/Actions"
 export {default as MovesPlus} from "./guide/parts/toggle-info/Speed"
