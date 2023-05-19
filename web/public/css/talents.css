@@ -1,5 +1,5 @@
 .talent-div{
-  width: 70%;
+  width: 95%;
   text-decoration: none;
   color: white;
   margin-top: 50px;
@@ -54,7 +54,6 @@ border: none;
 border: 2px solid white;
 border-radius: 40px;
 font-size: calc(10px + 1vw);
-width: 100px;
 }
 
 @keyframes shining {
@@ -211,10 +210,14 @@ width: 100px;
 /* Talent itemmmmmssssssss */
 /* Talent itemmmmmssssssss */
 .button-talent-item{
+  background: linear-gradient(to right, black, black, black, black, rgb(66, 64, 64), black, black, black, black);
+  animation: moveGradient 3s ease-in-out infinite;
+  background-size: 800px;
+  color:white;
   background-color: black;
   border-radius: 10px;
-  color: white;
   margin-top: 10px;
+
 }
 .button-talent-item-selected{
   background-color: black;
@@ -238,18 +241,19 @@ width: 100px;
 }
 
 .talentSecond{
-margin-top: 30px;
 display: flex;
 justify-content: space-evenly;
+margin-bottom: 25px;
 }
 
 .line-conections {
   display: flex;
   position: absolute;
-  border: 1px solid;
   overflow: hidden; /* Para ocultar el exceso del gradiente */
-  width: 100%;
-  max-width: 800px;
+  width: 10px;
+  height: 80px;
+  margin-left: 4%;
+  margin-top: 10px;
   z-index: -2;
 }
 
@@ -268,4 +272,31 @@ justify-content: space-evenly;
   background-image: linear-gradient(to bottom, blue, white, blue);
   background-size: 700% 500%; /* Ajusta el tamaño según sea necesario */
   animation: gradientAnimation 10s linear infinite; /* Ajusta la duración y el tipo de animación según sea necesario */
+}
+.line-conections-horizontal {
+  display: flex;
+  position: absolute;
+  overflow: hidden; /* Para ocultar el exceso del gradiente */
+  width: 40%;
+  height: 10px;
+  margin-left: 4%;
+  margin-top: 20px;
+  z-index: -2;
+}
+
+@keyframes gradientAnimationHorizontal {
+  0% { background-position: 0% 400%; }
+  100% { background-position: 400% 0%; }
+}
+
+.line-conections-horizontal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, blue, white, blue);
+  background-size: 700% 500%; /* Ajusta el tamaño según sea necesario */
+  animation: gradientAnimationHorizontal 10s linear infinite; /* Ajusta la duración y el tipo de animación según sea necesario */
 }

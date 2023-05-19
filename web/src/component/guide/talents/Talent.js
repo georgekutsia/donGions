@@ -10,6 +10,8 @@ function Talent({
   talThird1,talThird2, talThird3, talThird4, talThird5, talThird6, talThird7, talThird8, talThird9, talThird10, talThird11, talThird12, talThird13, talThird14, talThird15, talThird16, talThird17, talThird18, 
   talFourth1,talFourth2, talFourth3, talFourth4, talFourth5, talFourth6, talFourth7, talFourth8, talFourth9, talFourth10, talFourth11, talFourth12, talFourth13, talFourth14, talFourth15, talFourth16, talFourth17, talFourth18, 
   talFourth1c,talFourth2c, talFourth3c, talFourth4c, talFourth5c, talFourth6c, talFourth7c, talFourth8c, talFourth9c, talFourth10c, talFourth11c, talFourth12c, talFourth13c, talFourth14c, talFourth15c, talFourth16c, talFourth17c, talFourth18c, 
+  talFifth1,talFifth2, talFifth3, talFifth4, talFifth5, talFifth6, talFifth7, talFifth8, talFifth9, talFifth10, talFifth11, talFifth12, talFifth13, talFifth14, talFifth15, talFifth16, talFifth17, talFifth18, 
+  talFifth19,talFifth20, talFifth21, talFifth22, talFifth23, talFifth24, talFifth25, talFifth26, talFifth27, talFifth28, talFifth29, talFifth30, talFifth31, talFifth32, talFifth33, talFifth34, talFifth35, talFifth36, 
 }) {
   const [talFirstOne, setTalFirstOne] = useState(false)
   const [talFirstTwo, setTalFirstTwo] = useState(false)
@@ -80,6 +82,44 @@ function Talent({
   const [talFourthcc17, setTalFourthc17] = useState(false)
   const [talFourthcc18, setTalFourthc18] = useState(false)
 
+  const [talFifthd1, setTalFifthd1] = useState(false)
+  const [talFifthd2, setTalFifthd2] = useState(false)
+  const [talFifthd3, setTalFifthd3] = useState(false)
+  const [talFifthd4, setTalFifthd4] = useState(false)
+  const [talFifthd5, setTalFifthd5] = useState(false)
+  const [talFifthd6, setTalFifthd6] = useState(false)
+  const [talFifthd7, setTalFifthd7] = useState(false)
+  const [talFifthd8, setTalFifthd8] = useState(false)
+  const [talFifthd9, setTalFifthd9] = useState(false)
+  const [talFifthd10, setTalFifthd10] = useState(false)
+  const [talFifthd11, setTalFifthd11] = useState(false)
+  const [talFifthd12, setTalFifthd12] = useState(false)
+  const [talFifthd13, setTalFifthd13] = useState(false)
+  const [talFifthd14, setTalFifthd14] = useState(false)
+  const [talFifthd15, setTalFifthd15] = useState(false)
+  const [talFifthd16, setTalFifthd16] = useState(false)
+  const [talFifthd17, setTalFifthd17] = useState(false)
+  const [talFifthd18, setTalFifthd18] = useState(false)
+  const [talFifthd19, setTalFifthd19] = useState(false)
+  const [talFifthd20, setTalFifthd20] = useState(false)
+  const [talFifthd21, setTalFifthd21] = useState(false)
+  const [talFifthd22, setTalFifthd22] = useState(false)
+  const [talFifthd23, setTalFifthd23] = useState(false)
+  const [talFifthd24, setTalFifthd24] = useState(false)
+  const [talFifthd25, setTalFifthd25] = useState(false)
+  const [talFifthd26, setTalFifthd26] = useState(false)
+  const [talFifthd27, setTalFifthd27] = useState(false)
+  const [talFifthd28, setTalFifthd28] = useState(false)
+  const [talFifthd29, setTalFifthd29] = useState(false)
+  const [talFifthd30, setTalFifthd30] = useState(false)
+  const [talFifthd31, setTalFifthd31] = useState(false)
+  const [talFifthd32, setTalFifthd32] = useState(false)
+  const [talFifthd33, setTalFifthd33] = useState(false)
+  const [talFifthd34, setTalFifthd34] = useState(false)
+  const [talFifthd35, setTalFifthd35] = useState(false)
+  const [talFifthd36, setTalFifthd36] = useState(false)
+  
+  
 
   const handleFirstClick = () => {
     setTalFirstOne(!talFirstOne);
@@ -325,107 +365,181 @@ function Talent({
   const handleTalentItemClickcc17 = () => {setTalFourthc17(!talFourthcc17)};
   const handleTalentItemClickcc18 = () => {setTalFourthc18(!talFourthcc18)};
 
-
+  const handleTalentItemClickd1= () => {setTalFifthd1(!talFifthd1)};
+  const handleTalentItemClickd2= () => {setTalFifthd2(!talFifthd2)};
+  const handleTalentItemClickd3= () => {setTalFifthd3(!talFifthd3)};
+  const handleTalentItemClickd4 = () => {setTalFifthd4(!talFifthd4)};
+  const handleTalentItemClickd5 = () => {setTalFifthd5(!talFifthd5)};
+  const handleTalentItemClickd6 = () => {setTalFifthd6(!talFifthd6)};
+  const handleTalentItemClickd7 = () => {setTalFifthd7(!talFifthd7)};
+  const handleTalentItemClickd8 = () => {setTalFifthd8(!talFifthd8)};
+  const handleTalentItemClickd9 = () => {setTalFifthd9(!talFifthd9)};
+  const handleTalentItemClickd10 = () => {setTalFifthd10(!talFifthd10)};
+  const handleTalentItemClickd11 = () => {setTalFifthd11(!talFifthd11)};
+  const handleTalentItemClickd12 = () => {setTalFifthd12(!talFifthd12)};
+  const handleTalentItemClickd13 = () => {setTalFifthd13(!talFifthd13)};
+  const handleTalentItemClickd14 = () => {setTalFifthd14(!talFifthd14)};
+  const handleTalentItemClickd15 = () => {setTalFifthd15(!talFifthd15)};
+  const handleTalentItemClickd16 = () => {setTalFifthd16(!talFifthd16)};
+  const handleTalentItemClickd17 = () => {setTalFifthd17(!talFifthd17)};
+  const handleTalentItemClickd18 = () => {setTalFifthd18(!talFifthd18)};
+  const handleTalentItemClickd19= () => {setTalFifthd19(!talFifthd19)};
+  const handleTalentItemClickd20= () => {setTalFifthd20(!talFifthd20)};
+  const handleTalentItemClickd21= () => {setTalFifthd21(!talFifthd21)};
+  const handleTalentItemClickd22 = () => {setTalFifthd22(!talFifthd22)};
+  const handleTalentItemClickd23 = () => {setTalFifthd23(!talFifthd23)};
+  const handleTalentItemClickd24 = () => {setTalFifthd24(!talFifthd24)};
+  const handleTalentItemClickd25 = () => {setTalFifthd25(!talFifthd25)};
+  const handleTalentItemClickd26 = () => {setTalFifthd26(!talFifthd26)};
+  const handleTalentItemClickd27 = () => {setTalFifthd27(!talFifthd27)};
+  const handleTalentItemClickd28 = () => {setTalFifthd28(!talFifthd28)};
+  const handleTalentItemClickd29 = () => {setTalFifthd29(!talFifthd29)};
+  const handleTalentItemClickd30 = () => {setTalFifthd30(!talFifthd30)};
+  const handleTalentItemClickd31 = () => {setTalFifthd31(!talFifthd31)};
+  const handleTalentItemClickd32 = () => {setTalFifthd32(!talFifthd32)};
+  const handleTalentItemClickd33 = () => {setTalFifthd33(!talFifthd33)};
+  const handleTalentItemClickd34 = () => {setTalFifthd34(!talFifthd34)};
+  const handleTalentItemClickd35 = () => {setTalFifthd35(!talFifthd35)};
+  const handleTalentItemClickd36 = () => {setTalFifthd36(!talFifthd36)};
   return (
     <div className='talent-div'>
-    {(talFirstOne || talFirstTwo || talFirstThree) && <LineConect positioningLine={"105px 5% 0px 5%"} colorLine={"#9306f1"} heightLine={"10px"} />}
     {/* {talFirstOne && <LineConect positioningLine={positionLine1} colorLine={colorLine1} heightLine={heightLine1} widthLine={widthLine1}/>} */}
       <div className='talent-first'>
-        <button onClick={handleFirstClick} className={talFirstOne ? "talent-first-selected talent-items":'talent-first-1 talent-items'}>{talentfirst1}</button>
-        <button onClick={handleSecondClick} className={talFirstTwo ? "talent-second-selected talent-items":'talent-first-2 talent-items' }>{talentfirst2}</button>
-        <button onClick={handleThirdClick} className={talFirstThree ? "talent-third-selected talent-items":'talent-first-3 talent-items'}>{talentfirst3}</button>
+          <button onClick={handleFirstClick} className={talFirstOne ? "talent-first-selected talent-items":'talent-first-1 talent-items'}>{talentfirst1}</button>
+          <button onClick={handleSecondClick} className={talFirstTwo ? "talent-second-selected talent-items":'talent-first-2 talent-items' }>{talentfirst2}</button>
+          <button onClick={handleThirdClick} className={talFirstThree ? "talent-third-selected talent-items":'talent-first-3 talent-items'}>{talentfirst3}</button>
       </div>
       <div >
           {talFirstOne &&  <article className='talent-text1'>{text1}</article>}
           {talFirstTwo &&  <article className='talent-text1'>{text2}</article>}
           {talFirstThree &&  <article className='talent-text1'>{text3}</article>}
           <div className='talentSecond'>
-            {talFirstOne && <TalentItem onItemClick={handleTalentItemClicka1}  itemOption={talSecond1}/>}
+            {talFirstOne && <TalentItem onItemClick={handleTalentItemClicka1} aver={"true"} itemOption={talSecond1}/>}
             {talFirstOne && <TalentItem onItemClick={handleTalentItemClicka2}   itemOption={talSecond2}/>}
-          </div>
-          <div className='talentSecond'>
-            {talFirstTwo && <TalentItem onItemClick={handleTalentItemClicka3}   itemOption={talSecond3}/>}
+            {talFirstTwo && <TalentItem onItemClick={handleTalentItemClicka3} aver={"true"}   itemOption={talSecond3}/>}
             {talFirstTwo && <TalentItem onItemClick={handleTalentItemClicka4}   itemOption={talSecond4}/>}
-          </div>
-          <div className='talentSecond'>
-            {talFirstThree && <TalentItem onItemClick={handleTalentItemClicka5}   itemOption={talSecond5}/>}
+            {talFirstThree && <TalentItem onItemClick={handleTalentItemClicka5} aver={"true"}   itemOption={talSecond5}/>}
             {talFirstThree && <TalentItem onItemClick={handleTalentItemClicka6}   itemOption={talSecond6}/>}
           </div>
       </div>
       <div>
           <div className='talentSecond'>
-              {(talSeconda1 )&& <TalentItem onItemClick={handleTalentItemClickb1}   itemOption={talThird1}/>}
-              {(talSeconda1 )&& <TalentItem onItemClick={handleTalentItemClickb2}   itemOption={talThird2}/>}
+              {(talSeconda1 )&& <TalentItem onItemClick={handleTalentItemClickb1} aver={"true"}  itemOption={talThird1}/>}
+              {(talSeconda1 )&& <TalentItem onItemClick={handleTalentItemClickb2} aver={"true"}  itemOption={talThird2}/>}
               {(talSeconda1 )&& <TalentItem onItemClick={handleTalentItemClickb3}   itemOption={talThird3}/>}
-              {(talSeconda2 )&& <TalentItem onItemClick={handleTalentItemClickb4}   itemOption={talThird4}/>}
-              {(talSeconda2 )&& <TalentItem onItemClick={handleTalentItemClickb5}   itemOption={talThird5}/>}
+              {(talSeconda2 )&& <TalentItem onItemClick={handleTalentItemClickb4} aver={"true"}  itemOption={talThird4}/>}
+              {(talSeconda2 )&& <TalentItem onItemClick={handleTalentItemClickb5} aver={"true"}  itemOption={talThird5}/>}
               {(talSeconda2 )&& <TalentItem onItemClick={handleTalentItemClickb6}   itemOption={talThird6}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talSeconda3) && <TalentItem onItemClick={handleTalentItemClickb7}   itemOption={talThird7}/>}
-              {(talSeconda3) && <TalentItem onItemClick={handleTalentItemClickb8}   itemOption={talThird8}/>}
+
+              {(talSeconda3) && <TalentItem onItemClick={handleTalentItemClickb7} aver={"true"}  itemOption={talThird7}/>}
+              {(talSeconda3) && <TalentItem onItemClick={handleTalentItemClickb8} aver={"true"}  itemOption={talThird8}/>}
               {(talSeconda3) && <TalentItem onItemClick={handleTalentItemClickb9}   itemOption={talThird9}/>}
-              {(talSeconda4) && <TalentItem onItemClick={handleTalentItemClickb10}   itemOption={talThird10}/>}
-              {(talSeconda4) && <TalentItem onItemClick={handleTalentItemClickb11}   itemOption={talThird11}/>}
+              {(talSeconda4) && <TalentItem onItemClick={handleTalentItemClickb10} aver={"true"}  itemOption={talThird10}/>}
+              {(talSeconda4) && <TalentItem onItemClick={handleTalentItemClickb11} aver={"true"}  itemOption={talThird11}/>}
               {(talSeconda4) && <TalentItem onItemClick={handleTalentItemClickb12}   itemOption={talThird12}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talSeconda5) && <TalentItem onItemClick={handleTalentItemClickb13}   itemOption={talThird13}/>}
-              {(talSeconda5) && <TalentItem onItemClick={handleTalentItemClickb14}   itemOption={talThird14}/>}
+
+              {(talSeconda5) && <TalentItem onItemClick={handleTalentItemClickb13} aver={"true"}  itemOption={talThird13}/>}
+              {(talSeconda5) && <TalentItem onItemClick={handleTalentItemClickb14} aver={"true"}  itemOption={talThird14}/>}
               {(talSeconda5) && <TalentItem onItemClick={handleTalentItemClickb15}   itemOption={talThird15}/>}
-              {(talSeconda6) && <TalentItem onItemClick={handleTalentItemClickb16}   itemOption={talThird16}/>}
-              {(talSeconda6) && <TalentItem onItemClick={handleTalentItemClickb17}   itemOption={talThird17}/>}
+              {(talSeconda6) && <TalentItem onItemClick={handleTalentItemClickb16} aver={"true"}  itemOption={talThird16}/>}
+              {(talSeconda6) && <TalentItem onItemClick={handleTalentItemClickb17} aver={"true"}  itemOption={talThird17}/>}
               {(talSeconda6) && <TalentItem onItemClick={handleTalentItemClickb18}   itemOption={talThird18}/>}
           </div>
       </div>
       <div>
           <div className='talentSecond'>
-              {(talThirdb1 )&& <TalentItem onItemClick={handleTalentItemClickc1}   itemOption={talFourth1}/>}
+              {(talThirdb1 )&& <TalentItem onItemClick={handleTalentItemClickc1} aver={"true"}  itemOption={talFourth1}/>}
               {(talThirdb1 )&& <TalentItem onItemClick={handleTalentItemClickc2}   itemOption={talFourth2}/>}
-              {(talThirdb2 )&& <TalentItem onItemClick={handleTalentItemClickc3}   itemOption={talFourth3}/>}
+              {(talThirdb2 )&& <TalentItem onItemClick={handleTalentItemClickc3} aver={"true"}  itemOption={talFourth3}/>}
               {(talThirdb2 )&& <TalentItem onItemClick={handleTalentItemClickc4}   itemOption={talFourth4}/>}
-              {(talThirdb3 )&& <TalentItem onItemClick={handleTalentItemClickc5}   itemOption={talFourth5}/>}
+              {(talThirdb3 )&& <TalentItem onItemClick={handleTalentItemClickc5} aver={"true"}  itemOption={talFourth5}/>}
               {(talThirdb3 )&& <TalentItem onItemClick={handleTalentItemClickc6}   itemOption={talFourth6}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talThirdb4) && <TalentItem onItemClick={handleTalentItemClickc7}   itemOption={talFourth7}/>}
+
+              {(talThirdb4) && <TalentItem onItemClick={handleTalentItemClickc7} aver={"true"}  itemOption={talFourth7}/>}
               {(talThirdb4) && <TalentItem onItemClick={handleTalentItemClickc8}   itemOption={talFourth8}/>}
-              {(talThirdb5) && <TalentItem onItemClick={handleTalentItemClickc9}   itemOption={talFourth9}/>}
+              {(talThirdb5) && <TalentItem onItemClick={handleTalentItemClickc9}  aver={"true"} itemOption={talFourth9}/>}
               {(talThirdb5) && <TalentItem onItemClick={handleTalentItemClickc10}   itemOption={talFourth10}/>}
-              {(talThirdb6) && <TalentItem onItemClick={handleTalentItemClickc11}   itemOption={talFourth11}/>}
+              {(talThirdb6) && <TalentItem onItemClick={handleTalentItemClickc11} aver={"true"}  itemOption={talFourth11}/>}
               {(talThirdb6) && <TalentItem onItemClick={handleTalentItemClickc12}   itemOption={talFourth12}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talThirdb7) && <TalentItem onItemClick={handleTalentItemClickc13}   itemOption={talFourth13}/>}
+
+              {(talThirdb7) && <TalentItem onItemClick={handleTalentItemClickc13} aver={"true"}  itemOption={talFourth13}/>}
               {(talThirdb7) && <TalentItem onItemClick={handleTalentItemClickc14}   itemOption={talFourth14}/>}
-              {(talThirdb8) && <TalentItem onItemClick={handleTalentItemClickc15}   itemOption={talFourth15}/>}
+              {(talThirdb8) && <TalentItem onItemClick={handleTalentItemClickc15} aver={"true"}  itemOption={talFourth15}/>}
               {(talThirdb8) && <TalentItem onItemClick={handleTalentItemClickc16}   itemOption={talFourth16}/>}
-              {(talThirdb9) && <TalentItem onItemClick={handleTalentItemClickc17}   itemOption={talFourth17}/>}
+              {(talThirdb9) && <TalentItem onItemClick={handleTalentItemClickc17} aver={"true"}  itemOption={talFourth17}/>}
               {(talThirdb9) && <TalentItem onItemClick={handleTalentItemClickc18}   itemOption={talFourth18}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talThirdb10 )&& <TalentItem onItemClick={handleTalentItemClickcc1}   itemOption={talFourth1c}/>}
+
+              {(talThirdb10 )&& <TalentItem onItemClick={handleTalentItemClickcc1} aver={"true"}  itemOption={talFourth1c}/>}
               {(talThirdb10 )&& <TalentItem onItemClick={handleTalentItemClickcc2}   itemOption={talFourth2c}/>}
-              {(talThirdb11 )&& <TalentItem onItemClick={handleTalentItemClickcc3}   itemOption={talFourth3c}/>}
+              {(talThirdb11 )&& <TalentItem onItemClick={handleTalentItemClickcc3} aver={"true"}  itemOption={talFourth3c}/>}
               {(talThirdb11 )&& <TalentItem onItemClick={handleTalentItemClickcc4}   itemOption={talFourth4c}/>}
-              {(talThirdb12 )&& <TalentItem onItemClick={handleTalentItemClickcc5}   itemOption={talFourth5c}/>}
+              {(talThirdb12 )&& <TalentItem onItemClick={handleTalentItemClickcc5} aver={"true"}  itemOption={talFourth5c}/>}
               {(talThirdb12 )&& <TalentItem onItemClick={handleTalentItemClickcc6}   itemOption={talFourth6c}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talThirdb13) && <TalentItem onItemClick={handleTalentItemClickcc7}   itemOption={talFourth7c}/>}
+
+              {(talThirdb13) && <TalentItem onItemClick={handleTalentItemClickcc7} aver={"true"}  itemOption={talFourth7c}/>}
               {(talThirdb13) && <TalentItem onItemClick={handleTalentItemClickcc8}   itemOption={talFourth8c}/>}
-              {(talThirdb14) && <TalentItem onItemClick={handleTalentItemClickcc9}   itemOption={talFourth9c}/>}
+              {(talThirdb14) && <TalentItem onItemClick={handleTalentItemClickcc9} aver={"true"}  itemOption={talFourth9c}/>}
               {(talThirdb14) && <TalentItem onItemClick={handleTalentItemClickcc10}   itemOption={talFourth10c}/>}
-              {(talThirdb15) && <TalentItem onItemClick={handleTalentItemClickcc11}   itemOption={talFourth11c}/>}
+              {(talThirdb15) && <TalentItem onItemClick={handleTalentItemClickcc11} aver={"true"}  itemOption={talFourth11c}/>}
               {(talThirdb15) && <TalentItem onItemClick={handleTalentItemClickcc12}   itemOption={talFourth12c}/>}
-          </div>
-          <div className='talentSecond'>
-              {(talThirdb16) && <TalentItem onItemClick={handleTalentItemClickcc13}   itemOption={talFourth13c}/>}
+
+              {(talThirdb16) && <TalentItem onItemClick={handleTalentItemClickcc13} aver={"true"}  itemOption={talFourth13c}/>}
               {(talThirdb16) && <TalentItem onItemClick={handleTalentItemClickcc14}   itemOption={talFourth14c}/>}
-              {(talThirdb17) && <TalentItem onItemClick={handleTalentItemClickcc15}   itemOption={talFourth15c}/>}
+              {(talThirdb17) && <TalentItem onItemClick={handleTalentItemClickcc15} aver={"true"}  itemOption={talFourth15c}/>}
               {(talThirdb17) && <TalentItem onItemClick={handleTalentItemClickcc16}   itemOption={talFourth16c}/>}
-              {(talThirdb18) && <TalentItem onItemClick={handleTalentItemClickcc17}   itemOption={talFourth17c}/>}
+              {(talThirdb18) && <TalentItem onItemClick={handleTalentItemClickcc17} aver={"true"}  itemOption={talFourth17c}/>}
               {(talThirdb18) && <TalentItem onItemClick={handleTalentItemClickcc18}   itemOption={talFourth18c}/>}
+          </div>
+          <div>
+            <div className='talentSecond'>
+                {(talFourthc1 )&& <TalentItem onItemClick={handleTalentItemClickd1}   itemOption={talFifth1}/>}
+                {(talFourthc2 )&& <TalentItem onItemClick={handleTalentItemClickd2}   itemOption={talFifth2}/>}
+                {(talFourthc3 )&& <TalentItem onItemClick={handleTalentItemClickd3}   itemOption={talFifth3}/>}
+
+                {(talFourthc4) && <TalentItem onItemClick={handleTalentItemClickd4}   itemOption={talFifth4}/>}
+                {(talFourthc5) && <TalentItem onItemClick={handleTalentItemClickd5}   itemOption={talFifth5}/>}
+                {(talFourthc6) && <TalentItem onItemClick={handleTalentItemClickd6}   itemOption={talFifth6}/>}
+
+                {(talFourthc7) && <TalentItem onItemClick={handleTalentItemClickd7}   itemOption={talFifth7}/>}
+                {(talFourthc8) && <TalentItem onItemClick={handleTalentItemClickd8}   itemOption={talFifth8}/>}
+                {(talFourthc9) && <TalentItem onItemClick={handleTalentItemClickd9}   itemOption={talFifth9}/>}
+
+                {(talFourthc10 )&& <TalentItem onItemClick={handleTalentItemClickd10}   itemOption={talFifth10}/>}
+                {(talFourthc11 )&& <TalentItem onItemClick={handleTalentItemClickd11}   itemOption={talFifth11}/>}
+                {(talFourthc12 )&& <TalentItem onItemClick={handleTalentItemClickd12}   itemOption={talFifth12}/>}
+
+                {(talFourthc13) && <TalentItem onItemClick={handleTalentItemClickd13}   itemOption={talFifth13}/>}
+                {(talFourthc14) && <TalentItem onItemClick={handleTalentItemClickd14}   itemOption={talFifth14}/>}
+                {(talFourthc15) && <TalentItem onItemClick={handleTalentItemClickd15}   itemOption={talFifth15}/>}
+
+                {(talFourthc16) && <TalentItem onItemClick={handleTalentItemClickd16}   itemOption={talFifth16}/>}
+                {(talFourthc17) && <TalentItem onItemClick={handleTalentItemClickd17}   itemOption={talFifth17}/>}
+                {(talFourthc18) && <TalentItem onItemClick={handleTalentItemClickd18}   itemOption={talFifth18}/>}
+
+                {(talFourthcc1 )&& <TalentItem onItemClick={handleTalentItemClickd19}   itemOption={talFifth19}/>}
+                {(talFourthcc2 )&& <TalentItem onItemClick={handleTalentItemClickd20}   itemOption={talFifth20}/>}
+                {(talFourthcc3 )&& <TalentItem onItemClick={handleTalentItemClickd21}   itemOption={talFifth21}/>}
+
+                {(talFourthcc4) && <TalentItem onItemClick={handleTalentItemClickd22}   itemOption={talFifth22}/>}
+                {(talFourthcc5) && <TalentItem onItemClick={handleTalentItemClickd23}   itemOption={talFifth23}/>}
+                {(talFourthcc6) && <TalentItem onItemClick={handleTalentItemClickd24}   itemOption={talFifth24}/>}
+
+                {(talFourthcc7) && <TalentItem onItemClick={handleTalentItemClickd25}   itemOption={talFifth25}/>}
+                {(talFourthcc8) && <TalentItem onItemClick={handleTalentItemClickd26}   itemOption={talFifth26}/>}
+                {(talFourthcc9) && <TalentItem onItemClick={handleTalentItemClickd27}   itemOption={talFifth27}/>}
+
+                {(talFourthcc10 )&& <TalentItem onItemClick={handleTalentItemClickd28}   itemOption={talFifth28}/>}
+                {(talFourthcc11 )&& <TalentItem onItemClick={handleTalentItemClickd29}   itemOption={talFifth29}/>}
+                {(talFourthcc12 )&& <TalentItem onItemClick={handleTalentItemClickd30}   itemOption={talFifth30}/>}
+
+                {(talFourthcc13) && <TalentItem onItemClick={handleTalentItemClickd31}   itemOption={talFifth31}/>}
+                {(talFourthcc14) && <TalentItem onItemClick={handleTalentItemClickd32}   itemOption={talFifth32}/>}
+                {(talFourthcc15) && <TalentItem onItemClick={handleTalentItemClickd33}   itemOption={talFifth33}/>}
+
+                {(talFourthcc16) && <TalentItem onItemClick={handleTalentItemClickd34}   itemOption={talFifth34}/>}
+                {(talFourthcc17) && <TalentItem onItemClick={handleTalentItemClickd35}   itemOption={talFifth35}/>}
+                {(talFourthcc18) && <TalentItem onItemClick={handleTalentItemClickd36}   itemOption={talFifth36}/>}
+            </div>
           </div>
       </div>
     </div>

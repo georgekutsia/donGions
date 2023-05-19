@@ -8,11 +8,6 @@ function SorinMarkov() {
   return (
     <div>
       <Talent
-        // positionLine1 = {"30px 0px 0px 8%"}
-        // colorLine1 ={"#9306f1"}
-        // heightLine1 = {"9%"}
-        // widthLine1 = {"10px"}
-
         talentfirst1={"Sangromante"}
         talentfirst2={"Luchador"}
         talentfirst3={"Arquero"}
@@ -24,19 +19,19 @@ function SorinMarkov() {
         }
         text3={"Obtienes +D4 para daño a distancia y un dado de Aptitud"}
 
-        talSecond1={"Sangre incesante"}
-        talSecond2={"Sangre calientes"}
+        talSecond1={"+20% sanaciones de Sangromancia"}
+        talSecond2={"Aumenta la vida básica +2"}
         talSecond3={"lucha incesante"}
         talSecond4={"lucha caliente"}
         talSecond5={"arque incesante"}
         talSecond6={"arque caliente"}
 
-        talThird1={"sangre incesante incesante"}
-        talThird2={"sangre incesante incesante"}
-        talThird3={"sangre incesante incesante"}
-        talThird4={"sangre sangre calientes"}
+        talThird1={"+20% sanaciones de Sangromancia"}
+        talThird2={"Cuestan 1 esencia menos tus Sangromancias"}
+        talThird3={""}
+        talThird4={"Aumenta la vida básica +2"}
         talThird5={"sangre sangre calientes"}
-        talThird6={"sangre sangre caliente"}
+        talThird6={"Aumenta la vida básica +2"}
 
         talThird7={"lucha incesante incesante"}
         talThird8={"lucha incesante incesante"}
@@ -53,20 +48,18 @@ function SorinMarkov() {
         talThird18={"Arquero caliente caliente"}
 
 
-        talFourth1={"sangre 31"}
+        talFourth1={"+20% sanaciones de Sangromancia"}
         talFourth2={"sangre 32"}
         talFourth3={"sangre 33"}
         talFourth4={"sangre 34"}
         talFourth5={"sangre 35"}
         talFourth6={"sangre 36"}
-
         talFourth7={"lucha 37"}
         talFourth8={"lucha 38"}
         talFourth9={"lucha 39"}
         talFourth10={"lucha 40"}
         talFourth11={"lucha 41"}
         talFourth12={"lucha 42"}
-
         talFourth13={"Arquero 3 incesante incesante"}
         talFourth14={"Arquero 3 incesante incesante"}
         talFourth15={"Arquero 3 incesante incesante"}
@@ -80,20 +73,57 @@ function SorinMarkov() {
         talFourth4c={"5 sangre 34"}
         talFourth5c={"5 sangre 35"}
         talFourth6c={"5 sangre 36"}
-
         talFourth7c={"5 lucha 37"}
         talFourth8c={"5 lucha 38"}
         talFourth9c={"5 lucha 39"}
         talFourth10c={"5 lucha 40"}
         talFourth11c={"5 lucha 41"}
         talFourth12c={"5 lucha 42"}
-
         talFourth13c={"5 Arquero 3 incesante incesante"}
         talFourth14c={"5 Arquero 3 incesante incesante"}
         talFourth15c={"5 Arquero 3 incesante incesante"}
         talFourth16c={"5 Arquero 3 caliente caliente"}
         talFourth17c={"5 Arquero 3 caliente caliente"}
         talFourth18c={"5 Arquero 3 caliente caliente"}
+
+
+        talFifth1={"last1"}
+        talFifth2={"last2"}
+        talFifth3={"last3"}
+        talFifth4={"last4"}
+        talFifth5={"last5"}
+        talFifth6={"last6"}
+        talFifth7={"5 lucha 37"}
+        talFifth8={"5 lucha 38"}
+        talFifth9={"5 lucha 39"}
+        talFifth10={"5 lucha 40"}
+        talFifth11={"5 lucha 41"}
+        talFifth12={"5 lucha 42"}
+        talFifth13={"5 Arquero 3 incesante incesante"}
+        talFifth14={"5 Arquero 3 incesante incesante"}
+        talFifth15={"5 Arquero 3 incesante incesante"}
+        talFifth16={"5 Arquero 3 caliente caliente"}
+        talFifth17={"5 Arquero 3 caliente caliente"}
+        talFifth18={"5 Arquero 3 caliente caliente"}
+        talFifth19={"last1 2222"}
+        talFifth20={"5 sangre 32 2222"}
+        talFifth21={"5 sangre 33"}
+        talFifth22={"5 sangre 34"}
+        talFifth23={"5 sangre 35"}
+        talFifth24={"5 sangre 36"}
+        talFifth25={"5 lucha 37"}
+        talFifth26={"5 lucha 38"}
+        talFifth27={"5 lucha 39"}
+        talFifth28={"5 lucha 40"}
+        talFifth29={"5 lucha 41"}
+        talFifth30={"5 lucha 42"}
+        talFifth31={"5 Arquero 3 incesante incesante"}
+        talFifth32={"5 Arquero 3 incesante incesante"}
+        talFifth33={"5 Arquero 3 incesante incesante"}
+        talFifth34={"5 Arquero 3 caliente caliente"}
+        talFifth35={"5 Arquero 3 caliente caliente"}
+        talFifth36={"5 Arquero 3 caliente caliente"}
+
 
 
 
