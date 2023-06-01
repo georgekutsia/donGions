@@ -14,12 +14,12 @@ function Presence() {
         Presencia es una habilidad que genera Amezada adicional, llama la atención sobre el jugador etc.  
         </article>
         <ul>
-          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Permite esconderse, ocultarse o incluso desaparecer más fácilmente durante el combate.</li>
-          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Permite robar, colarse en lugares y atacar desde oculto, siendo más difícil de detectar.</li>
-          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Los jugadores con presencia disminuida son menos propensos a ser atacados al luchar en grupo, incluso haciendo más daño.</li>
+          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Presencia negativa permite esconderse, ocultarse o incluso desaparecer más fácilmente durante el combate.</li>
+          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Presencia negativa permite robar, colarse en lugares y atacar desde oculto, siendo más difícil de detectar.</li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia positiva aumenta tu parada y bloqueo +1</li>
-          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia negativa aumenta tu daño por la espalda, puntos ciegos o inesperados sobre la criatura 20%. Este efecto se aplica después de calcular el daño total que se ha hecho a la criatura </li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Afecta a la eficacia de las ilusiones y cierto tipo de magia invocada.</li>
+          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Los jugadores con presencia disminuida son menos propensos a ser atacados al luchar en grupo, incluso haciendo más daño.</li>
+          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia negativa aumenta tu daño por la espalda, puntos ciegos o inesperados sobre la criatura en D4 por cada punto</li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Los jugadores con Presencia disminuida que también tienen Percepción, obtienen un 100% de daño en su primer ataque desde oculto, además de notar el mejor momento para ocultarse de la vista de las criaturas. El porcentaje aumenta en proporción</li>
         </ul>
     </div>

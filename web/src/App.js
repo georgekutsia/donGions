@@ -25,7 +25,7 @@ const [countMons, setCountMons] = useState(4)
 
   return (
     <div >
-    {connected.pj && <NavBar/>}
+    {connected.pj && <NavBar/>}ç
     {/* <NavBar/> */}
           <div className="cur1" >
             <Routes>

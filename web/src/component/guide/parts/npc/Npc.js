@@ -66,7 +66,7 @@ function Npc() {
           <div className='d-flex'>
             <img className='npc-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682381523/donGions%20imgs/ruleImages/herida_izxe0u.jpg" alt=""/>
             <li>&nbsp;<span className='nombre-npc-negro' style={{color:"darkkhaki", borderBottom:"none"}}> Heridas: </span>Los golpes críticos aplican heridas tantas rondas como el daño. La criatura pierde vidas igual al 20% del daño que se le hizo 
-                                                                                                                    cada vez que se mueven o lo muevan. Se puede acumular y aumenta la duración de la herida. Es conveniente llevar contador de daño y de ducación</li>
+                                                                                                                    cada vez que se mueven o lo muevan. Se puede acumular y aumenta la duración de la herida. Es conveniente llevar contador de daño y de duración</li>
           </div>
           <div className='d-flex'>
             <img className='npc-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682383144/donGions%20imgs/ruleImages/electrocutado_byvzhx.jpg" alt=""/>

@@ -277,9 +277,9 @@ margin-bottom: 25px;
   display: flex;
   position: absolute;
   overflow: hidden; /* Para ocultar el exceso del gradiente */
-  width: 40%;
+  width: 30%;
   height: 10px;
-  margin-left: 4%;
+  margin-left: 8%;
   margin-top: 20px;
   z-index: -2;
 }

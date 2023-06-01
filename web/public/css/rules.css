@@ -441,6 +441,7 @@ font-size: calc(12px + 0.6vw);
     100% { background-position: 0 50% }
 }
 .texto-resaltado-combate {
+  margin-top: 70px;
   animation: fluido2 10s ease-in-out infinite;
   background: linear-gradient(-45deg, rgb(255, 0, 0), rgb(3, 160, 40));
   background-size: 300%;
@@ -528,7 +529,7 @@ scale:1.5
   margin: 0px 15px;
 }
 .dice-images:hover{
-scale:2.2
+scale:1.5
 }
 .npc-images{
   width: 29%;

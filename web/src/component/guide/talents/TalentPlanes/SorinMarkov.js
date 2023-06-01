@@ -27,8 +27,8 @@ function SorinMarkov() {
         talSecond6={"arque caliente"}
 
         talThird1={"+20% sanaciones de Sangromancia"}
-        talThird2={"Cuestan 1 esencia menos tus Sangromancias"}
-        talThird3={""}
+        talThird2={"Daño básico con hechizos +2"}
+        talThird3={"Acierto con hechizos +3"}
         talThird4={"Aumenta la vida básica +2"}
         talThird5={"sangre sangre calientes"}
         talThird6={"Aumenta la vida básica +2"}
@@ -49,7 +49,7 @@ function SorinMarkov() {
 
 
         talFourth1={"+20% sanaciones de Sangromancia"}
-        talFourth2={"sangre 32"}
+        talFourth2={"Cuestan 1 esencia menos tus Sangromancias"}
         talFourth3={"sangre 33"}
         talFourth4={"sangre 34"}
         talFourth5={"sangre 35"}

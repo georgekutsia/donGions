@@ -18,6 +18,8 @@ function Charisma() {
             <li><i className="fa-solid fa-head-side-cough"></i>&nbsp; Las ilusiones, distracciones, manipulaciones etc. tienen incremento en tirada de 2 puntos</li>
             <li><i className="fa-solid fa-head-side-cough"></i>&nbsp; Aumenta tus efectos de provocación</li>
             <li><i className="fa-solid fa-head-side-cough"></i>&nbsp; Disminuye algunos requisitos para formar parte de los gremios </li>
+            <li><i className="fa-solid fa-head-side-cough"></i>&nbsp; Como metajuego, los jugadores con carisma pueden sobornar al DM para repetir algunas acciones, tipo tiradas por acierto, 
+            forzar cerraduras, adivinanzas, intentos de acrobacia etc</li>
           </ul>
       </div>
   )

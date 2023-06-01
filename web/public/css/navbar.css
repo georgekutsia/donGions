@@ -22,7 +22,6 @@
   color: #EEE;
   font-family: 'Rubik Maze', cursive;
   text-align: center;
--webkit-animation: bounce .5s ease infinite alternate;
 }
 
 @-webkit-keyframes bounce {
