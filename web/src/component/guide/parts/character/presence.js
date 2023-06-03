@@ -19,7 +19,7 @@ function Presence() {
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia positiva aumenta tu parada y bloqueo +1</li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Afecta a la eficacia de las ilusiones y cierto tipo de magia invocada.</li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Los jugadores con presencia disminuida son menos propensos a ser atacados al luchar en grupo, incluso haciendo más daño.</li>
-          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia negativa aumenta tu daño por la espalda, puntos ciegos o inesperados sobre la criatura en D4 por cada punto</li>
+          <li><i className="fa-solid fa-person-rays"></i>&nbsp; Cada punto de presencia negativa aumenta tu daño por la espalda, puntos ciegos o inesperados sobre la criatura en D3 por cada punto</li>
           <li><i className="fa-solid fa-person-rays"></i>&nbsp; Los jugadores con Presencia disminuida que también tienen Percepción, obtienen un 100% de daño en su primer ataque desde oculto, además de notar el mejor momento para ocultarse de la vista de las criaturas. El porcentaje aumenta en proporción</li>
         </ul>
     </div>
