@@ -17,11 +17,11 @@ function Perception() {
         para obtener ventajas durante el combate, encontrar pistas o incluso encontrar una forma de sobrevivir una situación aparentemente imposible
         </article>
         <article align="center" className='background-list-actions'>
-        &nbsp;&nbsp;&nbsp; Para analizar los puntos fuertes y débiles de las criaturas con las que se lucha, los jugadores pueden lanzar un tiro por percepción. Esta acción es gratuita, 
-        pero sólo se puede usar 3 veces por combate. Por cada vez que te hayas defendido o atacado a la criatura, aumenta 1 punto el tiro por percepción.
+        &nbsp;&nbsp;&nbsp; Para analizar los puntos fuertes y débiles de las criaturas con las que se lucha, los jugadores pueden lanzar un tiro por percepción.
+        Según el resultado, se obtiene más o menos información.
         </article>
         <ul>
-          <li><i className="fa-solid fa-eye"></i> &nbsp; •	Obtienes +3 en cada tirada de percepción</li>
+          <li><i className="fa-solid fa-eye"></i> &nbsp; • Por cada punto de percepción	obtienes +3 en cada tirada de percepción</li>
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Cada punto de percepción ignora un nivel de diferencia con las criaturas con las que se lucha</li>
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Contrarresta criaturas con carisma, haciendo que seas menos vulnerable a engaños y distracciones </li>
           <li><i className="fa-solid fa-eye"></i>&nbsp;	•	Cada punto de Percepción aumenta en 1 las veces que puedes tirar por percepción en el turno</li>

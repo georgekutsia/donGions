@@ -11,6 +11,9 @@ function EstadisticasPj() {
   return (
     <>
       <div className="background-rule-info">
+          <div className="nombre-concepto-blanco" style={{color:"rgb(145, 45, 45)"}}><i className="fa-brands fa-connectdevelop"></i> Estadística básica:<span className="definicion-concepto">todos los puntos aportados por la rama de talentos más las estadísticas de tu Guía representan las Estadísticas Básicas del personaje. 
+          El daño, las vidas, aciertos etc aportado por equipo, pociones, hechizos etc no cuentan para estadística básica. <br /> Ejemplo: si un hechizo hace tu daño de hechizos básico, solo se tiene en cuenta el de la rama de talentos + ficha de personaje y se ignora el aportado por el resto de objetos y efectos.
+          <br /> Ejemplo: al sanar o dañar con un hechizo directo, se aplica la cantidad que dice el hechizo más el poder de hechizo básico del personaje. Si hay sanación o daño en tiempo, a menos que se indique, no se aplicará la estadística básica, si no que aumentará en 1 por nivel</span></div> 
           <div className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}><i className="fa-solid fa-heart-pulse fa-beat"></i> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
           <div className="nombre-concepto-blanco" style={{color:"#00e5ff"}}><i className="fa-solid fa-droplet fa-fade"></i> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, recuperas un punto.</span></div> 
           <div className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}><i className="fa-brands fa-cloudsmith fa-shake"></i> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 

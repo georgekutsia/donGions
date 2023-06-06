@@ -20,7 +20,7 @@ function Luck() {
           <li><i className="fa-solid fa-dice"></i> &nbsp;Añade +2 por cada punto de suerte a tus tiradas de suerte</li>
           <li><i className="fa-solid fa-dice"></i>&nbsp;	Tantas veces por combate como suerte tengas, puedes repetir una tirada de dados en la que hayas sacado 1. Con suerte +2 se puede usar el mismo efecto con tiradas de dado con resultado 2 y con suerte +3 con resultado 3 etc.</li>
           <li><i className="fa-solid fa-dice"></i>&nbsp;	Si un jugador encuentra un objeto cuyo valor se desconoce, dependerá de su suerte que el objeto sea valioso o no. </li>
-          <li><i className="fa-solid fa-dice"></i>&nbsp;	Algunos cofres contienen una cantidad de objeto que se determina con un D 4. Cada punto de suerte te da un objeto adicional.</li>
+          <li><i className="fa-solid fa-dice"></i>&nbsp;	Algunos cofres contienen una cantidad de objeto que se determina con una tirada de dados. Cada punto de suerte te da un objeto adicional del tipo.</li>
           <li></li>
           <li></li>
         </ul>
