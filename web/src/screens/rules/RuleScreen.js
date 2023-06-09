@@ -267,10 +267,6 @@ const handleingOff = () =>{
         </FadeInOut>
       </div>
         </FadeInOut>
-      {/* <FadeInOut show duration={400}>
-              { <ExtraInfo/>}
-      </FadeInOut> */}
-        {/* explor start */}
       <div className='img-rules-inspi-container'>
         <FadeInOut show={expl1} duration={400}>
             {expl1 &&

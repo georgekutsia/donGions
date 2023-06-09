@@ -30,6 +30,10 @@ function NonSpecific() {
           </ul>
         <h1 id="s-cinestesia" align="center" className='texto-resaltado-no-especificados'> Datos no especificados</h1> 
         <ul className="definicion-concepto">
+          <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i> Tras fracasar en la esquiva, puedes usar las otras defensas disminuidas en 3</li>
+          <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i> Disparar a más distancia que el alcance del personaje disminuye el acierto en 3</li>
+          <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i> Todas las armas de dos manos se pueden sujetar con una, pero disminuye el acierto total en 
+              1 por cada carga de cada arma y todos los golpes fallidos cuentan como contundentes</li>
           <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i> Armas que no especifican su carga de munición o forma de obtenerla, tienen carga de munición 5 </li>
           <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i>	Cualquier efecto que no especifique su duración, durará 1 turno. </li>
           <li>&nbsp; <i style={{color:"turquoise"}} className="fa-solid fa-circle-check"></i>	Cualquier redondeo o porcentaje siempre es mínimo 1. Si algo dice "20% de la vida total" y la vida son 3, sigue siendo 1 ya que se redondea siempre hacia arriba </li>
@@ -43,7 +47,7 @@ function NonSpecific() {
           <ul className="definicion-concepto">
             <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada 3 puntos de <span style={{fontStyle:"italic", color:"violet"}}>movimiento </span> adicionales</span> obtienes 1 Velocidad de movimiento </li>
             <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada punto de <span style={{fontStyle:"italic", color:"yellow"}}>velocidad de movimiento </span> </span> te permite repetir un tipo de ataque básico y es gratuito</li>
-            <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada 3 puntos de <span style={{fontStyle:"italic", color:"aquamarine"}}>rotura </span> disminuidas</span> aumentan el daño del arma lanzada 50%</li>
+            <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada 3 puntos adicionales de <span style={{fontStyle:"italic", color:"aquamarine"}}>rotura </span> disminuidas</span> aumentan el daño del arma lanzada 50%</li>
             <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Cada 3 <span style={{fontStyle:"italic", color:"cornflowerblue"}}>tatuajes </span> </span> aumentan tu carisma +1</li>
           </ul>
       </div>

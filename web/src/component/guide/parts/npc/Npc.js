@@ -32,7 +32,8 @@ function Npc() {
       </div>
       <div className='d-flex'>
         <img className='npc-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682375614/donGions%20imgs/ruleImages/iluminadas_xsy8ko.jpg" alt="marcada"/>
-        <li>&nbsp;<span className='nombre-npc-negro' style={{color:"darkkhaki", borderBottom:"none"}}> Marcadas o iluminadas</span> +3 en acierto de hechizos y reduce el coste de cada hechizo 1 maná </li>
+        <li>&nbsp;<span className='nombre-npc-negro' style={{color:"darkkhaki", borderBottom:"none"}}> Marcadas o iluminadas</span> +3 en acierto de hechizos y reduce el coste de cada hechizo no básico 1 maná. Las criaturas iluminadas no pueden ocultarse ni volverse invisibles y algunos
+                                                                                                      efectos de iluminación en área revelan las criaturas ocultas </li>
       </div>
       <div className='d-flex'>
         <img className='npc-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682377009/donGions%20imgs/ruleImages/paralizadas_dqt3f0.jpg" alt="paralizadas"/>
