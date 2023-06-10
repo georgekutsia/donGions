@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import TalentItem from './TalentItem'
-import LineConect from './../../../component/extra/buttons/LineConect'
+import LineConect from '../../extra/buttons/LineConect'
 
 function Talent({
   positionLine1,colorLine1, heightLine1, widthLine1,

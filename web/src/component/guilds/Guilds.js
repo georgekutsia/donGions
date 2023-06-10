@@ -1,4 +1,4 @@
-import { ListGuilds, SearchGuild } from "../../component";
+import { ListGuilds, SearchGuild } from "..";
 // import React, { Component }  from 'react';
 import React from "react";
 import { useEffect, useState } from "react";

@@ -1,5 +1,5 @@
 import React from "react";
-import { EquipmentAbilities } from "../../../../../component";
+import { EquipmentAbilities } from "../../../..";
 
 function shieldAbility() {
   return (

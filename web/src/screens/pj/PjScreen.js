@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Character, Materials, StatsSalud, StatsPlusFight, StatsDam, StatsDefence} from '../../screens';
+import { Character, Materials, StatsSalud, StatsPlusFight, StatsDam, StatsDefence} from '..';
 import { AuthContext } from '../../context/AuthContext'
 import FadeInOut from "../../component/FadeInOut";
 import { Link } from 'react-router-dom';

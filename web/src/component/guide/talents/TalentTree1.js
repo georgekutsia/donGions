@@ -1,5 +1,5 @@
 import React from 'react'
-import {TalentItem} from '../../../component'
+import {TalentItem} from '../..'
 
 function TalentTree1() {
   return (

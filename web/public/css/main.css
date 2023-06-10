@@ -62,6 +62,7 @@ button:disabled {
   width:50%;
   margin-top: calc(50px + 10%);
   border-radius: 20%;
+  max-width: 70%;
   animation: border-flicker 3s linear;
 }
 .div-neon:hover {

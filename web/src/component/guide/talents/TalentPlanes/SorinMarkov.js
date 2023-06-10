@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Talent from "../Talent";
-import LineConect from './../../../extra/buttons/LineConect'
+import LineConect from '../../../extra/buttons/LineConect'
 
 
 function SorinMarkov() {
