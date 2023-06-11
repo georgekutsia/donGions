@@ -11,7 +11,7 @@ function effort() {
       </div>
       </div>
           <article  align="center" className='background-list-actions'>
-          &nbsp;&nbsp;&nbsp; El esfuerzo amplifica el efecto de cualquier acción básica, cuesta 1 esencia y no consume acciones. Debajo del 50% de vida consumen 2 esencias y por debajo de 20%, consume 3 esencias.
+          &nbsp;&nbsp;&nbsp; El esfuerzo amplifica el efecto de cualquier acción básica, cuesta 2 esencias y no consume acciones. Debajo del 50% de vida consumen 3 esencias y por debajo de 20%, consume 4 esencias.
           </article>
           
           <ul>

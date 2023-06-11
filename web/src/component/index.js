@@ -23,6 +23,7 @@ export {default as Charisma} from "./guide/parts/character/Charisma"
 export {default as Presence} from "./guide/parts/character/Presence"
 export {default as Kinesthesia} from "./guide/parts/character/Kinesthesia"
 export {default as Perception} from "./guide/parts/character/Perception"
+export {default as Instinct} from "./guide/parts/character/Instinct"
 
 export {default as Effort} from "./guide/parts/effort/Effort"
 export {default as Npc} from "./guide/parts/npc/Npc"

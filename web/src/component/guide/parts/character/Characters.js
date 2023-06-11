@@ -1,9 +1,10 @@
 import React from 'react'
-import {Luck, Perception, Charisma, Kinesthesia, Presence} from '../../../../component'
+import {Luck, Perception, Charisma, Kinesthesia, Presence, Instinct} from '../../../../component'
 
 function Characters() {
   return (
     <div>
+    <Instinct/>
     <Luck/>
     <Perception/>
     <Charisma/>
