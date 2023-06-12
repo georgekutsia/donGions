@@ -13,15 +13,14 @@ function Instinct() {
         <div><h4 style={{color: "rgb(250, 250, 0)"}} className='rules-show-shadow'>20+ <span > <br /> Instinto Perfecto </span></h4> </div>
     </div>
         <article id="s-percepcion" align="center" className='background-list-actions'>
-        &nbsp;&nbsp;&nbsp; Los jugadores con instinto mejorado pueden confiar más en su cuerpo para reaccionar de la forma adecuada cuando ocurre algo
-        que su percepción no es capaz de detectar o pasa tan rápido que apenas hay tiempo para reaccionar.
+        &nbsp;&nbsp;&nbsp; Los jugadores con instinto mejorado tienen reflejos tan afinados que responden a situaciones que no han tenido tiempo de interpretar.
         </article>
         <article align="center" className='background-list-actions'>
-        &nbsp;&nbsp;&nbsp; El DM estará atento de avisar al jugador con puntos de instinto cuando se le active. Al tirar por instinto, se sabrá cómo reaccionar
+        &nbsp;&nbsp;&nbsp; El DM estará atento de avisar al jugador con puntos de instinto cuando se le active. Al tirar por instinto, se sabrá cómo reacciona
         el jugador y qué tipo de información obtiene. 
         </article>
         <ul>
-          <li><i className="fa-solid fa-arrows-up-down-left-right"></i> &nbsp;  Por cada punto de Intinto	obtienes +2 en cada tirada de Intinto</li>
+          <li><i className="fa-solid fa-arrows-up-down-left-right"></i> &nbsp;  Por cada punto de Instinto obtienes +2 en cada tirada de Intinto</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Cuando hay que reaccionar a una explosión, ataque sorpresa o algo repentino, aumenta la tirada de dados en 2 para la reacción deseada por cada punto de Instinto</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 A mayor instinto, eres más capaz de detectar si la criatura a la que enfrentas es más fuerte o débil, peligrosa o inofensiva etc. </li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;		Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"green"}}>Cinestesia</span>, pueden volver 
