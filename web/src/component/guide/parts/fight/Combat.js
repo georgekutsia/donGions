@@ -68,7 +68,7 @@ function Combat() {
                       <img className='combat-images-right' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682324910/donGions%20imgs/ruleImages/marcialidad_cu2yvy.jpg" alt="Bloqueo"/>
                     </div>
                     <div className='ataque-potenciado-texto'>&nbsp;&nbsp;&nbsp;Al luchar desarmado, obtienes Instinto +1 y un D4 para incrementar la esquiva. D6 en el nivel 2. D8 en el 3. 
-                    Tras una esquiva crítica o por encima de 23, puedes usar un contraataque físico gratuito.</div>
+                    Tras una esquiva crítica o por encima de 23, puedes usar un contraataque físico gratuito y guay.</div>
                   </div>
                 </div>
               </div>
