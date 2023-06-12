@@ -4,9 +4,9 @@ import {Luck, Perception, Charisma, Kinesthesia, Presence, Instinct} from '../..
 function Characters() {
   return (
     <div>
+    <Perception/>
     <Instinct/>
     <Luck/>
-    <Perception/>
     <Charisma/>
     <Kinesthesia/>
     <Presence/>

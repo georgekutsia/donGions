@@ -7,10 +7,10 @@ function Perception() {
         <img className='character-images' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1682202307/donGions%20imgs/characters/perception_jxcqqd.png" alt="Charisma"/>
 
       <div className='d-flex justify-content-evenly'>
-        <div><h4 className='rules-show-shadow'>1-12- <span >Nada</span></h4> </div>
-        <div><h4 className='rules-show-shadow'>13-17-<span >Poca Información</span></h4> </div>
-        <div><h4 className='rules-show-shadow'>18-19 -<span >Información Útil</span></h4> </div>
-        <div><h4 className='rules-show-shadow'>20+ <span >Mucha información </span></h4> </div>
+        <div><h4 style={{color: "rgb(106, 57, 7)"}} className='rules-show-shadow'>1-12- <span >Nada</span></h4> </div>
+        <div><h4 style={{color: "rgb(166, 104, 4)"}} className='rules-show-shadow'>13-17-<span >Poca Información</span></h4> </div>
+        <div><h4 style={{color: "rgb(230, 143, 5)"}} className='rules-show-shadow'>18-19 -<span >Información Útil</span></h4> </div>
+        <div><h4 style={{color: "rgb(255, 169, 3)"}} className='rules-show-shadow'>20+ <span >Mucha información </span></h4> </div>
     </div>
         <article id="s-percepcion" align="center" className='background-list-actions'>
         &nbsp;&nbsp;&nbsp; Al explorar, investigar o luchar, los jugadores con buena percepción tienes mucha ventaja para salir victoriosos en cada situación. Usa las tiradas de percepción 
