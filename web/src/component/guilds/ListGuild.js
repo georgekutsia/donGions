@@ -4,10 +4,10 @@ import data from "../../data/guildsPactsData.json"
 import {useEffect, useState} from "react"
 import FadeInOut from "../FadeInOut";
 
-function ListGuild({search, food, character, damage, where, potions, explosives, distance, mele, 
+function ListGuild({search, place, food, character, damage, where, potions, explosives, distance, mele, 
     magic, book, techno, defence, explor, move, vida, mana, restore, cards, gems, companion, 
     gun, tatu, throww, action, ability, light, dice, concent, money, maz, mutate, hit, heal, 
-    weight,maz1,maz2,maz3,maz4, nonDefined }) {
+    weight,esence,objects,maz3,maz4, nonDefined }) {
     const [guild, setGuild] = useState([])
 
     useEffect(() => {
@@ -28,6 +28,7 @@ function ListGuild({search, food, character, damage, where, potions, explosives,
             <tbody>
                 {guild
                     .filter((pact) => pact.name.toLowerCase().includes(search.toLowerCase()))
+                    .filter((pact) => pact.where.toLowerCase().includes(place.toLowerCase()))
                     .filter((pact) => (food ? pact.food : true))
                     .filter((pact) => (character ? pact.character : true))
                     .filter((pact) => (damage ? pact.damage : true))
@@ -62,8 +63,8 @@ function ListGuild({search, food, character, damage, where, potions, explosives,
                     .filter((pact) => (hit ? pact.hit: true))
                     .filter((pact) => (heal ? pact.heal : true))
                     .filter((pact) => (weight ? pact.weight : true))
-                    .filter((pact) => (maz1 ? pact.maz1 : true))
-                    .filter((pact) => (maz2 ? pact.maz2 : true))
+                    .filter((pact) => (esence ? pact.esence : true))
+                    .filter((pact) => (objects ? pact.objects : true))
                     .filter((pact) => (maz3 ? pact.maz3 : true))
                     .filter((pact) => (maz4 ? pact.maz4 : true))
                     .filter((pact) => (nonDefined ? pact.nonDefined : true))

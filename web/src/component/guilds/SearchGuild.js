@@ -1,16 +1,16 @@
 import React from 'react';
-function SearchGuild({ search, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, move, 
+function SearchGuild({ search, place, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, move, 
   vida, mana, restore, cards, gems, companion, gun, tatu, throww, action, ability, light, dice, concent, money, maz, mutate, hit, heal, weight,
-  maz1, maz2, maz3, maz4, nonDefined, 
-  setSearch, filterCharacter, filterDamage, filterFood, filterWhere, filterPotions, filterExplosives, filterDistance, filterMele, filterMagic, 
+  esence, objects, maz3, maz4, nonDefined, 
+  setSearch,setPlace, filterCharacter, filterDamage, filterFood, filterWhere, filterPotions, filterExplosives, filterDistance, filterMele, filterMagic, 
   filterBook, filterTechno, filterDefence,filterExplor,filterMove, filterVida,filterMana, filterRestore,filterCards,filterGems, filterCompanion,
   filterGun, filterTatu, filterThroww, filterAction, filterAbility, filterLight, filterDice, filterConcent, filterMoney, filterMaz, filterMutate, 
-  filterHit, filterHeal, filterWeight,filterMaz1,filterMaz2,filterMaz3,filterMaz4, filterNonDefined}) {
+  filterHit, filterHeal, filterWeight,filterEsence,filterObjects,filterMaz3,filterMaz4, filterNonDefined}) {
   return(
     <div>
-        <div>
+        <div className='justify-content-evenly'>
           <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre de Gremio" value={search} onChange={(event) => setSearch(event.target.value)}/>
-          {/* <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por ubicación" value={search} onChange={(event) => setSearch(event.target.value)}/> */}
+          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por ubicación" value={place} onChange={(event) => setPlace(event.target.value)}/>
         </div>
         <label htmlFor="food" className={food ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterFood(!food)}>Alimentos y consumibles</label>
         <label htmlFor="character" className={character ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterCharacter(!character)}>Carácter y personalidad</label>
@@ -27,6 +27,7 @@ function SearchGuild({ search, food, character, damage, where, potions, explosiv
         <label htmlFor="move" className={move ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMove(!move)}>Movimiento y velocidad</label>
         <label htmlFor="vida" className={vida ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterVida(!vida)}>Vida y Sanación</label>
         <label htmlFor="mana" className={mana ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMana(!mana)}>Maná y Recuperación</label>
+        <label htmlFor="esence" className={esence ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterEsence(!esence)}>Esencias</label>
         <label htmlFor="restore" className={restore ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterRestore(!restore)}>Salud</label>
         <label htmlFor="cards" className={cards ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterCards(!cards)}>Loot y cartas de hechizos</label>
         <label htmlFor="gems" className={gems ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterGems(!gems)}>Gemas y Joyas</label>
@@ -45,10 +46,9 @@ function SearchGuild({ search, food, character, damage, where, potions, explosiv
         <label htmlFor="hit" className={hit ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterHit(!hit)}>Acierto, precisión y velocidad</label>
         <label htmlFor="heal" className={heal ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterHeal(!heal)}>Sanación y supervivencia</label>
         <label htmlFor="weight" className={weight ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterWeight(!weight)}>weight</label>
-        <label htmlFor="maz1" className={maz1 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz1(!maz1)}>maz1</label>
-        <label htmlFor="maz2" className={maz2 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz2(!maz2)}>maz2</label>
-        <label htmlFor="maz3" className={maz3 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz3(!maz3)}>maz3</label>
-        <label htmlFor="maz4" className={maz4 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz4(!maz4)}>maz4</label>
+        <label htmlFor="objects" className={objects ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterObjects(!objects)}>Objetos especiales</label>
+        {/* <label htmlFor="maz3" className={maz3 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz3(!maz3)}>maz3</label>
+        <label htmlFor="maz4" className={maz4 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz4(!maz4)}>maz4</label> */}
         <label htmlFor="nonDefined" className={nonDefined ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterNonDefined(!nonDefined)}>Gremios de carácter especial</label>
     </div>
   )

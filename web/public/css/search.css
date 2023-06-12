@@ -14,10 +14,14 @@
 }
 
 .search-bar-creatures-beleron {
-  width: 300px;
+  width: 20%;
+  min-width: 160px;
   color: rgb(52, 6, 52);
 }
-
+.justify-content-evenly{
+  display: flex;
+justify-content: space-evenly
+}
   .responsive-td {
     display: block;
   }
@@ -28,4 +32,46 @@
   margin-top: 30px;
   width: 70%;
   min-width: 390px;
+}
+.show-filters-guilds{
+  background-color: black;
+  color: white;
+  border: 2px solid;
+  border-radius: 10%;
+  animation: rainbow-border 35s linear infinite, rotate 5s linear infinite;
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-color: red;
+    box-shadow: 0 0 10px red;
+  }
+  14% {
+    border-color: orange;
+    box-shadow: 0 0 10px orange;
+  }
+  28% {
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+  }
+  42% {
+    border-color: green;
+    box-shadow: 0 0 10px green;
+  }
+  57% {
+    border-color: blue;
+    box-shadow: 0 0 10px blue;
+  }
+  71% {
+    border-color: indigo;
+    box-shadow: 0 0 10px indigo;
+  }
+  85% {
+    border-color: violet;
+    box-shadow: 0 0 10px violet;
+  }
+  100% {
+    border-color: red;
+    box-shadow: 0 0 10px red;
+  }
 }

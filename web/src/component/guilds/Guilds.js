@@ -8,7 +8,9 @@ function Guilds() {
   useEffect(() => {
     setShowPage(true);
   }, []);
+  const [showFilters, setShowFilters] = useState(false)
   const [search, setSearch] = useState("");
+  const [place, setPlace] = useState("");
   const [food, setFood] = useState(false);
   const [character, setCharacter] = useState(false);
   const [damage, setDamage] = useState(false);
@@ -42,8 +44,8 @@ function Guilds() {
   const [hit, setHit] = useState(false);
   const [heal, setHeal] = useState(false);
   const [weight, setWeight] = useState(false);
-  const [maz1, setMaz1] = useState(false);
-  const [maz2, setMaz2] = useState(false);
+  const [esence, setEsence] = useState(false);
+  const [objects, setObjects] = useState(false);
   const [maz3, setMaz3] = useState(false);
   const [maz4, setMaz4] = useState(false);
   const [nonDefined, setNonDefined] = useState(false);
@@ -56,9 +58,15 @@ function Guilds() {
       <FadeInOut show={true} duration={1000}>
         <div align="center">
           <div className="m-1">
+          <button className="show-filters-guilds" onClick={() => setShowFilters(!showFilters) }> {showFilters? "Ocultar Filtros" : "Mostrar filtros"} </button>
+          <FadeInOut show={showFilters} duration={500}>
+          
+          {showFilters && 
             <SearchGuild
               setSearch={setSearch}
               search={search}
+              setPlace={setPlace}
+              place={place}
               filterWhere={setWhere}
               where={where}
               filterFood={setFood}
@@ -127,10 +135,10 @@ function Guilds() {
               heal={heal}
               filterWeight={setWeight}
               weight={weight}
-              filterMaz1={setMaz1}
-              maz1={maz1}
-              filterMaz2={setMaz2}
-              maz2={maz2}
+              filterEsence={setEsence}
+              esence={esence}
+              filterObjects={setObjects}
+              objects={objects}
               filterMaz3={setMaz3}
               maz3={maz3}
               filterMaz4={setMaz4}
@@ -138,6 +146,8 @@ function Guilds() {
               filterNonDefined={setNonDefined}
               nonDefined={nonDefined}
             />
+          }
+          </FadeInOut>
           </div>
           {/* <div className="bubble-text">
             <img className="img-shop-info-creature" alt="Dude" />
@@ -146,6 +156,7 @@ function Guilds() {
           <div className="div-list-creatures">
             <ListGuilds
               search={search}
+              place={place}
               food={food}
               character={character}
               damage={damage}
@@ -180,8 +191,8 @@ function Guilds() {
               hit={hit}
               heal={heal}
               weight={weight}
-              maz1={maz1}
-              maz2={maz2}
+              esence={esence}
+              objects={objects}
               maz3={maz3}
               maz4={maz4}
               nonDefined={nonDefined}
