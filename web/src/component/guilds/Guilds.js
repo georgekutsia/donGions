@@ -2,13 +2,11 @@ import { ListGuilds, SearchGuild } from "..";
 // import React, { Component }  from 'react';
 import React from "react";
 import { useEffect, useState } from "react";
-import FadeInOut from "../FadeInOut";
 function Guilds() {
   const [showPage, setShowPage] = useState(false);
   useEffect(() => {
     setShowPage(true);
   }, []);
-  const [showFilters, setShowFilters] = useState(false)
   const [search, setSearch] = useState("");
   const [place, setPlace] = useState("");
   const [food, setFood] = useState(false);
@@ -55,13 +53,9 @@ function Guilds() {
   const [showTable, setShowTable] = useState(false);
   return (
     <div align="center">
-      <FadeInOut show={true} duration={1000}>
         <div align="center">
           <div className="m-1">
-          <button className="show-filters-guilds" onClick={() => setShowFilters(!showFilters) }> {showFilters? "Ocultar Filtros" : "Mostrar filtros"} </button>
-          <FadeInOut show={showFilters} duration={500}>
-          
-          {showFilters && 
+
             <SearchGuild
               setSearch={setSearch}
               search={search}
@@ -146,8 +140,6 @@ function Guilds() {
               filterNonDefined={setNonDefined}
               nonDefined={nonDefined}
             />
-          }
-          </FadeInOut>
           </div>
           {/* <div className="bubble-text">
             <img className="img-shop-info-creature" alt="Dude" />
@@ -199,7 +191,6 @@ function Guilds() {
             />
           </div>
         </div>
-      </FadeInOut>
     </div>
   );
 }

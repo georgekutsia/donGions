@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FadeInOut from "../FadeInOut";
+
 function SearchGuild({ search, place, food, character, damage, where, potions, explosives, distance, mele, magic, book, techno, defence, explor, move, 
   vida, mana, restore, cards, gems, companion, gun, tatu, throww, action, ability, light, dice, concent, money, maz, mutate, hit, heal, weight,
   esence, objects, maz3, maz4, nonDefined, 
   setSearch,setPlace, filterCharacter, filterDamage, filterFood, filterWhere, filterPotions, filterExplosives, filterDistance, filterMele, filterMagic, 
   filterBook, filterTechno, filterDefence,filterExplor,filterMove, filterVida,filterMana, filterRestore,filterCards,filterGems, filterCompanion,
   filterGun, filterTatu, filterThroww, filterAction, filterAbility, filterLight, filterDice, filterConcent, filterMoney, filterMaz, filterMutate, 
-  filterHit, filterHeal, filterWeight,filterEsence,filterObjects,filterMaz3,filterMaz4, filterNonDefined}) {
+  filterHit, filterHeal, filterWeight,filterEsence,filterObjects,filterMaz3,filterMaz4, filterNonDefined})
+  {
+  const [showFilters, setShowFilters] = useState(false)
+
   return(
     <div>
-        <div className='justify-content-evenly'>
+        <button className="show-filters-guilds" onClick={() => setShowFilters(!showFilters) }> {showFilters? "Ocultar Filtros" : "Mostrar filtros"} </button>
+          <div className='justify-content-evenly'>
           <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre de Gremio" value={search} onChange={(event) => setSearch(event.target.value)}/>
           <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por ubicación" value={place} onChange={(event) => setPlace(event.target.value)}/>
         </div>
+          <FadeInOut show={showFilters} duration={500}>
+        {showFilters && 
+      <div>
         <label htmlFor="food" className={food ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterFood(!food)}>Alimentos y consumibles</label>
         <label htmlFor="character" className={character ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterCharacter(!character)}>Carácter y personalidad</label>
         <label htmlFor="damage" className={damage ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterDamage(!damage)}>Daño en combate</label>
@@ -50,6 +59,9 @@ function SearchGuild({ search, place, food, character, damage, where, potions, e
         {/* <label htmlFor="maz3" className={maz3 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz3(!maz3)}>maz3</label>
         <label htmlFor="maz4" className={maz4 ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterMaz4(!maz4)}>maz4</label> */}
         <label htmlFor="nonDefined" className={nonDefined ? "selectedGuild" : "notSelectedGuild"} onClick={() => filterNonDefined(!nonDefined)}>Gremios de carácter especial</label>
+      </div>
+      }
+      </FadeInOut>
     </div>
   )
 }
