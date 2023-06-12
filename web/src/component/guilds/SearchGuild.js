@@ -15,8 +15,8 @@ function SearchGuild({ search, place, food, character, damage, where, potions, e
     <div>
         <button className="show-filters-guilds" onClick={() => setShowFilters(!showFilters) }> {showFilters? "Ocultar Filtros" : "Mostrar filtros"} </button>
           <div className='justify-content-evenly'>
-          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por nombre de Gremio" value={search} onChange={(event) => setSearch(event.target.value)}/>
-          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por ubicación" value={place} onChange={(event) => setPlace(event.target.value)}/>
+          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por Gremio" value={search} onChange={(event) => setSearch(event.target.value)}/>
+          <input  type="text" className="search-bar-creatures-beleron" placeholder="Buscar por Ubicación" value={place} onChange={(event) => setPlace(event.target.value)}/>
         </div>
           <FadeInOut show={showFilters} duration={500}>
         {showFilters && 
