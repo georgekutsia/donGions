@@ -9,6 +9,7 @@ import AjaniGoldmane from '../../component/guide/talents/TalentPlanes/AjaniGoldm
 import TeferiAkosa from '../../component/guide/talents/TalentPlanes/TeferiAkosa';
 
 function RuleScreen() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [showPage, setShowPage] = useState(false)
   useEffect(() => {
       setShowPage(true)
@@ -16,6 +17,14 @@ function RuleScreen() {
         setDude(false)
       }, 5000)
   }, [])
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); 
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   const [dude, setDude] = useState(false)
@@ -146,7 +155,17 @@ const handleingOff = () =>{
         </div>
         </FadeInOut>
         }
-          <div className='nav-show-stats-rules'> 
+          <div className={isSmallScreen? '':'nav-show-stats-rules'}> 
+            <div>
+              <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
+              onClick={()=>{handleingOn()}}>
+                    <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
+              </button>
+              <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
+              onClick={()=>{handleingOff()}}>
+                    <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
+              </button>
+            </div>
             <div>
                     <button className={basic ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setBasic(!basic)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-list"></i>Básico
@@ -187,16 +206,6 @@ const handleingOff = () =>{
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
                         <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Talentos
                     </button>
-              </div>
-              <div>
-                <button className='btn-rules-toggle' style={{color:"violet", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{handleingOn()}}>
-                      <span></span><span></span><span></span><span></span><i className="fa-regular fa-folder-open"></i>  
-                </button>
-                <button className='btn-rules-toggle' style={{color:"blue", fontSize:"calc(14px + 0.3vw)"}} 
-                onClick={()=>{handleingOff()}}>
-                      <span></span><span></span><span></span><span></span><i className="fa-solid fa-folder-closed"></i>
-                </button>
               </div>
             </div>
         <div className='bla'>

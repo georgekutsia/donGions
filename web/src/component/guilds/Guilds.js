@@ -55,7 +55,6 @@ function Guilds() {
     <div align="center">
         <div align="center">
           <div className="m-1">
-
             <SearchGuild
               setSearch={setSearch}
               search={search}

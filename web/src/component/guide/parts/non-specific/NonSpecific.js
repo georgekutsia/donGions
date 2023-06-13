@@ -4,7 +4,7 @@ function NonSpecific() {
   return (
     <>
       <div style={{backgroundColor:"rgb(2, 12, 5)"}} className='background-rule-info'>
-        <h1 id="s-cinestesia" align="center" className='texto-resaltado-modifican'> Otros conceptos</h1> 
+        <h1 id="s-otros-conceptos" align="center" className='texto-resaltado-modifican'> Otros conceptos</h1> 
           <ul className="definicion-concepto">
             <li>&nbsp; <span className='nombre-stat-negro' style={{color:"burlywood", borderBottom:"none"}}><i className="fa-solid fa-circle-check"></i> Crítico: </span>
             Un efecto crítico puede ser cualquier tirada de dados natural que obtenga la máxima puntuación del dado. Puede ser para acierto, daño, defensa etc. 

@@ -89,7 +89,15 @@ font-size: calc(19px + 0.8vw);
 font-weight: bolder;
 font-family: 'Times New Roman', Times, serif;
 -webkit-text-stroke: 0.3px  rgb(0, 0, 0);
-border-bottom: white 1px solid;
+color: darkkhaki;
+}
+.nombre-npc-negro-titulo{
+font-size: calc(19px + 0.8vw);
+font-weight: bolder;
+border-bottom: none;
+font-family: 'Times New Roman', Times, serif;
+-webkit-text-stroke: 0.3px  rgb(0, 0, 0);
+padding-top: 40px;
 }
 .nombre-stat-negro{
 font-size: calc(12px + 0.7vw);
@@ -101,8 +109,8 @@ border-bottom: white 1px solid;
 
 .definicion-concepto{
 color:white;
+padding: 5px;
 text-align: justify;
-margin-left: 10px;
 margin-top: 10px;
 font-size: calc(12px + 0.6vw);
 -webkit-text-stroke: 0 white;
@@ -183,13 +191,13 @@ font-size: calc(12px + 0.6vw);
 
 
 .texto-resaltado-npc {
-  animation: fluido1 4s ease-in-out infinite;
-  background: linear-gradient(-45deg, #9e3602, rgb(1, 121, 206), rgb(206, 1, 59), rgb(1, 206, 11));
+  animation: fluido1 18s ease-in-out infinite;
+  background: linear-gradient(-45deg, rgb(89, 185, 253), rgb(123, 247, 224), rgb(1, 28, 206));
   background-size: 300%;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(14px + 1.5vw);
 }
 .texto-resaltado-degradado {
   animation: fluido1 4s ease-in-out infinite;
