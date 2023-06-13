@@ -12,30 +12,30 @@ function EstadisticasPj() {
     <>
       <h1 className="texto-resaltado-npc"> Estadísticas del personaje y las acciones que puede realizar</h1>
       <div className="background-rule-info">
-          <div className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}><i className="fa-solid fa-heart-pulse fa-beat"></i> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
-          <div className="nombre-concepto-blanco" style={{color:"#00e5ff"}}><i className="fa-solid fa-droplet fa-fade"></i> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, recuperas un punto.</span></div> 
-          <div className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}><i className="fa-brands fa-cloudsmith fa-shake"></i> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 
-          <div className="nombre-concepto-blanco" id="s-salud"> <span className="texto-salud"><i className="fa-solid fa-heart-pulse fa-beat"></i><i className="fa-solid fa-droplet fa-fade"></i> <i className="fa-brands fa-cloudsmith fa-shake"></i>  Salud:</span><span className="definicion-concepto">es el total de vida, maná y esencia. Recuperar 1 punto de salud es recuperar 1 de cada.</span></div> 
+          <div className="nombre-concepto-blanco" style={{color:"rgb(0, 245, 0)"}}><i className="fa-solid fa-heart-pulse"></i> Vida:<span className="definicion-concepto">los puntos máximos que puedes tener. Al llegar a 0 mueres. No te puedes sanar por encima de esa cantidad.</span></div> 
+          <div className="nombre-concepto-blanco" style={{color:"#00e5ff"}}><i className="fa-solid fa-droplet"></i> Maná:<span className="definicion-concepto">se gasta para usar hechizos y habilidades. Al comienzo del turno del personaje, recuperas un punto.</span></div> 
+          <div className="nombre-concepto-blanco" style={{color:"rgb(247, 0, 255)"}}><i className="fa-brands fa-cloudsmith"></i> Esencia:<span className="definicion-concepto">se consigue al rematar una criatura. Sirve para gastar en hechizos y habilidades que requieren esencia</span></div> 
+          <div className="nombre-concepto-blanco" id="s-salud"> <span className="texto-salud"><i className="fa-solid fa-heart-pulse"></i><i className="fa-solid fa-droplet"></i> <i className="fa-brands fa-cloudsmith"></i>  Salud:</span><span className="definicion-concepto">es el total de vida, maná y esencia. Recuperar 1 punto de salud es recuperar 1 de cada.</span></div> 
           <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
           <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setActions(!actions)}>
-              <span></span><span></span><span></span><span></span><i className="fa-solid fa-person-running fa-flip"></i> Acciones: </button>
+              <span></span><span></span><span></span><span></span><i className="fa-solid fa-person-running "></i> Acciones: </button>
                   </span><span className="definicion-concepto">La cantidad de cosas que puedes hacer en la ronda. Se recarga al comienzo del turno y algunas acciones se pueden gastar 
                   en el turno del oponente (defensas). No puede usar el mismo jugador más de 1 ataque seguido con el personaje sin intercalar con otro jugador. Puedes usar hasta 2 acciones 
                   (concentración no cuenta) antes del otro.</span>
           </div> 
               {actions && <Actions/>}
-              <div className="nombre-concepto-blanco" style={{color:"red"}}><i className="fa-solid fa-head-side-cough-slash fa-shake"></i> Daño:<span className="definicion-concepto" > Físico, mágico o a distancia. Lo marcan las estadísticas básicas del personaje más otros modificadores de equipo, arma, habilidad etc.</span></div> 
+              <div className="nombre-concepto-blanco" style={{color:"red"}}><i className="fa-solid fa-head-side-cough-slash"></i> Daño:<span className="definicion-concepto" > Físico, mágico o a distancia. Lo marcan las estadísticas básicas del personaje más otros modificadores de equipo, arma, habilidad etc.</span></div> 
               <div className="nombre-concepto-negro" style={{color:"orange",}}><i className="fa-solid fa-weight-hanging"></i> Carga:<span className="definicion-concepto"> Es la cantidad de objetos que puede tener equipados a la vez. La mayoría de los objetos llevan un número que representa la carga que tiene. 
               La carga total de tu equipo no puede superar la carga de tu personaje. El resto puede ir en la mochila y ser re-equipados. También marca la cantidad de Hechizos que se pueden transportar y objetos de arma o armadura que se puede llevar en la mochila.</span></div> 
 
-              <div className="nombre-concepto-negro" style={{color:"rgb(247, 0, 255)"}}> <span><i className="fa-solid fa-person-walking-dashed-line-arrow-right fa-shake"></i> Movimiento:</span><span className="definicion-concepto" id="s-acciones">
+              <div className="nombre-concepto-negro" style={{color:"rgb(247, 0, 255)"}}> <span><i className="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Movimiento:</span><span className="definicion-concepto" id="s-acciones">
               Las cuadrículas que te puedes desplazar. A mayor cantidad de puntos de movimiento, mayor<button className='btn-rules-toggle nombre-concepto-blanco' onClick={()=>setMoves(!moves)}>
           <span></span><span></span><span></span><span></span>Velocidad
           </button></span></div> 
               {moves && <MovesPlus/>}
               <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
                   <button className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(220, 10, 90)"}} onClick={()=>setBrake(!brake)}>
-              <span></span><span></span><span></span><span></span><i className="fa-solid fa-link-slash fa-shake"></i> Rotura: </button>
+              <span></span><span></span><span></span><span></span><i className="fa-solid fa-link-slash"></i> Rotura: </button>
                   </span><span className="definicion-concepto">La mayoría de los objetos se pueden lanzar para intentar ocasionar daño u otros propósitos. Tienen probabilidad de romperse según las circunstancias.
                   </span>
                   </div> 
@@ -48,10 +48,10 @@ function EstadisticasPj() {
                 <a className='btn-rules-toggle nombre-concepto-blanco' style={{ fontSize:"20px"}} onClick={()=>setCombat(!combat)} href="#combat">
                 <span></span><span></span><span></span><span></span> Mas detalle en la página de Combate</a>
                 </span></div> 
-              
+              <div className="nombre-concepto-blanco" style={{color:"rgb(32, 45, 190)"}}><i className="fa-solid fa-hands-holding-child"></i> Intervenir:<span className="definicion-concepto"> puedes ayudar defendiendo un ataque por un aliado. Debes interponerte, gasta una acción y elegir cómo defenderlo. Esquivar implica empujar al aliado para ponerlo a salvo.</span></div> 
               <div className="nombre-concepto-blanco" style={{color:"rgb(255, 255, 0)"}}><span>
                 <button id="s-concentracion" className='btn-rules-toggle nombre-concepto-blanco' style={{color:"rgb(20, 251, 190)"}} onClick={()=>setFocus(!focus)}>
-                  <span></span><span></span><span></span><span></span><i className="fa-solid fa-brain fa-bounce"></i> Concentración: </button>
+                  <span></span><span></span><span></span><span></span><i className="fa-solid fa-brain"></i> Concentración: </button>
                   </span><span className="definicion-concepto">Se gasta una acción para aumentar el acierto de tu siguiente ataque o defensa</span>
               </div> 
               {focus && <Enfoque/>}

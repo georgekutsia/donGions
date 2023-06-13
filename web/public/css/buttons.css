@@ -69,7 +69,7 @@
   background-color: black;
   border: none;
   font-weight: 900;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
 }
 .btn-rules-on:hover {
   background: white;
@@ -167,7 +167,7 @@
   letter-spacing: 4px;
   overflow: hidden;
   border: 30px;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(8px + 0.6vw);
   background: linear-gradient(to right, black, black, black, black, #606060, black, black, black, black);
   animation: moveGradientRules 10s ease-in-out infinite;
   background-size: 3800px;

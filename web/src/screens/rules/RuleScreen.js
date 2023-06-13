@@ -30,8 +30,8 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [basic, setBasic] = useState(false)
-  const [char, setChar] = useState(true)
+  const [basic, setBasic] = useState(true)
+  const [char, setChar] = useState(false)
   const [inspi1, setInpsi1] = useState(false)
   const [inspi2, setInpsi2] = useState(false)
   const [inspi3, setInpsi3] = useState(false)
@@ -174,10 +174,10 @@ const handleingOff = () =>{
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-arrows"></i>Combate
                     </button>
                     <button className={rEquipment ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREquipment(!rEquipment)}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-group-arrows-rotate"></i>Equipo
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-group-arrows-rotate"></i>Armas
                     </button>
                     <button className={rArmor ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRArmor(!rArmor)}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-shirt"></i>Armadura
+                        <span></span><span></span><span></span><span></span><i className="fa-solid fa-shirt"></i>Armaduras
                     </button>
                     <button className={char ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setChar(!char)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-hurricane"></i>Carácter
@@ -186,7 +186,7 @@ const handleingOff = () =>{
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
                     </button>
                     <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handelInspiOff(!true);}}>
-                        <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>¡Inspírate!
+                        <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>Inspírate
                     </button>
                     <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handleExploOff(!true);}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
@@ -204,7 +204,7 @@ const handleingOff = () =>{
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-dice"></i>Dados
                     </button>
                     <button className={rTalent ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRTalent(!rTalent)}}>
-                        <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Talentos
+                        <span></span><span></span><span></span><span></span><i className="iconoir-3d-arc-center-pt"></i>Ramas
                     </button>
               </div>
             </div>
