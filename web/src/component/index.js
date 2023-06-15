@@ -76,6 +76,8 @@ export {default as MediumArmor} from "./guide/parts/equipment-abilities/armor-ab
 export {default as Dice} from "./guide/parts/dice/Dice"
 export {default as Dungeon} from "./guide/parts/dungeon/Dungeon"
 
+export {default as Ridles} from "./ridles/Ridles"
+
 
 export {default as Guilds} from "./guilds/Guilds"
 export {default as ListGuilds} from "./guilds/ListGuild"

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds } from "../../component";
+import { BackgroundFloatingBuble, ImportantCreaturesBeleron, Guilds, Ridles } from "../../component";
 import FadeInOut from "../../component/FadeInOut";
 
 function EventsScreen() {
@@ -29,6 +29,9 @@ function EventsScreen() {
           <h1><button onClick={() => {setShowGuilds(!showGuilds); setShowNPC(false)}} 
           className="btn btn-round b-level-2 b-type-show-creatures">Guilds</button>
           </h1>
+        </div>
+        <div>
+          <Ridles/>
         </div>
       </div>
           <FadeInOut show={showNPC} duration={500}>

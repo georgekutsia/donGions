@@ -23,6 +23,7 @@ function Instinct() {
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i> &nbsp;  Por cada punto de Instinto obtienes +2 en cada tirada de Instinto</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Cuando hay que reaccionar a una explosión, ataque sorpresa o algo repentino, aumenta la tirada de dados en 2 para la reacción deseada por cada punto de Instinto</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 A mayor instinto, eres más capaz de detectar si la criatura a la que enfrentas es más fuerte o débil, peligrosa o inofensiva etc. </li>
+          <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;	 Los jugadores con instinto están alerta incluso mientras duermen, están desmayados o controlados.</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;		Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"green"}}>Cinestesia</span>, pueden volver 
           hacer un ataque al esquivar un ataque por sorpresa o emboscada. También ayuda para iniciar el combate.</li>
           <li><i className="fa-solid fa-arrows-up-down-left-right"></i>&nbsp;		Los jugadores con <span style={{color:"rgb(250, 250, 0)"}}>Instinto</span>  que también tienen puntos en <span style={{color:"orange"}}>Percepción</span>, son capaces 
