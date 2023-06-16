@@ -127,9 +127,8 @@ const handleingOff = () =>{
         />
         </FadeInOut>
         <BackgroundFloatingBuble floatingBalls=
-        // square-flow      slow-flow
     {"url(https://res.cloudinary.com/dfrda73uc/image/upload/v1666134847/donGions%20imgs/backgroundEffects/pngwing.com_-_2022-10-19T011351.446_eeqfuh.png)"} 
-    widthBall={"50px"} heigthBall={"60px"} radiusBall={"2px"} idFlow={"square-flow"}/>
+    widthBall={"15px"} heigthBall={"22px"} radiusBall={"2px"} idFlow={"square-flow"}/>
       <div align="center" className='container'>
       <FadeInOut show={showPage} duration={1000}>
         <div className='titulo-pagina'> Manual de instrucciones del juego</div>
