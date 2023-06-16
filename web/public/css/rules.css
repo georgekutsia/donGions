@@ -54,7 +54,7 @@
 .rules-show-shadow{
   color: rgb(111, 110, 107);
   text-shadow: #dfdbdb 1px 1px;
-  font-size: calc(14px + 1.3vw);
+  font-size: calc(10px + 1vw);
 }
 .iconBar a:hover {
   background-color: #ffffff;
@@ -683,3 +683,7 @@ margin-top: 20px;
   100% { transform: rotate(720deg)  }
 }
 
+
+.below-rules-space{
+  margin-top: 40px;
+}

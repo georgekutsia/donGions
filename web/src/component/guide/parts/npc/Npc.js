@@ -3,6 +3,12 @@ import React from 'react'
 function Npc() {
   return (
     <>
+      <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> Recompensas</h1>
+      <div className='nombre-npc-negro-titulo'> Criaturas y combate </div>
+        <article>Cuando se mata a una criatura no aliada, se obtiene recompensa en esencia y maná igual a su coste, pero algunas criaturas,
+        como las mecánicas, invocadas, ilusiones etc sólo otorgan un maná y una esencia, ya que no son realmente seres vivos. 
+      <br /> Al matar criaturas de menos nivel que los personajes, se obtiene un maná y una esencia. Al matar criaturas del mismo nivel o superior, se obtiene lo que especifica el coste de la criatura.
+</article>
       <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> Daño y efectos en NPCs</h1>
         <div className='nombre-npc-negro-titulo'> Ventajas en combate </div>
       <ul className='text-npc'>

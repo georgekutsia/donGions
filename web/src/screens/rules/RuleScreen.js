@@ -30,8 +30,8 @@ function RuleScreen() {
   const [dude, setDude] = useState(false)
   const [rDice, setRDice] =useState(false)
 
-  const [basic, setBasic] = useState(true)
-  const [char, setChar] = useState(false)
+  const [basic, setBasic] = useState(false)
+  const [char, setChar] = useState(true)
   const [inspi1, setInpsi1] = useState(false)
   const [inspi2, setInpsi2] = useState(false)
   const [inspi3, setInpsi3] = useState(false)
@@ -207,7 +207,7 @@ const handleingOff = () =>{
                     </button>
               </div>
             </div>
-        <div className='bla'>
+        <div className='below-rules-space'>
       <FadeInOut show={basic} duration={400}>
               {basic && <Rules/>}
         </FadeInOut>
@@ -277,6 +277,7 @@ const handleingOff = () =>{
         </FadeInOut>
       <div className='img-rules-inspi-container'>
         <FadeInOut show={expl1} duration={400}>
+      <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> Cada arma funciona de una forma particular y cada objeto tiene una característica especial</h1>
             {expl1 &&
             <img className='img-rules-inspi' src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666704197/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_15.20.30_eqplj7.png" alt="inspire 3" />
             }
@@ -312,6 +313,7 @@ const handleingOff = () =>{
 
         {/* inspiracion start */}
         <FadeInOut show={inspi1} duration={200}>
+            <h1 id="s-tiempo" align="center" className='texto-resaltado-npc'> ¡Inspírate! Estos son algunos combos y posibilidades dentro del juego</h1>
             {inspi1 &&
             <img className='m-2' width="90%" src="https://res.cloudinary.com/dfrda73uc/image/upload/v1666698260/donGions%20imgs/rules%2B/Captura_de_pantalla_2022-10-25_a_las_13.42.46_dl8bcg.png" alt="inspire 1" />
             }

@@ -9,8 +9,8 @@ function EventsScreen() {
   }, [])
   const[showGuilds, setShowGuilds] = useState(false);
   const[showNPC, setShowNPC] = useState(false);
-  const[ridles, setRidles] = useState(true);
-  const [robot1, setRobot1] = useState(true)
+  const[ridles, setRidles] = useState(false);
+  const [robot1, setRobot1] = useState(false)
   return (
     <div>
       <BackgroundFloatingBuble

@@ -9,6 +9,7 @@ text-align: center;
 .button-riddle{
   width: 90%;
   max-width: 350px;
+  color: black;
   background-color: rgb(255, 200, 0);
 }
 .button-show-riddle{
