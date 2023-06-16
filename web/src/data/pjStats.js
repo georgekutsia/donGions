@@ -51,13 +51,19 @@ const planeswalkers = [
     name : "Sarkhan", surname:"Sarkhan", life : 6, mana : 6,  weight: 8, actions: 5, reach: 3, move : 3, 
     image : ("https://res.cloudinary.com/dfrda73uc/image/upload/v1665910916/donGions%20imgs/register%20images/planSarkhan_uyvvcp.jpg"),
     damFis : 1, damDist : 0, damMag : 1, acFis : 15, acDist : 15, acMag : 15, precision : 0, speed:0, marciality:0,
-    block:16, dodge : 15, parry : 15, resist : 16, reflex: 0, firm: 0, temple: 0, style : "red"
+    block:16, dodge : 15, parry : 15, resist : 16, reflex: 0, firm: 0, temple: 0, style : "mediumOrchid"
   },
   {
     name : "Teferi", surname:"Akosa", life : 5, mana : 6,  weight: 10, actions: 6, reach: 3, move : 2, 
     image : ("https://res.cloudinary.com/dfrda73uc/image/upload/v1665910916/donGions%20imgs/register%20images/planTeferi_nghzw7.jpg"),
     damFis : 1, damDist : 0, damMag : 1, acFis : 15, acDist : 15, acMag : 14, precision : 0, speed:0, marciality:0,
     block:15, dodge : 14, parry : 17, resist : 13, reflex: 0, firm: 0, temple: 0, style : "moccasin"
+  },
+  {
+    name : "Chandra", surname:"Nalaar", life : 5, mana : 6,  weight: 10, actions: 6, reach: 3, move : 2, 
+    image : ("https://res.cloudinary.com/dfrda73uc/image/upload/v1686957963/donGions%20imgs/register%20images/planChandra_yhbozm.jpg"),
+    damFis : 1, damDist : 0, damMag : 1, acFis : 15, acDist : 15, acMag : 14, precision : 0, speed:0, marciality:0,
+    block:15, dodge : 14, parry : 17, resist : 13, reflex: 0, firm: 0, temple: 0, style : "red"
   }
 ]
 export default planeswalkers

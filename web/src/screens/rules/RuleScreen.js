@@ -71,6 +71,13 @@ function RuleScreen() {
   const [onJace, setOnJace] = useState(false)
   const [onTeferi, setOnTeferi] = useState(false)
   const [onAjani, setOnAjani] = useState(false)
+  const [onGideon, setOnGideon] = useState(false)
+  const [onElspeth, setOnElspeth] = useState(false)
+  const [onNissa, setOnNissa] = useState(false)
+  const [onSarkhan, setOnSarkhan] = useState(false)
+  const [onChandra, setOnChandra] = useState(false)
+  const [onRal, setOnRal] = useState(false)
+  const [onLiliana, setOnLiliana] = useState(false)
 
   const handelInspiOff = (onOff) => {
  setTimeout(() => {
@@ -105,8 +112,7 @@ const handleExploOff= (onOf) => {
   }, 800)
 }
 const handlePlansOn = ()=>{
-  setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false)
-}
+  setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false); setOnChandra(false); setOnElspeth(false); setOnGideon(false); setOnLiliana(false); setOnNissa(false);setOnRal(false); setOnSarkhan(false)}
 
 const handleingOn = () =>{
   handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
@@ -256,10 +262,17 @@ const handleingOff = () =>{
       <FadeInOut show={rTalent} duration={400}>
       <div >
       <div>
-        <button onClick={()=>{handlePlansOn(); setOnMark(!onMark)}} style={{color:"maroon"}} className={onMark? 'talent-name-selected':'talent-name'}>Sorin Markov</button>
+        <button onClick={()=>{handlePlansOn();setOnMark(!onMark)}} style={{color:"maroon"}} className={onMark? 'talent-name-selected':'talent-name'}>Sorin Markov</button>
         <button onClick={()=>{handlePlansOn();setOnTeferi(!onTeferi)}} style={{color:"moccasin"}} className={onTeferi? 'talent-name-selected':'talent-name'}>Teferi Akosa</button>
         <button onClick={()=>{handlePlansOn();setOnJace(!onJace)}} style={{color:"blue"}} className={onJace? 'talent-name-selected':'talent-name'}>Jace Beleren</button>
         <button onClick={()=>{handlePlansOn();setOnAjani(!onAjani)}} style={{color:"yellow"}} className={onAjani? 'talent-name-selected':'talent-name'}>Ajani Goldmane</button>
+        <button onClick={()=>{handlePlansOn();setOnGideon(!onGideon)}} style={{color:"white"}} className={onGideon? 'talent-name-selected':'talent-name'}>Gideon Jura</button>
+        <button onClick={()=>{handlePlansOn();setOnElspeth(!onElspeth)}} style={{color:"dimgrey"}} className={onElspeth? 'talent-name-selected':'talent-name'}>Elspeth Tirel</button>
+        <button onClick={()=>{handlePlansOn();setOnNissa(!onNissa)}} style={{color:"green"}} className={onNissa? 'talent-name-selected':'talent-name'}>Nissa Revane</button>
+        <button onClick={()=>{handlePlansOn();setOnSarkhan(!onSarkhan)}} style={{color:"mediumOrchid"}} className={onSarkhan? 'talent-name-selected':'talent-name'}>Sarkhan Vol</button>
+        <button onClick={()=>{handlePlansOn();setOnChandra(!onChandra)}} style={{color:"red"}} className={onChandra? 'talent-name-selected':'talent-name'}>Chandra Nalaar</button>
+        <button onClick={()=>{handlePlansOn();setOnRal(!onRal)}} style={{color:"aqua"}} className={onRal? 'talent-name-selected':'talent-name'}>Ral Zarek</button>
+        <button onClick={()=>{handlePlansOn();setOnLiliana(!onLiliana)}} style={{color:"blueviolet"}} className={onLiliana? 'talent-name-selected':'talent-name'}>Liliana Vess</button>
       </div>
       <FadeInOut show={onMark} duration={400}>
               {onMark && <SorinMarkov/> }
@@ -272,6 +285,27 @@ const handleingOff = () =>{
         </FadeInOut>
         <FadeInOut show={onAjani} duration={400}>
               {onAjani && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onGideon} duration={400}>
+              {onGideon && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onElspeth} duration={400}>
+              {onElspeth && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onNissa} duration={400}>
+              {onNissa && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onSarkhan} duration={400}>
+              {onSarkhan && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onChandra} duration={400}>
+              {onChandra && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onRal} duration={400}>
+              {onRal && <AjaniGoldmane/> }
+        </FadeInOut>
+        <FadeInOut show={onLiliana} duration={400}>
+              {onLiliana && <AjaniGoldmane/> }
         </FadeInOut>
       </div>
         </FadeInOut>
