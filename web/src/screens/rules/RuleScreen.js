@@ -79,46 +79,46 @@ function RuleScreen() {
   const [onRal, setOnRal] = useState(false)
   const [onLiliana, setOnLiliana] = useState(false)
 
-  const handelInspiOff = (onOff) => {
+  const handelInspiOff = () => {
  setTimeout(() => {
-    setInpsi1(!onOff)
+    setInpsi1(!inspi1)
   }, 200)
   setTimeout(() => {
-    setInpsi2(!onOff)
+    setInpsi2(!inspi2)
   }, 400)
   setTimeout(() => {
-    setInpsi3(!onOff)
+    setInpsi3(!inspi3)
   }, 600)
 }
 
-const handleExploOff= (onOf) => {
+const handleExploOff= () => {
   setTimeout(() => {
-    setExpl1(!onOf)
+    setExpl1(!expl1)
   }, 300)
   setTimeout(() => {
-    setExpl2(!onOf)
+    setExpl2(!expl2)
   }, 400)
   setTimeout(() => {
-    setExpl3(!onOf)
+    setExpl3(!expl3)
   }, 500)
   setTimeout(() => {
-    setExpl4(!onOf)
+    setExpl4(!expl4)
   }, 600)
   setTimeout(() => {
-    setExpl5(!onOf)
+    setExpl5(!expl5)
   }, 700)
   setTimeout(() => {
-    setExpl6(!onOf)
+    setExpl6(!expl6)
   }, 800)
 }
 const handlePlansOn = ()=>{
   setOnAjani(false); setOnJace(false);setOnMark(false); setOnTeferi(false); setOnChandra(false); setOnElspeth(false); setOnGideon(false); setOnLiliana(false); setOnNissa(false);setOnRal(false); setOnSarkhan(false)}
 
 const handleingOn = () =>{
-  handelInspiOff(false); handleExploOff(false); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
+  handelInspiOff(); handleExploOff(); setBasic(true); setChar(true);setrPre(true); setrCha(true); setrLu(true); setrPer(true); setrKi(true); setREffort(true); setRCombat(true);setRNonSpecific(true);setRNpc(true); setREquipment(true); setRArmor(true); setRDice(true); setRDungeon(true); setRTalent(true)
 }
 const handleingOff = () =>{
-  handelInspiOff(true); handleExploOff(true); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
+  handelInspiOff(); handleExploOff(); setBasic(false); setChar(false);setrPre(false); setrCha(false); setrLu(false); setrPer(false); setrKi(false); setREffort(false); setRCombat(false);setRNonSpecific(false);setRNpc(false); setREquipment(false); setRArmor(false); setRDice(false); setRDungeon(false); setRTalent(false)
 }
   return (
     <div className='margin-rules-borrom'>
@@ -190,10 +190,10 @@ const handleingOff = () =>{
                     <button className={rNpc ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setRNpc(!rNpc)}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-people-group"></i>NPC
                     </button>
-                    <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handelInspiOff(!true);}}>
+                    <button className={inspi1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handelInspiOff();}}>
                         <span></span><span></span><span></span><span></span><i className="fa-regular fa-lightbulb"></i><i className="fa-sharp fa-solid fa-raygun"></i>Inspírate
                     </button>
-                    <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handleExploOff(!true);}}>
+                    <button className={expl1 ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); handleExploOff();}}>
                         <span></span><span></span><span></span><span></span><i className="fa-solid fa-bag-shopping"></i>Objetos
                     </button>
                     <button className={rEffort ? 'btn-rules-on' : 'btn-rules-toggle'} style={{color:"grey"}} onClick={()=>{handleingOff(); setREffort(!rEffort)}}>
