@@ -49,7 +49,7 @@ function StatsSalud() {
       <div className="plans-name"> {st.name} {st.surname} </div>
       <div  className="stats-salud-block">
         <div>
-          <div className="stats-salud justify-content-between" style={{color:`${tlcolor}`}}>Vida: <span><ButtonCounts stat={tLife} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>
+          <div className="stats-salud justify-content-between" style={{color:`${tlcolor}`}}>Vidsssa: <span><ButtonCounts stat={tLife} dead="fa-skull-crossbones"  colorDead="red" colorText={"rgb(0, 245, 0)"}/></span>  </div>
           <div className="stats-salud justify-content-between" style={{color:`${tmcolor}`}}>Maná: <span style={{color:"#00e5ff"}}><ButtonCounts stat={tMana} dead="fa-droplet-slash" colorDead="lightblue" colorText={"#00e5ff"}/></span></div>
           <div className="stats-salud justify-content-between" style={{color:`${tacolor}`}}>Acciones: <span style={{color:"yellow"}}><ButtonCounts stat={tActions} dead="fa-bolt" colorDead="grey" colorText={"yellow"}/></span></div>
         </div>

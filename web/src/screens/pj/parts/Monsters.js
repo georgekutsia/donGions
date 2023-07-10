@@ -15,7 +15,6 @@ function Monsters() {
 
   return (
     <div className='monster-scroller'>
-
           <div className='div-counter-monster'>
             <Link className='link-name-monster' onClick={()=> setShowMonster1(!showMonster1)}>Criatura 1</Link>
               {showMonster1 &&
@@ -25,7 +24,6 @@ function Monsters() {
           }
           </div>
           <div className='div-counter-monster'>
-
             <Link className='link-name-monster' onClick={()=> setShowMonster2(!showMonster2)}>Criatura 2</Link>
               {showMonster2 &&
               <FadeInOut show={showMonster2} duration={1000}>
